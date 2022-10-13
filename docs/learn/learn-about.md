@@ -4,3 +4,4 @@
 - Data privacy
 - Financial Assets & NFTs
 - Digital Money
+- Whitepapers

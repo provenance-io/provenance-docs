@@ -122,20 +122,20 @@ const config = {
 
                             {
                                 label: 'Dev Environment',
-                                to: 'docs/quick-start/start-here',
+                                to: 'docs/build/dev-environment',
                             },
                             {
                                 label: 'Clients',
-                                to: 'docs/quick-start/start-here',
+                                to: 'docs/build/clients',
                             },
 
                             {
                                 label: 'Libraries',
-                                to: 'docs/quick-start/start-here',
+                                to: 'docs/build/libraries',
                             },
                             {
                                 label: 'Tutorials',
-                                to: 'docs/quick-start/start-here',
+                                to: 'docs/build/tutorials',
                             },
                         ],
                     },
@@ -146,25 +146,25 @@ const config = {
                         items: [
                             {
                                 label: 'Provenance Explorer',
-                                to: 'docs/quick-start/start-here',
+                                to: 'docs/discover/',
                             },
                             {
                                 label: 'Wallets',
-                                to: 'docs/quick-start/start-here',
+                                to: 'docs/discover/',
                             },
 
                             {
                                 label: 'Solutions',
-                                to: 'docs/quick-start/start-here',
+                                to: 'docs/discover/',
                             },
                             {
                                 label: 'Grants Program',
-                                to: 'docs/quick-start/start-here',
+                                to: 'docs/discover/',
                             },
 
                             {
                                 label: 'Resources',
-                                to: 'docs/quick-start/start-here',
+                                to: 'docs/discover/',
                             },
                         ],
                     },
@@ -175,21 +175,21 @@ const config = {
                         items: [
                             {
                                 label: 'GitHub',
-                                to: 'docs/quick-start/start-here',
+                                to: 'https://github.com/provenance-io/',
                             },
                             {
                                 label: 'Discord',
-                                to: 'docs/quick-start/start-here',
+                                to: 'https://discord.gg/kNZC8nwCFP',
                             },
 
                             {
                                 label: 'LinkedIn',
-                                to: 'docs/quick-start/start-here',
+                                to: 'https://www.linkedin.com/company/provenance-blockchain/',
                             },
 
                             {
                                 label: 'Twitter',
-                                to: 'docs/quick-start/start-here',
+                                to: 'https://twitter.com/provenancefdn',
                             },
                             {
                                 label: 'Blog',

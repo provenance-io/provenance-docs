@@ -28,11 +28,11 @@ const sidebars = {
           label: 'Provenance Blockchain: Financial Services Blockchain',
           link: {
             type: 'doc',
-            id: 'ecosystem/financial-services-blockchain/index',
+            id: 'pb/ecosystem/financial-services-blockchain/index',
           },
           items: [
-            'ecosystem/financial-services-blockchain/token-economics',
-            'ecosystem/financial-services-blockchain/distribution',
+            'pb/ecosystem/financial-services-blockchain/token-economics',
+            'pb/ecosystem/financial-services-blockchain/distribution',
           ],
         },
         {
@@ -40,26 +40,26 @@ const sidebars = {
           label: 'Governance',
           link: {
             type: 'doc',
-            id: 'ecosystem/governance/index',
+            id: 'pb/ecosystem/governance/index',
           },
           items: [
-            'ecosystem/governance/voting',
-            'ecosystem/governance/software-upgrade-proposal',
+            'pb/ecosystem/governance/voting',
+            'pb/ecosystem/governance/software-upgrade-proposal',
           ],
         },
-        'ecosystem/foundation',
+        'pb/ecosystem/foundation',
         {
           type: 'category',
           label: 'Community',
           link: {
             type: 'doc',
-            id: 'ecosystem/community/index',
+            id: 'pb/ecosystem/community/index',
           },
           items: [
-            'ecosystem/community/participants',
-            'ecosystem/community/validator',
-            'ecosystem/community/delegator',
-            'ecosystem/community/asset-originators',
+            'pb/ecosystem/community/participants',
+            'pb/ecosystem/community/validator',
+            'pb/ecosystem/community/delegator',
+            'pb/ecosystem/community/asset-originators',
           ],
         },
         {
@@ -67,11 +67,11 @@ const sidebars = {
           label: 'Funding Program',
           link: {
             type: 'doc',
-            id: 'ecosystem/funding-program/index',
+            id: 'pb/ecosystem/funding-program/index',
           },
           items: [
-            'ecosystem/funding-program/core-infrastructure-details',
-            'ecosystem/funding-program/grants-program-details',
+            'pb/ecosystem/funding-program/core-infrastructure-details',
+            'pb/ecosystem/funding-program/grants-program-details',
           ],
         },
       ],
@@ -87,11 +87,11 @@ const sidebars = {
           label: 'Introduction',
           link: {
             type: 'doc',
-            id: 'blockchain/introduction/index',
+            id: 'pb/blockchain/introduction/index',
           },
           items: [
-            'blockchain/introduction/application-architecture',
-            'blockchain/introduction/major-components',
+            'pb/blockchain/introduction/application-architecture',
+            'pb/blockchain/introduction/major-components',
           ],
         },
         {
@@ -103,12 +103,12 @@ const sidebars = {
               'Basic concepts provided by the Provenance Blockchain application-specific blockchain',
           },
           items: [
-            'blockchain/basics/anatomy-of-a-provenance-application',
-            'blockchain/basics/transaction-lifecycle',
-            'blockchain/basics/query-lifecycle',
-            'blockchain/basics/accounts',
-            'blockchain/basics/stablecoin',
-            'blockchain/basics/gas-and-fees',
+            'pb/blockchain/basics/anatomy-of-a-provenance-application',
+            'pb/blockchain/basics/transaction-lifecycle',
+            'pb/blockchain/basics/query-lifecycle',
+            'pb/blockchain/basics/accounts',
+            'pb/blockchain/basics/stablecoin',
+            'pb/blockchain/basics/gas-and-fees',
           ],
         },
         {
@@ -116,7 +116,7 @@ const sidebars = {
           label: 'Installing Provenanced',
           link: {
             type: 'doc',
-            id: 'blockchain/running-a-node/index',
+            id: 'pb/blockchain/running-a-node/index',
           },
           items: [
             {
@@ -124,7 +124,7 @@ const sidebars = {
               label: 'Running a Node',
               link: {
                 type: 'doc',
-                id: 'blockchain/running-a-node/running-a-node-1/index',
+                id: 'pb/blockchain/running-a-node/running-a-node-1/index',
               },
               items: [
                 {
@@ -132,15 +132,15 @@ const sidebars = {
                   label: 'Joining Testnet',
                   link: {
                     type: 'doc',
-                    id: 'blockchain/running-a-node/running-a-node-1/join-provenance-testnet/index',
+                    id: 'pb/blockchain/running-a-node/running-a-node-1/join-provenance-testnet/index',
                   },
                   items: [
-                    'blockchain/running-a-node/running-a-node-1/join-provenance-testnet/running-a-testnet-node-from-quicksync',
+                    'pb/blockchain/running-a-node/running-a-node-1/join-provenance-testnet/running-a-testnet-node-from-quicksync',
                   ],
                 },
-                'blockchain/running-a-node/running-a-node-1/become-a-validator',
-                'blockchain/running-a-node/running-a-node-1/configure-a-sentry',
-                'blockchain/running-a-node/running-a-node-1/running-a-mainnet-node',
+                'pb/blockchain/running-a-node/running-a-node-1/become-a-validator',
+                'pb/blockchain/running-a-node/running-a-node-1/configure-a-sentry',
+                'pb/blockchain/running-a-node/running-a-node-1/running-a-mainnet-node',
               ],
             },
           ],
@@ -150,11 +150,11 @@ const sidebars = {
           label: 'Using Provenanced',
           link: {
             type: 'doc',
-            id: 'blockchain/using-provenance/index',
+            id: 'pb/blockchain/using-provenance/index',
           },
           items: [
-            'blockchain/using-provenance/query-command',
-            'blockchain/using-provenance/tx-command',
+            'pb/blockchain/using-provenance/query-command',
+            'pb/blockchain/using-provenance/tx-command',
           ],
         },
         {
@@ -162,7 +162,7 @@ const sidebars = {
           label: 'Explorer',
           link: {
             type: 'doc',
-            id: 'blockchain/explorer/index',
+            id: 'pb/blockchain/explorer/index',
           },
           items: [
             {
@@ -170,7 +170,7 @@ const sidebars = {
               label: 'Walkthrough',
               link: {
                 type: 'doc',
-                id: 'blockchain/explorer/ui-walkthrough/index',
+                id: 'pb/blockchain/explorer/ui-walkthrough/index',
               },
               items: [
                 {
@@ -178,10 +178,10 @@ const sidebars = {
                   label: 'Dashboard',
                   link: {
                     type: 'doc',
-                    id: 'blockchain/explorer/ui-walkthrough/dashboard/index',
+                    id: 'pb/blockchain/explorer/ui-walkthrough/dashboard/index',
                   },
                   items: [
-                    'blockchain/explorer/ui-walkthrough/dashboard/blocks',
+                    'pb/blockchain/explorer/ui-walkthrough/dashboard/blocks',
                   ],
                 },
                 {
@@ -189,16 +189,16 @@ const sidebars = {
                   label: 'Staking (Validators)',
                   link: {
                     type: 'doc',
-                    id: 'blockchain/explorer/ui-walkthrough/staking-validators/index',
+                    id: 'pb/blockchain/explorer/ui-walkthrough/staking-validators/index',
                   },
                   items: [
-                    'blockchain/explorer/ui-walkthrough/staking-validators/validator-details',
+                    'pb/blockchain/explorer/ui-walkthrough/staking-validators/validator-details',
                   ],
                 },
-                'blockchain/explorer/ui-walkthrough/transactions',
-                'blockchain/explorer/ui-walkthrough/assets',
-                'blockchain/explorer/ui-walkthrough/governance',
-                'blockchain/explorer/ui-walkthrough/account-address',
+                'pb/blockchain/explorer/ui-walkthrough/transactions',
+                'pb/blockchain/explorer/ui-walkthrough/assets',
+                'pb/blockchain/explorer/ui-walkthrough/governance',
+                'pb/blockchain/explorer/ui-walkthrough/account-address',
                 {
                   type: 'category',
                   label: 'Forthcoming',
@@ -206,23 +206,23 @@ const sidebars = {
                     type: 'generated-index',
                   },
                   items: [
-                    'blockchain/explorer/ui-walkthrough/forthcoming/params',
-                    'blockchain/explorer/ui-walkthrough/forthcoming/ibc',
-                    'blockchain/explorer/ui-walkthrough/forthcoming/nfts',
-                    'blockchain/explorer/ui-walkthrough/forthcoming/blockchain-statistics',
+                    'pb/blockchain/explorer/ui-walkthrough/forthcoming/params',
+                    'pb/blockchain/explorer/ui-walkthrough/forthcoming/ibc',
+                    'pb/blockchain/explorer/ui-walkthrough/forthcoming/nfts',
+                    'pb/blockchain/explorer/ui-walkthrough/forthcoming/blockchain-statistics',
                   ],
                 },
               ],
             },
-            'blockchain/explorer/wallet',
+            'pb/blockchain/explorer/wallet',
             {
               type: 'category',
               label: 'Explorer as a Service',
               link: {
                 type: 'doc',
-                id: 'blockchain/explorer/explorer-as-a-service/index',
+                id: 'pb/blockchain/explorer/explorer-as-a-service/index',
               },
-              items: ['blockchain/explorer/explorer-as-a-service/ingestion'],
+              items: ['pb/blockchain/explorer/explorer-as-a-service/ingestion'],
             },
           ],
         },
@@ -234,12 +234,12 @@ const sidebars = {
       className: 'section-heading',
       collapsible: false,
       items: [
-        'modules/inherited-modules',
-        'modules/metadata-module',
-        'modules/marker-module',
-        'modules/account',
-        'modules/name-module',
-        'modules/provwasm-smart-contracts',
+        'pb/modules/inherited-modules',
+        'pb/modules/metadata-module',
+        'pb/modules/marker-module',
+        'pb/modules/account',
+        'pb/modules/name-module',
+        'pb/modules/provwasm-smart-contracts',
       ],
     },
     {
@@ -253,20 +253,20 @@ const sidebars = {
           label: 'P8e Contract Execution Environment',
           link: {
             type: 'doc',
-            id: 'p8e/overview/index',
+            id: 'pb/p8e/overview/index',
           },
           items: [
-            'p8e/overview/api',
+            'pb/p8e/overview/api',
             {
               type: 'category',
               label: 'Encrypted Object Store',
               link: {
                 type: 'doc',
-                id: 'p8e/overview/encrypted-object-store/index',
+                id: 'pb/p8e/overview/encrypted-object-store/index',
               },
               items: [
-                'p8e/overview/encrypted-object-store/encryption-scheme',
-                'p8e/overview/encrypted-object-store/dime-encryption-envelope-specification',
+                'pb/p8e/overview/encrypted-object-store/encryption-scheme',
+                'pb/p8e/overview/encrypted-object-store/dime-encryption-envelope-specification',
               ],
             },
           ],
@@ -275,14 +275,14 @@ const sidebars = {
           type: 'category',
           label: 'P8e Usage',
           items: [
-            'p8e/p8e-usage/architecture',
-            'p8e/p8e-usage/specifications',
-            'p8e/p8e-usage/building-new-contracts',
-            'p8e/p8e-usage/data-retrieval',
-            'p8e/p8e-usage/cross-scope-contract-example',
-            'p8e/p8e-usage/multi-contract-example',
-            'p8e/p8e-usage/multi-step-contract-example',
-            'p8e/p8e-usage/next-steps',
+            'pb/p8e/p8e-usage/architecture',
+            'pb/p8e/p8e-usage/specifications',
+            'pb/p8e/p8e-usage/building-new-contracts',
+            'pb/p8e/p8e-usage/data-retrieval',
+            'pb/p8e/p8e-usage/cross-scope-contract-example',
+            'pb/p8e/p8e-usage/multi-contract-example',
+            'pb/p8e/p8e-usage/multi-step-contract-example',
+            'pb/p8e/p8e-usage/next-steps',
           ],
         },
       ],
@@ -298,7 +298,7 @@ const sidebars = {
           label: 'Integrating with p8e',
           link: {
             type: 'doc',
-            id: 'integrating/integrating-with-p8e/index',
+            id: 'pb/integrating/integrating-with-p8e/index',
           },
           items: [
             {
@@ -306,11 +306,11 @@ const sidebars = {
               label: 'Lending Ecosystem',
               link: {
                 type: 'doc',
-                id: 'integrating/integrating-with-p8e/lending-ecosystem/index',
+                id: 'pb/integrating/integrating-with-p8e/lending-ecosystem/index',
               },
               items: [
-                'integrating/integrating-with-p8e/lending-ecosystem/life-cycle-of-a-loan',
-                'integrating/integrating-with-p8e/lending-ecosystem/data-mapping',
+                'pb/integrating/integrating-with-p8e/lending-ecosystem/life-cycle-of-a-loan',
+                'pb/integrating/integrating-with-p8e/lending-ecosystem/data-mapping',
               ],
             },
             {
@@ -318,7 +318,7 @@ const sidebars = {
               label: 'P8e Contract Execution Environment (p8e)',
               link: {
                 type: 'doc',
-                id: 'integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/index',
+                id: 'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/index',
               },
               items: [
                 {
@@ -326,10 +326,10 @@ const sidebars = {
                   label: 'Deploying the Encrypted Object Store',
                   link: {
                     type: 'doc',
-                    id: 'integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/deploying-the-encrypted-object-store/index',
+                    id: 'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/deploying-the-encrypted-object-store/index',
                   },
                   items: [
-                    'integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/deploying-the-encrypted-object-store/configuring-replication',
+                    'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/deploying-the-encrypted-object-store/configuring-replication',
                   ],
                 },
                 {
@@ -337,10 +337,10 @@ const sidebars = {
                   label: 'P8e Contracts',
                   link: {
                     type: 'doc',
-                    id: 'integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/p8e-contracts/index',
+                    id: 'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/p8e-contracts/index',
                   },
                   items: [
-                    'integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/p8e-contracts/example-loan-contracts',
+                    'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/p8e-contracts/example-loan-contracts',
                   ],
                 },
                 {
@@ -348,13 +348,13 @@ const sidebars = {
                   label: 'Key Management',
                   link: {
                     type: 'doc',
-                    id: 'integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/key-management/index',
+                    id: 'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/key-management/index',
                   },
                   items: [
-                    'integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/key-management/permissioning-others',
+                    'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/key-management/permissioning-others',
                   ],
                 },
-                'integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/summary',
+                'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/summary',
               ],
             },
             {
@@ -362,7 +362,7 @@ const sidebars = {
               label: 'p8e CEE API',
               link: {
                 type: 'doc',
-                id: 'integrating/integrating-with-p8e/loan-onboarding-service/index',
+                id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/index',
               },
               items: [
                 {
@@ -370,13 +370,13 @@ const sidebars = {
                   label: 'API Usage Guide',
                   link: {
                     type: 'doc',
-                    id: 'integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/index',
+                    id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/index',
                   },
                   items: [
-                    'integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/loan-onboarding',
-                    'integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/validation-request',
-                    'integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/validation-response',
-                    'integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/error-handling',
+                    'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/loan-onboarding',
+                    'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/validation-request',
+                    'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/validation-response',
+                    'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/error-handling',
                   ],
                 },
                 {
@@ -384,35 +384,35 @@ const sidebars = {
                   label: 'API Specification',
                   link: {
                     type: 'doc',
-                    id: 'integrating/integrating-with-p8e/loan-onboarding-service/api-specification/index',
+                    id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/index',
                   },
                   items: [
-                    'integrating/integrating-with-p8e/loan-onboarding-service/api-specification/configuration-endpoints',
+                    'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/configuration-endpoints',
                     {
                       type: 'category',
                       label: 'Object Store Endpoints',
                       link: {
                         type: 'doc',
-                        id: 'integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/index',
+                        id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/index',
                       },
                       items: [
-                        'integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/store-object',
-                        'integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/retrieve-object',
-                        'integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/store-file',
-                        'integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/retrieve-file',
+                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/store-object',
+                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/retrieve-object',
+                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/store-file',
+                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/retrieve-file',
                       ],
                     },
-                    'integrating/integrating-with-p8e/loan-onboarding-service/api-specification/p8e-endpoints',
+                    'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/p8e-endpoints',
                     {
                       type: 'category',
                       label: 'Contract Execution Endpoints',
                       link: {
                         type: 'doc',
-                        id: 'integrating/integrating-with-p8e/loan-onboarding-service/api-specification/contract-execution-endpoints/index',
+                        id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/contract-execution-endpoints/index',
                       },
                       items: [
-                        'integrating/integrating-with-p8e/loan-onboarding-service/api-specification/contract-execution-endpoints/execute-contract',
-                        'integrating/integrating-with-p8e/loan-onboarding-service/api-specification/contract-execution-endpoints/approve-contract',
+                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/contract-execution-endpoints/execute-contract',
+                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/contract-execution-endpoints/approve-contract',
                       ],
                     },
                   ],
@@ -429,34 +429,34 @@ const sidebars = {
       className: 'section-heading',
       collapsible: false,
       items: [
-        'provenance-applications/apps-powered-by-provenance',
+        'pb/provenance-applications/apps-powered-by-provenance',
         {
           type: 'category',
           label: 'Figure LOS',
           link: {
             type: 'doc',
-            id: 'provenance-applications/loan-origination-system-los/index',
+            id: 'pb/provenance-applications/loan-origination-system-los/index',
           },
           items: [
-            'provenance-applications/loan-origination-system-los/assets',
-            'provenance-applications/loan-origination-system-los/onboarding-contract',
-            'provenance-applications/loan-origination-system-los/funding',
+            'pb/provenance-applications/loan-origination-system-los/assets',
+            'pb/provenance-applications/loan-origination-system-los/onboarding-contract',
+            'pb/provenance-applications/loan-origination-system-los/funding',
             {
               type: 'category',
               label: 'Validation',
               link: {
                 type: 'doc',
-                id: 'provenance-applications/loan-origination-system-los/loan-validation/index',
+                id: 'pb/provenance-applications/loan-origination-system-los/loan-validation/index',
               },
               items: [
-                'provenance-applications/loan-origination-system-los/loan-validation/3rd-party-digital-signatures',
+                'pb/provenance-applications/loan-origination-system-los/loan-validation/3rd-party-digital-signatures',
               ],
             },
-            'provenance-applications/loan-origination-system-los/loan-servicing',
-            'provenance-applications/loan-origination-system-los/data-sharing-with-portfolio-manager',
+            'pb/provenance-applications/loan-origination-system-los/loan-servicing',
+            'pb/provenance-applications/loan-origination-system-los/data-sharing-with-portfolio-manager',
           ],
         },
-        'provenance-applications/evault',
+        'pb/provenance-applications/evault',
       ],
     },
     {
@@ -470,22 +470,22 @@ const sidebars = {
           label: 'ADR',
           link: {
             type: 'doc',
-            id: 'contributing/adr/index',
+            id: 'pb/contributing/adr/index',
           },
           items: [
-            'contributing/adr/template',
+            'pb/contributing/adr/template',
             {
               type: 'category',
               label: '100 Blockchain Configuration and Concepts',
               link: {
                 type: 'doc',
-                id: 'contributing/adr/blockchain-configuration-and-concepts/index',
+                id: 'pb/contributing/adr/blockchain-configuration-and-concepts/index',
               },
               items: [
-                'contributing/adr/blockchain-configuration-and-concepts/genesis-network-configuration',
-                'contributing/adr/blockchain-configuration-and-concepts/hd-wallets-key-pairs-addresses',
-                'contributing/adr/blockchain-configuration-and-concepts/markers-tokens-and-coins',
-                'contributing/adr/blockchain-configuration-and-concepts/transaction-fees-and-gas',
+                'pb/contributing/adr/blockchain-configuration-and-concepts/genesis-network-configuration',
+                'pb/contributing/adr/blockchain-configuration-and-concepts/hd-wallets-key-pairs-addresses',
+                'pb/contributing/adr/blockchain-configuration-and-concepts/markers-tokens-and-coins',
+                'pb/contributing/adr/blockchain-configuration-and-concepts/transaction-fees-and-gas',
               ],
             },
             {
@@ -493,11 +493,11 @@ const sidebars = {
               label: '200 Base Infrastructure',
               link: {
                 type: 'doc',
-                id: 'contributing/adr/base-infrastructure/index',
+                id: 'pb/contributing/adr/base-infrastructure/index',
               },
               items: [
-                'contributing/adr/base-infrastructure/name-service',
-                'contributing/adr/base-infrastructure/account-metadata',
+                'pb/contributing/adr/base-infrastructure/name-service',
+                'pb/contributing/adr/base-infrastructure/account-metadata',
               ],
             },
             {
@@ -505,11 +505,11 @@ const sidebars = {
               label: '300 Core Concepts',
               link: {
                 type: 'doc',
-                id: 'contributing/adr/core-concepts/index',
+                id: 'pb/contributing/adr/core-concepts/index',
               },
               items: [
-                'contributing/adr/core-concepts/identity',
-                'contributing/adr/core-concepts/hash',
+                'pb/contributing/adr/core-concepts/identity',
+                'pb/contributing/adr/core-concepts/hash',
               ],
             },
             {
@@ -517,20 +517,20 @@ const sidebars = {
               label: '400 Smart Contracts',
               link: {
                 type: 'doc',
-                id: 'contributing/adr/smart-contracts/index',
+                id: 'pb/contributing/adr/smart-contracts/index',
               },
               items: [
-                'contributing/adr/smart-contracts/smart-contracts-1',
-                'contributing/adr/smart-contracts/p8e-metadata',
-                'contributing/adr/smart-contracts/p8e-specifications',
-                'contributing/adr/smart-contracts/p8e-smart-contracts',
-                'contributing/adr/smart-contracts/omnibus',
+                'pb/contributing/adr/smart-contracts/smart-contracts-1',
+                'pb/contributing/adr/smart-contracts/p8e-metadata',
+                'pb/contributing/adr/smart-contracts/p8e-specifications',
+                'pb/contributing/adr/smart-contracts/p8e-smart-contracts',
+                'pb/contributing/adr/smart-contracts/omnibus',
               ],
             },
-            'contributing/adr/administration',
-            'contributing/adr/governance',
-            'contributing/adr/business-applications',
-            'contributing/adr/system-migration',
+            'pb/contributing/adr/administration',
+            'pb/contributing/adr/governance',
+            'pb/contributing/adr/business-applications',
+            'pb/contributing/adr/system-migration',
           ],
         },
       ],
@@ -541,11 +541,11 @@ const sidebars = {
       className: 'section-heading',
       collapsible: false,
       items: [
-        'whitepapers/loan-participation-on-provenance',
-        'whitepapers/securitization-on-provenance',
-        'whitepapers/blockchain-impact-on-credit-ratings',
-        'whitepapers/investment-fund-services-on-provenance',
-        'whitepapers/supply-chain-finance-on-provenance',
+        'pb/whitepapers/loan-participation-on-provenance',
+        'pb/whitepapers/securitization-on-provenance',
+        'pb/whitepapers/blockchain-impact-on-credit-ratings',
+        'pb/whitepapers/investment-fund-services-on-provenance',
+        'pb/whitepapers/supply-chain-finance-on-provenance',
       ],
     },
     {
@@ -554,16 +554,16 @@ const sidebars = {
       className: 'section-heading',
       collapsible: false,
       items: [
-        'faq/foundation-faq',
-        'faq/grants-program-faq',
-        'faq/ecosystem-faq',
-        'faq/blockchain-faq',
-        'faq/hash-utility-token-faq',
-        'faq/validator-faq',
-        'faq/delegator-faq',
-        'faq/client-contract-execution-environment-faq',
-        'faq/smart-contract-faq',
-        'faq/transactions-faq',
+        'pb/faq/foundation-faq',
+        'pb/faq/grants-program-faq',
+        'pb/faq/ecosystem-faq',
+        'pb/faq/blockchain-faq',
+        'pb/faq/hash-utility-token-faq',
+        'pb/faq/validator-faq',
+        'pb/faq/delegator-faq',
+        'pb/faq/client-contract-execution-environment-faq',
+        'pb/faq/smart-contract-faq',
+        'pb/faq/transactions-faq',
       ],
     },
     {
