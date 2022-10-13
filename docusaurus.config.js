@@ -76,11 +76,44 @@ const config = {
           src: 'img/circle-logo.png',
         },
         items: [
+
+          {
+            type: 'dropdown',
+            position: 'left',
+            label: 'Quick Start',
+            items: [
+              {
+                label: 'Start Here',
+                to: 'docs/quick-start/start-here',
+              },
+              {
+                label: 'Get a Wallet & Hash',
+                to: 'docs/quick-start/wallet-and-hash',
+              },
+              {
+                label: 'Run a Node',
+                to: 'docs/quick-start/run-a-node',
+              },
+              {
+                label: 'Become a Validator',
+                to: 'docs/quick-start/become-a-validator',
+              },
+              {
+                label: 'Build a dApp',
+                to: 'docs/quick-start/build-a-dapp',
+              },
+              {
+                label: 'Write a Smart Contract',
+                to: 'docs/quick-start/write-a-smart-contract',
+              },
+
+            ]
+          },
           {
             type: 'doc',
             docId: 'provenance-blockchain',
             position: 'left',
-            label: 'Getting Started',
+            label: 'Documentation',
           },
           {
             href: 'https://github.com/provenance-io',
@@ -104,10 +137,6 @@ const config = {
           {
             title: 'Community',
             items: [
-              // {
-              //   label: 'Stack Overflow',
-              //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              // },
               {
                 label: 'Discord',
                 href: 'https://discord.gg/kNZC8nwCFP',
