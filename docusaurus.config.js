@@ -35,15 +35,6 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    editUrl: 'https://github.com/provenance-io/docs/tree/main/',
-                },
-                blog: {
-                    showReadingTime: true,
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    editUrl: 'https://github.com/provenance-io/blog/tree/main/',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
@@ -146,25 +137,28 @@ const config = {
                         items: [
                             {
                                 label: 'Provenance Explorer',
-                                to: 'docs/discover/',
+                                to: 'docs/discover/explorer',
                             },
                             {
                                 label: 'Wallets',
-                                to: 'docs/discover/',
+                                to: 'docs/discover/wallets',
                             },
-
                             {
-                                label: 'Solutions',
-                                to: 'docs/discover/',
+                                label: 'Hash',
+                                to: 'docs/discover/hash',
+                            },
+                            {
+                                label: 'dApps & Solutions',
+                                to: 'docs/discover/dapps',
                             },
                             {
                                 label: 'Grants Program',
-                                to: 'docs/discover/',
+                                to: 'https://provenance.io/grants',
                             },
 
                             {
                                 label: 'Resources',
-                                to: 'docs/discover/',
+                                to: 'docs/discover/resources',
                             },
                         ],
                     },

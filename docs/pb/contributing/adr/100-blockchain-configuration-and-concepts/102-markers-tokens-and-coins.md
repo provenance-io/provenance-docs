@@ -130,7 +130,7 @@ A token can be configured with a flexible set of parameters governing inflation.
 
 _Table: Mint parameters for token inflation._
 
-Coins that are minted through inflation are deposited in the Fee Collection pool and are subject to network wide rules for distribution. For more information on fees and distribution see [ADR-103 Transaction Fees and Gas](adr-103-transaction-fees-gas.md).
+Coins that are minted through inflation are deposited in the Fee Collection pool and are subject to network wide rules for distribution. For more information on fees and distribution see [ADR-103 Transaction Fees and Gas](./103-transaction-fees-and-gas.md).
 
 #### Total Supply
 

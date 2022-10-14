@@ -1,10 +1,16 @@
 
 # Start Here
 
-What are you trying to do?
+Welcome! Let's get you pointed in the right direction. What would you like to do?
 
-- setup wallet/account
-- buy hash
-- query the chain: public servers, run a node, apis
-- become a validator
-- submit transactions
+## I want to...
+
+- Learn about Provenance Blockchain
+- Learn about Financial Services on Provenance Blockchain
+- Set up a wallet and buy some Hash
+- Learn how to delegate my Hash
+- Learn how to query the blockchain
+- Become a Validator in the network
+- Write a dApp for Provenance Blockchain
+- Learn how to develop smart contracts
+
