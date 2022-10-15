@@ -1,6 +1,6 @@
 # Joining Testnet
 
-import { DocSubheader } from '../../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Join a locally installed Provenance Blockchain node to the testnet."/>
 

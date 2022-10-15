@@ -1,6 +1,6 @@
 # Integrating with p8e
 
-import { DocSubheader } from '../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="A practical guide for integrating with p8e"
 />

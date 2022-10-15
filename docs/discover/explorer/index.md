@@ -1,6 +1,6 @@
 # Explorer
 
-import { DocSubheader } from '../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Overview of Explorer capabilities" />
 

@@ -1,6 +1,6 @@
 # Execute Contract
 
-import { DocSubheader } from '../../../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Execute any p8e contract by name" />
 

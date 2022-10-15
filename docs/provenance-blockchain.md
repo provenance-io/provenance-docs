@@ -1,6 +1,6 @@
 # Provenance Blockchain
 
-import { DocSubheader } from './pb/components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Provenance Blockchain is a distributed, proof-of-stake blockchain designed for financial service industries."
 />

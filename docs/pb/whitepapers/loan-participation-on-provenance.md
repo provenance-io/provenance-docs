@@ -1,6 +1,6 @@
 # Loan Participation On Provenance
 
-import { FileLink } from '../components/FileLink';
+import { FileLink } from '/docs/components/FileLink';
 
 <FileLink
   text="Loan Participation On Provenance.pdf"

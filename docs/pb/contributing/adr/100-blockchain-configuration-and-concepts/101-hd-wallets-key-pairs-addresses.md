@@ -1,6 +1,6 @@
 # 101 - HD Wallets, Key Pairs, Addresses
 
-import { DocSubheader } from '../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="An overview of the specific encryption curves and structures used in the blockchain platform. Covers how addresses are derived from public keys and the structure of recording addresses on chain."
 />

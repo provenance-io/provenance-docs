@@ -1,6 +1,6 @@
 # Ingestion
 
-import { DocSubheader } from '../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="How EaaS ingests data from the blockchain" />
 

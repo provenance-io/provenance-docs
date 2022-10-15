@@ -1,6 +1,6 @@
 # Life Cycle of a Loan
 
-import { DocSubheader } from '../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text='Translating the traditional life cycle of a loan to a blockchain-enabled world'
 />

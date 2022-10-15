@@ -1,6 +1,6 @@
 # Contract Execution Endpoints
 
-import { DocSubheader } from '../../../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Endpoints for executing, approving, rejecting, and submitting p8e contracts"
 />

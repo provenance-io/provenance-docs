@@ -1,6 +1,6 @@
 # Software Upgrade Proposals
 
-import { DocSubheader } from '../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Information on how to propose, vote, and track a software upgrade proposal" />
 

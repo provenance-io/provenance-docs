@@ -1,6 +1,6 @@
 # p8e CEE API
 
-import { DocSubheader } from '../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="A variation of the Asset Onboarding Service that implements the p8e Scope SDK"
 />

@@ -1,6 +1,6 @@
 # Name
 
-import { DocSubheader } from '../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="The Name module provides a hierarchical structure of canonical names associated with blockchain addresses." />
 

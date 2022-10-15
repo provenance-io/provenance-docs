@@ -1,6 +1,6 @@
 # Attribute
 
-import { DocSubheader } from '../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="A module that stores attribute values against addresses/accounts.  Keys are managed by the Name module." />
 

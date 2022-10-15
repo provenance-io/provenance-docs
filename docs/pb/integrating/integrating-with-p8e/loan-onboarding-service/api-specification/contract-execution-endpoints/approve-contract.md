@@ -1,6 +1,6 @@
 # Approve Contract
 
-import { DocSubheader } from '../../../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Approve and sign a p8e contract envelope"
 />

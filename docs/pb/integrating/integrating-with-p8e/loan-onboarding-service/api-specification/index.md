@@ -1,6 +1,6 @@
 # API Specification
 
-import { DocSubheader } from '../../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Loan Onboarding Service API Spec"
 />

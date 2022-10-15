@@ -1,6 +1,6 @@
 # 102 - Markers, Tokens, and Coins
 
-import { DocSubheader } from '../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Classifications of Coins used in the blockchain and how these values are recorded on the ledger. Defines standard denominations and purposes."
 />

@@ -1,6 +1,6 @@
 # Marker
 
-import { DocSubheader } from '../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="The Marker module provides an ownership structure for managing tokenized value backed by assets or other tokenized units of value denominated as unit(s) of coin." />
 

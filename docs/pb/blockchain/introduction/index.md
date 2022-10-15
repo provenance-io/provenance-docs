@@ -1,6 +1,6 @@
 # Introduction
 
-import { DocSubheader } from '../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Public blockchain network for ledger, registry, and exchange of financial assets."/>
 

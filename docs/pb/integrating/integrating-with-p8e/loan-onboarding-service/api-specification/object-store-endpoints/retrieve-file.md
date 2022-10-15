@@ -1,6 +1,6 @@
 # Retrieve File
 
-import { DocSubheader } from '../../../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Retrieve and decrypt a file"
 />

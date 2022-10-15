@@ -1,6 +1,6 @@
 # Installing Provenanced
 
-import { DocSubheader } from '../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Install the `provenanced` executable for both client and server operations." />
 

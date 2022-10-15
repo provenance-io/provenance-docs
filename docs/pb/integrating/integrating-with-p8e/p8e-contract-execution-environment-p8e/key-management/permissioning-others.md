@@ -1,6 +1,6 @@
 # Permissioning Others
 
-import { DocSubheader } from '../../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="When to use each key"
 />

@@ -16,7 +16,7 @@ on the blockchain. Analogous to a bank account, your blockchain account holds yo
 
 You are the only entity that has access to your account. Your account is secured using a cryptographic key pair. 
 You don't need to know anything about cryptography to use Provenance Blockchain, but you need to keep the Private Key 
-portion of your key pair safe, and a special app called a Wallet does that for you.
+portion of your key pair safe, and a special app called a **[Wallet](/docs/discover/wallets)** does that for you.
 
 :::info A Wallet app helps you use a blockchain in three ways:
 
@@ -36,7 +36,7 @@ an NFT to sending a payment incur a small fee paid for in Hash. The fees are col
 Validators as a reward for securing the network.
 
 Holding Hash also gives you the right to participating in the Governance process for Provenance Blockchain. 
-You have one vote for every Hash token you own!
+You have one vote for every Hash token you have staked.
 
 ![Hash](/img/hashtransparent.svg)
 
@@ -47,3 +47,7 @@ You have one vote for every Hash token you own!
 ### Step 2: Purchase Hash from [OKCoin](https://go.okcoin.com/hash) or [dlob.io](https://provenance.io/purchase-hash)
 ### Step 3: If interested, learn how to [stake your Hash](/docs/discover/staking)
 
+
+:::tip
+For developers needing Hash on `testnet`, you can get Hash from the [Faucet](https://explorer.test.provenance.io/faucet)
+:::

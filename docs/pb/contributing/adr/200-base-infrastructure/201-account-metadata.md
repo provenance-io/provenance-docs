@@ -1,6 +1,6 @@
 # 201 - Account Metadata
 
-import { DocSubheader } from '../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text= "A structure for collecting key/value metadata attributes against an address (account) on the blockchain. Uses the Name Service to control the allowed set of Keys."
 />

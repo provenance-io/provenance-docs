@@ -1,6 +1,6 @@
 # Smart Contracts (ProvWasm)
 
-import { DocSubheader } from '../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Web assembly (Wasm) smart contracts for the Provenance Blockchain." />
 

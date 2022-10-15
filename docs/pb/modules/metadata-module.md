@@ -1,6 +1,6 @@
 # Metadata
 
-import { DocSubheader } from '../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="The Metadata module provides an on-chain storage and assertion facility for side-chained data including assets-of-value and NFTs." />
 

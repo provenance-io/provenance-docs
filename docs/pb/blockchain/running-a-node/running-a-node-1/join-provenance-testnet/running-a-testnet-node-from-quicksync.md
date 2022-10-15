@@ -1,6 +1,6 @@
 # Running a testnet node from quicksync
 
-import { DocSubheader } from '../../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Running a testnet node for pio-testnet-1 from a quicksync file." />
 

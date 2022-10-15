@@ -1,6 +1,6 @@
 # Tx Command
 
-import { DocSubheader } from '../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Submit transactions using the `provenanced` transaction command."/>
 

@@ -1,6 +1,6 @@
 # P8e Contracts
 
-import { DocSubheader } from '../../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Developing and publishing p8e contracts for loan life cycle events"
 />

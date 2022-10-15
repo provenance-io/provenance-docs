@@ -1,6 +1,6 @@
 # Application Architecture
 
-import { DocSubheader } from '../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Provenance Blockchain is an ecosystem for application-specific financial services blockchain implementations." />
 

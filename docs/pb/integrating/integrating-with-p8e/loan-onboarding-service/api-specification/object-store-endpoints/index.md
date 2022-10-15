@@ -1,6 +1,6 @@
 # Object Store Endpoints
 
-import { DocSubheader } from '../../../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Endpoints for storing and retrieving objects and files"
 />

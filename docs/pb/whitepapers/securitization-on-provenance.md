@@ -1,6 +1,6 @@
 # Securitization On Provenance
 
-import { FileLink } from '../components/FileLink';
+import { FileLink } from '/docs/components/FileLink';
 
 <FileLink
   text="Investment Fund Services on Provenance.pdf"

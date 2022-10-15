@@ -1,6 +1,6 @@
 # Key Management
 
-import { DocSubheader } from '../../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Solutions to keeping your keys safe and organized"
 />

@@ -1,6 +1,6 @@
 # 200 - Name Service
 
-import { DocSubheader } from '../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text= "Name service that provides a hierarchical registry of names similar to the DNS and Ethereum Name Service."
 />

@@ -1,6 +1,6 @@
 # Fees/Distribution
 
-import { DocSubheader } from '../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Explanation of how fees are collected and distributed among the many network participants." />
 

@@ -1,6 +1,6 @@
 # Financial Services Blockchain
 
-import { DocSubheader } from '../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Provenance Blockchain provides the foundation to build marketplaces and exchanges for buyers and sellers of digital assets." />
 

@@ -1,6 +1,6 @@
 # Figure LOS
 
-import { DocSubheader } from '../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Figure Loan Origination System"
 />

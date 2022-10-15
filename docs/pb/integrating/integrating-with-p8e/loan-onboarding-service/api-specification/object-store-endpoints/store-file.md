@@ -1,6 +1,6 @@
 # Store File
 
-import { DocSubheader } from '../../../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Encrypt and store any file"
 />

@@ -1,6 +1,6 @@
 # Onboard Loan Contract
 
-import { DocSubheader } from '../../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Establishing the loan in the Encrypted Object Store and Blockchain"
 />

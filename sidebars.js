@@ -47,7 +47,6 @@ const sidebars = {
             'pb/ecosystem/governance/software-upgrade-proposal',
           ],
         },
-        'pb/ecosystem/foundation',
         {
           type: 'category',
           label: 'Community',
@@ -157,75 +156,7 @@ const sidebars = {
             'pb/blockchain/using-provenance/tx-command',
           ],
         },
-        {
-          type: 'category',
-          label: 'Explorer',
-          link: {
-            type: 'doc',
-            id: 'pb/blockchain/explorer/index',
-          },
-          items: [
-            {
-              type: 'category',
-              label: 'Walkthrough',
-              link: {
-                type: 'doc',
-                id: 'pb/blockchain/explorer/ui-walkthrough/index',
-              },
-              items: [
-                {
-                  type: 'category',
-                  label: 'Dashboard',
-                  link: {
-                    type: 'doc',
-                    id: 'pb/blockchain/explorer/ui-walkthrough/dashboard/index',
-                  },
-                  items: [
-                    'pb/blockchain/explorer/ui-walkthrough/dashboard/blocks',
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'Staking (Validators)',
-                  link: {
-                    type: 'doc',
-                    id: 'pb/blockchain/explorer/ui-walkthrough/staking-validators/index',
-                  },
-                  items: [
-                    'pb/blockchain/explorer/ui-walkthrough/staking-validators/validator-details',
-                  ],
-                },
-                'pb/blockchain/explorer/ui-walkthrough/transactions',
-                'pb/blockchain/explorer/ui-walkthrough/assets',
-                'pb/blockchain/explorer/ui-walkthrough/governance',
-                'pb/blockchain/explorer/ui-walkthrough/account-address',
-                {
-                  type: 'category',
-                  label: 'Forthcoming',
-                  link: {
-                    type: 'generated-index',
-                  },
-                  items: [
-                    'pb/blockchain/explorer/ui-walkthrough/forthcoming/params',
-                    'pb/blockchain/explorer/ui-walkthrough/forthcoming/ibc',
-                    'pb/blockchain/explorer/ui-walkthrough/forthcoming/nfts',
-                    'pb/blockchain/explorer/ui-walkthrough/forthcoming/blockchain-statistics',
-                  ],
-                },
-              ],
-            },
-            'pb/blockchain/explorer/wallet',
-            {
-              type: 'category',
-              label: 'Explorer as a Service',
-              link: {
-                type: 'doc',
-                id: 'pb/blockchain/explorer/explorer-as-a-service/index',
-              },
-              items: ['pb/blockchain/explorer/explorer-as-a-service/ingestion'],
-            },
-          ],
-        },
+
       ],
     },
     {

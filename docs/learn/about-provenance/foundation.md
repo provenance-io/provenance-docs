@@ -1,6 +1,6 @@
 # Foundation
 
-import { DocSubheader } from '../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="A non-profit org that manages, supports, and funds an ecosystem for its community that enables the creation and operation of sophisticated, blockchain-based DeFi apps."/>
 

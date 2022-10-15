@@ -1,6 +1,6 @@
 # Explorer as a Service
 
-import { DocSubheader } from '../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="EaaS: Explorer as a Service" />
 

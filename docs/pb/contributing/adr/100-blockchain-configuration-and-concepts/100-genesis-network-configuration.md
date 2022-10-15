@@ -1,6 +1,6 @@
 # 100 - Genesis Network Configuration
 
-import { DocSubheader} from '../../../components/DocSubheader';
+import { DocSubheader} from '/docs/components/DocSubheader';
 
 <DocSubheader text="Description of the contents of the genesis block, mainnet, testnet, and related configuration for connecting to the networks."
 />

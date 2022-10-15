@@ -1,6 +1,6 @@
 # Inherited Modules
 
-import { DocSubheader } from '../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Modules inherited from the community" />
 

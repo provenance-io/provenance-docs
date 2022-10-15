@@ -1,6 +1,6 @@
 # Lending Ecosystem
 
-import { DocSubheader } from '../../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text='The guide uses the lending ecosystem as a very real example of building out a use case on top of Provenance Blockchain'
 />

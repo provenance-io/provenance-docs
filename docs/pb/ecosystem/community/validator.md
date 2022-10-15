@@ -1,6 +1,6 @@
 # Validator
 
-import { DocSubheader } from '../../components/DocSubheader';
+import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Benefits, risks, and other considerations for network users that wish to
 become a validating node on the Provenance Blockchain network."/>
