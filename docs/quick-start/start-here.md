@@ -14,3 +14,14 @@ Welcome! Let's get you pointed in the right direction. What would you like to do
 - Write a dApp for Provenance Blockchain
 - Learn how to develop smart contracts
 
+Highlight examples:
+
+https://github.com/provenance-io/how-to-provenance
+
+Where to get help
+
+
+
+----
+
+https://github.com/provenance-io/provenance

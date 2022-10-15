@@ -156,7 +156,15 @@ const config = {
                                 to: 'docs/discover/dapps',
                             },
                             {
-                                label: 'Resources',
+                                label: 'Smart Contract Catalog',
+                                to: 'docs/discover/smart-contract-catalog',
+                            },
+                            {
+                                label: 'USDF',
+                                to: 'docs/discover/usdf',
+                            },
+                            {
+                                label: 'More Resources',
                                 to: 'docs/discover/resources',
                             },
                         ],

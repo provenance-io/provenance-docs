@@ -12,3 +12,8 @@
 </Link>
 
 [details](explorer/ui-walkthrough/walkthru)
+
+
+https://github.com/provenance-io/explorer-frontend
+
+https://github.com/provenance-io/explorer-service
