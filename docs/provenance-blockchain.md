@@ -15,13 +15,9 @@ Read about the Provenance blockchain and financial services:
 
 Start with the basics of the Provenance blockchain network:
 
-{% page-ref page="blockchain/basics/" %}
 
 Install the Provenance blockchain application, and start running a node:
 
-{% page-ref page="blockchain/running-a-node/" %}
-
-{% page-ref page="blockchain/using-provenance/" %}
 
 Explore the Provenance ecosystem:
 
@@ -29,7 +25,6 @@ Learn how to use the Provenance modules and how they empower blockchain-based bu
 
 Discover the benefits of the Provenance client-side Contract Execution Environment:
 
-{% page-ref page="p8e/overview/" %}
 
 Get started integrating with Provenance:
 

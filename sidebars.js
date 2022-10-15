@@ -61,18 +61,6 @@ const sidebars = {
             'pb/ecosystem/community/asset-originators',
           ],
         },
-        {
-          type: 'category',
-          label: 'Funding Program',
-          link: {
-            type: 'doc',
-            id: 'pb/ecosystem/funding-program/index',
-          },
-          items: [
-            'pb/ecosystem/funding-program/core-infrastructure-details',
-            'pb/ecosystem/funding-program/grants-program-details',
-          ],
-        },
       ],
     },
     {
@@ -354,42 +342,41 @@ const sidebars = {
         },
       ],
     },
-    {
-      type: 'category',
-      label: 'Apps Built on Provenance Blockchain',
-      className: 'section-heading',
-      collapsible: false,
-      items: [
-        'pb/provenance-applications/apps-powered-by-provenance',
-        {
-          type: 'category',
-          label: 'Figure LOS',
-          link: {
-            type: 'doc',
-            id: 'pb/provenance-applications/loan-origination-system-los/index',
-          },
-          items: [
-            'pb/provenance-applications/loan-origination-system-los/assets',
-            'pb/provenance-applications/loan-origination-system-los/onboarding-contract',
-            'pb/provenance-applications/loan-origination-system-los/funding',
-            {
-              type: 'category',
-              label: 'Validation',
-              link: {
-                type: 'doc',
-                id: 'pb/provenance-applications/loan-origination-system-los/loan-validation/index',
-              },
-              items: [
-                'pb/provenance-applications/loan-origination-system-los/loan-validation/3rd-party-digital-signatures',
-              ],
-            },
-            'pb/provenance-applications/loan-origination-system-los/loan-servicing',
-            'pb/provenance-applications/loan-origination-system-los/data-sharing-with-portfolio-manager',
-          ],
-        },
-        'pb/provenance-applications/evault',
-      ],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'Apps Built on Provenance Blockchain',
+    //   className: 'section-heading',
+    //   collapsible: false,
+    //   items: [
+    //     'pb/provenance-applications/apps-powered-by-provenance',
+    //     {
+    //       type: 'category',
+    //       label: 'Figure LOS',
+    //       link: {
+    //         type: 'doc',
+    //         id: 'pb/provenance-applications/loan-origination-system-los/index',
+    //       },
+    //       items: [
+    //         'pb/provenance-applications/loan-origination-system-los/assets',
+    //         'pb/provenance-applications/loan-origination-system-los/onboarding-contract',
+    //         'pb/provenance-applications/loan-origination-system-los/funding',
+    //         {
+    //           type: 'category',
+    //           label: 'Validation',
+    //           link: {
+    //             type: 'doc',
+    //             id: 'pb/provenance-applications/loan-origination-system-los/loan-validation/index',
+    //           },
+    //           items: [
+    //             'pb/provenance-applications/loan-origination-system-los/loan-validation/3rd-party-digital-signatures',
+    //           ],
+    //         },
+    //         'pb/provenance-applications/loan-origination-system-los/loan-servicing',
+    //         'pb/provenance-applications/loan-origination-system-los/data-sharing-with-portfolio-manager',
+    //       ],
+    //     },
+    //   ],
+    // },
     {
       type: 'category',
       label: 'Contributing',
@@ -466,34 +453,30 @@ const sidebars = {
         },
       ],
     },
-    {
-      type: 'category',
-      label: 'Whitepapers',
-      className: 'section-heading',
-      collapsible: false,
-      items: [
-        'pb/whitepapers/loan-participation-on-provenance',
-        'pb/whitepapers/securitization-on-provenance',
-        'pb/whitepapers/blockchain-impact-on-credit-ratings',
-        'pb/whitepapers/investment-fund-services-on-provenance',
-        'pb/whitepapers/supply-chain-finance-on-provenance',
-      ],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'Whitepapers',
+    //   className: 'section-heading',
+    //   collapsible: false,
+    //   items: [
+    //     'pb/whitepapers/loan-participation-on-provenance',
+    //     'pb/whitepapers/securitization-on-provenance',
+    //     'pb/whitepapers/blockchain-impact-on-credit-ratings',
+    //     'pb/whitepapers/investment-fund-services-on-provenance',
+    //     'pb/whitepapers/supply-chain-finance-on-provenance',
+    //   ],
+    // },
     {
       type: 'category',
       label: 'Provenance Blockchain FAQ',
       className: 'section-heading',
       collapsible: false,
       items: [
-        'pb/faq/foundation-faq',
-        'pb/faq/grants-program-faq',
         'pb/faq/ecosystem-faq',
         'pb/faq/blockchain-faq',
         'pb/faq/hash-utility-token-faq',
         'pb/faq/validator-faq',
         'pb/faq/delegator-faq',
-        'pb/faq/client-contract-execution-environment-faq',
-        'pb/faq/smart-contract-faq',
         'pb/faq/transactions-faq',
       ],
     },

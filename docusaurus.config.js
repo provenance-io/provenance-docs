@@ -128,6 +128,10 @@ const config = {
                                 label: 'Tutorials',
                                 to: 'docs/build/tutorials',
                             },
+                            {
+                                label: 'Grants Program',
+                                to: 'https://provenance.io/grants',
+                            },
                         ],
                     },
                     {
@@ -151,11 +155,6 @@ const config = {
                                 label: 'dApps & Solutions',
                                 to: 'docs/discover/dapps',
                             },
-                            {
-                                label: 'Grants Program',
-                                to: 'https://provenance.io/grants',
-                            },
-
                             {
                                 label: 'Resources',
                                 to: 'docs/discover/resources',
