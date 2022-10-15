@@ -2,14 +2,6 @@
 
 ## What is a Wallet?
 
-:::caution Docs TODO
-- Placeholder wallet image
-- Center images
-- Make list text large without being headings/anchors
-:::
-
-![Wallet](/img/wallet-icon.png)
-
 Everyone who transacts on Provenance Blockchain has their own **[Account](https://docs.cosmos.network/v0.46/basics/accounts.html)** 
 on the blockchain. Analogous to a bank account, your blockchain account holds your on-chain assets, like 
 [Hash](docs/discover/hash) or [USDF](https://www.usdfconsortium.com/).
@@ -51,3 +43,5 @@ You have one vote for every Hash token you have staked.
 :::tip
 For developers needing Hash on `testnet`, you can get Hash from the [Faucet](https://explorer.test.provenance.io/faucet)
 :::
+
+https://medium.com/provenanceblockchain/hands-on-testnet-accounts-wallets-and-coin-transfer-452ee1f343cd

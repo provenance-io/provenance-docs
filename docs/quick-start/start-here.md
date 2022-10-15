@@ -25,3 +25,6 @@ Where to get help
 ----
 
 https://github.com/provenance-io/provenance
+
+https://medium.com/provenanceblockchain/hands-on-testnet-accounts-wallets-and-coin-transfer-452ee1f343cd
+

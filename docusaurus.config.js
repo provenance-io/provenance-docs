@@ -144,12 +144,12 @@ const config = {
                                 to: 'docs/discover/explorer',
                             },
                             {
-                                label: 'Wallets',
-                                to: 'docs/discover/wallets',
-                            },
-                            {
                                 label: 'Hash',
                                 to: 'docs/discover/hash',
+                            },
+                            {
+                                label: 'Wallets',
+                                to: 'docs/discover/wallets',
                             },
                             {
                                 label: 'dApps & Solutions',

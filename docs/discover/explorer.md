@@ -17,3 +17,5 @@
 https://github.com/provenance-io/explorer-frontend
 
 https://github.com/provenance-io/explorer-service
+
+https://medium.com/provenanceblockchain/how-to-propose-to-your-true-love-blockchain-proposals-and-why-they-matter-c1ba61271991

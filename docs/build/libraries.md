@@ -16,6 +16,8 @@ https://github.com/provenance-io/ledger-go
 
 ## Data Privacy and Off-Chain Data Storage
 
+https://medium.com/provenanceblockchain/off-chain-p8e-contracts-sdk-ac313e40c9c7
+
 ### Object Store
 Encrypted off-chain storage
 https://github.com/provenance-io/object-store
@@ -59,6 +61,8 @@ https://github.com/provenance-io/event-stream
 Aggregate data, at a reasonable rate, to support business decisions
 
 https://github.com/provenance-io/aggregate-service
+
+https://medium.com/provenanceblockchain/aggregating-provenance-blockchain-data-a-developers-story-a23972971287
 
 ### Explorer Service
 API for the Provenance Blockchain Explorer containing aggregate and cached data

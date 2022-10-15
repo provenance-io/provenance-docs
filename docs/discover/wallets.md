@@ -45,3 +45,5 @@ https://github.com/provenance-io/wallet-utils
 https://github.com/provenance-io/walletconnect-js
 
 https://github.com/provenance-io/walletconnect-js-qrcode-modal
+
+https://medium.com/provenanceblockchain/provenance-blockchain-wallet-e7a5ffc645c0
