@@ -7,8 +7,11 @@
 
 - [Building Your First dApp](https://medium.com/provenanceblockchain/building-your-first-dapp-5679c07d1983)<br/>_How to build a simple, front-end-only webapp using [WalletConnect](docs/discover/wallets)_
 
+## Smart Contracts
 
-## Using the CEE for Off-Chain Data
+- [Provwasm Smart Contracts](https://github.com/provenance-io/provwasm/blob/22c90c89900f53859c55112909217174f2e910c4/docs/tutorial/01-overview.md)<br/>_Learn how to write a smart contract for Provenance Blockchain_
+
+## The CEE and Off-Chain Data
 
 - [Confidential Compute and Validation Oracles](https://medium.com/provenanceblockchain/confidential-compute-and-validation-oracles-caff2f6a5b60)<br/>_Overview of design and data flows for using [CEE](/docs/pb/p8e/overview/) and EOS_
 
