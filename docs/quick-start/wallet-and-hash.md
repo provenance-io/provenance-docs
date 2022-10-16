@@ -17,6 +17,9 @@ portion of your key pair safe, and a special app called a **[Wallet](/docs/disco
 3. Allows you to perform actions with your account, like transferring funds or signing (approving) blockchain transactions.
 :::
 
+![Hash](/img/hashtransparent.svg)
+
+
 ## What is Hash?
 
 Hash is the [utility token of Provenance Blockchain](/docs/discover/hash). As a utility token, Hash helps keep 
@@ -29,8 +32,6 @@ Validators as a reward for securing the network.
 
 Holding Hash also gives you the right to participating in the Governance process for Provenance Blockchain. 
 You have one vote for every Hash token you have staked.
-
-![Hash](/img/hashtransparent.svg)
 
 
 ## I'm in, how do I get set up?

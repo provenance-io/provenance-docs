@@ -1,5 +1,7 @@
 # Wallet Options
 
+Keyring
+
 ## Mobile Wallet
 Self custody wallet available on the App Store and Google Play
 https://github.com/provenance-io/provenance-mobile-wallet

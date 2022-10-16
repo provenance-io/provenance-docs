@@ -1,7 +1,7 @@
 
 # ProvWasm Smart Contract Catalog
 
-[Contracts Deployed on Mainnet](https://explorer.provenance.io/contracts)
+[Contracts instantiated on Mainnet](https://explorer.provenance.io/contracts)
 
 | Category | Contract | Mainnet | Description | 
 | -------- | -------- | ------------------- | ----------- |

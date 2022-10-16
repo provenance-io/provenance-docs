@@ -1,4 +1,6 @@
-# Tooling and Libraries
+# Libraries and APIs
+
+https://test.figure.tech/ apis
 
 ## Utilities
 
@@ -8,11 +10,15 @@ https://github.com/provenance-io/scripts
 
 [Read about Wallets here](/docs/discover/wallets.md)
 
+https://github.com/FigureTechnologies/hdwallet
+
 https://github.com/provenance-io/originator-key-access-lib
 
 https://github.com/provenance-io/ledger-cosmos
 
 https://github.com/provenance-io/ledger-go
+
+
 
 ## Data Privacy and Off-Chain Data Storage
 
