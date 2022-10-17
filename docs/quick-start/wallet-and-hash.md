@@ -7,7 +7,7 @@ on the blockchain. Analogous to a bank account, your blockchain account holds yo
 [Hash](docs/discover/hash) or [USDF](https://www.usdfconsortium.com/).
 
 You are the only entity that has access to your account. Your account is secured using a cryptographic key pair. 
-You don't need to know anything about cryptography to use Provenance Blockchain, but you need to keep the Private Key 
+You don't necessarily need to know anything about cryptography to use Provenance Blockchain, but you need to keep the Private Key 
 portion of your key pair safe, and a special app called a **[Wallet](/docs/discover/wallets)** does that for you.
 
 :::info A Wallet app helps you use a blockchain in three ways:
@@ -16,6 +16,8 @@ portion of your key pair safe, and a special app called a **[Wallet](/docs/disco
 2. Shows you what assets your hold in your account.
 3. Allows you to perform actions with your account, like transferring funds or signing (approving) blockchain transactions.
 :::
+
+For developers building software on Provenance Blockchain, you'll need to consider your strategy for key management.
 
 ![Hash](/img/hashtransparent.svg)
 
