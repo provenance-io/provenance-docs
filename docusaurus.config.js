@@ -9,8 +9,8 @@ const config = {
     title: 'Provenance Blockchain',
     tagline:
         'A distributed, proof-of-stake blockchain designed for financial service industries.',
-    url: 'https://docs.provenance.io',
-    baseUrl: '/',
+    url: 'https://vwagner.github.io',
+    baseUrl: '/provenance-docs/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/circle-logo.png',
