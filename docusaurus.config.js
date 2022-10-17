@@ -11,7 +11,7 @@ const config = {
         'A distributed, proof-of-stake blockchain designed for financial service industries.',
     url: 'https://docs.provenance.io',
     baseUrl: '/',
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/circle-logo.png',
 
