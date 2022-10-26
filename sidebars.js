@@ -153,7 +153,7 @@ const sidebars = {
       collapsible: false,
       link: {
         type: 'doc',
-        id: 'pb/modules/modules.md',
+        id: 'pb/modules/modules',
       },
       items: [
         'pb/modules/inherited-modules',

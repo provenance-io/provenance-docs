@@ -10,3 +10,7 @@ https://docs.provenance.io/blockchain/running-a-node/running-a-node-1/become-a-v
 
 https://forum.cosmos.network/t/sentry-node-architecture-overview/454
 
+
+https://github.com/provenance-io/aws-validator
+
+
