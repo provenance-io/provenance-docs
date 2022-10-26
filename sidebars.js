@@ -151,6 +151,10 @@ const sidebars = {
       label: 'Modules',
       className: 'section-heading',
       collapsible: false,
+      link: {
+        type: 'doc',
+        id: 'pb/modules/modules.md',
+      },
       items: [
         'pb/modules/inherited-modules',
         'pb/modules/metadata-module',

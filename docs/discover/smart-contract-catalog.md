@@ -16,6 +16,7 @@
 | **Primary Capital Raise** | [Capital Raise](https://github.com/FigureTechnologies/marketpalace-raise-contract) |Initiate a primary capital raise (GP)<br/>[Read more about the Capital Raise process and fund services](https://medium.com/provenanceblockchain/capital-raise-contracts-on-provenance-blockchain-2873f23e16a2) | [41](https://explorer.provenance.io/proposal/41) | 
 | | [Investor Subscription](https://github.com/FigureTechnologies/marketpalace-subscription-contract) | Investor subscription process for a primary raise (LP) | [42](https://explorer.provenance.io/proposal/42) |
 | | [Capital Call](https://github.com/FigureTechnologies/marketpalace-capital-call-contract) |  Issuance of a capital call for a primary raise (GP & LP) |[16](https://explorer.provenance.io/proposal/16) |
+| **IBC** | [IBC Exchange](https://github.com/provenance-io/ibc/tree/main/contracts/exchange) | | |
 
 
 
