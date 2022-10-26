@@ -9,8 +9,10 @@ The ProvWasm/CosmWasm platform allows smart contracts to be executed in
 
 ## Get Started
 
-- We recommend following the [**Provwasm Tutorial**](https://github.com/provenance-io/provwasm/blob/main/docs/tutorial/01-overview.md), 
+- We recommend following the [**ProvWasm Tutorial**](https://github.com/provenance-io/provwasm/blob/main/docs/tutorial/01-overview.md), 
 which will walk you through the process of building and deploying a smart contract step-by-step.
+
+- Read through the [**ProvWarm Documentation**](/docs/pb/modules/provwasm-smart-contracts).
 
 - If you are new to the Rust programming language, the [Rust Book](https://doc.rust-lang.org/book/) is an excellent resource.
 
@@ -23,5 +25,5 @@ similar to your use case.
 - The [How-To-Provenance](https://github.com/provenance-io/how-to-provenance) GitHub repo contains more useful
 cases, including examples of:
   - [How to execute a contract](https://github.com/provenance-io/how-to-provenance/tree/main/bilateral-trade-example)
-  - [How to build and run a contract](https://github.com/provenance-io/how-to-provenance/tree/main/provenance-smart-contract-example)
+  - [How to build and deploy a contract](https://github.com/provenance-io/how-to-provenance/tree/main/provenance-smart-contract-example)
   - [How to migrate a contract for a blockchain upgrade](https://github.com/provenance-io/how-to-provenance/tree/main/provenance-contract-migration-example)
