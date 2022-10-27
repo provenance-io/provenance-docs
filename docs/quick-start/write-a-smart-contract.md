@@ -12,7 +12,7 @@ The ProvWasm/CosmWasm platform allows smart contracts to be executed in
 - We recommend following the [**ProvWasm Tutorial**](https://github.com/provenance-io/provwasm/blob/main/docs/tutorial/01-overview.md), 
 which will walk you through the process of building and deploying a smart contract step-by-step.
 
-- Read through the [**ProvWarm Documentation**](/docs/pb/modules/provwasm-smart-contracts).
+- Read through the [**ProvWasm Documentation**](/docs/pb/modules/provwasm-smart-contracts).
 
 - If you are new to the Rust programming language, the [Rust Book](https://doc.rust-lang.org/book/) is an excellent resource.
 
