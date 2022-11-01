@@ -7,6 +7,10 @@
 
 - [Building Your First dApp](https://medium.com/provenanceblockchain/building-your-first-dapp-5679c07d1983)<br/>_How to build a simple, front-end-only webapp using [WalletConnect](docs/discover/wallets)_
 
+## Building dApps
+
+- [Creating React dApps via WalletConnect-JS](https://medium.com/provenanceblockchain/creating-dapps-via-walletconnect-js-658268c8d549)
+
 ## Smart Contracts
 
 - [Provwasm Smart Contracts](https://github.com/provenance-io/provwasm/blob/22c90c89900f53859c55112909217174f2e910c4/docs/tutorial/01-overview.md)<br/>_Learn how to write a smart contract for Provenance Blockchain_

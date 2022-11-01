@@ -152,7 +152,7 @@ const config = {
                                 to: 'docs/discover/wallets',
                             },
                             {
-                                label: 'dApps & Solutions',
+                                label: 'dApps & Services',
                                 to: 'docs/discover/dapps',
                             },
                             {

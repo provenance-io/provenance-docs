@@ -39,7 +39,7 @@ You have one vote for every Hash token you have staked.
 ## I'm in, how do I get set up?
 
 ### Step 1: [Select which Wallet](/docs/discover/wallets) you'll use
-### Step 2: Purchase Hash from [OKCoin](https://go.okcoin.com/hash) or [dlob.io](https://provenance.io/purchase-hash)
+### Step 2: Purchase Hash from  [dlob.io](https://provenance.io/purchase-hash)
 ### Step 3: If interested, learn how to [stake your Hash](/docs/discover/staking)
 
 

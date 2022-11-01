@@ -1,4 +1,4 @@
-# Ecosystem dApps and Solutions
+# Ecosystem dApps and Services
 
 
 ## dApps
@@ -18,7 +18,8 @@
 
 <br/>
 
-## Solutions
+## Services & Tooling
 
-- [Digital Money and Fiat Ramps](/docs/discover/money)
+- [Digital Money](/docs/discover/money)
+- [Fiat On/Off Ramps](/docs/discover/ramps)
 - Documents and Private Data Management

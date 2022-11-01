@@ -29,15 +29,6 @@ to customers via their existing front end interface.
 
 ![USDF flow](/img/discover/usdf-flow.png)
 
-
 ----
 
-## IBC Tokens through the Osmosis DEX
-
-Axelar
-
-----
-
-## Other Fiat On- and Off- Ramps
-
-More options are in development! (help: how to say that)
+## Omnicoins
