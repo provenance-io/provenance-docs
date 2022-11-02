@@ -1,0 +1,62 @@
+import ReactPlayer from 'react-player'
+
+# Transfer USDC from Axelar to Provenance using Osmosis
+
+Any token or asset in the Cosmos ecosystem can be transferred between Cosmos-based blockchains through IBC (the 
+Inter-Blockchain protocol), provided that a relayer is running to transport messages between any two chains.
+
+The [Osmosis DEX](https://app.osmosis.zone/) (Decentralized EXchange), running on top of the [Osmosis blockchain](https://osmosis.zone/), acts as a source of liquidity and 
+interchange for many cryptocurrencies. 
+
+In this tutorial, we'll show you how to transfer the stablecoin [**USDC**](https://www.circle.com/en/usdc) from the [Axelar Network](https://axelar.network/) to Provenance
+using the Osmosis DEX and the [Keplr Wallet](https://www.keplr.app/). 
+
+Axelar is currently the only provider of USDC on 
+Osmosis (as of November 2022), and the version of USDC available is an Axelar-wrapped token called `AXLUSDC`. However, 
+Axelar and Circle have announced that within the next few months, a native, non-wrapped version of USDC will be available
+on Osmosis.
+
+## The Token Flow
+
+For the convenience of this guide, we're going to transfer some Provenance HASH to Osmosis and swap it for USDC. 
+Alternatively, one could purchase USDC on public exchanges, such as Coinbase or Binance, and then transfer them to Osmosis.
+
+Once we have USDC, we will also need some OSMO coin (the native token for the Osmosis blockchain) to be able to pay for 
+the gas fee for the IBC transfer from Osmosis to Provenance. 
+
+![token flow](/img/build/tutorials/osmosis-token-flow.jpg)
+
+## 1. Set Up a Keplr Wallet
+
+Keplr is a non-custodial (you hold your own keys) blockchain wallet that works well with Osmosis and other Cosmos-based blockchains.
+
+For this exercise, the Chrome Extension version of the Keplr Wallet is most convenient.
+
+1. Install and open the [Keplr Wallet Chrome Extension](https://www.keplr.app/)
+
+2. Do not create a new account. Instead, choose to `Import existing account` so that you can use the Keplr wallet with your existing Provenance account
+
+![keplr import account](/img/build/tutorials/keplr-import-account.png )
+
+3. Make sure to switch the seed input from the default `12 words` to `24 words` to match your Provenance Blockchain
+mnemonic length
+
+![keplr import account](/img/build/tutorials/keplr-input-seed.png )
+
+4. Next, we need to connect your Keplr Wallet to the Provenance Blockchain. This YouTube video describes two
+alternative methods for connecting your Keplr Wallet to Provenance using either:
+- [Restake](https://restake.app/) or
+- [Osmosis Frontier Zone](https://frontier.osmosis.zone/)
+
+<ReactPlayer playing controls url='https://youtu.be/ht58kd-Glh8'/>
+
+<br/>
+<br/>
+
+:::tip Verify it worked:
+Once you have your Keplr Wallet connected to Provenance, verify that your Provenance account address shown in the Keplr Wallet is correct, and that your Provenance tokens are available as expected.
+
+**PLACEHOLDER IMAGE:**
+
+![keplr import account](/img/build/tutorials/keplr-provenance-view.png)
+:::
