@@ -24,7 +24,9 @@ Alternatively, one could purchase USDC on public exchanges, such as Coinbase or 
 Once we have USDC, we will also need some OSMO coin (the native token for the Osmosis blockchain) to be able to pay for 
 the gas fee for the IBC transfer from Osmosis to Provenance. 
 
-![token flow](/img/build/tutorials/osmosis-token-flow.jpg)
+<center>
+<img src="../../../img/build/tutorials/osmosis-token-flow.jpg" alt="token flow" width="75%"/>
+</center>
 
 ## 1. Set Up a Keplr Wallet
 
@@ -36,27 +38,80 @@ For this exercise, the Chrome Extension version of the Keplr Wallet is most conv
 
 2. Do not create a new account. Instead, choose to `Import existing account` so that you can use the Keplr wallet with your existing Provenance account
 
-![keplr import account](/img/build/tutorials/keplr-import-account.png )
+<center>
+<img src="../../../img/build/tutorials/keplr-import-account.png" alt="import seed" width="50%"/>
+</center>
 
 3. Make sure to switch the seed input from the default `12 words` to `24 words` to match your Provenance Blockchain
 mnemonic length
 
-![keplr import account](/img/build/tutorials/keplr-input-seed.png )
+<center>
+<img src="../../../img/build/tutorials/keplr-input-seed.png" alt="import account" width="75%"/>
+</center>
 
-4. Next, we need to connect your Keplr Wallet to the Provenance Blockchain. This YouTube video describes two
+## 2. Connect Keplr to Provenance Blockchain
+
+Next, we need to connect your Keplr Wallet to the Provenance Blockchain. This YouTube video describes two
 alternative methods for connecting your Keplr Wallet to Provenance using either:
 - [Restake](https://restake.app/) or
 - [Osmosis Frontier Zone](https://frontier.osmosis.zone/)
 
+<center>
 <ReactPlayer playing controls url='https://youtu.be/ht58kd-Glh8'/>
+</center>
 
 <br/>
 <br/>
 
 :::tip Verify it worked:
+
 Once you have your Keplr Wallet connected to Provenance, verify that your Provenance account address shown in the Keplr Wallet is correct, and that your Provenance tokens are available as expected.
 
 **PLACEHOLDER IMAGE:**
-
-![keplr import account](/img/build/tutorials/keplr-provenance-view.png)
+<center>
+<img src="../../../img/build/tutorials/keplr-provenance-view.png" alt="keplr provenance view" width="50%"/>
+</center>
 :::
+
+## 3. Transfer Hash to Osmosis
+
+We're now going to transfer some Hash from the Provenance Blockchain to the Osmosis Blockchain over IBC. Go to the [Osmosis Frontier Zone](https://frontier.osmosis.zone)
+and click on `Assets` on the left side of the screen.Frontier
+
+Use the Asset Search form to find HASH on Provenance Blockchain, then click on `Deposit`
+
+<center>
+<img src="../../../img/build/tutorials/osmosis-hash-asset.png" alt="search assets" width="100%"/>
+</center>
+
+<br/>
+
+Connect your Keplr wallet, then choose how much Hash you wish to transfer.
+<br/>
+
+
+<center>
+<img src="../../../img/build/tutorials/osmosis-transfer-hash.png" alt="transfer hash" width="50%"/>
+</center>
+
+## 4. Swap Hash for USDC
+
+Now that your Hash is sitting on the Osmosis blockchain, you can use the Osmosis DEX to swap Hash for USDC. Click on
+`Swap` on the left-hand side menu of the Osmosis Frontier Zone.
+
+In the Swap form, choose HASH/Provenance for the first coin and USDC/Axelar for the second.
+
+<center>
+<img src="../../../img/build/tutorials/osmosis-hash-usdc-swap.png" alt="swap hash to usdc" width="50%"/>
+</center>
+
+Approve the swap, and now you have USDC!
+
+## 5. Swap Hash for OSMO
+
+The IBC transfer of USDC from the Osmosis chain to the Provenance chain incurs a gas fee that must be paid in OSMO, so
+repeat step 4, this time swapping some Hash for OSMO token.OSMO
+
+<center>
+<img src="../../../img/build/tutorials/osmosis-hash-osmo-swap.png" alt="swap hash to osmo" width="50%"/>
+</center>
