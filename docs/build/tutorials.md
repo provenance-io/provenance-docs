@@ -1,6 +1,9 @@
 
 # Tutorials
 
+https://github.com/provenance-io/scripts
+
+
 ## Getting Started
 
 - [Hands on Testnet: Accounts, Wallets, and Coin Transfers](https://medium.com/provenanceblockchain/hands-on-testnet-accounts-wallets-and-coin-transfer-452ee1f343cd)<br/>_Learn how to use `provenaned` on the command line to talk to `testnet`_
