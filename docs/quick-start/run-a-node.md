@@ -22,6 +22,7 @@ To avoid having to replay transaction history when spinning up a node, use a Qui
 [Instructions](/docs/pb/blockchain/running-a-node/running-a-node-1/join-provenance-testnet/running-a-testnet-node-from-quicksync) for running a node from QuickSync.
 
 <center>
+
 <Link className="button button--secondary button--md"
             to="https://provenance.io/quicksync/">
             Mainnet QuickSync
@@ -34,12 +35,12 @@ To avoid having to replay transaction history when spinning up a node, use a Qui
 <br/>
 <br/>
 <Link className="button button--secondary button--md"
-            to="https://provenance.io/quicksync/">
+            to="https://test.provenance.io/quicksync/">
             Testnet QuickSync
 </Link>
 &nbsp;
 <Link className="button button--secondary button--md"
-            to="https://provenance.io/quicksync-index/">
+            to="https://test.provenance.io/quicksync-index/">
             Testnet QuickSync - Indexed
 </Link>
 </center>
