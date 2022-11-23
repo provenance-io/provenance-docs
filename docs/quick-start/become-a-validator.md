@@ -22,6 +22,7 @@ Validators stake [**Hash**](/docs/discover/hash) to become part of the active ne
 and the [Validator FAQ](/docs/pb/faq/validator-faq)
 2. Learn how to [run a node](/docs/pb/blockchain/running-a-node/running-a-node-1/)
 3. Setup the recommended [node architecture](/docs/pb/blockchain/running-a-node/running-a-node-1/become-a-validator)
+4. [Purchase Hash](https://provenance.io/purchase-hash) to stake and join the [mainnet](https://github.com/provenance-io/mainnet)
 
 ### More resources
 
