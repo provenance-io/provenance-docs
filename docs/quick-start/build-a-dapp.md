@@ -24,11 +24,13 @@ A typical Provenance Blockchain dApp will:
   - Provenance [Attribute Query Serivce](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.attribute.v1.Query) for querying KYC/AML attributes for a user account 
   - Provenance [Marker Msg Service](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.marker.v1.Msg) for creating new tokens
   - Cosmos [Bank Msg Service](https://buf.build/cosmos/cosmos-sdk/docs/main:cosmos.bank.v1beta1) for sending coins/tokens to another account
-  - Make use of the [P8e CEE data privacy system](/docs/pb/p8e/overview/) for [PII](https://www.investopedia.com/terms/p/personally-identifiable-information-pii.asp) data that needs to stay off-chain
+
+- Make use of the [P8e CEE data privacy system](/docs/pb/p8e/overview/) for [PII](https://www.investopedia.com/terms/p/personally-identifiable-information-pii.asp) data that needs to stay off-chain
   
 
 ## Resources
 
+- Browse [our Tutorials](/docs/build/tutorials)
 - Read one developer's journey to [Building Your First dApp](https://medium.com/provenanceblockchain/building-your-first-dapp-5679c07d1983)
 - Read how to [Add WalletConnect functionality to your dApp lightning fast ⚡](https://medium.com/provenanceblockchain/creating-dapps-via-walletconnect-js-658268c8d549)
 - The [How-to-Provenance](https://github.com/provenance-io/how-to-provenance) GitHub repo contains examples of most types of operations you might perform on Provenance Blockchain
