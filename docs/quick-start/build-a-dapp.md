@@ -35,5 +35,6 @@ A typical Provenance Blockchain dApp will:
 - Read how to [Add WalletConnect functionality to your dApp lightning fast ⚡](https://medium.com/provenanceblockchain/creating-dapps-via-walletconnect-js-658268c8d549)
 - The [How-to-Provenance](https://github.com/provenance-io/how-to-provenance) GitHub repo contains examples of most types of operations you might perform on Provenance Blockchain
 - [Provenance Create React App template](https://github.com/provenance-io/create-provenance-app-template) is a quick way to create a web-based dApp
+- "Front-end only" dApps will need a service like https://www.envoyproxy.io/ to make GRPC calls to the blockchain
 - [GRPCurl examples](https://github.com/provenance-io/provenance/blob/main/docs/grpcurl.md)
 - [JVM (Java/Kotlin) GRPC client](https://github.com/provenance-io/pb-grpc-client-kotlin)

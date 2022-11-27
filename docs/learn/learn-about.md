@@ -6,7 +6,9 @@
 ### 101: What's a Blockchain?
 
 - [“What is a Blockchain?” and Other Questions You’re Too Shy to Ask](https://medium.com/provenanceblockchain/what-is-a-blockchain-and-other-questions-youre-too-shy-to-ask-56d108431ed1)
-- [Why Provenance Blockchain is built on Cosmos SDK & Tendermint](why-cosmos)
+
+
+<!-- - [Why Provenance Blockchain is built on Cosmos SDK & Tendermint](why-cosmos)-->
 
 ### 102: Security
 
@@ -17,6 +19,7 @@
 
 ### 201: The Digital Asset Lifecycle
 
+- [The Future of Private Markets is Blockchain Enabled](https://provenance.io/learn/posts/future-of-private-markets)
 - Issue, Manage, Trade
 
 ### 202: Digital Money
