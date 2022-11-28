@@ -121,7 +121,7 @@ const config = {
                             },
 
                             {
-                                label: 'Libraries',
+                                label: 'Libraries and APIs',
                                 to: 'docs/build/libraries',
                             },
                             {

@@ -5,8 +5,7 @@ Welcome! Let's get you pointed in the right direction. What would you like to do
 
 ## I want to...
 
-- Learn about **Provenance Blockchain**
-  - Visit https://provenance.io/
+- Learn about [**Provenance Blockchain**](https://provenance.io/)
   - Read articles in our [Learning Center](/docs/learn/learn-about)
   - Visit our [blog](https://medium.com/provenanceblockchain)
 - Learn about [Financial Services](/docs/learn/learn-about#200-level---financial-services-on-blockchain) on Provenance Blockchain
@@ -22,7 +21,7 @@ Welcome! Let's get you pointed in the right direction. What would you like to do
 - Join the community conversation on [Discord](https://discord.gg/kNZC8nwCFP)
 - Visit with us on our [biweekly community call](https://hackmd.io/Dh8y3WlrTQCo0BVO1gAd5Q) using [Google Meet](https://meet.google.com/qpt-qzjm-vjf)
 - Attend the quarterly [Friends of Provenance Blockchain Call](https://medium.com/provenanceblockchain/q4-2022-friends-of-provenance-blockchain-quarterly-update-highlights-79f1484acd14)
-- Ask questions about our [Grants Program](https://provenance.io/grants) - _Submit a question through the form at the bottom of the grants page._
+- Ask questions about our [Grants Program](https://provenance.io/grants) - _Submit a question through the form at the bottom of the grants page_
 - Follow us on [LinkedIn](https://www.linkedin.com/company/provenance-blockchain/) and [Twitter](https://twitter.com/provenancefdn) for frequent updates on our ecosystem
 
 

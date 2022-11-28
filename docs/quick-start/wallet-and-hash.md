@@ -27,8 +27,6 @@ with their own Hash. For some use cases, you may need a **service account** to h
 or perhaps to be a fee granter for your users. In those cases, you'll need to consider your strategy for [server-side
 key management](docs/build/tutorials/key-management) and will likely make use of an [HD wallet library](https://github.com/FigureTechnologies/hdwallet).
 
-![Hash](/img/hashtransparent.svg)
-
 
 ## What is Hash?
 

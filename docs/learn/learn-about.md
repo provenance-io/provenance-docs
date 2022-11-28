@@ -5,6 +5,7 @@
 
 ### 101: What's a Blockchain?
 
+- [The End Of Innocence In Crypto: Where We Go From Here](https://medium.com/provenanceblockchain/the-end-of-innocence-in-crypto-where-we-go-from-here-4fdff64de497)
 - [“What is a Blockchain?” and Other Questions You’re Too Shy to Ask](https://medium.com/provenanceblockchain/what-is-a-blockchain-and-other-questions-youre-too-shy-to-ask-56d108431ed1)
 
 
@@ -33,26 +34,26 @@
 - [Ode on Digital Assets and DeFi’s Bankruptcy-Remoteness](https://medium.com/provenanceblockchain/ode-on-digital-assets-and-defis-bankruptcy-remoteness-2c95a42d6be)
 - [Controllable Digital Assets](https://medium.com/provenanceblockchain/controllable-digital-assets-and-you-15a17963a2a2)
 
-### 219: Use Case: Lending
+### 204: Use Case: Lending
 
 - [**Whitepaper:** Blockchain Impact On Credit Ratings](/whitepapers/Blockchain%20Impact%20On%20Credit%20Ratings.pdf)
 - [**Whitepaper:** Loan Participation On Provenance](/whitepapers/Loan%20Participation%20On%20Provenance.pdf)
 - [**Whitepaper:** Securitization On Provenance](/whitepapers/Securitization%20On%20Provenance.pdf)
 
-### 220: Use Case: Trading Tokens
+### 205: Use Case: Trading Tokens
 
 - [Trading Coins and Bilateral Settlement](https://medium.com/provenanceblockchain/trading-coins-and-bilateral-settlement-on-provenance-blockchain-e254f7f0707e)
 
-### 221: Use Case: Investment Fund Services
+### 206: Use Case: Investment Fund Services
 
 - [Capital Raise Contracts](https://medium.com/provenanceblockchain/capital-raise-contracts-on-provenance-blockchain-2873f23e16a2)
 - [**Whitepaper:** Investment Fund Services on Provenance](/whitepapers/Investment%20Fund%20Services%20on%20Provenance.pdf)
 
-### 222 Use Case: Cap Table Management
+### 207 Use Case: Cap Table Management
 
 - [Cap Tables & Private Company Stock](https://medium.com/provenanceblockchain/cap-tables-private-company-stock-on-provenance-blockchain-e45fa172c0f1)
 
-### 223 Use Case: Supply Chain Finance
+### 208 Use Case: Supply Chain Finance
 
 - [**Whitepaper:** Supply Chain Finance On Provenance](/whitepapers/Supply%20Chain%20Finance%20On%20Provenance.pdf)
 

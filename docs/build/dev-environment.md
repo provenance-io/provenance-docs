@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 # Dev Environment 
 
 https://github.com/provenance-io/scripts

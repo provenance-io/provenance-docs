@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Clients
 
 aka "how do you _talk_ to the blockchain?"
