@@ -28,43 +28,18 @@ Read [about Wallets](/docs/discover/wallets.md)
 | Resource | Description |
 | -- | -- |
 | https://github.com/provenance-io/originator-key-access-lib |  |
-| https://github.com/provenance-io/provenance-dart |  |
-| https://github.com/provenance-io/provwallet-swift |  |
-| https://github.com/provenance-io/walletconnect-js | WalletConnect Bridge between dApp and Wallet |
-| https://github.com/provenance-io/walletconnect-js/tree/main/webDemo | Example React dApp |
+| https://github.com/provenance-io/provenance-dart | Provenance Mobile Wallet app source code - Flutter/Dart - iOS and Android |
+| https://github.com/provenance-io/provwallet-swift | JD's unicorn sparkle wallet - R&D iOs mobile app |
+| https://github.com/provenance-io/walletconnect-js | WalletConnect client for dApps |
+| https://github.com/provenance-io/walletconnect-js/tree/main/webDemo | Example React dApp using WalletConnect |
 | https://test.figure.tech/walletconnect | Example WalletConnect dApp |
-| https://github.com/provenance-io/ledger-cosmos |  |
-| https://github.com/provenance-io/ledger-go |  |
-| https://github.com/provenance-io/wallet-lib |  |
-| https://github.com/provenance-io/wallet-utils |  |
-| https://github.com/provenance-io/walletconnect-js |  |
-| https://github.com/provenance-io/walletconnect-js-qrcode-modal |  |
+| https://github.com/provenance-io/wallet-utils | Typescript Utils to create wallet messages - protos, build messages  |
+| https://github.com/provenance-io/walletconnect-js-qrcode-modal | check with vig if this is folded into walletconnect-js |
 
-## JavaScript
-
-| Resource | Description |
-| -- | -- |
-| https://github.com/provenance-io/provenance.js | Compact Typescript library to interact with Provenance Blockchain |
 | https://github.com/provenance-io/how-to-provenance/tree/main/name-service-dapp-example | Serverless Name Service dApp |
 
-## Front End
+// todo wallet connect bridge
 
-| Resource | Description |
-| -- | -- |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-
-https://github.com/provenance-io/frontend-apps
-
-https://github.com/provenance-io/frontend-bridge
-
-https://github.com/provenance-io/frontend-quicksync
-
-https://github.com/provenance-io/frontend-scripts
-
-https://github.com/provenance-io/frontend-template
 
 ## Data Privacy and Off-Chain Data Storage
 
@@ -176,7 +151,3 @@ https://github.com/provenance-io/wasmd
 https://github.com/provenance-io/wasmit
 
 https://github.com/provenance-io/wasmvm
-
-## Not sure of classification
-
-https://github.com/provenance-io/provenance-dart
