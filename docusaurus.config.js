@@ -162,11 +162,7 @@ const config = {
                             {
                                 label: 'USDF',
                                 to: 'docs/discover/usdf',
-                            },
-                            {
-                                label: 'More Resources',
-                                to: 'docs/discover/resources',
-                            },
+                            }
                         ],
                     },
                     {
