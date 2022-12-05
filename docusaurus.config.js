@@ -144,26 +144,26 @@ const config = {
                                 to: 'docs/discover/explorer',
                             },
                             {
-                                label: 'Hash',
-                                to: 'docs/discover/hash',
-                            },
-                            {
                                 label: 'Wallets',
                                 to: 'docs/discover/wallets',
                             },
                             {
-                                label: 'dApps & Services',
-                                to: 'docs/discover/dapps',
+                                label: 'Hash',
+                                to: 'docs/discover/hash',
+                            },
+                            {
+                                label: 'USDF',
+                                to: 'docs/discover/usdf',
                             },
                             {
                                 label: 'Smart Contract Catalog',
                                 to: 'docs/discover/smart-contract-catalog',
                             },
                             {
-                                label: 'USDF',
-                                to: 'docs/discover/usdf',
+                                label: 'dApps & Services',
+                                to: 'docs/discover/dapps',
                             }
-                        ],
+                            ],
                     },
                     {
                         label: 'Connect',
