@@ -60,4 +60,4 @@ A list of transactions affecting the validator itself, ie. commission updates or
 
 ![A list of proposals the validator has voted upon](/img/explorer/validator-proposals.png)
 
-A validator holds the ability submit and deposit on a [**Governance Proposal**](../../../../ecosystem/governance/). It also has the ability to vote on **Governance Proposals** on behalf of its delegators.
+A validator holds the ability submit and deposit on a [**Governance Proposal**](/docs/pb/ecosystem/governance/). It also has the ability to vote on **Governance Proposals** on behalf of its delegators.

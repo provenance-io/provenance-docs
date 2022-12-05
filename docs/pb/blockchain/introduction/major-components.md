@@ -16,7 +16,7 @@ Provenance Blockchain distinguishes three types of applications based on these c
 
 ### On-Chain
 
-Any client application that is configured with the proper key/addresses and modules, and uses Hash tokens for service payments, can transact directly on-chain within the Provenance Blockchain ecosystem. Applications interact directly with the core [Provenance Blockchain Modules](../../modules/inherited-modules.md) and a [Provenance Blockchain Node](../running-a-node/running-a-node-1/). Applications may implement and leverage custom [Smart Contracts ](../../modules/provwasm-smart-contracts.md)specific to the business application use case.
+Any client application that is configured with the proper key/addresses and modules, and uses Hash tokens for service payments, can transact directly on-chain within the Provenance Blockchain ecosystem. Applications interact directly with the core [Provenance Blockchain Modules](/docs/pb/modules/inherited-modules.md) and a [Provenance Blockchain Node](../running-a-node/running-a-node-1/). Applications may implement and leverage custom [Smart Contracts ](/docs/pb/modules/provwasm-smart-contracts.md)specific to the business application use case.
 
 ### Client-Side
 
@@ -28,7 +28,7 @@ Financial transactions often consist of on-chain and client-side parts. For fina
 
 ## Provenance Blockchain Node
 
-A Provenance Blockchain Node is a daemon process (`provenanced`) [Full-Node Client](https://docs.cosmos.network/v0.41/core/node.html) implementation and is the core process that runs the Provenance Blockchain. This process runs the state-machine, starting from a genesis file, and connects to peers on the network running the same client to receive and relay transactions, block proposals and signatures. Participants in the network run this process to initialize their state-machine, connect with other full-nodes and update their state-machine as new blocks come in. The blockchain full-node presents itself as the `provenanced` binary.
+A Provenance Blockchain Node is a daemon process (`provenanced`) [Full-Node Client](https://docs.cosmos.network/main/core/node.html) implementation and is the core process that runs the Provenance Blockchain. This process runs the state-machine, starting from a genesis file, and connects to peers on the network running the same client to receive and relay transactions, block proposals and signatures. Participants in the network run this process to initialize their state-machine, connect with other full-nodes and update their state-machine as new blocks come in. The blockchain full-node presents itself as the `provenanced` binary.
 
 Nodes in the network include:
 
@@ -40,17 +40,17 @@ Nodes in the network include:
 
 ### Cosmovisor
 
-[Cosmovisor](https://docs.cosmos.network/master/run-node/cosmovisor.html) is a small process manager around the Provenance Blockchain daemon process (`provenanced`) that monitors the [governance module](../../ecosystem/governance/) for [upgrade](../../ecosystem/governance/software-upgrade-proposal.md) proposals. Approved upgrade proposals can be run manually or automatically to download the new code, stop the node, run the migration script, replace the node binary, and start with the a genesis file.
+[Cosmovisor](https://docs.cosmos.network/main/run-node/cosmovisor.html) is a small process manager around the Provenance Blockchain daemon process (`provenanced`) that monitors the [governance module](../../ecosystem/governance/) for [upgrade](../../ecosystem/governance/software-upgrade-proposal.md) proposals. Approved upgrade proposals can be run manually or automatically to download the new code, stop the node, run the migration script, replace the node binary, and start with the a genesis file.
 
 ### Modules
 
-[Modules](https://docs.cosmos.network/v0.41/building-modules/intro.html) define the Provenance Blockchain logic. Provenance Blockchain is composed of modules from the Cosmos SDK and custom modules to support value markers and the [Contract Execution Environment](../../p8e/overview/). Modules provide core functionality that blockchain applications need, including a [boilerplate implementation of the ABCI](https://docs.cosmos.network/v0.41/core/baseapp.html) to communicate with the underlying consensus engine, a [multistore](https://docs.cosmos.network/v0.41/core/store.html#multistore) to persist state, a [server](https://docs.cosmos.network/v0.41/core/node.html) to form a full-node, and [interfaces](https://docs.cosmos.network/v0.41/interfaces/interfaces-intro.html) to handle queries. Modules implement the bulk of the logic of financial service applications and the core does the wiring to enable modules to be composed together.
+[Modules](https://docs.cosmos.network/main/building-modules/intro.html) define the Provenance Blockchain logic. Provenance Blockchain is composed of modules from the Cosmos SDK and custom modules to support value markers and the [Contract Execution Environment](../../p8e/overview/). Modules provide core functionality that blockchain applications need, including a [boilerplate implementation of the ABCI](https://docs.cosmos.network/main/core/baseapp.html) to communicate with the underlying consensus engine, a [multistore](https://docs.cosmos.network/main/core/store.html#multistore) to persist state, a [server](https://docs.cosmos.network/main/core/node.html) to form a full-node, and [interfaces](https://docs.cosmos.network/main/interfaces/interfaces-intro.html) to handle queries. Modules implement the bulk of the logic of financial service applications and the core does the wiring to enable modules to be composed together.
 
 Modules can be seen as little state-machines within the state-machine. They generally define a subset of the state using one or more key-value stores and message types.
 
 ### Key Ring
 
-To interact with the `provenanced` daemon, and by extension the node, a keyring that holds the private/public key pairs used to interact with a node must be established. For example, a validator key needs to be set up before running the blockchain node so that blocks can be correctly signed. The private key can be stored in different locations, called "backends", such as a file, an [HSM](https://en.wikipedia.org/wiki/Hardware_security_module), or the operating system's own key storage. [Refer to the Cosmos keyring documentation for more information.](https://docs.cosmos.network/master/run-node/keyring.html)
+To interact with the `provenanced` daemon, and by extension the node, a keyring that holds the private/public key pairs used to interact with a node must be established. For example, a validator key needs to be set up before running the blockchain node so that blocks can be correctly signed. The private key can be stored in different locations, called "backends", such as a file, an [HSM](https://en.wikipedia.org/wiki/Hardware_security_module), or the operating system's own key storage. [Refer to the Cosmos keyring documentation for more information.](https://docs.cosmos.network/main/run-node/keyring.html)
 
 ### Genesis
 
@@ -58,7 +58,7 @@ Before running a node the chain is initialized via a genesis file. A default Pro
 
 ### Interacting with a Node
 
-There are multiple ways to interact with a node: using the CLI, using gRPC, or using the REST endpoints. With a running node, the `provenanced` daemon process can be used as a CLI. The CLI provides functionality for signing and submitting transactions, querying, key and key ring management, as well as Module interaction. [Refer to the Cosmos Interacting with the Node documentation for more information.](https://docs.cosmos.network/master/run-node/interact-node.html)
+There are multiple ways to interact with a node: using the CLI, using gRPC, or using the REST endpoints. With a running node, the `provenanced` daemon process can be used as a CLI. The CLI provides functionality for signing and submitting transactions, querying, key and key ring management, as well as Module interaction. [Refer to the Cosmos Interacting with the Node documentation for more information.](https://docs.cosmos.network/main/run-node/interact-node.html)
 
 ## Smart Contracts
 
@@ -80,7 +80,7 @@ Provenance Blockchain Smart Contract are able to leverage Provenance Blockchain 
 
 ## Contract Execution Environment
 
-The Provenance Blockchain Contact Execution Environment (P8e) is an optional layer on top of the Provenance Blockchain to allow single- and multi-party client-side contract execution while preserving data privacy. Provenance Blockchain client-side contracts take encrypted data from the user (client) and transform the information into encrypted data in the user’s own private object store with object hashes recorded on the blockchain. P8e directly integrates with the [Provenance Blockchain Metadata Module](../../modules/metadata-module.md) to simplify generating signed records of an asset’s provenance.
+The Provenance Blockchain Contact Execution Environment (P8e) is an optional layer on top of the Provenance Blockchain to allow single- and multi-party client-side contract execution while preserving data privacy. Provenance Blockchain client-side contracts take encrypted data from the user (client) and transform the information into encrypted data in the user’s own private object store with object hashes recorded on the blockchain. P8e directly integrates with the [Provenance Blockchain Metadata Module](/docs/pb/modules/metadata-module.md) to simplify generating signed records of an asset’s provenance.
 
 Assets can be directly defined with the Metadata module, but the P8e execution environment assists in the complex process of hashing of data, maintenance of immutable objects, and signature orchestration between multiple parties.
 

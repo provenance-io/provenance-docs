@@ -71,7 +71,7 @@ Supply one `apikey` header when running in test or production environments..
 
 ## Example
 
-Assuming you followed the example found in the [Store Object Example](store-object.md#example) section to store a single `LoanState` Protocol Buffer, and received a resulting hash of `o0iERVQp7v7WdSkq8dlREr+yP8kEuAHvBMmprazYr0k=`, you could fetch that object using the following request:
+Assuming you followed the example found in the [Store Object Example](store-object.mdx#example) section to store a single `LoanState` Protocol Buffer, and received a resulting hash of `o0iERVQp7v7WdSkq8dlREr+yP8kEuAHvBMmprazYr0k=`, you could fetch that object using the following request:
 
 ```bash
 curl --location --request GET 'localhost:8080/p8e-cee-api/external/api/v1/eos?objectStoreAddress=grpc://localhost:5001&hash=o0iERVQp7v7WdSkq8dlREr+yP8kEuAHvBMmprazYr0k=&type=tech.figure.servicing.v1beta1.LoanStateOuterClass$LoanState' \

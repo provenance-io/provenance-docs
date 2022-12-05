@@ -6,7 +6,7 @@ transaction to the blockchain. (You don't need any Hash to query or view the blo
 
 ## What is a Wallet?
 
-Everyone who transacts on Provenance Blockchain has their own **[Account](https://docs.cosmos.network/v0.46/basics/accounts.html)** 
+Everyone who transacts on Provenance Blockchain has their own **[Account](https://docs.cosmos.network/main/basics/accounts.html)** 
 on the blockchain. Analogous to a bank account, your blockchain account holds your on-chain assets, like 
 [Hash](docs/discover/hash) or [USDF](https://www.usdfconsortium.com/).
 

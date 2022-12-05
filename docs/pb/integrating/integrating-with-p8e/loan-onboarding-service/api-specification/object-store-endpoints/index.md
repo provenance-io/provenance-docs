@@ -7,8 +7,8 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 
 ## Encrypt and Store
 
-{% content-ref url="store-object.md" %}
-[store-object.md](store-object.md)
+{% content-ref url="store-object.mdx" %}
+[store-object.mdx](store-object.mdx)
 {% endcontent-ref %}
 
 {% content-ref url="store-file.md" %}

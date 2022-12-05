@@ -49,7 +49,7 @@ Once the node has synced it is joined to the Provenance Blockchain testnet. Note
 
 ## Setting Up a New Node
 
-Unlike the Quick Start instructions, this section describes setting up a new full node from scratch with [Cosmovisor](https://docs.cosmos.network/master/run-node/cosmovisor.html) and better configuration options. This section effectively configures and starts a Provenance Blockchain full node.
+Unlike the Quick Start instructions, this section describes setting up a new full node from scratch with [Cosmovisor](https://docs.cosmos.network/main/run-node/cosmovisor.html) and better configuration options. This section effectively configures and starts a Provenance Blockchain full node.
 
 Before starting this section, be sure the prerequisites have been installed as described in [Installing Provenance Blockchain](../../#prerequisites).
 
@@ -122,7 +122,7 @@ mv genesis.json $PIO_HOME/config
 
 > Provenance Blockchain provides a base `config.toml` file that can be used instead of following these steps in this section. [Refer to the "Using Provenance Blockchain testnet config.toml" section for more information.](./#using-provenance-testnet-config-toml)
 
-The `$PIO_HOME/config/config.toml` contains important node settings including [seed node](https://docs.tendermint.com/master/spec/p2p/node.html#seeds) locations, moniker, and database backend. This section describes the updates to the `$PIO_HOME/config/config.toml` file needed to start a new node. The [Become a Validator](../become-a-validator.md) section will describe [validator node](../../../../ecosystem/community/validator.md)-specific settings.
+The `$PIO_HOME/config/config.toml` contains important node settings including [seed node](https://docs.tendermint.com/master/spec/p2p/node.html#seeds) locations, moniker, and database backend. This section describes the updates to the `$PIO_HOME/config/config.toml` file needed to start a new node. The [Become a Validator](../become-a-validator.md) section will describe [validator node](/docs/pb/ecosystem/community/validator.md)-specific settings.
 
 #### Configure Seed Nodes
 

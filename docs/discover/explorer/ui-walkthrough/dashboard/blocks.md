@@ -10,7 +10,7 @@ Chain consensus is determined by validator's signing, and thus agreeing, on each
 
 Information to note:
 
-- **Proposer**: the validator that proposes the block, and all transactions contained therein. As the proposer, they get an initial cut of any transaction fees. See [here](../../../../ecosystem/financial-services-blockchain/distribution.md)
+- **Proposer**: the validator that proposes the block, and all transactions contained therein. As the proposer, they get an initial cut of any transaction fees. See [here](/docs/pb/financial-services-blockchain/distribution.md)
 - **Validators**: of the active validator set, how many validators signed consensus on the block
 - **Voting Power**: corresponding to the **Validators** ratio, the percentage of voting power that signed consensus on the block
 - **Timestamp**: the time the block was committed to the chain. This is the timestamp used for all transactions that occur within the block, and can be used to approximate a time until an expected block is cut
