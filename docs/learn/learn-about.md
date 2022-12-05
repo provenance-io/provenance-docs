@@ -16,6 +16,7 @@
 - [Provenance Blockchain Proof-of-Stake Provides 51% Attack Immunity](https://medium.com/provenanceblockchain/provenance-blockchain-proof-of-stake-provides-51-attack-immunity-4d5f153f02f6)
 - [Security Analysis of Tendermint](https://jepsen.io/analyses/tendermint-0-10-2)
 
+----
 ## 200 Level - _Financial Services on Blockchain_
 
 ### 201: The Digital Asset Lifecycle
@@ -58,6 +59,7 @@
 - [**Whitepaper:** Supply Chain Finance On Provenance](/whitepapers/Supply%20Chain%20Finance%20On%20Provenance.pdf)
 
 
+----
 ## 300 Level - _Building the Next Generation of Financial Services_
 
 ### 301: Data Privacy
@@ -67,6 +69,7 @@
 - [Taking the Validation Oracle Red Pill](https://medium.com/provenanceblockchain/taking-the-validation-oracle-red-pill-ca91e711a6e7)
 
 
+----
 ## 400 Level - _Advanced Topics_
 
 - [Funding Systems: Part 1 — Resource Allocation](https://medium.com/provenanceblockchain/fee-middleware-system-for-msg-based-fees-in-provenance-blockchain-ce84e58ae0b3)
