@@ -12,7 +12,7 @@ Provenance Blockchain facilitates the establishment of an ecosystem that garners
 
 Provenance Blockchain is an eco-friendly, public **proof-of-stake blockchain** that reduces unnecessary computational waste that encumbers proof-of-work blockchains in use today.
 
-Assets are defined natively using the [Provenance Blockchain Contract Execution Environment](../../p8e/overview/) in conjunction with the [Metadata Module](../../modules/metadata-module.md) enabling organizations to quickly define asset classes, permission data to counter-parties, create mutually agreed-upon processes, define ownership structures, and exchange on third party marketplaces.
+Assets are defined natively using the [Provenance Blockchain Contract Execution Environment](../../p8e/overview/) in conjunction with the [Metadata Module](/docs/pb/modules/metadata-module.md) enabling organizations to quickly define asset classes, permission data to counter-parties, create mutually agreed-upon processes, define ownership structures, and exchange on third party marketplaces.
 
 Hash is the Provenance Blockchain utility token to stake, govern, secure, and transact on the network.
 

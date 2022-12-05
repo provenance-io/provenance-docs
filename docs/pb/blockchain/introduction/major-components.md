@@ -16,7 +16,7 @@ Provenance Blockchain distinguishes three types of applications based on these c
 
 ### On-Chain
 
-Any client application that is configured with the proper key/addresses and modules, and uses Hash tokens for service payments, can transact directly on-chain within the Provenance Blockchain ecosystem. Applications interact directly with the core [Provenance Blockchain Modules](../../modules/inherited-modules.md) and a [Provenance Blockchain Node](../running-a-node/running-a-node-1/). Applications may implement and leverage custom [Smart Contracts ](../../modules/provwasm-smart-contracts.md)specific to the business application use case.
+Any client application that is configured with the proper key/addresses and modules, and uses Hash tokens for service payments, can transact directly on-chain within the Provenance Blockchain ecosystem. Applications interact directly with the core [Provenance Blockchain Modules](/docs/pb/modules/inherited-modules.md) and a [Provenance Blockchain Node](../running-a-node/running-a-node-1/). Applications may implement and leverage custom [Smart Contracts ](/docs/pb/modules/provwasm-smart-contracts.md)specific to the business application use case.
 
 ### Client-Side
 
@@ -80,7 +80,7 @@ Provenance Blockchain Smart Contract are able to leverage Provenance Blockchain 
 
 ## Contract Execution Environment
 
-The Provenance Blockchain Contact Execution Environment (P8e) is an optional layer on top of the Provenance Blockchain to allow single- and multi-party client-side contract execution while preserving data privacy. Provenance Blockchain client-side contracts take encrypted data from the user (client) and transform the information into encrypted data in the user’s own private object store with object hashes recorded on the blockchain. P8e directly integrates with the [Provenance Blockchain Metadata Module](../../modules/metadata-module.md) to simplify generating signed records of an asset’s provenance.
+The Provenance Blockchain Contact Execution Environment (P8e) is an optional layer on top of the Provenance Blockchain to allow single- and multi-party client-side contract execution while preserving data privacy. Provenance Blockchain client-side contracts take encrypted data from the user (client) and transform the information into encrypted data in the user’s own private object store with object hashes recorded on the blockchain. P8e directly integrates with the [Provenance Blockchain Metadata Module](/docs/pb/modules/metadata-module.md) to simplify generating signed records of an asset’s provenance.
 
 Assets can be directly defined with the Metadata module, but the P8e execution environment assists in the complex process of hashing of data, maintenance of immutable objects, and signature orchestration between multiple parties.
 

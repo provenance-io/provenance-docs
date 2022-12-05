@@ -16,7 +16,7 @@ As the records evolve through subsequent contract execution, each execution reco
 
 ### Scopes
 
-The P8e contract environment leverages the [Provenance Blockchain Metadata module](../../modules/metadata-module.md). Scopes are used as containers to represent the outputs produced from contract executions. Each contract execution on a scope generates a "session", which encapsulates one or more "records". Once memorialized, the session and records are immutably recorded to Provenance Blockchain.
+The P8e contract environment leverages the [Provenance Blockchain Metadata module](/docs/pb/modules/metadata-module.md). Scopes are used as containers to represent the outputs produced from contract executions. Each contract execution on a scope generates a "session", which encapsulates one or more "records". Once memorialized, the session and records are immutably recorded to Provenance Blockchain.
 
 ### Scopes are NFTs
 
@@ -24,7 +24,7 @@ A scope consists of a unique set of records and the history of record evolution 
 
 ### P8e Client-Side Contracts
 
-P8e contracts are distinct from blockchain-based smart contracts. P8e contracts execute only in the contract execution environment of the parties participating in the contract, and operate only on data stored in the EOS. A record of the contract execution is memorialized to the blockchain using the [Provenance Blockchain Metadata Module](../../modules/metadata-module.md) which, in turn, records the metadata to chain through the use of blockchain-based smart contracts. 
+P8e contracts are distinct from blockchain-based smart contracts. P8e contracts execute only in the contract execution environment of the parties participating in the contract, and operate only on data stored in the EOS. A record of the contract execution is memorialized to the blockchain using the [Provenance Blockchain Metadata Module](/docs/pb/modules/metadata-module.md) which, in turn, records the metadata to chain through the use of blockchain-based smart contracts. 
 
 Client side contracts differ from smart contracts in that they keep your data private between parties off chain and allow a structure to record agreed upon state data to the blockchain. Smart contracts in comparison are running on the blockchain and require the validators to have access to the data which can be problematic for most consumer-based transactions due to data privacy laws.
 

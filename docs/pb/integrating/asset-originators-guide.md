@@ -28,7 +28,7 @@ The guide will also outline the optional further steps of querying the loan data
 
 The development process for creating this loan boarding application will include:
 
-1. Mapping the originator's loan data to the [Figure Loan Data Model](../provenance-applications/loan-origination-system-los/assets.md).
+1. Mapping the originator's loan data to the [Figure Loan Data Model](/docs/pb/provenance-applications/loan-origination-system-los/assets.md).
 2. Setting up the P8e environment, including a local node of the blockchain \(see below\).
 3. If required, setting up an Omnibus Bank application to mint and burn stablecoin, as well as manage the associated fiat cash movement into and out of the system.
 4. Writing P8e contracts:
