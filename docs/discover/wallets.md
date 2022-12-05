@@ -1,27 +1,42 @@
-# Wallet Options
+# Wallets
 
-For dApp developers, please read about [Key Management Strategies](/docs/build/tutorials/key-management) and 
-have a look at available [Wallet and Wallet Connect libraries](/docs/build/libraries#wallets-and-key-management).
+A blockchain wallet allows users to store and manage their assets and sign/send messages on the blockchain.
 
-Publicly available wallets:
+Before starting development, it is recommended that dApp developers familiarize themselves with the Provenance Blockchain <a href="https://docs.provenance.io/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/key-management">Key Management Strategies</a> and
+the available wallets supported by Provenance Blockchain [Wallet and Wallet Connect libraries](/docs/build/libraries#wallets-and-key-management).
 
+### Supported Wallets
 
-## Mobile Wallet
-Self custody wallet available on the App Store and Google Play
-https://github.com/provenance-io/provenance-mobile-wallet
+#### Provenance Mobile Wallet
 
-## Web Wallet
-Google Chrome extension
-https://github.com/provenance-io/provenance-web-wallet
+Self custody mobile wallet application available for download on the App Store and Google Play.
 
-## Figure Wallet
-Custodied wallet by Figure.com
-Closed source
+<a href="https://apps.apple.com/us/app/provenance-blockchain-wallet/id1606428494">
+<img src="/provenance-docs/img/appStoreBadge.svg" alt="Apple App Store Download button" role="button" width="134px"/>
+</a>
 
-## Kepler Wallet
+<a href="https://play.google.com/store/apps/details?id=io.provenance.wallet">
+<img src="/provenance-docs/img/googlePlayBadge.png" alt="Google App Store Download button" role="button" width="150px"/>
+</a>
+<br/>
+<br/>
 
+Github repo: https://github.com/provenance-io/provenance-mobile-wallet
 
+#### Provenance Web Wallet
 
+Self custody chrome extension wallet application available for <a href="https://chrome.google.com/webstore/detail/provenance-blockchain-wal/pfcpdmimlaffecihgamfbnfffmdlhkmh?hl=en">download</a> on the chrome web store.
 
+Github repo: https://github.com/provenance-io/provenance-web-wallet
+
+#### Figure Wallet
+
+Custodied wallet offered by Figure. <a href="https://www.figure.com/wallet/set-up-a-wallet/">Learn how</a> to set up a Figure Wallet.
+
+#### Ongoing Development
+
+Provenance Blockchain Foundation is continuing development to support new wallets and improve the blockchain experience for our users. Stay tuned for more updates, or reach out to us with questions.
+
+### Wallet Medium Articles
 
 https://medium.com/provenanceblockchain/provenance-blockchain-wallet-e7a5ffc645c0
