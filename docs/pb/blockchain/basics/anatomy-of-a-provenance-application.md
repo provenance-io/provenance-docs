@@ -4,7 +4,7 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Provenance Blockchain is an ecosystem for application-specific financial services blockchain applications." />
 
-In it's simplest form, Provenance Blockchain is an [application-specific blockchain](https://docs.cosmos.network/master/intro/why-app-specific.html) built on the [Cosmos SDK.](https://docs.cosmos.network/master/intro/overview.html) Thus, the anatomy described in this section is a derivative of the Cosmos [Anatomy of an SDK Application](https://docs.cosmos.network/master/basics/app-anatomy.html) document.
+In it's simplest form, Provenance Blockchain is an [application-specific blockchain](https://docs.cosmos.network/main/intro/why-app-specific.html) built on the [Cosmos SDK.](https://docs.cosmos.network/main/intro/overview.html) Thus, the anatomy described in this section is a derivative of the Cosmos [Anatomy of an SDK Application](https://docs.cosmos.network/main/basics/app-anatomy.html) document.
 
 The Provenance Blockchain SDK enables developers to build modules that implement the business logic of a financial services blockchain. In other words, SDK modules implement the bulk of the logic of the blockchain, while the core does the wiring and enables modules to be composed together. The end goal is to build a robust ecosystem of open-source SDK modules, making it increasingly easier to build complex blockchain applications.
 
@@ -24,7 +24,7 @@ The **Tendermint BFT State Machine Replication** component (again, compiled into
 
 The **Provenance Blockchain SDK**, built on top of the Cosmos SDK, manages a state-machine and key-value store. The Provenanced SDK [includes base modules from the Cosmos SDK](/docs/pb/modules/inherited-modules.md) as well as custom modules like [Metadata](/docs/pb/modules/metadata-module.md) and [Marker](/docs/pb/modules/marker-module.md) for financial-services related functionality. The Provenance Blockchain SDK component communicates with [Tendermint using the ABCI](https://docs.tendermint.com/master/spec/abci/#abci). ABCI is a Tendermint construct and serves as the interface between Tendermint (a state-machine replication engine) and the Provenance Blockchain application (the actual state machine and blockchain implementation).
 
-The `provenanced` binary encapsulates the Provenance Blockchain SDK (and inheritied Cosmos SDK) and Tendermint engine. [Cosmovisor](https://docs.cosmos.network/master/run-node/cosmovisor.html) is a small process manager around `provenanced` that monitors the governance module via stdout to see if there's a chain upgrade proposal coming in. If it sees a proposal that gets approved it can be run manually or automatically to download the new code, stop the node, run the migration script, replace the node binary, and start with the new genesis file.
+The `provenanced` binary encapsulates the Provenance Blockchain SDK (and inheritied Cosmos SDK) and Tendermint engine. [Cosmovisor](https://docs.cosmos.network/main/run-node/cosmovisor.html) is a small process manager around `provenanced` that monitors the governance module via stdout to see if there's a chain upgrade proposal coming in. If it sees a proposal that gets approved it can be run manually or automatically to download the new code, stop the node, run the migration script, replace the node binary, and start with the new genesis file.
 
 ### Node Resources
 
