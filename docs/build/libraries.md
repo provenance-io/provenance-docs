@@ -6,6 +6,19 @@ sidebar_position: 3
 
 This page comprised a large list of libraries and APIs currently available or under development. We recommend using this resource as a starting point before development to find projects that match your own, and use the existing examples to simplify your efforts. These resources may also connect you with developers who you can interact with via slack or discord. Stay tuned, as more ongoing projects will be added here continuously!
 
+## APIs
+
+| Resource | Description |
+| -------- | ----------- |
+| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/attribute/v1/query.proto | Queries for the [Attribute Module](/docs/pb/modules/account) |
+| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/marker/v1/query.proto | Queries for the [Marker Module](/docs/pb/modules/marker-module) |
+| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/metadata/v1/query.proto | Queries for the [Metadata module](/docs/pb/modules/metadata-module) |
+| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/msgfees/v1/query.proto | Queries for the MsgFees Module |
+| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/name/v1/query.proto | Queries for the [Name Module](/docs/pb/modules/name-module) |
+| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/reward/v1/query.proto | Queries for the Rewards Module |
+| https://buf.build/cosmos/cosmos-sdk/docs/main | Cosmos API Documentation |
+| https://docs.tendermint.com/v0.34/rpc/ | Tendermint API Documentation |
+
 ## Asset Management
 
 | Resource                             | Description                                                                                  |
