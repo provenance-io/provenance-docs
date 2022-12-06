@@ -1,6 +1,10 @@
 # USDF
 
-USDF is a Bank-Minted Tokenized Deposit Referencing Fiat Currency on Blockchain. USDF is championed by the USDF Consortium™, a membership-based association of FDIC-insured banks. To learn more about this exciting development in crypto, visit their [website](https://www.usdfconsortium.com/).
+USDF is a Bank-Minted Tokenized Deposit Referencing Fiat Currency on Blockchain. USDF is championed by the USDF Consortium™, a membership-based association of FDIC-insured banks. To learn more about this exciting development in crypto, click on the logo below.
+<a className="button button--lg"
+            href="https://www.usdfconsortium.com/">
+<img src="/provenance-docs/img/usdf_logo.webp"/>
+</a>
 
 #### Github repos
 
