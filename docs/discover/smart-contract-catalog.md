@@ -1,10 +1,10 @@
 # ProvWasm Smart Contract Catalog
 
-The list below captures the most popular smart contracts currently in production on the Provenance Blockchain. To learn more about the development of smart contracts, please visit our [smart contracts page](/docs/quick-start/write-a-smart-contract.md).
+This list captures the most popular smart contracts currently in production on the Provenance Blockchain. To learn more about the development of smart contracts, please visit our [smart contracts page](/docs/quick-start/write-a-smart-contract.md).
 
 ### View Existing Contracts
 
-All existing contracts on the Provenance Blockchain are visible in the [Explorer](https://explorer.provenance.io/contracts).
+All existing contracts on the Provenance Blockchain are visible in the [Provenance Explorer](https://explorer.provenance.io/contracts).
 
 | Category                  | Contract                                                                                                      | Description                                                                                                                                                                                                                                                                                                                                      | Mainnet                                          |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------ |

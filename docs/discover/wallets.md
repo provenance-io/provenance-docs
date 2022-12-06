@@ -2,8 +2,8 @@
 
 A blockchain wallet allows users to store and manage their assets and sign/send messages on the blockchain.
 
-Before starting development, it is recommended that dApp developers familiarize themselves with the Provenance Blockchain <a href="https://docs.provenance.io/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/key-management">Key Management Strategies</a> and
-the available wallets supported by Provenance Blockchain [Wallet and Wallet Connect libraries](/docs/build/libraries#wallets-and-key-management).
+> Before starting development, it is recommended that dApp developers familiarize themselves with the Provenance Blockchain <a href="https://docs.provenance.io/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/key-management">Key Management Strategies</a> and
+> the [available wallets](/docs/build/libraries#wallets-and-key-management) supported by Provenance Blockchain.
 
 ### Supported Wallets
 
@@ -11,23 +11,25 @@ the available wallets supported by Provenance Blockchain [Wallet and Wallet Conn
 
 Self custody mobile wallet application available for download on the App Store and Google Play.
 
+<!-- Apple Store Icon -->
 <a href="https://apps.apple.com/us/app/provenance-blockchain-wallet/id1606428494">
 <img src="/provenance-docs/img/appStoreBadge.svg" alt="Apple App Store Download button" role="button" width="134px"/>
 </a>
 
+<!-- Google Chrome Store Icon -->
 <a href="https://play.google.com/store/apps/details?id=io.provenance.wallet">
 <img src="/provenance-docs/img/googlePlayBadge.png" alt="Google App Store Download button" role="button" width="150px"/>
 </a>
 <br/>
 <br/>
 
-Github repo: https://github.com/provenance-io/provenance-mobile-wallet
+> [Mobile Wallet Github repo](https://github.com/provenance-io/provenance-mobile-wallet)
 
 #### Provenance Web Wallet
 
 Self custody chrome extension wallet application available for <a href="https://chrome.google.com/webstore/detail/provenance-blockchain-wal/pfcpdmimlaffecihgamfbnfffmdlhkmh?hl=en">download</a> on the chrome web store.
 
-Github repo: https://github.com/provenance-io/provenance-web-wallet
+> [Web Wallet Github repo](https://github.com/provenance-io/provenance-web-wallet)
 
 #### Figure Wallet
 
@@ -39,4 +41,4 @@ Provenance Blockchain Foundation is continuing development to support new wallet
 
 ### Wallet Medium Articles
 
-https://medium.com/provenanceblockchain/provenance-blockchain-wallet-e7a5ffc645c0
+- [Provenance Blockchain Wallet](https://medium.com/provenanceblockchain/provenance-blockchain-wallet-e7a5ffc645c0)

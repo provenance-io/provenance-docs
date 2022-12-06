@@ -6,9 +6,11 @@ Hash is the publically available utility token on Provenance Blockchain, used to
 - Its value is driven by usage
 - It can't be created or destroyed
 
+<iframe width="100%" height="500" src="https://explorer.test.provenance.io/hashstats" />
+
 ### Tokenomics
 
-Provenance Blockchain is uniquely suited to drive massive disruption in financial services by combining truth-vs-trust and riskless transactions, creating bilateral decentralized markets. Read more in our <a href="https://docs.provenance.io/ecosystem/financial-services-blockchain/token-economics">tokenomics paper</a>
+Provenance Blockchain is uniquely suited to drive massive disruption in financial services by combining truth-vs-trust and riskless transactions, creating bilateral decentralized markets. Read more in our <a href="https://docs.provenance.io/ecosystem/financial-services-blockchain/token-economics">tokenomics paper</a>.
 
 ### Get Hash
 
@@ -26,4 +28,4 @@ All tokens are inherently different, and hash is no exception! We've collected <
 
 ### Hash Medium Articles
 
-https://medium.com/provenanceblockchain/staking-hash-how-does-staking-work-and-how-do-i-participate-7286b0da1388
+- [Staking Hash: How Does Staking Work and How Do I Participate?](https://medium.com/provenanceblockchain/staking-hash-how-does-staking-work-and-how-do-i-participate-7286b0da1388)

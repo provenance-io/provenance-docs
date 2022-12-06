@@ -20,5 +20,5 @@ Ready to start building? Visit our [tutorials](/docs/build/tutorials/) page!
 
 ### dApp Medium Articles
 
-- https://medium.com/provenanceblockchain/storyline-builds-on-provenance-blockchain-c9a0e56e2d67
-- https://medium.com/provenanceblockchain/cap-tables-private-company-stock-on-provenance-blockchain-e45fa172c0f1
+- [Storyline Builds on Provenance Blockchain](https://medium.com/provenanceblockchain/storyline-builds-on-provenance-blockchain-c9a0e56e2d67)
+- [Cap Tables Private Company Stock on Provenance Blockchain](https://medium.com/provenanceblockchain/cap-tables-private-company-stock-on-provenance-blockchain-e45fa172c0f1)
