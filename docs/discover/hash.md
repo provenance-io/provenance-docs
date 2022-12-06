@@ -6,7 +6,11 @@ Hash is the publically available utility token on Provenance Blockchain, used to
 - Its value is driven by usage
 - It can't be created or destroyed
 
-<iframe width="100%" height="500" src="https://explorer.test.provenance.io/hashstats" />
+### Hash Markets
+
+Data from the [Provenance Explorer](https://explorer.provenance.io)
+
+<iframe width="100%" height="550" src="https://explorer.test.provenance.io/hashstats" />
 
 ### Tokenomics
 
