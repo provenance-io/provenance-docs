@@ -6,43 +6,29 @@ sidebar_position: 3
 
 This page comprised a large list of libraries and APIs currently available or under development. We recommend using this resource as a starting point before development to find projects that match your own, and use the existing examples to simplify your efforts. These resources may also connect you with developers who you can interact with via slack or discord. Stay tuned, as more ongoing projects will be added here continuously!
 
-## APIs
-
-| Resource                                                | Description                                                                 |
-| ------------------------------------------------------- | --------------------------------------------------------------------------- |
-| https://pay.test.figure.com/pay/docs/index.html#/       | Figure Pay Partner API guide                                                |
-| https://test.figure.tech/docs/apis/marketplace/         | Figure Marketplace API guide                                                |
-| https://test.figure.tech/docs/apis/onboard/#tag/Assets  | Figure Asset Onboarding API guide                                           |
-| https://test.figure.tech/docs/apis/documents/           | Figure document filling, mapping, and signature storage for dApps API guide |
-| https://test.figure.tech/docs/apis/asset-manager/       | Figure Asset Manager API guide                                              |
-| https://test.figure.tech/docs/apis/portfolio-manager/   | Figure Portfolio Manager API guide                                          |
-| https://test.figure.tech/docs/apis/pricing-engine/      | Figure Pricing Engine API guide                                             |
-| https://test.figure.tech/docs/apis/provenance-explorer/ | Provenance Explorer API guide                                               |
-| https://test.figure.tech/docs/apis/block-api/           | Figure Block API guide                                                      |
-
 ## Asset Management
 
-| Resource                             | Description                                       |
-| ------------------------------------ | ------------------------------------------------- |
-| https://test.figure.tech/docs/asset/ | Store digital assets on the Provenance blockchain |
+| Resource                             | Description                                                                                  |
+| ------------------------------------ | -------------------------------------------------------------------------------------------- |
+| https://test.figure.tech/docs/asset/ | Guide on storing discrete digital assets on the Provenance blockchain as Non-Fungible Tokens |
 
 ### Onboarding
 
-| Resource                                                  | Description                                 |
-| --------------------------------------------------------- | ------------------------------------------- |
-| https://github.com/provenance-io/service-asset-onboarding | Onboard assets to the Provenance Blockchain |
+| Resource                                                  | Description                                                       |
+| --------------------------------------------------------- | ----------------------------------------------------------------- |
+| https://github.com/provenance-io/service-asset-onboarding | Onboarding assets to the Provenance Blockchain via multiple means |
 
 ### Management
 
-| Resource                               | Description                                            |
-| -------------------------------------- | ------------------------------------------------------ |
-| https://test.figure.tech/docs/manager/ | Organize, structure, and attach assets to marketplaces |
+| Resource                               | Description                                                                             |
+| -------------------------------------- | --------------------------------------------------------------------------------------- |
+| https://test.figure.tech/docs/manager/ | Introduction and guide to organizing, structuring, and attaching assets to digital marketplaces |
 
 ### Marketplace
 
 | Resource                                   | Description                                                                          |
 | ------------------------------------------ | ------------------------------------------------------------------------------------ |
-| https://test.figure.tech/docs/marketplace/ | Provides functionality to enable digital asset transactions on Provenance blockchain |
+| https://test.figure.tech/docs/marketplace/ | Provides functionality to enable digital asset transactions on the Provenance Blockchain |
 
 ### Pricing
 
@@ -63,15 +49,15 @@ This page comprised a large list of libraries and APIs currently available or un
 
 ### p8e Contracts
 
-| Resource                                                                                                          | Description                                         |
-| ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| [Off-Chain P8e Contracts & SDK](https://medium.com/provenanceblockchain/off-chain-p8e-contracts-sdk-ac313e40c9c7) | A tutorial on Provenance Blockchain's off-chain SDK |
+| Resource                                                                                                          | Description                                                                                |
+| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| [Off-Chain P8e Contracts & SDK](https://medium.com/provenanceblockchain/off-chain-p8e-contracts-sdk-ac313e40c9c7) | An introduction and tutorial on Provenance Blockchain's off-chain SDK, published on Medium |
 
 ### Object Store
 
-| Resource                                      | Description                 |
-| --------------------------------------------- | --------------------------- |
-| https://github.com/provenance-io/object-store | Encrypted off-chain storage |
+| Resource                                      | Description                                                                     |
+| --------------------------------------------- | ------------------------------------------------------------------------------- |
+| https://github.com/provenance-io/object-store | An object storage system with a gRPC interface and strong encryption properties |
 
 ### Client Side Contract Execution
 
@@ -95,9 +81,9 @@ This page comprised a large list of libraries and APIs currently available or un
 
 ## Docker Images
 
-| Resource                              | Description                       |
-| ------------------------------------- | --------------------------------- |
-| https://hub.docker.com/u/provenanceio | Multiple provenance docker images |
+| Resource                              | Description                                                                                          |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| https://hub.docker.com/u/provenanceio | A docker hub website with twenty downloadable provenance docker images to help kickstart development |
 
 ## Example dApps
 
@@ -105,7 +91,7 @@ This page comprised a large list of libraries and APIs currently available or un
 
 | Resource                                                                               | Description                  |
 | -------------------------------------------------------------------------------------- | ---------------------------- |
-| https://github.com/provenance-io/how-to-provenance/tree/main/name-service-dapp-example | Serverless Name Service dApp |
+| https://github.com/provenance-io/how-to-provenance/tree/main/name-service-dapp-example | A serverless Name Service dApp |
 
 ## IBC
 
@@ -115,23 +101,7 @@ This page comprised a large list of libraries and APIs currently available or un
 | https://github.com/provenance-io/ibc     | Contracts, utilities, andother utilities needed for ibc                                                                 |
 | https://github.com/provenance-io/ibc-go  | Provenance version of the IBC protocol in Golang                                                                        |
 
-## Smart Contracts
-
-> Read the [Smart Contract Catalog](/docs/discover/smart-contract-catalog)
-
-| Resource                                | Description                                                                                                                                                          |
-| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| https://github.com/provenance-io/wasmd  | Hosts Wasmd, the first implementation of a cosmos zone with wasm smart contracts enabled                                                                             |
-| https://github.com/provenance-io/wasmit | A Go lib for building integration test commands that store, instantiate, execute and query smart contracts on a Provenance localnet using the command line.          |
-| https://github.com/provenance-io/wasmvm | This is a wrapper around the CosmWasm VM. It allows you to compile, initialize and execute CosmWasm smart contracts from Go applications, in particular from x/wasm. |
-
-## Utilities
-
-| Resource                                 | Description                                             |
-| ---------------------------------------- | ------------------------------------------------------- |
-| https://github.com/provenance-io/scripts | Multiple scripts to assist in development and debugging |
-
-## Wallets and Key Management
+## Key Management and Wallets
 
 > Read the [Wallets](/docs/discover/wallets.md) page
 
@@ -144,3 +114,33 @@ This page comprised a large list of libraries and APIs currently available or un
 | https://github.com/provenance-io/walletconnect-js/tree/main/webDemo | Example React dApp using WalletConnect                                    |
 | https://test.figure.tech/walletconnect                              | Example WalletConnect dApp                                                |
 | https://github.com/provenance-io/wallet-utils                       | Typescript Utils to create wallet messages - protos, build messages       |
+
+## Scripts and Utilities
+
+| Resource                                 | Description                                                                   |
+| ---------------------------------------- | ----------------------------------------------------------------------------- |
+| https://github.com/provenance-io/scripts | Multiple scripts to assist in Provenance Blockchain development and debugging |
+
+## Smart Contracts
+
+> Read the [Smart Contract Catalog](/docs/discover/smart-contract-catalog)
+
+| Resource                                | Description                                                                                                                                                          |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| https://github.com/provenance-io/wasmd  | Hosts Wasmd, the first implementation of a cosmos zone with wasm smart contracts enabled                                                                             |
+| https://github.com/provenance-io/wasmit | A Go lib for building integration test commands that store, instantiate, execute and query smart contracts on a Provenance localnet using the command line.          |
+| https://github.com/provenance-io/wasmvm | This is a wrapper around the CosmWasm VM. It allows you to compile, initialize and execute CosmWasm smart contracts from Go applications, in particular from x/wasm. |
+
+## Third Party APIs
+
+| Resource                                                | Description                                                                 |
+| ------------------------------------------------------- | --------------------------------------------------------------------------- |
+| https://pay.test.figure.com/pay/docs/index.html#/       | Figure Pay Partner API guide                                                |
+| https://test.figure.tech/docs/apis/marketplace/         | Figure Marketplace API guide                                                |
+| https://test.figure.tech/docs/apis/onboard/#tag/Assets  | Figure Asset Onboarding API guide                                           |
+| https://test.figure.tech/docs/apis/documents/           | Figure document filling, mapping, and signature storage for dApps API guide |
+| https://test.figure.tech/docs/apis/asset-manager/       | Figure Asset Manager API guide                                              |
+| https://test.figure.tech/docs/apis/portfolio-manager/   | Figure Portfolio Manager API guide                                          |
+| https://test.figure.tech/docs/apis/pricing-engine/      | Figure Pricing Engine API guide                                             |
+| https://test.figure.tech/docs/apis/provenance-explorer/ | Provenance Explorer API guide                                               |
+| https://test.figure.tech/docs/apis/block-api/           | Figure Block API guide                                                      |
