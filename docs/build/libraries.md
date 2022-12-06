@@ -8,16 +8,16 @@ This page comprised a large list of libraries and APIs currently available or un
 
 ## APIs
 
-| Resource | Description |
-| -------- | ----------- |
-| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/attribute/v1/query.proto | Queries for the [Attribute Module](/docs/pb/modules/account) |
-| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/marker/v1/query.proto | Queries for the [Marker Module](/docs/pb/modules/marker-module) |
-| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/metadata/v1/query.proto | Queries for the [Metadata module](/docs/pb/modules/metadata-module) |
-| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/msgfees/v1/query.proto | Queries for the MsgFees Module |
-| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/name/v1/query.proto | Queries for the [Name Module](/docs/pb/modules/name-module) |
-| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/reward/v1/query.proto | Queries for the Rewards Module |
-| https://buf.build/cosmos/cosmos-sdk/docs/main | Cosmos API Documentation |
-| https://docs.tendermint.com/v0.34/rpc/ | Tendermint API Documentation |
+| Resource                                                                                                         | Description                                                     |
+| ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/attribute/v1/attribute.proto | API for the [Attribute Module](/docs/pb/modules/account)        |
+| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/marker/v1/accessgrant.proto  | API for the [Marker Module](/docs/pb/modules/marker-module)     |
+| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/metadata/v1/events.proto     | API for the [Metadata module](/docs/pb/modules/metadata-module) |
+| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/msgfees/v1/msgfees.proto     | API for the MsgFees Module                                      |
+| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/name/v1/name.proto           | API for the [Name Module](/docs/pb/modules/name-module)         |
+| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/reward/v1/reward.proto       | API for the Rewards Module                                      |
+| https://buf.build/cosmos/cosmos-sdk/docs/main                                                                    | Cosmos API Documentation                                        |
+| https://docs.tendermint.com/v0.34/rpc/                                                                           | Tendermint API Documentation                                    |
 
 ## Asset Management
 
@@ -33,14 +33,14 @@ This page comprised a large list of libraries and APIs currently available or un
 
 ### Management
 
-| Resource                               | Description                                                                             |
-| -------------------------------------- | --------------------------------------------------------------------------------------- |
+| Resource                               | Description                                                                                     |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | https://test.figure.tech/docs/manager/ | Introduction and guide to organizing, structuring, and attaching assets to digital marketplaces |
 
 ### Marketplace
 
-| Resource                                   | Description                                                                          |
-| ------------------------------------------ | ------------------------------------------------------------------------------------ |
+| Resource                                   | Description                                                                              |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------- |
 | https://test.figure.tech/docs/marketplace/ | Provides functionality to enable digital asset transactions on the Provenance Blockchain |
 
 ### Pricing
@@ -102,8 +102,8 @@ This page comprised a large list of libraries and APIs currently available or un
 
 > Read the [dApps](/docs/quick-start/build-a-dapp) page
 
-| Resource                                                                               | Description                  |
-| -------------------------------------------------------------------------------------- | ---------------------------- |
+| Resource                                                                               | Description                    |
+| -------------------------------------------------------------------------------------- | ------------------------------ |
 | https://github.com/provenance-io/how-to-provenance/tree/main/name-service-dapp-example | A serverless Name Service dApp |
 
 ## IBC
