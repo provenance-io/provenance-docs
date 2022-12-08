@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Provenance Blockchain",
+  title: "Provenance Blockchain Developer Portal",
   tagline:
     "A distributed, proof-of-stake blockchain designed for financial service industries.",
   url: "https://vwagner.github.io",

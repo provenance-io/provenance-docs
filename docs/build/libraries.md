@@ -4,56 +4,27 @@ sidebar_position: 3
 
 # Libraries and APIs
 
-This page comprised a large list of libraries and APIs currently available or under development. We recommend using this resource as a starting point before development to find projects that match your own, and use the existing examples to simplify your efforts. These resources may also connect you with developers who you can interact with via slack or discord. Stay tuned, as more ongoing projects will be added here continuously!
+This page comprised a large list of libraries and APIs currently available. We recommend using this resource as a starting point before development to find projects that match your own, and use the existing examples to simplify your efforts. 
+These resources may also connect you with developers who you can interact with via Slack or Discord. Stay tuned, as more ongoing projects will be added here continuously!
 
-## APIs
+## Provenance Blockchain APIs
 
 | Resource                                                                                                         | Description                                                     |
 | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/attribute/v1/attribute.proto | API for the [Attribute Module](/docs/pb/modules/account)        |
-| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/marker/v1/accessgrant.proto  | API for the [Marker Module](/docs/pb/modules/marker-module)     |
-| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/metadata/v1/events.proto     | API for the [Metadata module](/docs/pb/modules/metadata-module) |
-| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/msgfees/v1/msgfees.proto     | API for the MsgFees Module                                      |
-| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/name/v1/name.proto           | API for the [Name Module](/docs/pb/modules/name-module)         |
-| https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/reward/v1/reward.proto       | API for the Rewards Module                                      |
+| [Attribute](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.attribute.v1.Attribute) <br/> [Attribute Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/attribute/v1/tx.proto)  <br/> [Query Attribute Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/attribute/v1/query.proto)  | API for the [Attribute Module](/docs/pb/modules/account)        |
+| [MarkerAccount](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.marker.v1.MarkerAccount) <br/> [Marker Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/marker/v1/tx.proto)  <br/> [Query Marker Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/marker/v1/query.proto)  | API for the [Marker Module](/docs/pb/modules/marker-module)        |
+| [Scope (NFT)](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.metadata.v1.Scope) <br/> [Metadata Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/metadata/v1/tx.proto)  <br/> [Query Metadata Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/metadata/v1/query.proto)  | API for the [Metadata Module](/docs/pb/modules/metadata-module)        |
+| [MsgFee](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.msgfees.v1.MsgFee) <br/> [MsgFees Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/msgfees/v1/tx.proto)  <br/> [Query MsgFees Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/msgfees/v1/query.proto)  | API for the [Msgfees Module](https://github.com/provenance-io/provenance/tree/main/x/msgfees/spec)        |
+| [NameRecord](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.name.v1.NameRecord) <br/> [Name Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/name/v1/tx.proto)  <br/> [Query Name Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/name/v1/query.proto)  | API for the [Name Module](/docs/pb/modules/name-module)        |
+| [RewardProgram](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.reward.v1.RewardProgram) <br/> [Reward Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/reward/v1/tx.proto)  <br/> [Query Reward Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/reward/v1/query.proto)  | API for the [Reward Module](https://github.com/provenance-io/provenance/tree/main/x/reward/spec)        |
 | https://buf.build/cosmos/cosmos-sdk/docs/main                                                                    | Cosmos API Documentation                                        |
-| https://docs.tendermint.com/v0.34/rpc/                                                                           | Tendermint API Documentation                                    |
+| https://docs.tendermint.com/main/rpc/                                                                           | Tendermint API Documentation                                    |
 
-## Asset Management
-
-| Resource                             | Description                                                                                  |
-| ------------------------------------ | -------------------------------------------------------------------------------------------- |
-| https://test.figure.tech/docs/asset/ | Guide on storing discrete digital assets on the Provenance blockchain as Non-Fungible Tokens |
-
-### Onboarding
-
-| Resource                                                  | Description                                                       |
-| --------------------------------------------------------- | ----------------------------------------------------------------- |
-| https://github.com/provenance-io/service-asset-onboarding | Onboarding assets to the Provenance Blockchain via multiple means |
-
-### Management
-
-| Resource                               | Description                                                                                     |
-| -------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| https://test.figure.tech/docs/manager/ | Introduction and guide to organizing, structuring, and attaching assets to digital marketplaces |
-
-### Marketplace
-
-| Resource                                   | Description                                                                              |
-| ------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| https://test.figure.tech/docs/marketplace/ | Provides functionality to enable digital asset transactions on the Provenance Blockchain |
-
-### Pricing
-
-| Resource                                      | Description                                                                                 |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| https://test.figure.tech/docs/pricing-engine/ | Figure Tech service providing the ability to assign a value to a Provenance marker or scope |
 
 ## Data and Business Intelligence
 
 | Resource                                           | Description                                                                                                                                                                                                   |
 | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| https://test.figure.tech/docs/block-api/           | Block API - Layer two "cache" API to retrieve blockchain data                                                                                                                                                 |
 | https://github.com/provenance-io/event-stream      | Event Stream - blockchain event listener                                                                                                                                                                      |
 | https://github.com/provenance-io/aggregate-service | Aggregator - Aggregate data to support business decisions<br/>[Blog post on using Aggregator](https://medium.com/provenanceblockchain/aggregating-provenance-blockchain-data-a-developers-story-a23972971287) |
 | https://github.com/provenance-io/explorer-service  | Explorer Service - API for the Provenance Blockchain Explorer containing aggregate and cached data                                                                                                            |
@@ -136,7 +107,7 @@ This page comprised a large list of libraries and APIs currently available or un
 
 ## Smart Contracts
 
-> Read the [Smart Contract Catalog](/docs/discover/smart-contract-catalog)
+> Browse the [Smart Contract Catalog](/docs/discover/smart-contract-catalog)
 
 | Resource                                | Description                                                                                                                                                          |
 | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
