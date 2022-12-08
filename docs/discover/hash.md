@@ -18,7 +18,9 @@ Provenance Blockchain is uniquely suited to drive massive disruption in financia
 
 ### Get Hash
 
-Hash is publically available, and detailed <a href="https://provenance.io/purchase-hash">instructions</a> on how to purchase hash are as well.
+Hash is publicly available, and detailed <a href="https://provenance.io/purchase-hash">instructions</a> on how to purchase Hash are as well.
+
+_See also: [Quick Start: Get a Wallet & Hash](/docs/quick-start/wallet-and-hash)_
 
 Additionally, the Provenance Blockchain Foundation funds a <a href="https://provenance.io/grants">grants program</a> for projects that enhance the ecosystem, research new directions, or provide educational resources. Apply today to kickstart your dApp!
 
@@ -28,7 +30,7 @@ Additionally, the Provenance Blockchain Foundation funds a <a href="https://prov
 
 ### Hash FAQs
 
-All tokens are inherently different, and hash is no exception! We've collected <a href="https://provenance.io/hashfaq">answers</a> to frequently asked questions about hash to help broaden understanding of what makes hash different from the rest.
+All tokens are inherently different, and Hash is no exception! We've collected <a href="https://provenance.io/hashfaq">answers</a> to frequently asked questions about Hash to help broaden understanding of what makes Hash different from the rest.
 
 ### Hash Medium Articles
 

@@ -1,8 +1,6 @@
 
 # Tutorials
 
-https://github.com/provenance-io/scripts
-
 
 ## Getting Started
 

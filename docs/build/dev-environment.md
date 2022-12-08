@@ -13,8 +13,6 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 
 [Provenance Scripts](https://github.com/provenance-io/scripts) is a collection of scripts to assist in developing and maintaining Provenance Blockchain.
 
-[Cavendish](https://github.com/provenance-io/cavendish) is a command-line tool for quickly starting a local Provenance blockchain.
-
 ## IDEs and Plugins
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is one of our favorite IDEs to use when we are working on the chain.
