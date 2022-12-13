@@ -1,6 +1,4 @@
-
-
-## Financial NFTs {#financial-nfts}
+# Financial NFTs 
 
 Single-asset NFTs are represented on Provenance Blockchain using the [Metadata module](https://docs.provenance.io/modules/metadata-module).
 
@@ -9,11 +7,11 @@ The Metadata module was designed to work in conjunction with Provenance Blockcha
 Usage of the CEE is an optional extension to the Provenance Blockchain, and asset NFTs may be minted directly on-chain without using the CEE.
 
 
-### Anatomy of an NFT {#anatomy-of-an-nft}
+## Anatomy of an NFT 
 
+![nft](/img/learn/asset-lifecycle/nft.png)
 
-
-
+<br/>
 
 
 An NFT on Provenance Blockchain is defined by the [Scope](https://docs.provenance.io/modules/metadata-module#scope-data-structures) data structure. Two unique aspects of Provenance NFTs include:
@@ -24,7 +22,7 @@ An NFT on Provenance Blockchain is defined by the [Scope](https://docs.provenanc
 * **Multi-party Ownership** - allowing a distinction between the Value Owner of an NFT, the party entitled to the financial value of the asset, and one or more Data Owners who may have the right or obligation to maintain the data backing the NFT. This nuance allows NFTs to have multiple participants in the roles of investors, controllers, and servicers, for example. Further parties can be permissioned with read-only data access, for example granting data viewing to another party or dApp, such as an exchange.
 
 
-### Data Privacy {#data-privacy}
+## Data Privacy
 
 The goals of having publicly-readable blockchain data while maintaining data privacy may at first seem incompatible. In transacting with other parties using our data, and cannot assume other parties will just “trust” the data we show them. We need to be able to prove that the asset data is the truth.
 
@@ -34,9 +32,11 @@ Provenance Blockchain’s NFT structure allows one to record not only the finger
 
 Having all these hashes recorded on the blockchain for the NFT can allow anyone to later prove exactly what the data was, how it mutated, and what code was executed to change the NFT data, without disclosing the data publicly.
 
+<br/>
 
+![nft](/img/learn/asset-lifecycle/cee.png)
 
-
+<br/>
 
 
 The CEE is particularly powerful when contract execution involves multiple parties that may prefer verification of truth over trust (ie. parties no longer require explicit trust or third-party participation to ensure trust).. During the contract execution, each party’s CEE can independently verify that the copy of the data it holds matches the hash of the data last recorded on-chain. If the hashes don’t match what is on the blockchain, the contract execution will fail.

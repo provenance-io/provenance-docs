@@ -10,7 +10,11 @@ Provenance Blockchain is uniquely positioned as a platform built specifically fo
 
 ## Types of Assets
 
-Broadly speaking, assets can be categorized into two types: unique or singular assets, such as loans, and assets that can be divided into equivalent parts, such as shares of stock in a share class. The web3 community has popularized the term “**Non-Fungible Token**”** (NFT)** for assets that are singular and unique, while using the generic term “**token**”  to refer to divisible assets, such as cryptocurrencies like Bitcoin.
+Broadly speaking, assets can be categorized into two types: unique or singular assets, such as loans, and assets that 
+can be divided into equivalent parts, such as shares of stock in a share class. The web3 community has popularized 
+the term “**Non-Fungible Token**”** (NFT)** for assets that are singular and unique, while using the generic 
+term “**token**”  to refer to divisible (and fungible) assets, such as cryptocurrencies like Bitcoin. We'll use the term **tokenized asset**
+here for clarity.
 
 ### NFTs
 
@@ -21,3 +25,7 @@ recorded on a public blockchain. Provenance Blockchain provides a solution for k
 off-chain and encrypted](/docs/pb/p8e/overview/), while recording asset ownership, metadata, and history on-chain.
 
 ### Tokenized Assets
+
+
+### Pooled Assets
+
