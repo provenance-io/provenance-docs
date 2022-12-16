@@ -1,11 +1,10 @@
 ---
-sidebar_position: 1
 sidebar_label: Introduction
 ---
-
 # Financial Digital Assets
 
-[_Read more about the Benefits of Real-World Financial Asset Tokenization_](https://provenance.io/learn/posts/basics-of-real-world-financial-a)
+
+_Read more about the [Benefits of Real-World Financial Asset Tokenization](https://provenance.io/learn/posts/basics-of-real-world-financial-a)_
 
 **Financial digital assets** are uniquely identifiable assets that are created and stored digitally, have value, and come with distinct ownership or usage rights.
 
@@ -22,6 +21,9 @@ the term “**Non-Fungible Token**”** (NFT)** for assets that are singular and
 term “**token**”  to refer to divisible (and fungible) assets, such as cryptocurrencies like Bitcoin. We'll use the term **tokenized asset**
 here for clarity.
 
+![asset types](/img/learn/asset-lifecycle/asset-types.png)
+
+
 ### Asset NFTs
 
 On Provenance Blockchain, individual assets such as loans are recorded as NFTs using the [**Scope**](https://github.com/provenance-io/provenance/blob/main/proto/provenance/metadata/v1/scope.proto#L70) 
@@ -37,3 +39,16 @@ a [**Marker**](/docs/pb/modules/marker-module). The Marker module provides an ow
 
 ### Pooled Assets
 
+Asset NFTs can be aggregated into pools or structures using the [**Marker**](/docs/pb/modules/marker-module) construct. 
+The entire pool of assets can be managed or sold as a single entity, such as for a whole loan sales, or the pool 
+can be further tokenized to represent fractional ownership in the pool, such as for a securitization.
+
+
+
+## The Digital Asset Lifecycle
+
+Every type of financial asset has a unique lifecycle, but the phases of digital assets can be broadly categorized into
+three areas: asset issuance, asset management, and asset trading. 
+
+
+![asset lifecycle](/img/learn/asset-lifecycle/lifecycle.png)
