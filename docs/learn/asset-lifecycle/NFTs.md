@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Financial NFTs 
 
 Single-asset NFTs are represented on Provenance Blockchain using the [Metadata module](https://docs.provenance.io/modules/metadata-module).
@@ -5,7 +9,7 @@ Single-asset NFTs are represented on Provenance Blockchain using the [Metadata m
 The Metadata module was designed to work in conjunction with Provenance Blockchain’s [Client Execution Environment](https://docs.provenance.io/p8e/overview) (CEE), whose purpose is to control and reason about asset-specific data off-chain while using the blockchain for recording an immutable history of the asset data and metadata on-chain. This powerful capability provides data privacy for Personally Identifying Information (PII) and other Non-Public Information (NPI).
 
 Usage of the CEE is an optional extension to the Provenance Blockchain, and asset NFTs may be minted directly on-chain without using the CEE.
-
+  
 
 ## Anatomy of an NFT 
 
@@ -36,7 +40,6 @@ Having all these hashes recorded on the blockchain for the NFT can allow anyone 
 
 ![nft](/img/learn/asset-lifecycle/cee.png)
 
-<br/>
 
 
 The CEE is particularly powerful when contract execution involves multiple parties that may prefer verification of truth over trust (ie. parties no longer require explicit trust or third-party participation to ensure trust).. During the contract execution, each party’s CEE can independently verify that the copy of the data it holds matches the hash of the data last recorded on-chain. If the hashes don’t match what is on the blockchain, the contract execution will fail.
