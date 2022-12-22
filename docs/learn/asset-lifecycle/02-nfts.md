@@ -1,5 +1,3 @@
-
-
 # Financial NFTs 
 
 Single-asset NFTs are represented on Provenance Blockchain using the [Metadata module](https://docs.provenance.io/modules/metadata-module).
@@ -11,12 +9,13 @@ Usage of the CEE is an optional extension to the Provenance Blockchain, and asse
 
 ## Anatomy of an NFT 
 
+An NFT on Provenance Blockchain is defined by the [Scope](https://docs.provenance.io/modules/metadata-module#scope-data-structures) data structure.
+
 ![nft](/img/learn/asset-lifecycle/nft.png)
 
 <br/>
 
-
-An NFT on Provenance Blockchain is defined by the [Scope](https://docs.provenance.io/modules/metadata-module#scope-data-structures) data structure. Two unique aspects of Provenance NFTs include:
+Two unique aspects of Provenance NFTs include:
 
 
 
@@ -40,4 +39,72 @@ Having all these hashes recorded on the blockchain for the NFT can allow anyone 
 
 
 
-The CEE is particularly powerful when contract execution involves multiple parties that may prefer verification of truth over trust (ie. parties no longer require explicit trust or third-party participation to ensure trust).. During the contract execution, each party’s CEE can independently verify that the copy of the data it holds matches the hash of the data last recorded on-chain. If the hashes don’t match what is on the blockchain, the contract execution will fail.
+The CEE is particularly powerful when contract execution involves multiple parties that may prefer verification of truth over trust (ie. parties no longer require explicit trust or third-party participation to ensure trust). During the contract execution, each party’s CEE can independently verify that the copy of the data it holds matches the hash of the data last recorded on-chain. If the hashes don’t match what is on the blockchain, the contract execution will fail.
+
+
+## Data Structures
+
+
+
+On the Provenance Blockchain, data structures are encoded as [Google Protocol Buffers](https://developers.google.com/protocol-buffers). The onboarding API consumes a generic `Asset` protobuf, which can contain any type of NFT or digital asset. The components parts of the `Asset` are:
+
+
+
+<table>
+  <tr>
+   <td><code>id</code>
+   </td>
+   <td>An unique identifier in the <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier#:~:text=A%20universally%20unique%20identifier%20(UUID,%2C%20for%20practical%20purposes%2C%20unique.">UUID format</a>
+   </td>
+  </tr>
+  <tr>
+   <td><code>type</code>
+   </td>
+   <td>A broadly-generic “type” of the asset, such as “LOAN”, “FUND”, or “TITLE”. This field is typically used to identify the type of asset to Provenance-based applications.
+   </td>
+  </tr>
+  <tr>
+   <td><code>description</code>
+   </td>
+   <td>A brief description of the asset
+   </td>
+  </tr>
+  <tr>
+   <td><code>key-value map</code>
+   </td>
+   <td>A dictionary of string-value pairs, mapping a field name to its data value. The data value is encoded as a <a href="https://developers.google.com/protocol-buffers/docs/proto3#any">protobuf Any</a>, allowing for any type of data structure.
+   </td>
+  </tr>
+</table>
+
+
+Asset proto definition:
+
+
+```
+syntax = "proto3";
+
+package tech.figure.asset;
+
+import "google/protobuf/any.proto";
+
+message Asset {
+  string                           id          = 1; // Required UUID identifier for this asset
+  string                           type        = 2; // Optional user-defined type (e.g. LOAN, ART, FUND, SHARE CLASS)
+  string                           description = 3; // Optional user-defined description, title, name, etc. for display
+  map<string, google.protobuf.Any> kv          = 4; // Key-value store of asset data
+}
+
+
+```
+
+
+The NFT Onboarding API consumes protobufs serialized to [JSON](https://www.json.org/json-en.html) format. Note in particular that the `Any` protobuf JSON representation consists of a `typeUrl` followed by the normal JSON representation of the data proto `Message`.
+
+Example of a Loan Asset (truncated):
+
+
+
+
+
+
