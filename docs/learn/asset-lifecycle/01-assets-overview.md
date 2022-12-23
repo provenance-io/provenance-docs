@@ -1,5 +1,5 @@
 ---
-sidebar_label: Introduction
+sidebar_label: Digital Asset Lifecycle
 ---
 # Financial Digital Assets
 

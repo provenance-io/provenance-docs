@@ -1,36 +1,55 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Example: Private Fund Capital Raise
+
 
 ![asset lifecycle](/img/learn/asset-lifecycle/funds-lifecycle-roles.png)
 
 ## Fund Onboarding
 
-### GP Instantiates Contract
+### GP Configures Raise Contract
 
+Each fund's capital raise process is governed by a unique instance of the Provenance Blockchain [**Capital Raise smart contract**](https://github.com/FigureTechnologies/marketpalace-raise-contract).
+The smart contract executable is loaded onto the blockchain through a [governance proposal](/docs/pb/ecosystem/governance), which requires a vote from
+the delegator community. Once the vote is passed, the contract's [WASM](/docs/pb/modules/provwasm-smart-contracts) binary is stored on the blockchain. Each time a fund
+wishes to use the contract for a capital raise, a new instance of the smart contract is instantiated by the GP with a
+configuration specific for the fund.
 
 ![asset lifecycle](/img/learn/asset-lifecycle/funds-lifecycle-instantiate.png)
 
-Contract:
-https://explorer.provenance.io/contract/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p
+
+<Tabs>
+  <TabItem value="1" label="Example Contract Configuration" default>
+
+| Parameter | Value | Description |
+| ---- | ---- | ---- |
+| **acceptable_accreditations** | funds506c.passport.pb | Indicates LP required accreditations (506c qualified investor) |
+| **subscription_code_id** | [12](https://explorer.provenance.io/code/12) | Indicates which smart contract to use for LP subscriptions |
+| **capital_denom** | [cfigureomni](https://explorer.provenance.io/asset/cfigureomni) (USD cents) | Indicates which currency (coin) will be accepted as capital by the GP |
+| **capital_per_share** | 1,000 | Indicates price per share of fund in capital_denom currency (USD $10) |
+
+  </TabItem>
+  <TabItem value="2" label="Contract Details">
+
+- Capital Raise smart contract [source code](https://github.com/FigureTechnologies/marketpalace-raise-contract)
+- Capital Raise smart contract [governance proposal](https://explorer.provenance.io/proposal/41)
+- Capital Raise smart contract [wasm code](https://explorer.provenance.io/code/22)
+----
+  </TabItem>
+<TabItem value="3" label="Example Details">
+
+- Example [contract instantiation tx](https://explorer.provenance.io/tx/8C3253C39A3A952486AF35A7C5263838A074C2A07102BDFE2D1BDE2AE2E819A1/5877851)
+- Example [instantiated contract address](https://explorer.provenance.io/contract/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p) with configuration
+- Example [commitment coin Marker](https://explorer.provenance.io/asset/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p.commitment)
+- Example [investment coin Marker](https://explorer.provenance.io/asset/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p.investment)
+----
+</TabItem>
+
+</Tabs>
 
 
-https://explorer.provenance.io/tx/8C3253C39A3A952486AF35A7C5263838A074C2A07102BDFE2D1BDE2AE2E819A1/5877851
 
-```json
-{
-  "subscription_code_id": 12,
-  "recovery_admin": "pb175gx39t90xyg88fx0jqwrfp5ppusaekrl0cggk",
-  "acceptable_accreditations": [
-    "funds506c.passport.pb"
-  ],
-  "other_required_tags": [],
-  "capital_denom": "cfigureomni",
-  "capital_per_share": 1000
-}
-```
-
-https://explorer.provenance.io/asset/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p.commitment
-
-https://explorer.provenance.io/asset/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p.investment
 
 ## Subscriptions 
 
@@ -67,9 +86,11 @@ https://explorer.provenance.io/tx/F78C16E04CA35D5D45346BF1209E3B3D6AB836605C8F21
 ![asset lifecycle](/img/learn/asset-lifecycle/funds-lifecycle-close-cap-call.png)
 
 
-complete asset exchange
+complete asset exchange aka "cash out"
 
 https://explorer.provenance.io/tx/7A021B17114AF3F5473BE5DF0EE0580544A402A566DF5EA118FC15D64672FF86/8144885
+
+![asset lifecycle](/img/learn/asset-lifecycle/funds-lifecycle-cap-table.png)
 
 
 ## Distributions
