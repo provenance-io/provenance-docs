@@ -14,8 +14,6 @@ Examples of RWAs include:
 - Intellectual property such as patents, trademarks, and copyrights
 - Natural resources such as oil, gold, and timber
 
-
-
 Just like cryptocurrencies, tokenized assets can be bought, traded, and held in digital wallets by individuals or managed by an investment platform.
 
 On Provenance Blockchain, all tokenized assets (including cryptocurrencies, tokens, asset pools, cap tables, 
@@ -63,8 +61,6 @@ Cosmos [Coin](https://buf.build/cosmos/cosmos-sdk/docs/main:cosmos.base.v1beta1#
 
 ## Tokenized Asset Control
 
-
-
 The marker system provides advanced token management through its implementation of fine-grained [Access Grants](https://docs.provenance.io/modules/marker-module#access-grants). 
 This allows for greater customization and flexibility in the management of marker accounts. 
 Access rights, such as minting, burning, depositing, withdrawing, deleting, administrating, and transferring, 
@@ -88,9 +84,19 @@ offering a unique and comprehensive approach to token management.
 | **Transfer** | The ability to invoke a send operation using the Marker module to facilitate exchange |
 
 
-## Restricted Token Trading
+## Restricted Token Transfer
 
-two types of markers: coin and restricted
+Marker tokens come in two flavors:
+
+- **Unrestricted (Coin Type)** - Coin can be freely exchanged between any two Provenance accounts without any third-paprty control
+- **Restricted Type** - Coins may not be transferred between arbitrary accounts without the approval of the `Transfer` agent on the Marker
+
+For Restricted Markers, the transfer permission is usually delegated to a smart contract. In the following example,
+`example-co.stock` trading in a secondary market is delegated to a smart contact, which checks that the recipient's
+506c accreditation is present and currently valid. If the recipient's 506c Attribute is either missing or expired,
+the smart contract will not allow the transfer to occur.
+
+![marker structure](/img/learn/asset-lifecycle/marker-transfer-approval.png)
 
 ## Asset Pools
 The Marker system is capable of representing a collection of assets, such as a pool of loans. It can serve as a 
@@ -101,7 +107,7 @@ A Marker is represented on the blockchain through an Account, similar to a stand
 individual or entity. This allows the Marker to hold any asset type represented on the Provenance Blockchain.
 
 It is important to note that in certain cases, the administrator of an asset pool may choose to represent the 
-pool's token on the blockchain without minting the individual assets. For instance, the Marker may represent an 
+pool's tokenization on the blockchain without minting the individual assets. For instance, the Marker may represent an 
 Asset-Backed Security (ABS) token on the blockchain, without the need for individual assets to be added to the 
 blockchain. The ABS token can be used to represent ownership and transfer of shares, and can also administer 
 waterfall payments through a smart contract, while the underlying collateral assets remain in their original system.
@@ -134,6 +140,7 @@ provenanced tx marker grant pb15fnwec... "example-co.stock" transfer
 
 # Withdraw 1,000 shares of stock to a user account
 provenanced tx marker withdraw "example-co.stock" "1000example-co.stock" pb18wldir...
+
 ```
 <br/>
 
