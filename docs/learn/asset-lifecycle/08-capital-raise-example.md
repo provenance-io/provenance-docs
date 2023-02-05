@@ -197,9 +197,11 @@ for manual reconciliation and data verification.
 
 ## Final Cap Table
 
-The [investment coin Marker](https://explorer.provenance.io/asset/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p.investment) 
+The [investment coin Marker](https://explorer.provenance.io/asset/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p.investment)
+(click to see live example on Provenance Explorer)
 now represents the final cap table for the tokenized asset.
 
+_Example cap table:_
 ![asset lifecycle](/img/learn/asset-lifecycle/funds-lifecycle-cap-table.png)
 
 
@@ -262,5 +264,18 @@ accessing secondary liquidity is significantly streamlined through fund
 digitization and representation on Provenance Blockchain. Creating bids and asks 
 against an exchange contract is all that is needed to open up secondary liquidity for a digital fund.
 
+### Secondary Trading Process
 
+1. **Smart Contract creation**: A secondary trading smart contract is created on the blockchain to manage the 
+tokenized fund. The contract contains the rules and conditions for buying, selling, and transferring the tokens,
+including required account attributes for the participants as well as accepted denominations for settlement, for example.
+2. **Token Listing**: The tokenized fund is listed on a decentralized exchange that supports the blockchain where 
+the tokens are stored. The exchange, marketplace, or trading system will be a web site or mobile app where participants
+can connect their wallets to participate in the decentralized trading algorithm.
+3. **Buy and Sell Orders**: Buyers and sellers can place orders on the decentralized exchange for the tokenized fund. 
+The smart contract automatically executes the trade by transferring the tokens from the seller's wallet to the 
+buyer's wallet, based on the agreed price and the rules encoded in the contract.
+4. **Settlement**: The settlement of the trade occurs in real-time as the tokens are transferred on the blockchain.
+The smart contract updates the token ownership records, providing a transparent and tamper-proof record of the trade.
 
+**Example:** [Alternative Trading System Smart Contract](https://github.com/FigureTechnologies/ats-smart-contract)
