@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         The leading public open-source blockchain for financial services,
-        leveraged by over 50 financial institutions and operating at scale today
+        leveraged by over 60 financial institutions and operating at scale today
         with billions of dollars of digital financial assets transacted across
         lending, payments and marketplaces.
       </>
