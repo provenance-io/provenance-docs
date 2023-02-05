@@ -145,7 +145,7 @@ provenanced tx marker withdraw "example-co.stock" "1000example-co.stock" pb18wld
 <br/>
 
 A backend service for a dApp will use gRPC commands via a [client](/docs/build/clients) to create a Marker. See the 
-[How-to Provenance](https://github.com/provenance-io/how-to-provenance/blob/main/bilateral-trade-example/examples/kotlin/scope-exchange/src/main/kotlin/MarkerCreator.kt) repository for an example.
+[How-to-Provenance](https://github.com/provenance-io/how-to-provenance/blob/main/bilateral-trade-example/examples/kotlin/scope-exchange/src/main/kotlin/MarkerCreator.kt) repository for an example.
 
 ```kotlin title="Kotlin Example - Create a Unrestricted (Coin) Marker in a Finalized state"
 fun createMarker(shares: Int, denom: String, owner: WalletSigner): MarkerAccount {
