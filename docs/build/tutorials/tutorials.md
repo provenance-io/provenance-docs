@@ -8,6 +8,10 @@
 
 - [Building Your First dApp](https://medium.com/provenanceblockchain/building-your-first-dapp-5679c07d1983)<br/>_How to build a simple, front-end-only webapp using [WalletConnect](docs/discover/wallets)_
 
+## Asset Design & Lifecycle
+
+- [**Guide to the Digital Asset Lifecycle**](/docs/learn/asset-lifecycle/assets-overview): _Issue, Manage, Trade_
+
 ## Building dApps
 
 - [Creating React dApps via WalletConnect-JS](https://medium.com/provenanceblockchain/creating-dapps-via-walletconnect-js-658268c8d549)

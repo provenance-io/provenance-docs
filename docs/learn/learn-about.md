@@ -21,9 +21,9 @@
 
 ### The Digital Asset Lifecycle
 
+- [**Guide to the Digital Asset Lifecycle**](/docs/learn/asset-lifecycle/assets-overview): _Issue, Manage, Trade_
 - [The Future of Private Markets is Blockchain Enabled](https://provenance.io/learn/posts/future-of-private-markets)
 - [Basics of Real-World Financial Asset Tokenization](https://provenance.io/learn/posts/basics-of-real-world-financial-a)
-- Issue, Manage, Trade
 
 ### Digital Money
 

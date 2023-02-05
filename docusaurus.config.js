@@ -89,6 +89,10 @@ const config = {
                 to: "docs/quick-start/become-a-validator",
               },
               {
+                label: "Tokenize an Asset",
+                to: "docs/learn/asset-lifecycle/markers",
+              },
+              {
                 label: "Build a dApp",
                 to: "docs/quick-start/build-a-dapp",
               },

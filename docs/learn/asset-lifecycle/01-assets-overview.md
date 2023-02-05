@@ -1,7 +1,4 @@
----
-sidebar_label: Digital Asset Lifecycle
----
-# Financial Digital Assets
+# Blockchain-Native Assets
 
 
 _Read more about the [Benefits of Real-World Financial Asset Tokenization](https://provenance.io/learn/posts/basics-of-real-world-financial-a)_

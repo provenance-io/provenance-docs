@@ -6,7 +6,7 @@ real estate, fine art, and even commodities, as well as intangible assets such a
 investment funds, and others. The tokenization process helps to increase the liquidity of these assets, as well as 
 making them more accessible to a wider range of investors.
 
-**Real World Assets** (RWA) refer to tangible or intangible assets that have value and can be traded, bought, or sold. 
+**Real World Assets** (RWA) refers to tangible or intangible assets that have value and can be traded, bought, or sold. 
 Examples of RWAs include:
 
 - Physical assets such as real estate, commodities, and personal property
@@ -81,7 +81,7 @@ offering a unique and comprehensive approach to token management.
 | **Withdraw** | The ability to remove other assets from the Marker account, including the movement of newly-minted tokens to other accounts. |
 | **Delete** | The ability to move a proposed, finalized, or active Marker into the cancelled state, and to mark cancelled Markers for deletion. |
 | **Admin** | The ability to add access grants for accounts to the list of Marker permissions. |
-| **Transfer** | The ability to invoke a send operation using the Marker module to facilitate exchange |
+| **Transfer** | The ability to invoke a send operation using the Marker module to facilitate exchange. |
 
 
 ## Restricted Token Transfer
