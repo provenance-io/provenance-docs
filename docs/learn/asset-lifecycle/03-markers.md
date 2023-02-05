@@ -94,7 +94,7 @@ Marker tokens come in two flavors:
 For Restricted Markers, the transfer permission is usually delegated to a smart contract. In the following example,
 `example-co.stock` trading in a secondary market is delegated to a smart contact, which checks that the recipient's
 506c accreditation is present and currently valid. If the recipient's 506c Attribute is either missing or expired,
-the smart contract will not allow the transfer to occur.
+the smart contract will not allow the transfer to complete.
 
 ![marker structure](/img/learn/asset-lifecycle/marker-transfer-approval.png)
 
@@ -112,7 +112,7 @@ Asset-Backed Security (ABS) token on the blockchain, without the need for indivi
 blockchain. The ABS token can be used to represent ownership and transfer of shares, and can also administer 
 waterfall payments through a smart contract, while the underlying collateral assets remain in their original system.
 
-Example Marker of an Asset-Backed Security holding four mortgages
+![marker structure](/img/learn/asset-lifecycle/loan-pool.png)
 
 
 ## How to Create a Marker
