@@ -1,0 +1,6 @@
+# Manage
+
+<!--
+A private fund distribution can be executed through a blockchain smart contract, which is a self-executing program that automatically executes the terms of an agreement between two parties. This approach has several advantages over traditional manual methods of distribution. Firstly, a blockchain smart contract can automate the entire distribution process, making it more efficient, transparent and secure. The smart contract can be programmed to automatically calculate and distribute the returns based on predefined rules and conditions, reducing the risk of errors or fraud. Additionally, using a blockchain-based smart contract eliminates the need for intermediaries, such as banks or clearinghouses, reducing transaction costs and increasing speed. Furthermore, all transactions and distribution details are recorded on a public, decentralized ledger, providing a clear and tamper-proof record of the fund's activities and distributions. Overall, using a blockchain smart contract for private fund distributions can provide increased efficiency, security and transparency for both the fund manager and limited partners.
+
+-->
