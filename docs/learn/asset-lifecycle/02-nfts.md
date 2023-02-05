@@ -77,11 +77,9 @@ On the Provenance Blockchain, data structures are encoded as [Google Protocol Bu
   </tr>
 </table>
 
+<br/>
 
-Asset proto definition:
-
-
-```
+```protobuf title="Asset proto definition"
 syntax = "proto3";
 
 package tech.figure.asset;
@@ -89,13 +87,13 @@ package tech.figure.asset;
 import "google/protobuf/any.proto";
 
 message Asset {
+
   string                           id          = 1; // Required UUID identifier for this asset
   string                           type        = 2; // Optional user-defined type (e.g. LOAN, ART, FUND, SHARE CLASS)
   string                           description = 3; // Optional user-defined description, title, name, etc. for display
   map<string, google.protobuf.Any> kv          = 4; // Key-value store of asset data
+
 }
-
-
 ```
 
 
