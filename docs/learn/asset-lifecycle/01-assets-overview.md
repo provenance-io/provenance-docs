@@ -1,22 +1,32 @@
-# Blockchain-Native Assets
+# Assets on Provenance Blockchain
 
 
 _Read more about the [Benefits of Real-World Financial Asset Tokenization](https://provenance.io/learn/posts/basics-of-real-world-financial-a)_
 
-**Financial digital assets** are uniquely identifiable assets that are created and stored digitally, have value, and come with distinct ownership or usage rights.
+**Financial digital assets** are unique, digital representations of valuable assets with defined ownership or 
+usage rights. Unlike traditional physical assets, financial digital assets exist solely in digital form and 
+their associated data and documents are all in digital format, such as PDF, without the need for paper copies.
 
-The emphasis on the “digital” qualifier indicates that both the data and documents associated with the asset are entirely in digital form; for example, all documents are in PDF format and no paper copies are required.
+**Provenance Blockchain** is a platform designed to support the entire **lifecycle** of financial digital assets, from 
+creation to financing, funding, and trading. This platform is specifically designed to accommodate a wide range of 
+asset classes, including debt, equity, derivatives, and payments, and can be used across multiple financial markets. 
+The platform offers a streamlined, secure, and efficient way to manage financial digital assets, providing 
+end-to-end support from origination to trading.
 
-Provenance Blockchain is uniquely positioned as a platform built specifically for the lifecycle of digital assets from origination to financing, funding, and trading. All asset classes can be issued or registered on Provenance Blockchain across multiple financial markets, including debt, equity, derivatives, and payments.
-
+----
 
 ## Types of Assets
 
-Broadly speaking, assets can be categorized into two types: unique or singular assets, such as loans, and assets that 
-can be divided into equivalent parts, such as shares of stock in a share class. The web3 community has popularized 
-the term “**Non-Fungible Token**”** (NFT)** for assets that are singular and unique, while using the generic 
-term “**token**”  to refer to divisible (and fungible) assets, such as cryptocurrencies like Bitcoin. We'll use the term **tokenized asset**
-here for clarity.
+Assets can be broadly classified into two categories: unique or singular assets and divisible assets. Unique 
+assets, such as loans, are one-of-a-kind and cannot be divided into smaller units or replaced by equivalent 
+units. On the other hand, divisible assets, such as shares of stock in a particular class, can be divided into 
+equivalent parts.
+
+The web3 community has popularized the use of specific terminology to distinguish between these two types of 
+assets. "**Non-Fungible Tokens**" (NFTs) are used to describe unique and singular assets, while the generic term "**token**" is 
+used to refer to divisible and fungible assets, such as cryptocurrencies like Bitcoin. We'll use the term "**tokenized asset**"
+here for to represent an asset whose ownership is represented by a corresponding token, allowing fractionalized ownership
+of the asset.
 
 ![asset types](/img/learn/asset-lifecycle/asset-types.png)
 

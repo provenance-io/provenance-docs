@@ -197,9 +197,11 @@ for manual reconciliation and data verification.
 
 ## Final Cap Table
 
-The [investment coin Marker](https://explorer.provenance.io/asset/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p.investment) 
+The [investment coin Marker](https://explorer.provenance.io/asset/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p.investment)
+(click to see live example on Provenance Explorer)
 now represents the final cap table for the tokenized asset.
 
+_Example cap table:_
 ![asset lifecycle](/img/learn/asset-lifecycle/funds-lifecycle-cap-table.png)
 
 
@@ -207,42 +209,73 @@ now represents the final cap table for the tokenized asset.
 
 
 ### Distributions
+The Capital Raise and Subscription smart contracts on Provenance Blockchain provide a secure and efficient way 
+to execute  fund distributions. The smart 
+contract acts as a self-executing agreement between the fund and its investors, where the terms of the agreement 
+are encoded into the contract. The contract automatically executes the distribution of funds according to the set 
+conditions without the need for intermediaries. This not only reduces the risk of errors and fraud but also saves 
+time and costs associated with manual processes.
 
-Fund distributions can also be executed through the smart contracts for increased efficiency,
-security, and transparency. The smart contract can automate the distribution process, reducing the risk of 
-errors and fraud and eliminating the need for intermediaries. Recording transactions and distribution details on a public, decentralized ledger, provides a clear and tamper-proof 
-record of the fund's activities and distributions.
-
-
-https://explorer.provenance.io/tx/68F824AEC9ABE771D04DB69EF1405248911E767C70035EC73510F36FD82F70D0/6615090
-https://explorer.provenance.io/tx/BB1115AB896CD87F02D2534415FF7E50F27417FA8F18D82B20C6B57961D4BEA8/5949730
-
-### Secondary
-
-https://figure.tech/docs/marketplace/Smart%20Contracts/Secondary/Intro/
-
-Tokenization allows entirely new ways to structure, distribute, lend against and trade private funds, lowering barriers and increasing participation.
-
-Materially lower administrative expenses (improve net performance) and time to market with a single source of truth.
-
-Broad Digital Ecosystem Benefits
-Native digital fund interests as collateral to capital calls and for loans/leverage; Other digital assets to fund capital calls
-
-rictionless buyer movement across investments by leveraging universal passporting. Secondary trades self-clear and settle instantaneously using stablecoin (USDF).
-
-Assets held digitally can be made available for secondary trading on Figure ATS during Sponsor-defined liquidity 
-windows, improving the liquidity profile of illiquid funds through bilateral secondary trading of fund interests 
-with real-time settlement while significantly reducing the high search and transaction costs of current secondary 
-markets. A digital fund allows investors to fund capital calls using crypto assets as collateral, without the 
-need to redeem to fiat. Lastly, investors may have an enhanced ability to use digital fund interests as collateral 
-for loans given the certainty of ownership provided by blockchain and enhanced liquidity characteristics due to 
-secondary trading windows.
-
-One of the largest benefits to a digitally native fund is easy access to secondary liquidity through an exchange. 
-Most long duration private funds (private equity, VC, real estate, etc.) have either no or very limited secondary 
-markets. Transactions are heavily brokered, can be by appointment only, and involve a lot of paperwork and long 
-settlement times. Because our investment has already been fully represented as a digitally native token on blockchain, 
-the process has been drastically simplified. To open up secondary liquidity for a digitally-native blockchain fund, 
-we really just need to create bids/asks against an exchange contract.
+Furthermore, the decentralized nature of blockchain provides a high level of transparency and security to the 
+distribution process. Transactions and distribution details are recorded on a public ledger, providing a clear 
+and tamper-proof record of the fund's activities and distributions. This allows investors to monitor their investments 
+and track the fund's performance in real-time. The use of smart contracts in private fund distributions not only 
+improves operational efficiency but also enhances trust and confidence among investors.
 
 
+<Tabs>
+  <TabItem value="2" label="Contract Details">
+
+- Raise contract [distribution](https://github.com/FigureTechnologies/marketpalace-raise-contract/blob/fb6735997247b96927b394e36570d09938301711/src/contract.rs#L103) entry point
+
+----
+  </TabItem>
+<TabItem value="3" label="Example Transactions">
+
+- Example [distribution](https://explorer.provenance.io/tx/68F824AEC9ABE771D04DB69EF1405248911E767C70035EC73510F36FD82F70D0/6615090)
+----
+</TabItem>
+</Tabs>
+
+
+
+### Secondary Trading
+
+Tokenization offers innovative approaches to managing, distributing, and trading private funds, reducing barriers, and 
+increasing accessibility. This results in lower administrative expenses and faster time to market through a 
+immutable source of truth. Secondary trading through bilateral exchange with T-0 settlement enables two parties 
+to instantly settle a transaction without any delay. This type of settlement reduces the risk of counterparty d
+efault and increases efficiency by allowing for immediate transfer of funds and securities, providing a 
+significant advantage over traditional T+n settlement systems.
+
+Benefits of the Provenance Blockchain ecosystem include the ability to use digital fund interests as collateral for capital 
+calls and loans, as well as the use of other digital assets for funding purposes. The use of an Account Attribute-based 
+passporting system allows for seamless movement of buyers across investments, with secondary trades self-clearing 
+and settling instantly using a digital money.
+
+Assets can be made available for secondary trading through a regulated alternative trading system (ATS) on Provenance Blockchain, 
+improving the liquidity of previously illiquid funds and reducing search and transaction costs. Additionally, 
+digital funds allow investors to fund capital calls using tokenized assets as collateral and provide greater 
+opportunities to use fund interests as collateral for loans due to the increased certainty of ownership and 
+enhanced liquidity offered by secondary trading windows.
+
+Overall, Provenance Blockchain funds provide easy access to secondary liquidity through exchange-based trading. The process of 
+accessing secondary liquidity is significantly streamlined through fund
+digitization and representation on Provenance Blockchain. Creating bids and asks 
+against an exchange contract is all that is needed to open up secondary liquidity for a digital fund.
+
+### Secondary Trading Process
+
+1. **Smart Contract creation**: A secondary trading smart contract is created on the blockchain to manage the 
+tokenized fund. The contract contains the rules and conditions for buying, selling, and transferring the tokens,
+including required account attributes for the participants as well as accepted denominations for settlement, for example.
+2. **Token Listing**: The tokenized fund is listed on a decentralized exchange that supports the blockchain where 
+the tokens are stored. The exchange, marketplace, or trading system will be a web site or mobile app where participants
+can connect their wallets to participate in the decentralized trading algorithm.
+3. **Buy and Sell Orders**: Buyers and sellers can place orders on the decentralized exchange for the tokenized fund. 
+The smart contract automatically executes the trade by transferring the tokens from the seller's wallet to the 
+buyer's wallet, based on the agreed price and the rules encoded in the contract.
+4. **Settlement**: The settlement of the trade occurs in real-time as the tokens are transferred on the blockchain.
+The smart contract updates the token ownership records, providing a transparent and tamper-proof record of the trade.
+
+**Example:** [Alternative Trading System Smart Contract](https://github.com/FigureTechnologies/ats-smart-contract)
