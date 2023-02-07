@@ -99,7 +99,6 @@ message Asset {
 
 The NFT Onboarding API consumes protobufs serialized to [JSON](https://www.json.org/json-en.html) format. Note in particular that the `Any` protobuf JSON representation consists of a `typeUrl` followed by the normal JSON representation of the data proto `Message`.
 
-Example of a Loan Asset (truncated):
 
 
 
