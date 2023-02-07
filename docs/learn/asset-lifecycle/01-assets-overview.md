@@ -25,7 +25,7 @@ equivalent parts.
 The web3 community has popularized the use of specific terminology to distinguish between these two types of 
 assets. "**Non-Fungible Tokens**" (NFTs) are used to describe unique and singular assets, while the generic term "**token**" is 
 used to refer to divisible and fungible assets, such as cryptocurrencies like Bitcoin. We'll use the term "**tokenized asset**"
-here for to represent an asset whose ownership is represented by a corresponding token, allowing fractionalized ownership
+here to represent an asset whose ownership is represented by a corresponding token, allowing fractionalized ownership
 of the asset.
 
 ![asset types](/img/learn/asset-lifecycle/asset-types.png)
