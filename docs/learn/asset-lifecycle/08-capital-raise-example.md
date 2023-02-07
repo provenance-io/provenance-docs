@@ -251,7 +251,7 @@ significant advantage over traditional T+n settlement systems.
 Benefits of the Provenance Blockchain ecosystem include the ability to use digital fund interests as collateral for capital 
 calls and loans, as well as the use of other digital assets for funding purposes. The use of an Account Attribute-based 
 passporting system allows for seamless movement of buyers across investments, with secondary trades self-clearing 
-and settling instantly using a digital money.
+and settling instantly using digital money.
 
 Assets can be made available for secondary trading through a regulated alternative trading system (ATS) on Provenance Blockchain, 
 improving the liquidity of previously illiquid funds and reducing search and transaction costs. Additionally, 
