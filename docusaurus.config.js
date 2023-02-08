@@ -113,6 +113,10 @@ const config = {
             position: "left",
             items: [
               {
+                label: "Asset Lifecycle Guide",
+                to: "docs/learn/asset-lifecycle/assets-overview",
+              },
+              {
                 label: "Dev Environment",
                 to: "docs/build/dev-environment",
               },
