@@ -61,11 +61,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Provenance Blockchain",
+        // Logo styled as background image in custom.css
         logo: {
-          alt: "Provenance Blockchain Logo",
-          src: "img/prov-logo.svg",
-          // src: "img/prov-logo-full-color.png",
+          alt: "",
+          src: "blank",
         },
         items: [
           {
@@ -257,7 +256,7 @@ const config = {
       prism: {
         theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['kotlin', 'protobuf'],
+        additionalLanguages: ["kotlin", "protobuf"],
       },
     }),
 };
