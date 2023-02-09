@@ -61,10 +61,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        // Logo styled as background image in custom.css
         logo: {
-          alt: "",
-          src: "blank",
+          alt: "Provenance Blockchain Logo",
+          src: "img/prov-logo-full-color.png",
         },
         items: [
           {
