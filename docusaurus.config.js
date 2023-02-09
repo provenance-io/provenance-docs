@@ -13,7 +13,7 @@ const config = {
   baseUrl: "/provenance-docs/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/prov-logo.png",
+  favicon: "img/prov-logo.svg",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
