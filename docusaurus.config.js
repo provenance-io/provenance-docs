@@ -13,7 +13,7 @@ const config = {
   baseUrl: "/provenance-docs/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/circle-logo.png",
+  favicon: "img/prov-logo.svg",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -64,7 +64,8 @@ const config = {
         title: "Provenance Blockchain",
         logo: {
           alt: "Provenance Blockchain Logo",
-          src: "img/circle-logo.png",
+          src: "img/prov-logo.svg",
+          // src: "img/prov-logo-full-color.png",
         },
         items: [
           {
@@ -112,6 +113,10 @@ const config = {
             type: "dropdown",
             position: "left",
             items: [
+              {
+                label: "Asset Lifecycle Guide",
+                to: "docs/learn/asset-lifecycle/assets-overview",
+              },
               {
                 label: "Dev Environment",
                 to: "docs/build/dev-environment",
