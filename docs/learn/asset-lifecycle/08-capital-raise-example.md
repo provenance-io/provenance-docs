@@ -244,8 +244,8 @@ improves operational efficiency but also enhances trust and confidence among inv
 Tokenization offers innovative approaches to managing, distributing, and trading private funds, reducing barriers, and 
 increasing accessibility. This results in lower administrative expenses and faster time to market through a 
 immutable source of truth. Secondary trading through bilateral exchange with T-0 settlement enables two parties 
-to instantly settle a transaction without any delay. This type of settlement reduces the risk of counterparty d
-efault and increases efficiency by allowing for immediate transfer of funds and securities, providing a 
+to instantly settle a transaction without any delay. This type of settlement reduces the risk of counterparty 
+default and increases efficiency by allowing for immediate transfer of funds and securities, providing a 
 significant advantage over traditional T+n settlement systems.
 
 Benefits of the Provenance Blockchain ecosystem include the ability to use digital fund interests as collateral for capital 
