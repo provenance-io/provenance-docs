@@ -93,7 +93,7 @@ Marker tokens come in two flavors:
 
 For Restricted Markers, the transfer permission is usually delegated to a smart contract. In the following example,
 `example-co.stock` trading in a secondary market is delegated to a smart contact, which checks that the recipient's
-506c accreditation is present and currently valid. If the recipient's 506c Attribute is either missing or expired,
+506\(c\) accreditation is present and currently valid. If the recipient's 506\(c\) Attribute is either missing or expired,
 the smart contract will not allow the transfer to complete.
 
 ![marker structure](/img/learn/asset-lifecycle/marker-transfer-approval.png)

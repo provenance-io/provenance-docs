@@ -12,10 +12,23 @@
 // @ts-check
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
+  dappsSidebar: [
+    {
+      type: 'category',
+      label: 'dApp Guide',
+      className: 'section-heading',
+      collapsible: false,
+      items: [
+        'learn/dapps/dapps-overview',
+        'learn/dapps/identity-verification',
+
+      ],
+    },
+  ],
   assetLifecycleSidebar: [
     {
       type: 'category',
-      label: 'Asset Lifecycle Guide',
+      label: 'Asset Guide',
       className: 'section-heading',
       collapsible: false,
       items: [

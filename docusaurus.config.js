@@ -112,7 +112,11 @@ const config = {
             position: "left",
             items: [
               {
-                label: "Asset Lifecycle Guide",
+                label: "dApp Guide",
+                to: "docs/learn/dapps/dapps-overview",
+              },
+              {
+                label: "Asset Guide",
                 to: "docs/learn/asset-lifecycle/assets-overview",
               },
               {
