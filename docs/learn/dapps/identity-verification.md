@@ -14,6 +14,7 @@ To simplify and streamline the identity verification process, Provenance Blockch
 [**Attributes**](/docs/pb/modules/attribute-module), a name-value pair structure that allows for the storage and management of verified identity information on
 the blockchain. Attributes are essentially metadata added to a blockchain account to indicate that an individual or
 entity has passed a specific verification process.
+entity has passed a specific verification process.
 
 For instance, an attribute might be used to verify that a person has completed a KYC process or that an entity is
 accredited to invest in a particular security. The data stored in the attribute value can be of 
