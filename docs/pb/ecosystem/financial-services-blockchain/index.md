@@ -15,8 +15,8 @@ introduces risk and undermines the system, but Provenance's immutable informatio
 and reliable system.
 
 While these attributes are necessary, they are not sufficient to fully eliminate rent-seeking and bring incremental
-value to financial markets. Provenance Blockchain goes beyond these attributes and performs three key functions: ledger,
-registry, and exchange.
+value to financial markets. Provenance Blockchain goes beyond these attributes and performs three key functions: **ledger,
+registry, and exchange.**
 
 - **Ledger -** Provenance Blockchain enables movements of value on the blockchain, delivering true economies of scale.
   Immutable records reduce or eliminate the need for trustees and reconciliation, and provide real-time visibility to

@@ -1,6 +1,8 @@
 ---
 title: Introduction
 ---
+import GitHubLogo from '/img/github-mark.png';
+
 # Provenance Blockchain
 
 import { DocSubheader } from '/docs/components/DocSubheader';
@@ -43,10 +45,18 @@ We understand that technical documentation can often be dense and challenging to
 effort to present the information in a clear, concise, and user-friendly manner. If you have any questions or need
 assistance, please don't hesitate to reach out to our team. We're here to help you succeed in your blockchain endeavors.
 
-The Provenance Blockchain open source code is maintained at https://github.com/provenance-io
+<center>
+<a href="https://github.com/provenance-io">
+  <img src={GitHubLogo} width="75"/><br/>
+  <img src="https://gh-card.dev/repos/provenance-io/provenance.svg"/>
+</a>
+</center>
 
-Provenance Blockchain is licensed under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0).
+<br/>
 
+Provenance Blockchain is licensed under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0)
+
+<br/>
 <br/>
 <div style={{
     display: 'grid',

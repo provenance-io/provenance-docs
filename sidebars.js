@@ -39,7 +39,7 @@ const sidebars = {
             type: 'category',
             label: 'Ecosystem',
             className: 'section-heading',
-            collapsible: false,
+            collapsible: true, collapsed: true,
             items: [
                 'pb/ecosystem/financial-services-blockchain/index',
                 'pb/ecosystem/financial-services-blockchain/token-economics',
@@ -71,7 +71,7 @@ const sidebars = {
             type: 'category',
             label: 'Blockchain',
             className: 'section-heading',
-            collapsible: false,
+            collapsible: true, collapsed: true,
             items: [
                 {
                     type: 'category',
@@ -155,7 +155,7 @@ const sidebars = {
             type: 'category',
             label: 'Modules',
             className: 'section-heading',
-            collapsible: false,
+            collapsible: true, collapsed: true,
             link: {
                 type: 'doc',
                 id: 'pb/modules/modules',
@@ -171,9 +171,18 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: 'Contract Execution Environment',
+            label: 'IBC and Zones',
             className: 'section-heading',
-            collapsible: false,
+            collapsible: true, collapsed: true,
+            items: [
+                'pb/modules/cosmos-modules',
+            ],
+        },
+        {
+            type: 'category',
+            label: 'Non-Public Asset Data',
+            className: 'section-heading',
+            collapsible: true, collapsed: true,
             items: [
                 {
                     type: 'category',
@@ -212,134 +221,134 @@ const sidebars = {
                         'pb/p8e/p8e-usage/next-steps',
                     ],
                 },
-            ],
-        },
-        {
-            type: 'category',
-            label: 'Integrating',
-            className: 'section-heading',
-            collapsible: false,
-            items: [
                 {
                     type: 'category',
-                    label: 'Integrating with p8e',
-                    link: {
-                        type: 'doc',
-                        id: 'pb/integrating/integrating-with-p8e/index',
-                    },
+                    label: 'Integrating',
+                    className: 'section-heading',
+                    collapsible: true, collapsed: true,
                     items: [
                         {
                             type: 'category',
-                            label: 'Lending Ecosystem',
+                            label: 'Integrating with p8e',
                             link: {
                                 type: 'doc',
-                                id: 'pb/integrating/integrating-with-p8e/lending-ecosystem/index',
-                            },
-                            items: [
-                                'pb/integrating/integrating-with-p8e/lending-ecosystem/life-cycle-of-a-loan',
-                                'pb/integrating/integrating-with-p8e/lending-ecosystem/data-mapping',
-                            ],
-                        },
-                        {
-                            type: 'category',
-                            label: 'P8e Contract Execution Environment (p8e)',
-                            link: {
-                                type: 'doc',
-                                id: 'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/index',
+                                id: 'pb/integrating/integrating-with-p8e/index',
                             },
                             items: [
                                 {
                                     type: 'category',
-                                    label: 'Deploying the Encrypted Object Store',
+                                    label: 'Lending Ecosystem',
                                     link: {
                                         type: 'doc',
-                                        id: 'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/deploying-the-encrypted-object-store/index',
+                                        id: 'pb/integrating/integrating-with-p8e/lending-ecosystem/index',
                                     },
                                     items: [
-                                        'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/deploying-the-encrypted-object-store/configuring-replication',
+                                        'pb/integrating/integrating-with-p8e/lending-ecosystem/life-cycle-of-a-loan',
+                                        'pb/integrating/integrating-with-p8e/lending-ecosystem/data-mapping',
                                     ],
                                 },
                                 {
                                     type: 'category',
-                                    label: 'P8e Contracts',
+                                    label: 'P8e Contract Execution Environment (p8e)',
                                     link: {
                                         type: 'doc',
-                                        id: 'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/p8e-contracts/index',
+                                        id: 'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/index',
                                     },
                                     items: [
-                                        'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/p8e-contracts/example-loan-contracts',
-                                    ],
-                                },
-                                {
-                                    type: 'category',
-                                    label: 'Key Management',
-                                    link: {
-                                        type: 'doc',
-                                        id: 'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/key-management/index',
-                                    },
-                                    items: [
-                                        'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/key-management/permissioning-others',
-                                    ],
-                                },
-                                'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/summary',
-                            ],
-                        },
-                        {
-                            type: 'category',
-                            label: 'p8e CEE API',
-                            link: {
-                                type: 'doc',
-                                id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/index',
-                            },
-                            items: [
-                                {
-                                    type: 'category',
-                                    label: 'API Usage Guide',
-                                    link: {
-                                        type: 'doc',
-                                        id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/index',
-                                    },
-                                    items: [
-                                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/loan-onboarding',
-                                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/validation-request',
-                                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/validation-response',
-                                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/error-handling',
-                                    ],
-                                },
-                                {
-                                    type: 'category',
-                                    label: 'API Specification',
-                                    link: {
-                                        type: 'doc',
-                                        id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/index',
-                                    },
-                                    items: [
-                                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/configuration-endpoints',
                                         {
                                             type: 'category',
-                                            label: 'Object Store Endpoints',
+                                            label: 'Deploying the Encrypted Object Store',
                                             link: {
                                                 type: 'doc',
-                                                id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/index',
+                                                id: 'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/deploying-the-encrypted-object-store/index',
                                             },
                                             items: [
-                                                'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/store-object',
-                                                'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/retrieve-object',
-                                                'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/store-file',
-                                                'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/retrieve-file',
+                                                'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/deploying-the-encrypted-object-store/configuring-replication',
                                             ],
                                         },
-                                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/p8e-endpoints',
                                         {
                                             type: 'category',
-                                            label: 'Contract Execution Endpoints',
+                                            label: 'P8e Contracts',
                                             link: {
                                                 type: 'doc',
-                                                id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/contract-execution-endpoints/index',
+                                                id: 'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/p8e-contracts/index',
                                             },
                                             items: [
-                                                'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/contract-execution-endpoints/execute-contract',
-                                                'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/contract-execution-endpoints/approve-contract',
+                                                'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/p8e-contracts/example-loan-contracts',
+                                            ],
+                                        },
+                                        {
+                                            type: 'category',
+                                            label: 'Key Management',
+                                            link: {
+                                                type: 'doc',
+                                                id: 'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/key-management/index',
+                                            },
+                                            items: [
+                                                'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/key-management/permissioning-others',
+                                            ],
+                                        },
+                                        'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/summary',
+                                    ],
+                                },
+                                {
+                                    type: 'category',
+                                    label: 'p8e CEE API',
+                                    link: {
+                                        type: 'doc',
+                                        id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/index',
+                                    },
+                                    items: [
+                                        {
+                                            type: 'category',
+                                            label: 'API Usage Guide',
+                                            link: {
+                                                type: 'doc',
+                                                id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/index',
+                                            },
+                                            items: [
+                                                'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/loan-onboarding',
+                                                'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/validation-request',
+                                                'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/validation-response',
+                                                'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-usage-guide/error-handling',
+                                            ],
+                                        },
+                                        {
+                                            type: 'category',
+                                            label: 'API Specification',
+                                            link: {
+                                                type: 'doc',
+                                                id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/index',
+                                            },
+                                            items: [
+                                                'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/configuration-endpoints',
+                                                {
+                                                    type: 'category',
+                                                    label: 'Object Store Endpoints',
+                                                    link: {
+                                                        type: 'doc',
+                                                        id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/index',
+                                                    },
+                                                    items: [
+                                                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/store-object',
+                                                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/retrieve-object',
+                                                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/store-file',
+                                                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/object-store-endpoints/retrieve-file',
+                                                    ],
+                                                },
+                                                'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/p8e-endpoints',
+                                                {
+                                                    type: 'category',
+                                                    label: 'Contract Execution Endpoints',
+                                                    link: {
+                                                        type: 'doc',
+                                                        id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/contract-execution-endpoints/index',
+                                                    },
+                                                    items: [
+                                                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/contract-execution-endpoints/execute-contract',
+                                                        'pb/integrating/integrating-with-p8e/loan-onboarding-service/api-specification/contract-execution-endpoints/approve-contract',
+                                                    ],
+                                                },
                                             ],
                                         },
                                     ],
@@ -350,46 +359,11 @@ const sidebars = {
                 },
             ],
         },
-        // {
-        //   type: 'category',
-        //   label: 'Apps Built on Provenance Blockchain',
-        //   className: 'section-heading',
-        //   collapsible: false,
-        //   items: [
-        //     'pb/provenance-applications/apps-powered-by-provenance',
-        //     {
-        //       type: 'category',
-        //       label: 'Figure LOS',
-        //       link: {
-        //         type: 'doc',
-        //         id: 'pb/provenance-applications/loan-origination-system-los/index',
-        //       },
-        //       items: [
-        //         'pb/provenance-applications/loan-origination-system-los/assets',
-        //         'pb/provenance-applications/loan-origination-system-los/onboarding-contract',
-        //         'pb/provenance-applications/loan-origination-system-los/funding',
-        //         {
-        //           type: 'category',
-        //           label: 'Validation',
-        //           link: {
-        //             type: 'doc',
-        //             id: 'pb/provenance-applications/loan-origination-system-los/loan-validation/index',
-        //           },
-        //           items: [
-        //             'pb/provenance-applications/loan-origination-system-los/loan-validation/3rd-party-digital-signatures',
-        //           ],
-        //         },
-        //         'pb/provenance-applications/loan-origination-system-los/loan-servicing',
-        //         'pb/provenance-applications/loan-origination-system-los/data-sharing-with-portfolio-manager',
-        //       ],
-        //     },
-        //   ],
-        // },
         {
             type: 'category',
             label: 'Contributing',
             className: 'section-heading',
-            collapsible: false,
+            collapsible: true, collapsed: true,
             items: [
                 {
                     type: 'category',
@@ -463,9 +437,9 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: 'Provenance Blockchain FAQ',
+            label: 'FAQ',
             className: 'section-heading',
-            collapsible: false,
+            collapsible: true, collapsed: true,
             items: [
                 'pb/faq/validator-faq',
                 'pb/faq/delegator-faq',

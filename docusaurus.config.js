@@ -221,7 +221,7 @@ const config = {
             type: "doc",
             docId: "introduction",
             position: "left",
-            label: "Docs",
+            label: "Documentation",
           },
           {
             href: "https://github.com/provenance-io",
