@@ -16,7 +16,7 @@ Provenance Blockchain distinguishes three types of applications based on these c
 
 ### On-Chain
 
-Any client application that is configured with the proper key/addresses and modules, and uses Hash tokens for service payments, can transact directly on-chain within the Provenance Blockchain ecosystem. Applications interact directly with the core [Provenance Blockchain Modules](/docs/pb/modules/inherited-modules.md) and a [Provenance Blockchain Node](../running-a-node/running-a-node-1/). Applications may implement and leverage custom [Smart Contracts ](/docs/pb/modules/provwasm-smart-contracts.md)specific to the business application use case.
+Any client application that is configured with the proper key/addresses and modules, and uses Hash tokens for service payments, can transact directly on-chain within the Provenance Blockchain ecosystem. Applications interact directly with the core [Provenance Blockchain Modules](/docs/pb/modules/cosmos-modules.md) and a [Provenance Blockchain Node](../running-a-node/running-a-node-1/). Applications may implement and leverage custom [Smart Contracts ](/docs/pb/modules/provwasm-smart-contracts.md)specific to the business application use case.
 
 ### Client-Side
 

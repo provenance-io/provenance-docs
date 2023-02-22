@@ -45,8 +45,8 @@ loans, loan participation, private funds, and securities can be leveraged to off
 Blockchain, buyers and sellers can trade with each other in a bilateral fashion, without counterparty or settlement risk.
 
 The platform also offers modules like the [**Name Module**](/docs/pb/modules/name-module.md) for KYC/AML and accreditation, and the
-[**Account**](/docs/pb/modules/inherited-modules.md), [**Marker**](/docs/pb/modules/marker-module.md), and
-[**Bank**](/docs/pb/modules/inherited-modules.md) Modules for real-time settlement without counterparty or settlement risk.
+[**Account**](/docs/pb/modules/cosmos-modules.md), [**Marker**](/docs/pb/modules/marker-module.md), and
+[**Bank**](/docs/pb/modules/cosmos-modules.md) Modules for real-time settlement without counterparty or settlement risk.
 Complex ownership, exchange, and settlement functions can be expressed using
 [**Provenance Blockchain Smart Contracts**](/docs/pb/modules/provwasm-smart-contracts.md).
 

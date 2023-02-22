@@ -219,7 +219,7 @@ const config = {
           },
           {
             type: "doc",
-            docId: "provenance-blockchain",
+            docId: "introduction",
             position: "left",
             label: "Docs",
           },

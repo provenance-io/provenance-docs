@@ -9,6 +9,8 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 Provenance Blockchain's utility token is called **HASH**. There are 100 billion HASH tokens in circulation, and no new
 tokens can be created or destroyed. However, HASH can be "slashed" during staking[^1].
 
+Hash has three use cases: as a spam-prevention mechanism, as a staking token, and as a voting mechanism in governance.
+
 Transactions and activities on the Provenance Blockchain platform incur gas fees, community fees, and smart contract
 fees, all of which are paid in HASH. While community and smart contract fees may be quoted in fiat, all fee distribution
 is ultimately in HASH.
@@ -42,6 +44,8 @@ security and stability._
 | Unbonding/Undelegating period | 21 days        |
 | Initial Active Set Size       | 100 validators |
 | Community pool                | 7%             |
+
+TODO add initial allocation 
 
 ## Staking Hash
 
