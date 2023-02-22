@@ -4,28 +4,28 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Provenance Blockchain - Foundationally transforming financial services"/>
 
-## The HASH Token and Fees
+## The Hash Token and Fees
 
-Provenance Blockchain's utility token is called **HASH**. There are 100 billion HASH tokens in circulation, and no new
-tokens can be created or destroyed. However, HASH can be "slashed" during staking[^1].
+Provenance Blockchain's utility token is called **Hash**. There are 100 billion Hash tokens in circulation, and no new
+tokens can be created or destroyed. However, Hash can be "slashed" during staking[^1].
 
 Hash has three use cases: as a spam-prevention mechanism, as a staking token, and as a voting mechanism in governance.
 
 Transactions and activities on the Provenance Blockchain platform incur gas fees, community fees, and smart contract
-fees, all of which are paid in HASH. While community and smart contract fees may be quoted in fiat, all fee distribution
-is ultimately in HASH.
+fees, all of which are paid in Hash. While community and smart contract fees may be quoted in fiat, all fee distribution
+is ultimately in Hash.
 
 Gas fees are paid to validators and their delegates, while community fees are currently distributed to all delegated
-HASH holders. This incentivizes delegation and network participation. Smart contract fees, on the other hand, go to
+Hash holders. This incentivizes delegation and network participation. Smart contract fees, on the other hand, go to
 smart contract owners or designated recipients.
 
-It's worth noting that all fees are paid in HASH. This means that participants must pay fees directly in HASH.
+It's worth noting that all fees are paid in Hash. This means that participants must pay fees directly in Hash.
 
 The number of minted Hash remains constant, and no new Hash is minted as reward for work. As a result, there is no
-inflation of the HASH value through the new influx of HASH.
+inflation of the Hash value through the new influx of Hash.
 
-To learn more about acquiring HASH, please refer
-to [Provenance's guide on acquiring HASH](https://provenance.io/ecosystem/HASH/).
+To learn more about acquiring Hash, please refer
+to [Provenance's guide on acquiring Hash](https://provenance.io/ecosystem/Hash/).
 
 [^1] _Validators on the Provenance Blockchain network are responsible for adding new blocks to the chain and ensuring
 the validity of transactions. If a validator is found to be acting in bad faith or not following the network's rules,
@@ -50,11 +50,11 @@ TODO add initial allocation
 ## Staking Hash
 
 The Provenance Blockchain network is a public Proof-Of-Stake (PoS) blockchain. Validators on the network are weighted
-based on the amount of staking tokens (HASH) bonded to them as collateral. These tokens can be self-delegated directly
-by the validator or delegated to them by other HASH holders.
+based on the amount of staking tokens (Hash) bonded to them as collateral. These tokens can be self-delegated directly
+by the validator or delegated to them by other Hash holders.
 
-Any HASH holder can delegate some or all of their tokens to any number of validators in order to stake their tokens. If
-a HASH holder wants to become a validator, they can send a create-validator transaction to the network, at which point
+Any Hash holder can delegate some or all of their tokens to any number of validators in order to stake their tokens. If
+a Hash holder wants to become a validator, they can send a create-validator transaction to the network, at which point
 they become a validator candidate.
 
 The voting power of a validator determines whether or not they are an active validator. Only the top $N_v$ validators
@@ -73,11 +73,11 @@ any impact on the required three-week unbonding period.
 ## Validator Rewards
 
 Validators are rewarded for their work on the Provenance Blockchain. The validator that proposes the next block on the
-chain is called the **proposer**. The frequency of being chosen as a proposer is proportional to the amount of staked HASH
-tokens, known as **voting power**, of the validator. For example, if a validator has 10% of the total staked HASH tokens
+chain is called the **proposer**. The frequency of being chosen as a proposer is proportional to the amount of staked Hash
+tokens, known as **voting power**, of the validator. For example, if a validator has 10% of the total staked Hash tokens
 across all validators, then they will be the proposer for approximately 10% of the blocks.
 
-Validators earn transaction fees in HASH tokens. The total fee for each transaction is divided among all validators'
+Validators earn transaction fees in Hash tokens. The total fee for each transaction is divided among all validators'
 staking pools based on each validator's weight. The revenue is further divided among delegators in proportion to each
 delegator's stake. Before the revenue is distributed, the validator may apply a commission on the part of the revenue
 that goes to their delegators. The commission is set as a percentage and can only change after the validator is

@@ -74,7 +74,7 @@ The `provenanced` binary provides a command-line interface to create and query t
 
 ### Creating a Key(s)
 
-All interactions with Provenance Blockchain are secured with a public/private key pair that will act as your account(s) on the blockchain. We use the `44'/1'/0'/0/0` BIP32 path as an example where the coin-type "1" is a reference to Provenance Blockchain testnet. We use the `44'/505'/0'/0/0` BIP32 path as an example where coin-type "505" is a reference to the HASH token on Provenance Blockchain mainnet.
+All interactions with Provenance Blockchain are secured with a public/private key pair that will act as your account(s) on the blockchain. We use the `44'/1'/0'/0/0` BIP32 path as an example where the coin-type "1" is a reference to Provenance Blockchain testnet. We use the `44'/505'/0'/0/0` BIP32 path as an example where coin-type "505" is a reference to the Hash token on Provenance Blockchain mainnet.
 
 :::tip
 Refer to the [Accounts](../basics/accounts.md) section for more information[ HD Wallet ](../basics/accounts.md#hd-wallet)paths.

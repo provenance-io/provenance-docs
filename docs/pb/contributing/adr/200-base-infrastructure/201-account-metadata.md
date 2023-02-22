@@ -32,7 +32,7 @@ Accounts on the Provenance Blockchain are based around the concept of holding a 
     value: "cee2dc96-08fa-450e-ab5c-a6bf549394f3"
     type: "uuid"
   - name: "preferred-currency.coin.provenance.pio"
-    value: "HASH"
+    value: "Hash"
     type: "string"
   - name: "loan.asset.provenance.pio"
     value: "pb://metadata/scope-bd3564da-4d84-437b-afe0-0d7593fe191f"

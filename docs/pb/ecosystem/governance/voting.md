@@ -8,7 +8,7 @@ The governance voting process is broken down into three stages; Deposit, Voting,
 
 ## Deposit
 
-Anyone can submit a proposal to the Provenance network for stake holders to review. In order for the proposal to proceed to a vote it must meet the minimum required deposit. The minimum deposit required is 1,000 HASH. A proposal has up to 48 hours to collect enough deposits to become eligible for voting. A proposal will immediately proceed to voting when the threshold is met. If the proposal does not achieve quorum or the proposal is vetoed the deposits are forfeit.
+Anyone can submit a proposal to the Provenance network for stake holders to review. In order for the proposal to proceed to a vote it must meet the minimum required deposit. The minimum deposit required is 1,000 Hash. A proposal has up to 48 hours to collect enough deposits to become eligible for voting. A proposal will immediately proceed to voting when the threshold is met. If the proposal does not achieve quorum or the proposal is vetoed the deposits are forfeit.
 
 ## Voting Period
 
