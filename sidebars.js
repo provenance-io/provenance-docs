@@ -88,11 +88,6 @@ const sidebars = {
                 {
                     type: 'category',
                     label: 'Basics',
-                    link: {
-                        type: 'generated-index',
-                        description:
-                            'Basic concepts provided by the Provenance Blockchain application-specific blockchain',
-                    },
                     items: [
                         'pb/blockchain/basics/anatomy-of-a-provenance-application',
                         'pb/blockchain/basics/transaction-lifecycle',
@@ -102,40 +97,7 @@ const sidebars = {
                         'pb/blockchain/basics/gas-and-fees',
                     ],
                 },
-                {
-                    type: 'category',
-                    label: 'Installing Provenanced',
-                    link: {
-                        type: 'doc',
-                        id: 'pb/blockchain/running-a-node/index',
-                    },
-                    items: [
-                        {
-                            type: 'category',
-                            label: 'Running a Node',
-                            link: {
-                                type: 'doc',
-                                id: 'pb/blockchain/running-a-node/running-a-node-1/index',
-                            },
-                            items: [
-                                {
-                                    type: 'category',
-                                    label: 'Joining Testnet',
-                                    link: {
-                                        type: 'doc',
-                                        id: 'pb/blockchain/running-a-node/running-a-node-1/join-provenance-testnet/index',
-                                    },
-                                    items: [
-                                        'pb/blockchain/running-a-node/running-a-node-1/join-provenance-testnet/running-a-testnet-node-from-quicksync',
-                                    ],
-                                },
-                                'pb/blockchain/running-a-node/running-a-node-1/become-a-validator',
-                                'pb/blockchain/running-a-node/running-a-node-1/configure-a-sentry',
-                                'pb/blockchain/running-a-node/running-a-node-1/running-a-mainnet-node',
-                            ],
-                        },
-                    ],
-                },
+                'pb/blockchain/running-a-node/index',
                 {
                     type: 'category',
                     label: 'Using Provenanced',
@@ -146,6 +108,30 @@ const sidebars = {
                     items: [
                         'pb/blockchain/using-provenance/query-command',
                         'pb/blockchain/using-provenance/tx-command',
+                    ],
+                },
+                {
+                    type: 'category',
+                    label: 'Running a Node',
+                    link: {
+                        type: 'doc',
+                        id: 'pb/blockchain/running-a-node/running-a-node-1/index',
+                    },
+                    items: [
+                        {
+                            type: 'category',
+                            label: 'Joining Testnet',
+                            link: {
+                                type: 'doc',
+                                id: 'pb/blockchain/running-a-node/running-a-node-1/join-provenance-testnet/index',
+                            },
+                            items: [
+                                'pb/blockchain/running-a-node/running-a-node-1/join-provenance-testnet/running-a-testnet-node-from-quicksync',
+                            ],
+                        },
+                        'pb/blockchain/running-a-node/running-a-node-1/become-a-validator',
+                        'pb/blockchain/running-a-node/running-a-node-1/configure-a-sentry',
+                        'pb/blockchain/running-a-node/running-a-node-1/running-a-mainnet-node',
                     ],
                 },
 
