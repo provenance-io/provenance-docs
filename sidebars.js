@@ -25,7 +25,7 @@ const sidebars = {
         // 'learn/asset-lifecycle/issue',
         // 'learn/asset-lifecycle/manage',
         // 'learn/asset-lifecycle/trade',
-        // 'learn/asset-lifecycle/lending-example',
+        'learn/asset-lifecycle/lending-example',
         'learn/asset-lifecycle/capital-raise-example',
       ],
     },
