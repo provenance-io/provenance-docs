@@ -237,7 +237,7 @@ const sidebars = {
         'pb/modules/inherited-modules',
         'pb/modules/metadata-module',
         'pb/modules/marker-module',
-        'pb/modules/attribute-module',
+        // 'pb/modules/attribute-module',
         'pb/modules/name-module',
         'pb/modules/provwasm-smart-contracts',
       ],
