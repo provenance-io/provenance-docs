@@ -4,7 +4,7 @@ hide_title: "true"
 
 <a className="button button--lg"
             href="https://www.usdfconsortium.com/">
-<img src="/provenance-docs/img/usdf_logo.webp"/>
+<img src="/img/usdf_logo.webp"/>
 </a>
 <br />
 <br />
