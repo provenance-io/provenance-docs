@@ -34,14 +34,14 @@ export const DataCard = ({ title, content, link }) => (
     gridTemplateColumns: '1fr 1fr',
     gap: '20px',
   }}>
-  <DataCard title="Read"     content="about the Provenance blockchain and financial services" link="https://provenance-io.github.io/provenance-docs/docs/pb/blockchain/introduction/"/>
-  <DataCard title="Start"    content="with the basics of the Provenance Blockchain network" link="https://provenance-io.github.io/provenance-docs/docs/category/basics"/>
-  <DataCard title="Install"  content="the Provenance blockchain application to run a node" link="https://provenance-io.github.io/provenance-docs/docs/pb/blockchain/running-a-node/"/>
-  <DataCard title="Explore"  content="the entirety of the Provenance ecosystem and community" link="https://provenance-io.github.io/provenance-docs/docs/pb/ecosystem/community/"/>
-  <DataCard title="Learn"    content="how the Provenance Modules empower business" link="https://provenance-io.github.io/provenance-docs/docs/pb/modules/"/>
-  <DataCard title="Discover" content="how the Provenance Contract Execution Environment works" link="https://provenance-io.github.io/provenance-docs/docs/pb/p8e/overview/"/>
-  <DataCard title="Build"    content="your integration into the Provenance Blockchain" link="https://provenance-io.github.io/provenance-docs/docs/pb/integrating/integrating-with-p8e/"/>
-  <DataCard title="Follow"   content="real-world use cases and applications built on Provenance" link="https://provenance-io.github.io/provenance-docs/docs/discover/dapps"/>
+  <DataCard title="Read"     content="about the Provenance blockchain and financial services" link="https://provenance-io.github.io/docs/pb/blockchain/introduction/"/>
+  <DataCard title="Start"    content="with the basics of the Provenance Blockchain network" link="https://provenance-io.github.io/docs/category/basics"/>
+  <DataCard title="Install"  content="the Provenance blockchain application to run a node" link="https://provenance-io.github.io/docs/pb/blockchain/running-a-node/"/>
+  <DataCard title="Explore"  content="the entirety of the Provenance ecosystem and community" link="https://provenance-io.github.io/docs/pb/ecosystem/community/"/>
+  <DataCard title="Learn"    content="how the Provenance Modules empower business" link="https://provenance-io.github.io/docs/pb/modules/"/>
+  <DataCard title="Discover" content="how the Provenance Contract Execution Environment works" link="https://provenance-io.github.io/docs/pb/p8e/overview/"/>
+  <DataCard title="Build"    content="your integration into the Provenance Blockchain" link="https://provenance-io.github.io/docs/pb/integrating/integrating-with-p8e/"/>
+  <DataCard title="Follow"   content="real-world use cases and applications built on Provenance" link="https://provenance-io.github.io/docs/discover/dapps"/>
   </div>
 
 <!-- - [Read](/docs/pb/blockchain/introduction/) about the Provenance blockchain and financial services.

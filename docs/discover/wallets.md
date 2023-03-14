@@ -13,12 +13,12 @@ Self custody mobile wallet application available for download on the App Store a
 
 <!-- Apple Store Icon -->
 <a href="https://apps.apple.com/us/app/provenance-blockchain-wallet/id1606428494">
-<img src="/provenance-docs/img/appStoreBadge.svg" alt="Apple App Store Download button" role="button" width="134px"/>
+<img src="/img/appStoreBadge.svg" alt="Apple App Store Download button" role="button" width="134px"/>
 </a>
 
 <!-- Google Chrome Store Icon -->
 <a href="https://play.google.com/store/apps/details?id=io.provenance.wallet">
-<img src="/provenance-docs/img/googlePlayBadge.png" alt="Google App Store Download button" role="button" width="150px"/>
+<img src="/img/googlePlayBadge.png" alt="Google App Store Download button" role="button" width="150px"/>
 </a>
 <br/>
 <br/>
