@@ -161,7 +161,7 @@ const sidebars = {
             className: 'section-heading',
             collapsible: true, collapsed: true,
             items: [
-                'pb/modules/cosmos-modules',
+                'pb/modules/ibc-and-zones',
             ],
         },
         {
@@ -209,7 +209,7 @@ const sidebars = {
                 },
                 {
                     type: 'category',
-                    label: 'Integrating',
+                    label: 'Integrating with BlockVault',
                     className: 'section-heading',
                     collapsible: true, collapsed: true,
                     items: [
@@ -235,7 +235,7 @@ const sidebars = {
                                 },
                                 {
                                     type: 'category',
-                                    label: 'P8e Contract Execution Environment (p8e)',
+                                    label: 'BlockVault Contract Execution Environment',
                                     link: {
                                         type: 'doc',
                                         id: 'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/index',
@@ -279,7 +279,7 @@ const sidebars = {
                                 },
                                 {
                                     type: 'category',
-                                    label: 'p8e CEE API',
+                                    label: 'BlockVault CEE API',
                                     link: {
                                         type: 'doc',
                                         id: 'pb/integrating/integrating-with-p8e/loan-onboarding-service/index',
