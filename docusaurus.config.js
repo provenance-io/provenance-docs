@@ -15,7 +15,7 @@ const config = {
   tagline:
     "A distributed, proof-of-stake blockchain designed for financial service industries.",
   url: "https://vwagner.github.io",
-  baseUrl: "/provenance-docs/",
+  baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/prov-logo.svg",

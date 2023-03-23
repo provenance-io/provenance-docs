@@ -32,7 +32,7 @@ Once we have USDC, we will also need some OSMO coin (the native token for the Os
 the gas fee for the IBC transfer from Osmosis to Provenance. 
 
 <center>
-<img src="/provenance-docs/img/build/tutorials/osmosis-token-flow.jpg" alt="token flow" width="75%"/>
+<img src="/img/build/tutorials/osmosis-token-flow.jpg" alt="token flow" width="75%"/>
 </center>
 
 ## 1. Set Up a Keplr Wallet
@@ -46,14 +46,14 @@ For this exercise, the Chrome Extension version of the Keplr Wallet is most conv
 2. Do not create a new account. Instead, choose to `Import existing account` so that you can use the Keplr wallet with your existing Provenance account
 
 <center>
-<img src="/provenance-docs/img/build/tutorials/keplr-import-account.png" alt="import seed" width="50%"/>
+<img src="/img/build/tutorials/keplr-import-account.png" alt="import seed" width="50%"/>
 </center>
 
 3. Make sure to switch the seed input from the default `12 words` to `24 words` to match your Provenance Blockchain
 mnemonic length
 
 <center>
-<img src="/provenance-docs/img/build/tutorials/keplr-input-seed.png" alt="import account" width="75%"/>
+<img src="/img/build/tutorials/keplr-input-seed.png" alt="import account" width="75%"/>
 </center>
 
 ## 2. Connect Keplr to Provenance Blockchain
@@ -76,7 +76,7 @@ Once you have your Keplr Wallet connected to Provenance, verify that your Proven
 
 **PLACEHOLDER IMAGE:**
 <center>
-<img src="/provenance-docs/img/build/tutorials/keplr-provenance-view.png" alt="keplr provenance view" width="50%"/>
+<img src="/img/build/tutorials/keplr-provenance-view.png" alt="keplr provenance view" width="50%"/>
 </center>
 :::
 
@@ -88,7 +88,7 @@ and click on `Assets` on the left side of the screen.Frontier
 Use the Asset Search form to find HASH on Provenance Blockchain, then click on `Deposit`
 
 <center>
-<img src="/provenance-docs/img/build/tutorials/osmosis-hash-asset.png" alt="search assets" width="100%"/>
+<img src="/img/build/tutorials/osmosis-hash-asset.png" alt="search assets" width="100%"/>
 </center>
 
 <br/>
@@ -98,7 +98,7 @@ Connect your Keplr wallet, then choose how much Hash you wish to transfer.
 
 
 <center>
-<img src="/provenance-docs/img/build/tutorials/osmosis-transfer-hash.png" alt="transfer hash" width="50%"/>
+<img src="/img/build/tutorials/osmosis-transfer-hash.png" alt="transfer hash" width="50%"/>
 </center>
 
 ## 4. Swap Hash for USDC
@@ -109,7 +109,7 @@ Now that your Hash is sitting on the Osmosis blockchain, you can use the Osmosis
 In the Swap form, choose HASH/Provenance for the first coin and USDC/Axelar for the second.
 
 <center>
-<img src="/provenance-docs/img/build/tutorials/osmosis-hash-usdc-swap.png" alt="swap hash to usdc" width="50%"/>
+<img src="/img/build/tutorials/osmosis-hash-usdc-swap.png" alt="swap hash to usdc" width="50%"/>
 </center>
 
 Approve the swap, and now you have USDC!
@@ -120,7 +120,7 @@ The IBC transfer of USDC from the Osmosis chain to the Provenance chain incurs a
 repeat step 4, this time swapping some Hash for OSMO token.
 
 <center>
-<img src="/provenance-docs/img/build/tutorials/osmosis-hash-osmo-swap.png" alt="swap hash to osmo" width="50%"/>
+<img src="/img/build/tutorials/osmosis-hash-osmo-swap.png" alt="swap hash to osmo" width="50%"/>
 </center>
 
 ## 6. Transfer USDC to Provenance
@@ -129,20 +129,20 @@ Now we're ready to transfer your USDC over to Provenance Blockchain using your K
 Extension and find the IBC Transfer button:
 
 <center>
-<img src="/provenance-docs/img/build/tutorials/keplr-ibc-transfer-button.png" alt="" width="50%"/>
+<img src="/img/build/tutorials/keplr-ibc-transfer-button.png" alt="" width="50%"/>
 </center>
 
 For your first IBC transfer to Provenance, you'll need to specify the channel over which the transfer will occur.
 
 <center>
-<img src="/provenance-docs/img/build/tutorials/keplr-setup-channel.png" alt="" width="50%"/>
+<img src="/img/build/tutorials/keplr-setup-channel.png" alt="" width="50%"/>
 </center>
 
 <br/>
 Select "Provenance" as the destination chain, using "channel-222"
 
 <center>
-<img src="/provenance-docs/img/build/tutorials/keplr-add-ibc-channel.png" alt="" width="50%"/>
+<img src="/img/build/tutorials/keplr-add-ibc-channel.png" alt="" width="50%"/>
 </center>
 
 You'll need to specify your account address on the Provenance Blockchain as the destination for the transfer. You can
@@ -150,13 +150,13 @@ copy the text of your address by clicking on your Provenance address (starting w
 chain view in your Keplr Wallet:
 
 <center>
-<img src="/provenance-docs/img/build/tutorials/keplr-copy-address.png" alt="" width="50%"/>
+<img src="/img/build/tutorials/keplr-copy-address.png" alt="" width="50%"/>
 </center>
 
 Your transfer destination configuration will look like this:
 
 <center>
-<img src="/provenance-docs/img/build/tutorials/keplr-ibc-destination.png" alt="" width="50%"/>
+<img src="/img/build/tutorials/keplr-ibc-destination.png" alt="" width="50%"/>
 </center>
 
 ```
@@ -170,5 +170,5 @@ Here's the view of the USDC in Explorer currently:
 
 
 <center>
-<img src="/provenance-docs/img/build/tutorials/explorer-account-view-usdc.png" alt="" width="100%"/>
+<img src="/img/build/tutorials/explorer-account-view-usdc.png" alt="" width="100%"/>
 </center>
