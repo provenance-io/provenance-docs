@@ -25,7 +25,7 @@ A typical Provenance Blockchain dApp will:
   - Provenance [Marker Msg Service](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.marker.v1.Msg) for creating new tokens
   - Cosmos [Bank Msg Service](https://buf.build/cosmos/cosmos-sdk/docs/main:cosmos.bank.v1beta1) for sending coins/tokens to another account
 
-- Make use of the [P8e CEE data privacy system](/docs/pb/p8e/overview/) for [PII](https://www.investopedia.com/terms/p/personally-identifiable-information-pii.asp) data that needs to stay off-chain
+- Make use of the [BlockVault CEE data privacy system](/docs/pb/p8e/overview/) for [PII](https://www.investopedia.com/terms/p/personally-identifiable-information-pii.asp) data that needs to stay off-chain
   
 
 ## Resources

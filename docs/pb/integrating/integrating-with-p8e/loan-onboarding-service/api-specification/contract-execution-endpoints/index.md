@@ -2,7 +2,7 @@
 
 import { DocSubheader } from '/docs/components/DocSubheader';
 
-<DocSubheader text="Endpoints for executing, approving, rejecting, and submitting p8e contracts"
+<DocSubheader text="Endpoints for executing, approving, rejecting, and submitting BlockVault contracts"
 />
 
 {% content-ref url="execute-contract.md" %}

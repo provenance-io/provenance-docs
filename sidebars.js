@@ -166,13 +166,13 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: 'Non-Public Asset Data',
+            label: 'BlockVault',
             className: 'section-heading',
             collapsible: true, collapsed: true,
             items: [
                 {
                     type: 'category',
-                    label: 'P8e Contract Execution Environment',
+                    label: 'BlockVault Contract Execution Environment',
                     link: {
                         type: 'doc',
                         id: 'pb/p8e/overview/index',
@@ -195,7 +195,7 @@ const sidebars = {
                 },
                 {
                     type: 'category',
-                    label: 'P8e Usage',
+                    label: 'BlockVault Usage',
                     items: [
                         'pb/p8e/p8e-usage/architecture',
                         'pb/p8e/p8e-usage/specifications',

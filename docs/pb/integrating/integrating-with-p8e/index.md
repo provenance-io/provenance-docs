@@ -5,13 +5,13 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 <DocSubheader text="A practical guide for integrating with p8e"
 />
 
-This guide walks through some key concepts and practical steps to begin your journey in originating and managing assets on Provenance Blockchain. You will learn how to use the [P8e Contract Execution Environment (p8e)](https://docs.provenance.io/p8e/overview) to manage private, sensitive data while maintaining a public record of changes, comprised of hashes of the data stored in p8e.
+This guide walks through some key concepts and practical steps to begin your journey in originating and managing assets on Provenance Blockchain. You will learn how to use the [BlockVault Contract Execution Environment (p8e)](https://docs.provenance.io/p8e/overview) to manage private, sensitive data while maintaining a public record of changes, comprised of hashes of the data stored in p8e.
 
 By following along, you will learn more about:
 
 - data modeling in a decentralized world,
 - operating an [Encrypted Object Store](https://github.com/provenance-io/object-store) with the option to enable replication,
-- writing and publishing p8e smart contracts,
+- writing and publishing BlockVault smart contracts,
 - key management and permissioning others, and
 - using the [p8e Contract Execution Environment API](https://github.com/provenance-io/p8e-cee-api) to transact with the Provenance Blockchain network.
 

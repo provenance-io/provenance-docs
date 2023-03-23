@@ -1,4 +1,4 @@
-# p8e Endpoints
+# BlockVault Endpoints
 
 ## Generate Scope Transaction
 

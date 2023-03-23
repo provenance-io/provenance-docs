@@ -23,4 +23,4 @@ Client-side Provenance Blockchain contracts can be crafted to require participat
 
 ## Gas
 
-While usage of the P8e execution environment itself does not incur any fees directly, P8e scope metadata is persisted to the blockchain through a transaction. This transaction will incur a gas fee \(paid in Hash\). The originator’s local instance of the execution environment must be configured with an appropriate Hash account containing sufficient Hash to cover the transaction fee per contract execution.
+While usage of the BlockVault execution environment itself does not incur any fees directly, BlockVault scope metadata is persisted to the blockchain through a transaction. This transaction will incur a gas fee \(paid in Hash\). The originator’s local instance of the execution environment must be configured with an appropriate Hash account containing sufficient Hash to cover the transaction fee per contract execution.

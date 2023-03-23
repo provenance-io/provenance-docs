@@ -9,7 +9,7 @@ The Provenance Blockchain network relies on public key infrastructure on both th
 
 ## Provenance Key Access Library
 
-The p8e CEE API takes advantage of the Provenance Key Access Library, which provides a layer of abstraction between the API and Key Management System (KMS). Rather than sending keys in an API request, consumers of the API will send a token authorizing them to pull the key from the KMS, and an identifier for the particular key they wish to use.
+The BlockVault CEE API takes advantage of the Provenance Key Access Library, which provides a layer of abstraction between the API and Key Management System (KMS). Rather than sending keys in an API request, consumers of the API will send a token authorizing them to pull the key from the KMS, and an identifier for the particular key they wish to use.
 
 There are many different KMS solutions on the market today, each providing their own methods for authentication and authorization. It is up to the entity hosting the API to decide which KMS to use and how best to authenticate users. By default, the library is configured to use [Hashicorp Vault](https://www.vaultproject.io/) as a KMS. This guide will describe the default implementation, which is designed to be used locally during testing, as well as a solution for accessing keys in a test or production environment. To view the full source, please visit the Key Access Library [here](https://github.com/provenance-io/originator-key-access-lib).
 
@@ -23,7 +23,7 @@ Vault concepts such as [Authentication](https://www.vaultproject.io/docs/concept
 
 ### Local Development
 
-The script that launches the multi-party p8e environment locally in Docker includes a Vault instance that automatically unseals itself, creates a [Key-Value](https://www.vaultproject.io/docs/secrets/kv/kv-v2) secrets engine called `kv2_originations`, and copies the local test keys provided by the default network configuration as secrets in that engine. The secrets are organized by organization in a directory called `originators`, meaning the "key" for the secret is the organization's provenance member ID and the "value" of the secret is a JSON object containing key-value pairs for each key or mnemonic belonging that that organization. By default, there are three key pairs: encryption, signing, and auth.
+The script that launches the multi-party BlockVault environment locally in Docker includes a Vault instance that automatically unseals itself, creates a [Key-Value](https://www.vaultproject.io/docs/secrets/kv/kv-v2) secrets engine called `kv2_originations`, and copies the local test keys provided by the default network configuration as secrets in that engine. The secrets are organized by organization in a directory called `originators`, meaning the "key" for the secret is the organization's provenance member ID and the "value" of the secret is a JSON object containing key-value pairs for each key or mnemonic belonging that that organization. By default, there are three key pairs: encryption, signing, and auth.
 
 Example path and naming convention:
 

@@ -9,7 +9,7 @@ When storing data in the Encrypted Object Store, asset originators have to the c
 
 The primary mechanism for providing this support is done by adding additional audience members to stored assets. Please reference [DIME (Encryption Envelope Specification)](https://docs.provenance.io/p8e/overview/encrypted-object-store/dime-encryption-envelope-specification#dime-encryptionenvelopespecification-retrievalcontext) for additional information on how data is encrypted.
 
-When storing objects in the Object Store or executing p8e contracts, additional audiences can be specified in a `permissions` object using the `PermissionInfo` schema:
+When storing objects in the Object Store or executing BlockVault contracts, additional audiences can be specified in a `permissions` object using the `PermissionInfo` schema:
 
 ```
 PermissionInfo {

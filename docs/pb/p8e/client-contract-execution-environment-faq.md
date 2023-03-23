@@ -1,14 +1,10 @@
-# Client Contract Execution Environment \(P8e\) FAQ
+# Client Contract Execution Environment \(BlockVault\) FAQ
 
-## What is the Client Contract Execution Environment or CCEE or P8e? <a id="what-is-the-client-contract-execution-environment-or-ccee-or-p-8-e"></a>
+## What is the Client Contract Execution Environment or CCEE or BlockVault? <a id="what-is-the-client-contract-execution-environment-or-ccee-or-p-8-e"></a>
 
-The Client Contract Environment \(CCEE or P8e\) is a framework that is part of the Provenance Blockchain ecosystem. The CCEE includes components that facilitate the management of contracts and its associated documents both on-chain and off-chain. One component deals with the secure communication between business partners to exchange information required to fulfill the contract. This communication flows through an asynchronous mail-box system where all messages are authenticated and encrypted by the two parties’ keys.
+The Client Contract Environment \(CCEE or BlockVault\) is a framework that is part of the Provenance Blockchain ecosystem. The CCEE includes components that facilitate the management of contracts and its associated documents both on-chain and off-chain. One component deals with the secure communication between business partners to exchange information required to fulfill the contract. This communication flows through an asynchronous mail-box system where all messages are authenticated and encrypted by the two parties’ keys.
 
 In addition, the CCEE includes facilities to easily refer to documents by their hash-id, and to encrypt and store those docs in an Encrypted Object Store \(EOS\). Those encrypted documents are indexed by their hash-id and optionally by selected document attribute values. The latter allows one to aggregate documents based on common attributes without revealing their sensitive content.
-
-## What does P8e stand for?
-
-P8e is the nickname for Provenance Blockchain’s Client Contract Execution Environment. The abbreviation comes from the word "Provenance", which starts with a “P”, then skips 8 letters and ends with “e” - “P8e”.
 
 ## What is a hash-id <a id="what-does-p-8-e-stand-for"></a>
 

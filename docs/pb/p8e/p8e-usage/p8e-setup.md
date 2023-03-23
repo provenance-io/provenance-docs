@@ -1,8 +1,8 @@
-# P8e Setup
+# BlockVault Setup
 
 ## Services
 
-The following are the services that make up a fully functional P8e environment:
+The following are the services that make up a fully functional BlockVault environment:
 
 * p8e-api
 * object-store
@@ -15,9 +15,9 @@ The following are the services that make up a fully functional P8e environment:
 
 ## Local
 
-A [docker compose](https://github.com/provenance-io/p8e-docker-compose) environment is provided to quickly bring up a fully configured P8e environment. This includes a four node Provenance Blockchain cluster. Having some familiarity with [docker](https://docs.docker.com/) and [docker-compose](https://docs.docker.com/compose/) will help.
+A [docker compose](https://github.com/provenance-io/p8e-docker-compose) environment is provided to quickly bring up a fully configured BlockVault environment. This includes a four node Provenance Blockchain cluster. Having some familiarity with [docker](https://docs.docker.com/) and [docker-compose](https://docs.docker.com/compose/) will help.
 
-The following steps will setup an environment and execute your first P8e contract.
+The following steps will setup an environment and execute your first BlockVault contract.
 
 ```bash
 cd $BASE_CODE_DIR
@@ -38,7 +38,7 @@ source $BASE_CODE_DIR/p8e-docker-compose/env/host/env
 ./gradlew runner:run
 ```
 
-From here you're all set to start creating your own contract specifications, and then publishing and executing them. The remaining documentation will walk you through these steps and help you understand P8e.
+From here you're all set to start creating your own contract specifications, and then publishing and executing them. The remaining documentation will walk you through these steps and help you understand BlockVault.
 
 ## Testnet/Mainnet
 
