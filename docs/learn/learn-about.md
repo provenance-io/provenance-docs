@@ -1,46 +1,40 @@
-# Learning Center
+# Guides
 
 
-## 100 Level - _Blockchain Basics_
+### Getting Started
 
-### What's a Blockchain?
+- [Hands on Testnet: Accounts, Wallets, and Coin Transfers](https://medium.com/provenanceblockchain/hands-on-testnet-accounts-wallets-and-coin-transfer-452ee1f343cd)<br/>_Learn how to use `provenaned` on the command line to talk to `testnet`_
 
-- [The End Of Innocence In Crypto: Where We Go From Here](https://medium.com/provenanceblockchain/the-end-of-innocence-in-crypto-where-we-go-from-here-4fdff64de497)
-- [“What is a Blockchain?” and Other Questions You’re Too Shy to Ask](https://medium.com/provenanceblockchain/what-is-a-blockchain-and-other-questions-youre-too-shy-to-ask-56d108431ed1)
+- [Building Your First dApp](https://medium.com/provenanceblockchain/building-your-first-dapp-5679c07d1983)<br/>_How to build a simple, front-end-only webapp using [WalletConnect](docs/discover/wallets)_
 
-
-<!-- - [Why Provenance Blockchain is built on Cosmos SDK & Tendermint](why-cosmos)-->
-
-### Security
-
-- [Provenance Blockchain Proof-of-Stake Provides 51% Attack Immunity](https://medium.com/provenanceblockchain/provenance-blockchain-proof-of-stake-provides-51-attack-immunity-4d5f153f02f6)
-- [Security Analysis of Tendermint](https://jepsen.io/analyses/tendermint-0-10-2)
-
-----
-## 200 Level - _Financial Services on Blockchain_
-
-### The Digital Asset Lifecycle
+### Asset Design & Lifecycle
 
 - [**Guide to the Digital Asset Lifecycle**](/docs/learn/asset-lifecycle/assets-overview): _Issue, Manage, Trade_
-- [The Future of Private Markets is Blockchain Enabled](https://provenance.io/learn/posts/future-of-private-markets)
-- [Basics of Real-World Financial Asset Tokenization](https://provenance.io/learn/posts/basics-of-real-world-financial-a)
 
-### Digital Money
+### Building dApps
 
-- [We Need Digital Money For the Global Economy to Thrive](https://techonomy.com/need-digital-money-global-economy-thrive/)
-- [USDF](https://www.usdfconsortium.com/)
-- [The Significance of the UST Collapse and the Growing Need for USDF](https://medium.com/provenanceblockchain/the-significance-of-the-ust-collapse-and-the-growing-need-for-usdf-d406962aad8c)
+- [Creating React dApps via WalletConnect-JS](https://medium.com/provenanceblockchain/creating-dapps-via-walletconnect-js-658268c8d549)
 
-### Compliance
+### Smart Contracts
 
-- [Ode on Digital Assets and DeFi’s Bankruptcy-Remoteness](https://medium.com/provenanceblockchain/ode-on-digital-assets-and-defis-bankruptcy-remoteness-2c95a42d6be)
-- [Controllable Digital Assets](https://medium.com/provenanceblockchain/controllable-digital-assets-and-you-15a17963a2a2)
+- [Provwasm Smart Contracts](https://github.com/provenance-io/provwasm/blob/22c90c89900f53859c55112909217174f2e910c4/docs/tutorial/01-overview.md)<br/>_Learn how to write a smart contract for Provenance Blockchain_
 
-### Use Case: Lending
+### The CEE and Off-Chain Data
 
-- [**Whitepaper:** Blockchain Impact On Credit Ratings](/whitepapers/Blockchain%20Impact%20On%20Credit%20Ratings.pdf)
-- [**Whitepaper:** Loan Participation On Provenance](/whitepapers/Loan%20Participation%20On%20Provenance.pdf)
-- [**Whitepaper:** Securitization On Provenance](/whitepapers/Securitization%20On%20Provenance.pdf)
+- [Confidential Compute and Validation Oracles](https://medium.com/provenanceblockchain/confidential-compute-and-validation-oracles-caff2f6a5b60)<br/>_Overview of design and data flows for using [CEE](/docs/pb/p8e/overview/) and EOS_
+
+- [Off-Chain BlockVault (CEE) Contracts & SDK](https://medium.com/provenanceblockchain/off-chain-p8e-contracts-sdk-ac313e40c9c7)<br/>_How to run a "smart contract" over data that isn't on chain._
+
+### Data Analysis
+- [Aggregating Provenance Blockchain Data: A Developer’s Story](https://medium.com/provenanceblockchain/aggregating-provenance-blockchain-data-a-developers-story-a23972971287)<br/>_Libraries for blockchain data aggregation_
+
+### Validators
+- [Nitro Enclave-Based Provenance Validator](https://medium.com/provenanceblockchain/nitro-enclave-based-provenance-validator-882122714415)<br/>_Example of running a validator node on AWS_
+
+### Governance
+
+- [How to Propose to Your True Love — Blockchain Proposals and Why They Matter](https://medium.com/provenanceblockchain/how-to-propose-to-your-true-love-blockchain-proposals-and-why-they-matter-c1ba61271991)<br/>_How to submit a governance proposal through Provenance Explorer_
+
 
 ### Use Case: Trading Tokens
 
@@ -49,28 +43,14 @@
 ### Use Case: Investment Fund Services
 
 - [Capital Raise Contracts](https://medium.com/provenanceblockchain/capital-raise-contracts-on-provenance-blockchain-2873f23e16a2)
-- [**Whitepaper:** Investment Fund Services on Provenance](/whitepapers/Investment%20Fund%20Services%20on%20Provenance.pdf)
 
 ### Use Case: Cap Table Management
 
 - [Cap Tables & Private Company Stock](https://medium.com/provenanceblockchain/cap-tables-private-company-stock-on-provenance-blockchain-e45fa172c0f1)
 
-### Use Case: Supply Chain Finance
 
-- [**Whitepaper:** Supply Chain Finance On Provenance](/whitepapers/Supply%20Chain%20Finance%20On%20Provenance.pdf)
+### Security
 
-
-----
-## 300 Level - _Building the Next Generation of Financial Services_
-
-### Data Privacy
-
-### Data Validation
-
-- [Taking the Validation Oracle Red Pill](https://medium.com/provenanceblockchain/taking-the-validation-oracle-red-pill-ca91e711a6e7)
-
-
-----
-## 400 Level - _Advanced Topics_
-
+- [Provenance Blockchain Proof-of-Stake Provides 51% Attack Immunity](https://medium.com/provenanceblockchain/provenance-blockchain-proof-of-stake-provides-51-attack-immunity-4d5f153f02f6)
+- [Security Analysis of Tendermint](https://jepsen.io/analyses/tendermint-0-10-2)
 - [Funding Systems: Part 1 — Resource Allocation](https://medium.com/provenanceblockchain/fee-middleware-system-for-msg-based-fees-in-provenance-blockchain-ce84e58ae0b3)

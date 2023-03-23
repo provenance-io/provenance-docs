@@ -15,7 +15,7 @@ The CosmWasm VM only integrates with the `banking` and `staking` modules by defa
 - [Account](account.md)
 - [Marker](marker-module.md)
 - [Name](name-module.md)
-- [Metadata](metadata-module.md) - NOTE: Not yet implemented
+- [Metadata](metadata-module.md)
 
 These extensions are compiled into the blockchain at build time.
 
@@ -40,14 +40,6 @@ One of the benefits of ProvWasm is that it allows for robust unit testing of sma
 ### Integrations
 
 To ensure the library code works correctly with the blockchain extensions, smart contracts were developed for each custom module in provenance. These contracts can be deployed to a localnet \(or the testnet\) for integration testing.
-
-## Status
-
-:::info
-**ProvWasm is alpha software. Use with caution.**
-:::
-
-There is no guaranteed migration path for smart contracts deployed to provenance, not even "dump state and restart" to move to future versions.
 
 ## References
 
