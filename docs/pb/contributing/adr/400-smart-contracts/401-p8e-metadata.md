@@ -1,4 +1,4 @@
-# 401 - P8e Metadata
+# 401 - BlockVault Metadata
 
 import { DocSubheader } from '/docs/components/DocSubheader';
 

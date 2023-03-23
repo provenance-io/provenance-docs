@@ -1,4 +1,4 @@
-# Transactions FAQ
+# Transaction Error Codes
 
 ## What does my transaction error code mean?
 

@@ -4,30 +4,51 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Provenance Blockchain provides the foundation to build marketplaces and exchanges for buyers and sellers of digital assets." />
 
-## Disintermediation
+## Registry, Ledger, Exchange
 
-Many intermediaries argue that their services are necessary for the market to function. Who else will safeguard investors if not a trusted third party? But such an argument is a false dichotomy as it presumes trust is necessary.
+Provenance Blockchain is a distributed ledger technology with three key attributes: **Distributed Information**, **
+Immutable History**, and
+**Trustless Data**. Distributed content provides a robust defense against hacking, eliminates agency problems that can
+lead to malfeasance, and facilitates enforceable digital contracts. Data written on the ledger is immutable and cannot
+be altered, ensuring a transparent and tamper-proof record of asset history and information. Rep and warranty data
+introduces risk and undermines the system, but Provenance's immutable information and trustless data ensures a secure
+and reliable system.
 
-Provenance Blockchain reduces third-party intermediation and internal staffing costs, promotes greater transparency and liquidity, and allows for new kinds of financial engineering and business opportunities. The goal is that any firm using Provenance Blockchain benefits from the blockchain and pays approximately ⅓ of that benefit back in [Hash gas fee payments](../../contributing/adr/300-core-concepts/301-hash.md) back to Provenance Blockchain.
+While these attributes are necessary, they are not sufficient to fully eliminate rent-seeking and bring incremental
+value to financial markets. Provenance Blockchain goes beyond these attributes and performs three key functions: **ledger,
+registry, and exchange.**
 
-## Distributed Trust
+- **Ledger -** Provenance Blockchain enables movements of value on the blockchain, delivering true economies of scale.
+  Immutable records reduce or eliminate the need for trustees and reconciliation, and provide real-time visibility to
+  information.
+- **Registry -** Ownership is determined solely on the blockchain, enabling T+0 pledging and sales of assets. Chain of
+  custody is immutable, and recording and conveyance are the same thing, eliminating latency and discrepancies.
+- **Exchange -** Price discovery becomes transparent, eliminating the need for market-making intermediaries. Assets can
+  be tokenized, allowing fractionalized sales and creating liquidity in illiquid asset classes.
 
-Provenance Blockchain has three key attributes: **Distributed Information, Immutable History,** and **Trustless Data**. Distributed content provides defense against hacking, eliminates agency problems that can lead to malfeasance, and helps support enforceable digital contracts. Data written on the ledger cannot be changed. Immutable information is critical in establishing asset history and the truth of the data. Having to rep and warranty data—analogous to “trust me”—undermines the system and introduces risk to those who provide these attestations.
+By performing these key functions, Provenance Blockchain brings a new level of efficiency, transparency, and
+accessibility to financial markets.
 
-These attributes are necessary, but not sufficient, to eliminate rent-seeking and bring incremental value to financial markets. To transform financial services, Provenance Blockchain performs three key functions: ledger, registry and exchange.
-
-- **Ledger –** Movements of value are done on blockchain, delivering true economies of scale. Immutable records reduce or eliminate the need for trustees and reconciliation and provide real time visibility to information.
-- **Registry -** Ownership is determined solely on blockchain, allowing T+0 pledging and sales of assets. Chain of custody is immutable, and recording and conveyance are the same thing, eliminating latency/discrepancies.
-- **Exchange -** Price discovery becomes transparent, eliminating the need for market making intermediaries. Assets can be tokenized, allowing fractionalized sales and creating liquidity in illiquid asset classes.
 
 ## Enabling Marketplaces
 
-Numerous financial marketplaces leverage Provenance Blockchain to connect buyers and sellers of digital assets. Marketplaces are are analogous to a town full of stores. Each store has products for primary and secondary offerings. Some stores require accreditation to enter and transact. For example, Figure’s Passport solution leverages the [Provenance Blockchain Name Module](/docs/pb/modules/name-module.md) for accreditation. Marketplaces build on Provenance Blockchain's support for loans, loan participation and private funds. Soon these marketplaces will support a full range of securities, from asset-backed securities to private equity.
+Provenance Blockchain makes it possible to create marketplaces for buying and selling digital assets without relying on
+third-party intermediaries. These marketplaces can provide transparency and liquidity, and allow for new kinds of financial
+engineering and business opportunities.
 
-Marketplaces leveraging Provenance Blockchain allow two counter-parties to trade bilaterally, settling real-time without counter-party or settlement risk using the Provenance Blockchain [Account](/docs/pb/modules/inherited-modules.md), [Marker](/docs/pb/modules/marker-module.md), and [Bank](/docs/pb/modules/inherited-modules.md) Modules. Complex ownership, exchange, and settlement functions can be expressed using [Provenance Blockchain Smart Contracts](/docs/pb/modules/provwasm-smart-contracts.md). Together, these Provenance Blockchain features allow unprecedented access, ease, and transparency to asset and fund interest buyers and sellers.
+Think of a marketplace as a digital town square where different stores sell different products. Each store represents a
+digital asset that can be bought and sold, like stocks or bonds. Some stores may require accreditation before you can enter and
+transact, to ensure compliance with regulations like KYC/AML.
 
-## Digital Fund Services
+Provenance Blockchain provides the underlying technology to power these marketplaces. For instance, the blockchain's support for
+loans, loan participation, private funds, and securities can be leveraged to offer new products to investors. With Provenance
+Blockchain, buyers and sellers can trade with each other in a bilateral fashion, without counterparty or settlement risk.
 
-Provenance Blockchain is revolutionizing how private funds are digitally issued, accessed and exchanged.
+The platform also offers modules like the [**Name Module**](/docs/pb/modules/name-module.md) for KYC/AML and accreditation, and the
+[**Account**](/docs/pb/modules/cosmos-modules.md), [**Marker**](/docs/pb/modules/marker-module.md), and
+[**Bank**](/docs/pb/modules/cosmos-modules.md) Modules for real-time settlement without counterparty or settlement risk.
+Complex ownership, exchange, and settlement functions can be expressed using
+[**Provenance Blockchain Smart Contracts**](/docs/pb/modules/provwasm-smart-contracts.md).
 
-[Figure's Digital Fund Services](https://provenance.io/#digital-fund-services) on Provenance Blockchain utilize tools for digital fundraising and ongoing fund management with a primary marketplace for raising capital and a secondary marketplace for trading fund interests. Using [Smart Contracts](/docs/pb/modules/provwasm-smart-contracts.md) in concert with the Provenance Blockchain [Account](/docs/pb/modules/inherited-modules.md), [Marker](/docs/pb/modules/marker-module.md), and [Bank](/docs/pb/modules/inherited-modules.md) modules improves liquidity profile of illiquid funds through bilateral secondary trading of fund interests with real time settlement while eliminating high search and transaction costs of current secondary markets.
+In summary, Provenance Blockchain enables marketplaces to be created that offer unprecedented access, ease, and transparency to
+buyers and sellers of digital assets.

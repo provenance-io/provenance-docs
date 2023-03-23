@@ -1,6 +1,6 @@
-# Building New P8e Contracts
+# Building New BlockVault Contracts
 
-## P8e Contract Creation
+## BlockVault Contract Creation
 
 When preparing to create contracts, information about the transaction must be identified. This information includes the participants involved, the role of each participant \(i.e. who initiates the contract\), the input and output data formats, and the requirements of the contract \(i.e. validation requirements\).
 

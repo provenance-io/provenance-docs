@@ -2,12 +2,12 @@
 
 import { DocSubheader } from '/docs/components/DocSubheader';
 
-<DocSubheader text="Approve and sign a p8e contract envelope"
+<DocSubheader text="Approve and sign a BlockVault contract envelope"
 />
 
 ## Description
 
-Used by additional participants in a multi-party contract execution to respond with approval by executing the p8e contract and updating the scope to include their approval, sending the record of their approval to the Provenance Blockchain network for memorialization.
+Used by additional participants in a multi-party contract execution to respond with approval by executing the BlockVault contract and updating the scope to include their approval, sending the record of their approval to the Provenance Blockchain network for memorialization.
 
 Approval creates an ephemeral Authz grant on behalf of the approver, allowing the proposing party to submit the fully-formed, signed transaction to the Provenance Blockchain network prior to the expiration date set by the approver.
 

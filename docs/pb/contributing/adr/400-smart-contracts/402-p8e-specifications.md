@@ -1,4 +1,4 @@
-# 402 - P8e Specifications
+# 402 - BlockVault Specifications
 
 import { DocSubheader } from '/docs/components/DocSubheader';
 

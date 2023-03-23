@@ -2,11 +2,11 @@
 
 import { DocSubheader } from '/docs/components/DocSubheader';
 
-<DocSubheader text="Execute any p8e contract by name" />
+<DocSubheader text="Execute any BlockVault contract by name" />
 
 ## Description
 
-Used to execute a p8e contract by providing the contract configuration and inputs to the contract.
+Used to execute a BlockVault contract by providing the contract configuration and inputs to the contract.
 
 For single-party contracts, the transaction is automatically submitted to the Provenance Blockchain node for memorialization.
 
@@ -104,8 +104,8 @@ Supply one `apikey` header when running in test or production environments..
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- |
 | account/partyType               | Party type of the provenance member invoking the contract. This type should be associated with the UUID (or API Key) passed in the header.             | String         |
 | client/objectStoreUrl           | URL to the encrypted object store to run against.                                                                                                      | String         |
-| contract/contractName           | Fully qualified name of the p8e contract you wish to invoke.                                                                                           | String         |
-| scope/scopeUuid                 | Unique identifier for the scope being created/updated by the p8e contract.                                                                             | String (UUID)  |
+| contract/contractName           | Fully qualified name of the BlockVault contract you wish to invoke.                                                                                           | String         |
+| scope/scopeUuid                 | Unique identifier for the scope being created/updated by the BlockVault contract.                                                                             | String (UUID)  |
 | contract/scopeSpecificationName | Fully qualified name of the scope specification.                                                                                                       | String         |
 | contract/parserConfig           | Optional configuration for parsing Any types used as inputs to contracts.                                                                              | Object         |
 | contract/parseConfig/name       | Fully qualified name of the parser                                                                                                                     | String         |
@@ -116,7 +116,7 @@ Supply one `apikey` header when running in test or production environments..
 | participants/uuid               | Provenance Member ID for any additional contract participants.                                                                                         | String (UUID)  |
 | participants/partyType          | Party type of the additional provenance member participating in the contract execution.                                                                | String         |
 | permissions                     | Object containing PermissionInfo. (See [Permissioning Others](../../../p8e-contract-execution-environment-p8e/key-management/permissioning-others.md)) | JSON           |
-| records                         | Object containing the inputs to the p8e contract as key-value pairs                                                                                    | JSON           |
+| records                         | Object containing the inputs to the BlockVault contract as key-value pairs                                                                                    | JSON           |
 | scope/sessionUuid               | The session uuid. Optional.                                                                                                                            | String (UUID)  |
 
 **Response Status Codes**:

@@ -1,5 +1,5 @@
 # Summary
 
-At this point, you should feel comfortable with the p8e Contract Execution Environment. This includes the Object Store, p8e contracts, and key management.
+At this point, you should feel comfortable with the BlockVault Contract Execution Environment. This includes the Object Store, BlockVault contracts, and key management.
 
-Next, we will explore practical usage of the p8e Contract Execution Environment via the p8e CEE API
+Next, we will explore practical usage of the BlockVault Contract Execution Environment via the BlockVault CEE API

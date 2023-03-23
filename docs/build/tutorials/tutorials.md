@@ -24,7 +24,7 @@
 
 - [Confidential Compute and Validation Oracles](https://medium.com/provenanceblockchain/confidential-compute-and-validation-oracles-caff2f6a5b60)<br/>_Overview of design and data flows for using [CEE](/docs/pb/p8e/overview/) and EOS_
 
-- [Off-Chain P8e (CEE) Contracts & SDK](https://medium.com/provenanceblockchain/off-chain-p8e-contracts-sdk-ac313e40c9c7)<br/>_How to run a "smart contract" over data that isn't on chain._
+- [Off-Chain BlockVault (CEE) Contracts & SDK](https://medium.com/provenanceblockchain/off-chain-p8e-contracts-sdk-ac313e40c9c7)<br/>_How to run a "smart contract" over data that isn't on chain._
 
 # Data Analysis
 - [Aggregating Provenance Blockchain Data: A Developer’s Story](https://medium.com/provenanceblockchain/aggregating-provenance-blockchain-data-a-developers-story-a23972971287)<br/>_Libraries for blockchain data aggregation_
