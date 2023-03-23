@@ -1,8 +1,13 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+// To enable syntax highlighting
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+
+// To enable LaTex
+const math = require('remark-math');
+const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -10,7 +15,7 @@ const config = {
   tagline:
     "A distributed, proof-of-stake blockchain designed for financial service industries.",
   url: "https://vwagner.github.io",
-  baseUrl: "/provenance-docs/",
+  baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/prov-logo.svg",
@@ -35,12 +40,25 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
+          remarkPlugins: [math],
+          rehypePlugins: [katex]
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
       }),
+
     ],
+  ],
+
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+          'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
   ],
 
   plugins: [
@@ -55,6 +73,7 @@ const config = {
         },
       };
     },
+
   ],
 
   themeConfig:
@@ -102,7 +121,7 @@ const config = {
             ],
           },
           {
-            label: "Learn",
+            label: "Guides",
             to: "docs/learn/learn-about",
             position: "left",
           },
@@ -111,14 +130,6 @@ const config = {
             type: "dropdown",
             position: "left",
             items: [
-              {
-                label: "dApp Guide",
-                to: "docs/learn/dapps/dapps-overview",
-              },
-              {
-                label: "Asset Guide",
-                to: "docs/learn/asset-lifecycle/assets-overview",
-              },
               {
                 label: "Dev Environment",
                 to: "docs/build/dev-environment",
@@ -131,10 +142,6 @@ const config = {
               {
                 label: "Libraries and APIs",
                 to: "docs/build/libraries",
-              },
-              {
-                label: "Tutorials",
-                to: "docs/build/tutorials",
               },
               {
                 label: "Grants Program",
@@ -204,9 +211,9 @@ const config = {
           },
           {
             type: "doc",
-            docId: "provenance-blockchain",
+            docId: "index",
             position: "left",
-            label: "Docs",
+            label: "Documentation",
           },
           {
             href: "https://github.com/provenance-io",

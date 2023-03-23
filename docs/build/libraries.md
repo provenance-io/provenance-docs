@@ -31,11 +31,11 @@ These resources may also connect you with developers who you can interact with v
 
 ## Data Privacy and Off-Chain Data Storage
 
-### p8e Contracts
+### BlockVault Contracts
 
 | Resource                                                                                                          | Description                                                                                |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| [Off-Chain P8e Contracts & SDK](https://medium.com/provenanceblockchain/off-chain-p8e-contracts-sdk-ac313e40c9c7) | An introduction and tutorial on Provenance Blockchain's off-chain SDK, published on Medium |
+| [Off-Chain BlockVault Contracts & SDK](https://medium.com/provenanceblockchain/off-chain-p8e-contracts-sdk-ac313e40c9c7) | An introduction and tutorial on Provenance Blockchain's off-chain SDK, published on Medium |
 
 ### Object Store
 
@@ -47,21 +47,21 @@ These resources may also connect you with developers who you can interact with v
 
 | Resource                                                | Description                                                                                        |
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| https://github.com/provenance-io/loan-package-contracts | Defines a loan package scope specification and p8e smart contracts that can be executed against it |
+| https://github.com/provenance-io/loan-package-contracts | Defines a loan package scope specification and BlockVault smart contracts that can be executed against it |
 | https://github.com/provenance-io/object-store           | A object storage system with a gRPC interface and strong encryption properties                     |
 | https://github.com/provenance-io/object-store-locator   | Object store locator service                                                                       |
 | https://github.com/provenance-io/p8e                    | Optional layer that allows client-side contract execution with data privacy                        |
 | https://github.com/provenance-io/p8e-cee-api            | Provenance Contract Execution Environment API                                                      |
-| https://github.com/provenance-io/p8e-docker-compose     | Supporting tools for rapid p8e test environment deployment                                         |
-| https://github.com/provenance-io/p8e-gradle-plugin      | Allows for publishing p8e Contracts against a p8e environment                                      |
+| https://github.com/provenance-io/p8e-docker-compose     | Supporting tools for rapid BlockVault test environment deployment                                         |
+| https://github.com/provenance-io/p8e-gradle-plugin      | Allows for publishing BlockVault Contracts against a BlockVault environment                                      |
 | https://github.com/provenance-io/p8e-scope-sdk          | Development kit for interacting with the Provenance Blockchain metadata module                     |
-| https://github.com/provenance-io/p8e-ui                 | Simple UI for p8e development                                                                      |
+| https://github.com/provenance-io/p8e-ui                 | Simple UI for BlockVault development                                                                      |
 
 ### Data Models
 
 | Resource                                              | Description                                                                                                             |
 | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| https://github.com/provenance-io/metadata-asset-model | protobuf data model reference standard for Provenance Blockchain Metadata module and P8e Contract Execution Environment |
+| https://github.com/provenance-io/metadata-asset-model | protobuf data model reference standard for Provenance Blockchain Metadata module and BlockVault Contract Execution Environment |
 
 ## Docker Images
 

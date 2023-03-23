@@ -42,7 +42,7 @@ As you can see, the user supplies three data points:
 
 After replication is enabled and public encryption keys are mapped to the appropriate target object store, users can control which object get replicated by choosing when to use that third-party's public encryption key.
 
-When creating an object using the p8e Contract Execution Environment API, clients can specify one of more Additional Audiences. This is where they can choose to pass as many public encryption keys as necessary for their use case. For each encryption key, the object store will automatically check to see if replication is configured and automatically replicate that particular object.
+When creating an object using the BlockVault Contract Execution Environment API, clients can specify one of more Additional Audiences. This is where they can choose to pass as many public encryption keys as necessary for their use case. For each encryption key, the object store will automatically check to see if replication is configured and automatically replicate that particular object.
 
 :::info
 It does not automatically replicate every object in the Object Store.
@@ -50,4 +50,4 @@ It does not automatically replicate every object in the Object Store.
 
 ## Security Considerations
 
-Developers need to consider how traffic is managed between object stores and who can access the endpoint used to configure replication. Whitelisting IP addresses and/or using API keys for communication between objects stores in two separate environments is recommended. Additionally, the p8e Contract Execution Environment API should be extended so that only the owner of an object store can call the configuration endpoint in a test or production environment.
+Developers need to consider how traffic is managed between object stores and who can access the endpoint used to configure replication. Whitelisting IP addresses and/or using API keys for communication between objects stores in two separate environments is recommended. Additionally, the BlockVault Contract Execution Environment API should be extended so that only the owner of an object store can call the configuration endpoint in a test or production environment.

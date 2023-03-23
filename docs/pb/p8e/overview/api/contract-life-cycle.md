@@ -1,6 +1,6 @@
 # Contract Life Cycle
 
-Contracts are executed through a series of life cycle events that are intercepted by client software. These events \(except for the initial 'Accepted' event\) are handled by passing callback functions or handler objects via the contract watchBuilder as in the following example \(note the return `true` to indicate successful processing of each event\). In cases where `false` is returned, or a networking problem causes the acknowledgment to not reach the p8e backend, the event will be redelivered after a retry delay elapses.
+Contracts are executed through a series of life cycle events that are intercepted by client software. These events \(except for the initial 'Accepted' event\) are handled by passing callback functions or handler objects via the contract watchBuilder as in the following example \(note the return `true` to indicate successful processing of each event\). In cases where `false` is returned, or a networking problem causes the acknowledgment to not reach the BlockVault backend, the event will be redelivered after a retry delay elapses.
 
 ```kotlin
 contractManager.watchBuilder(HelloWorldContract::class.java)

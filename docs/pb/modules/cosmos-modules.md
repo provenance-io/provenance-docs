@@ -1,4 +1,4 @@
-# Inherited Modules
+# Cosmos Modules
 
 import { DocSubheader } from '/docs/components/DocSubheader';
 
@@ -22,3 +22,6 @@ The Provenance Blockchain inherits the following core Cosmos SDK Modules:
 - [**Slashing**](https://docs.cosmos.network/main/modules/slashing/) - Validator punishment mechanisms.
 - [**Staking**](https://docs.cosmos.network/main/modules/staking/) - Proof-of-Stake layer for public blockchains.
 - [**Upgrade**](https://docs.cosmos.network/main/modules/upgrade/) - Software upgrades handling and coordination.
+
+
+https://github.com/provenance-io/provenance/blob/main/app/app.go

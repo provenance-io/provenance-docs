@@ -1,6 +1,6 @@
 # Loan Servicing
 
-After the Figure loan is onboarded, funded, and validated, the loan is onboarded to the Figure Servicing system. This exchange also takes place through a P8e client-side contract execution, now utilizing the multi-party capabilities of the P8e Contract Execution Environment.
+After the Figure loan is onboarded, funded, and validated, the loan is onboarded to the Figure Servicing system. This exchange also takes place through a BlockVault client-side contract execution, now utilizing the multi-party capabilities of the BlockVault Contract Execution Environment.
 
 Partial example of an “assign-to-servicing” contract to onboard a loan into the servicing system:
 

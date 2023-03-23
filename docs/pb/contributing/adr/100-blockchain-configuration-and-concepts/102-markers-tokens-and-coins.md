@@ -247,7 +247,7 @@ The Gas economy within the Provenance Blockchain is governed by the use of an ar
 
 Within the Provenance Blockchain the staking and fee purposes are handled using two separate denominations, `hash` for staking and `vspn` for fee payment. Because of the restriction for not using decimals hash will be denominated in nanohash \(`nhash`\).
 
-All units of value on the blockchain will be represented as coin denominations. The rules governing the issue and mangement of these coins will be enforced and curated using the Marker module. The HASH coin used for staking is the only coin not managed through this process as its behavior is defined through the staking process of the blockchain itself.
+All units of value on the blockchain will be represented as coin denominations. The rules governing the issue and mangement of these coins will be enforced and curated using the Marker module. The Hash coin used for staking is the only coin not managed through this process as its behavior is defined through the staking process of the blockchain itself.
 
 ## Status
 

@@ -50,7 +50,7 @@ Figure Tech is actively integrating with 3rd Party document preparation vendors 
 
 ## Onboarding the Loan Package
 
-Once documents are stored in EOS, and the loan application process is in a stage where it is worth onboarding the loan data to Provenance, the loan originator should hit the [Execute Contract](../api-specification/contract-execution-endpoints/execute-contract.md) endpoint to execute the [Record Loan](https://github.com/provenance-io/loan-package-contracts/blob/main/contract/src/main/kotlin/io/provenance/scope/loan/contracts/RecordLoanContract.kt) p8e contract.
+Once documents are stored in EOS, and the loan application process is in a stage where it is worth onboarding the loan data to Provenance, the loan originator should hit the [Execute Contract](../api-specification/contract-execution-endpoints/execute-contract.md) endpoint to execute the [Record Loan](https://github.com/provenance-io/loan-package-contracts/blob/main/contract/src/main/kotlin/io/provenance/scope/loan/contracts/RecordLoanContract.kt) BlockVault contract.
 
 :::info
 Ultimately the stage at which an originator onboards a loan to Provenance is an internal business decision. A suggestion would be to onboard the loan either at the point in which you would no longer want to update the base loan data, or at the point you would want to share one common set of loan application data with a 3rd party, such as a validator, servicer, warehouse lender, or investor.
@@ -88,7 +88,7 @@ As a best practice, include as many Records as are available. That translates to
 If you use a 3rd party document services provider that is directly integrated with Provenance to generate and send eNotes, then the `eNote` Record may already be populated for you. Simply omit that record in the input object - it cannot be overwritten by executing the Record Loan contract. This is designed to prevent mistakes.
 :::
 
-An example of a set of records using a MISMO XML to represent the loan data is provided below. In this example, the loan originator is providing the asset, document list, and servicing rights. They are leaving out the eNote, servicing data, and validation records because they are not requesting validation at this time and are using a 3rd party document servicer provider that will send the eNote and initial servicing data to Provenance separately. The p8e contract will automatically combine this loan data with an eNote once both are onboarded.
+An example of a set of records using a MISMO XML to represent the loan data is provided below. In this example, the loan originator is providing the asset, document list, and servicing rights. They are leaving out the eNote, servicing data, and validation records because they are not requesting validation at this time and are using a 3rd party document servicer provider that will send the eNote and initial servicing data to Provenance separately. The BlockVault contract will automatically combine this loan data with an eNote once both are onboarded.
 
 Since this example uses a MISMO XML to store loan data, the originator should repeat step one to onboard that file as an object in the object store prior to invoking the Record Loan contract.
 
@@ -152,7 +152,7 @@ Since this example uses a MISMO XML to store loan data, the originator should re
 
 </details>
 
-The curl command below will onboard the loan data to the Encrypted Object Store by executing the `Record Loan` p8e contract, and broadcast a fully formed Provenance Blockchain transaction proposal containing the appropriate hashes of the inputs, the process (the Record Loan p8e contract), and the outputs of that contract to the Provenance Blockchain memory pool. There, it will get picked up by validators and memorialized as a scope on the Provenance Blockchain ledger.
+The curl command below will onboard the loan data to the Encrypted Object Store by executing the `Record Loan` BlockVault contract, and broadcast a fully formed Provenance Blockchain transaction proposal containing the appropriate hashes of the inputs, the process (the Record Loan BlockVault contract), and the outputs of that contract to the Provenance Blockchain memory pool. There, it will get picked up by validators and memorialized as a scope on the Provenance Blockchain ledger.
 
 ```
 curl --location --request POST 'localhost:8080/p8e-cee-api/external/api/v1/cee/execute' \

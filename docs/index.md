@@ -1,8 +1,13 @@
+---
+title: Introduction
+---
+import GitHubLogo from '/img/github-mark.png';
+
 # Provenance Blockchain
 
 import { DocSubheader } from '/docs/components/DocSubheader';
 
-<DocSubheader text="Provenance Blockchain is a distributed, proof-of-stake blockchain designed for financial service industries."
+<DocSubheader text="Provenance Blockchain is a distributed, Proof-of-Stake Blockchain designed for the Financial Service Industry."
 />
 
 export const DataCard = ({ title, content, link }) => (
@@ -25,10 +30,34 @@ export const DataCard = ({ title, content, link }) => (
   </a>
 );
 
-## Getting Started
+## Introduction
 
-> The Provenance blockchain is based on the [Cosmos SDK](https://docs.cosmos.network/main/) and the [Tendermint](https://docs.tendermint.com/master/) blockchain application platforms. It is useful to have a basic understanding of both these technologies prior to reading the Provenance documentation. Refer to the [Cosmos SDK basics documentation](https://docs.cosmos.network/main/intro/overview.html) and the [Tendermint overview](https://docs.tendermint.com/master/introduction/what-is-tendermint.html#) for more information.
+Welcome to the **Provenance Blockchain Documentation**. Our open source software is built on the robust foundation
+of two powerful technologies, the [Cosmos SDK](https://docs.cosmos.network/main/) and the [Tendermint](https://docs.tendermint.com/master/) blockchain application platforms. In order to make the
+most out of Provenance, it's important to have a basic understanding of these technologies.
 
+To get started, we recommend reviewing the [Cosmos SDK basics documentation](https://docs.cosmos.network/main/intro/overview.html) and
+the [Tendermint overview](https://docs.tendermint.com/master/introduction/what-is-tendermint.html#). These resources
+will provide a comprehensive understanding of the technologies that power Provenance and help ensure you have the
+knowledge necessary to effectively utilize our product.
+
+We understand that technical documentation can often be dense and challenging to navigate. As such, we have made every
+effort to present the information in a clear, concise, and user-friendly manner. If you have any questions or need
+assistance, please don't hesitate to reach out to our team. We're here to help you succeed in your blockchain endeavors.
+
+<center>
+<a href="https://github.com/provenance-io">
+  <img src={GitHubLogo} width="75"/><br/>
+  <img src="https://gh-card.dev/repos/provenance-io/provenance.svg"/>
+</a>
+</center>
+
+<br/>
+
+Provenance Blockchain is licensed under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0)
+
+<br/>
+<br/>
 <div style={{
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
@@ -42,20 +71,6 @@ export const DataCard = ({ title, content, link }) => (
   <DataCard title="Discover" content="how the Provenance Contract Execution Environment works" link="https://provenance-io.github.io/provenance-docs/docs/pb/p8e/overview/"/>
   <DataCard title="Build"    content="your integration into the Provenance Blockchain" link="https://provenance-io.github.io/provenance-docs/docs/pb/integrating/integrating-with-p8e/"/>
   <DataCard title="Follow"   content="real-world use cases and applications built on Provenance" link="https://provenance-io.github.io/provenance-docs/docs/discover/dapps"/>
-  </div>
+</div>
 
-<!-- - [Read](/docs/pb/blockchain/introduction/) about the Provenance blockchain and financial services.
 
-- Start with the [basics](/docs/category/basics) of the Provenance blockchain network
-
-- [Install](/docs/pb/blockchain/running-a-node/) the Provenance blockchain application, and start running a node
-
-- Explore the Provenance [ecosystem](/docs/pb/ecosystem/community/)
-
-- Learn how to use the [Provenance modules](/docs/pb/modules/) and how they empower blockchain-based business like NFT and DeFi
-
-- Discover the benefits of the Provenance client-side [Contract Execution Environment](/docs/pb/p8e/overview/)
-
-- Get started [integrating with Provenance](/docs/pb/integrating/integrating-with-p8e/)
-
-- Follow [real-world use cases and applications](/docs/discover/dapps) built on Provenance -->
