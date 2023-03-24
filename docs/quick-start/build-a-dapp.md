@@ -30,7 +30,7 @@ A typical Provenance Blockchain dApp will:
 
 ## Resources
 
-- Browse [our Tutorials](/docs/build/tutorials)
+- Browse [our Tutorials](/docs/learn/learn-about)
 - Read one developer's journey to [Building Your First dApp](https://medium.com/provenanceblockchain/building-your-first-dapp-5679c07d1983)
 - Read how to [Add WalletConnect functionality to your dApp lightning fast ⚡](https://medium.com/provenanceblockchain/creating-dapps-via-walletconnect-js-658268c8d549)
 - The [How-to-Provenance](https://github.com/provenance-io/how-to-provenance) GitHub repo contains examples of most types of operations you might perform on Provenance Blockchain

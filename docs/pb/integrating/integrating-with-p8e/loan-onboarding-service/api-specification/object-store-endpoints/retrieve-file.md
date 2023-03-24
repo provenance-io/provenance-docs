@@ -7,7 +7,7 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 
 ## Description
 
-Used to retrieve and decrypt raw files from the object store. See [Encrypted Object Store ](https://docs.provenance.io/p8e/overview/encrypted-object-store)for additional information.
+Used to retrieve and decrypt raw files from the object store. See [Encrypted Object Store ](https://developer.provenance.io/docs/p8e/overview/encrypted-object-store)for additional information.
 
 ## Usage
 

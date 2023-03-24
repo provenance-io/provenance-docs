@@ -7,7 +7,7 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 
 ## Description
 
-Used to encrypt and store raw files in the object store. See [Encrypted Object Store ](https://docs.provenance.io/p8e/overview/encrypted-object-store)for additional information.
+Used to encrypt and store raw files in the object store. See [Encrypted Object Store ](https://developer.provenance.io/docs/p8e/overview/encrypted-object-store)for additional information.
 
 Files are passed in as multi-part form objects.
 

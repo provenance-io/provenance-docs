@@ -24,8 +24,9 @@ portion of your key pair safe, and a special app called a **[Wallet](/docs/disco
 
 As a **dApp** developer, in most cases your users will connect their own wallets to your dApp, and pay for transactions
 with their own Hash. For some use cases, you may need a **service account** to hold Hash in order execute transactions
-or perhaps to be a fee granter for your users. In those cases, you'll need to consider your strategy for [server-side
-key management](docs/build/tutorials/key-management) and will likely make use of an [HD wallet library](https://github.com/FigureTechnologies/hdwallet).
+or perhaps to be a fee granter for your users. In those cases, you'll need to consider your strategy for 
+[server-side key management](/docs/pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/key-management/)
+and will likely make use of an [HD wallet library](https://github.com/FigureTechnologies/hdwallet).
 
 
 ## What is Hash?

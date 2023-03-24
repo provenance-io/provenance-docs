@@ -9,7 +9,7 @@ const sidebars = {
       className: 'section-heading',
       collapsible: false,
       items: [
-        'learn/dapps/dapps-overview',
+        // 'learn/dapps/dapps-overview',
         {
           type: 'category',
           label: 'Asset Design & Lifecycle',
@@ -21,10 +21,10 @@ const sidebars = {
               label: 'Asset Design',
               id: 'learn/asset-lifecycle/assets-overview'
             },
-            {
-              type: 'ref',
-              id: 'learn/asset-lifecycle/asset-lifecycle'
-            }
+            // {
+            //   type: 'ref',
+            //   id: 'learn/asset-lifecycle/asset-lifecycle'
+            // }
           ],
         },
         {
@@ -35,7 +35,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'discover/wallets',
-            'learn/dapps/fiat-ramps',
+            // 'learn/dapps/fiat-ramps',
             {
               type: 'category',
               label: 'Identity Verification',
@@ -51,9 +51,10 @@ const sidebars = {
                 'learn/dapps/identity-verification/identity-nfts',
               ],
             },
-            'learn/dapps/organization-management',
+            // 'learn/dapps/organization-management',
           ],
         },
+          /*
         {
           type: 'category',
           label: 'Architecture',
@@ -66,6 +67,7 @@ const sidebars = {
             'learn/dapps/data-privacy',
           ],
         },
+           */
 
       ],
     },
@@ -80,7 +82,7 @@ const sidebars = {
                 'learn/asset-lifecycle/assets-overview',
                 'learn/asset-lifecycle/nfts',
                 'learn/asset-lifecycle/markers',
-        'learn/asset-lifecycle/asset-lifecycle',
+                // 'learn/asset-lifecycle/asset-lifecycle',
                 // 'learn/asset-lifecycle/issue',
                 // 'learn/asset-lifecycle/manage',
                 // 'learn/asset-lifecycle/trade',

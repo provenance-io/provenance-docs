@@ -8,9 +8,9 @@ Modules are the code components of the Provenance Blockchain that execute the ma
 
 Provenance uses inherited modules from the Cosmos SDK, and has also developed modules that are specific to Provenance.
 
-- [Inherited modules](/docs/pb/modules/inherited-modules)
+- [Inherited Cosmos modules](/docs/pb/modules/cosmos-modules)
 - Provenance specific modules:
   - [Metadata](/docs/pb/modules/metadata-module)
   - [Marker](/docs/pb/modules/marker-module)
-  - [Attribute](/docs/pb/modules/account)
+  - [Attribute](/docs/pb/modules/attribute-module)
   - [Name](/docs/pb/modules/name-module)

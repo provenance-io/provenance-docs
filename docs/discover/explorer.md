@@ -15,11 +15,11 @@ View Explorer - Testnet
 <br/>
 <br/>
 
-> Explorer also supports limited account capabilities, such as proposal submissions and voting (i.e. <a href="https://docs.provenance.io/blockchain/explorer/ui-walkthrough/governance">governance</a>), and <a href="https://docs.provenance.io/blockchain/explorer/ui-walkthrough/staking-validators">staking</a>.
+> Explorer also supports limited account capabilities, such as proposal submissions and voting (i.e. <a href="https://developer.provenance.io/docs/blockchain/explorer/ui-walkthrough/governance">governance</a>), and <a href="https://developer.provenance.io/docs/blockchain/explorer/ui-walkthrough/staking-validators">staking</a>.
 
 ### Documentation
 
-Provenance documentation includes a detailed <a href="https://docs.provenance.io/blockchain/explorer/ui-walkthrough">walkthrough</a> of the Explorer. The documentation also includes additional information on <a href="https://docs.provenance.io/blockchain/explorer/explorer-as-a-service">Explorer-Service</a>
+Provenance documentation includes a detailed <a href="https://developer.provenance.io/docs/blockchain/explorer/ui-walkthrough">walkthrough</a> of the Explorer. The documentation also includes additional information on <a href="https://developer.provenance.io/docs/blockchain/explorer/explorer-as-a-service">Explorer-Service</a>
 
 ### GitHub repos for Explorer-Service and Explorer-Frontend
 

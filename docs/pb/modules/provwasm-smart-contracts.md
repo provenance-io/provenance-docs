@@ -12,7 +12,7 @@ ProvWasm contains extensions for a third party blockchain module. These extensio
 
 The CosmWasm VM only integrates with the `banking` and `staking` modules by default. However, it allows for adding custom encoders and queriers. A package was added in the Provenance Blockchain that contain extensions for the following Provenance Blockchain modules:
 
-- [Account](account.md)
+- [Attribute](attribute-module.md)
 - [Marker](marker-module.md)
 - [Name](name-module.md)
 - [Metadata](metadata-module.md)
