@@ -42,13 +42,7 @@ Depending on the Identity Provider's implementation, the data can be accessed th
 Provider or an EOS Gateway that directly interfaces with the off-chain encrypted object store holding the identity data.
 
 
-## Step-by-Step Guide
-
-Define Protobuf Records: The Identity Provider defines one
-or more Protobuf Records to be included in the Scope. These Records store identity verification data, such as
-verification level, verification date, and other relevant non-sensitive information. Do not include any Personally
-Identifying Information (PII) in these Records.
-
+## Example Identity NFT
 
 ```protobuf title="Example NFT Protobuf (partial) representing investor accreditation data" showLineNumbers
 syntax = "proto3";
