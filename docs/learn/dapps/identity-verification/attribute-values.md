@@ -1,45 +1,45 @@
 # Identity Attribute Values
 
-When crafting attribute values for identity verification on Provenance Blockchain, it is crucial to determine what data
-should be included in an attribute value. Since attributes on a blockchain account are publicly readable, it is
-essential to consider privacy and security. This article discusses what should or could go into an attribute value for
+When crafting Attribute values for identity verification on Provenance Blockchain, it is crucial to determine what data
+should be included in an Attribute value. Since attributes on a blockchain account are publicly readable, it is
+essential to consider privacy and security. This article discusses what should or could go into an Attribute value for
 identity verification on the Provenance Blockchain.
 
 
 
 ## Ensuring Privacy and Security
 
-The primary rule is to **never include any Personally Identifying Information (PII) in the attribute value**. Once the
-attribute data is written to the chain, it is impossible to retract the information. The attribute value's content is left to the
-identity provider's discretion. The attribute name should convey the credential type, while the attribute value should
+The primary rule is to **never include any Personally Identifying Information (PII) in the Attribute value**. Once the
+Attribute data is written to the chain, it is impossible to retract the information. The Attribute value's content is left to the
+identity provider's discretion. The Attribute name should convey the credential type, while the Attribute value should
 contain a simple, opaque reference identifier to the user's KYC data stored at the identity provider.
 
 :::danger
-Never include any Personally Identifying Information (PII) in the attribute value
+Never include any Personally Identifying Information (PII) in the Attribute value
 :::
 
-A minimal attribute value example might be a customer or verification process reference ID. This ID can be used by a
+A minimal Attribute value example might be a customer or verification process reference ID. This ID can be used by a
 dApp or service to present to the identity provider when requesting user identity details. Alternatively, the identity
 provider could include a full URI for obtaining the identity data, provided the customer authorizes access.
 
 ## Handling Expiration Dates and Status Fields
 
 Most identity verification processes are valid for a limited time. It may seem logical to include an expiration date or
-status field in the attribute value, but this approach has downsides. Including an "expiration date" field relies on the
+status field in the Attribute value, but this approach has downsides. Including an "expiration date" field relies on the
 consuming application remembering to parse and respect the field. Similarly, incorporating a field for status or data state, such as 
 "pending," "completed," or "expired," places the responsibility on applications to parse and respect these semantic
 values.
 
-A recommended approach is to include an issue date (but not an expiration date) for the attribute. This allows the
+A recommended approach is to include an issue date (but not an expiration date) for the Attribute. This allows the
 consuming application to decide how current their credential requirements must be. Another method is for the identity
-provider to delete the attribute from the user account when it expires or becomes invalid. This way, consuming
-applications can reason about the attribute using only the presence or absence of the attribute as the definitive flag
+provider to delete the Attribute from the user account when it expires or becomes invalid. This way, consuming
+applications can reason about the Attribute using only the presence or absence of the Attribute as the definitive flag
 for the credential's current validity.
 
 ## Data Types
 
 The [AttributeType enum](https://github.com/provenance-io/provenance/blob/main/proto/provenance/attribute/v1/attribute.proto#L32)
-defines the different types of data that can be stored in an attribute value. It is important to choose the appropriate
+defines the different types of data that can be stored in an Attribute value. It is important to choose the appropriate
 type based on the data being stored, ensuring both privacy and functionality.
 
 
