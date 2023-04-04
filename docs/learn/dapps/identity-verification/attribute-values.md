@@ -20,13 +20,13 @@ Never include any Personally Identifying Information (PII) in the attribute valu
 
 A minimal attribute value example might be a customer or verification process reference ID. This ID can be used by a
 dApp or service to present to the identity provider when requesting user identity details. Alternatively, the identity
-provider could include a full URI for obtaining the identity data, provided the customer authorizes it.
+provider could include a full URI for obtaining the identity data, provided the customer authorizes access.
 
 ## Handling Expiration Dates and Status Fields
 
 Most identity verification processes are valid for a limited time. It may seem logical to include an expiration date or
 status field in the attribute value, but this approach has downsides. Including an "expiration date" field relies on the
-consuming application to parse and respect the field. Similarly, incorporating a field for status or data state, such as 
+consuming application remembering to parse and respect the field. Similarly, incorporating a field for status or data state, such as 
 "pending," "completed," or "expired," places the responsibility on applications to parse and respect these semantic
 values.
 
@@ -36,10 +36,7 @@ provider to delete the attribute from the user account when it expires or become
 applications can reason about the attribute using only the presence or absence of the attribute as the definitive flag
 for the credential's current validity.
 
-## Coordinating Identity NFTs with Attribute Values
-
-If there is a coordinating identity NFT for the attribute, it's a good idea to include the Scope address in the
-attribute value so that calling applications can find the NFT.
+## Data Types
 
 The [AttributeType enum](https://github.com/provenance-io/provenance/blob/main/proto/provenance/attribute/v1/attribute.proto#L32)
 defines the different types of data that can be stored in an attribute value. It is important to choose the appropriate
