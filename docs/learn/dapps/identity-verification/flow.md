@@ -1,37 +1,47 @@
-# Verification Flow
+---
+title: Verification Flow
+---
 
-Here's the process by which a user obtains and uses identity verification on Provenance Blockchain
+# Identity Verification Flow
 
-## User Undergoes KYC
+The process of performing identity verification using Attributes on Provenance Blockchain is a crucial aspect of
+ensuring security and trust within the ecosystem. This process can be broken down into two main steps: obtaining a
+credential from an Identity Provider and presenting the credential from the user's wallet to any decentralized
+application (dApp).
 
-The user is usually directed to a identity provider from an application. 
+## Step 1: User Undergoes KYC
 
-To start the process, the user must go to an identity verification provider company. 
+The user is typically directed to an Identity Provider from an application (dApp).
 
-The identity verification process typically involves the user providing some personal information, such as their name,
-date of birth, and address, as well as submitting relevant documentation to prove their identity. The documentation
-required may vary depending on the level of verification required by the application or service. For example, some
-services may require a government-issued ID, while others may require additional documents such as proof of address or
-proof of income.
-
-Once the user has completed the verification process, the provider will write an attribute to the user's account on the
-Provenance Blockchain indicating that the user has passed the verification requirements. This attribute serves as proof
-that the user has completed the process and can be used to grant access to specific features or services within the
-Provenance ecosystem.
-
-In addition, the identity verification provider will store the verification data in the EOS, which is a decentralized
-database that is maintained by a network of computers. By storing the verification data in the EOS, the provider ensures
-that the data is secure and cannot be tampered with. Furthermore, the provider will also create a unique NFT (
-non-fungible token) that represents the verification data on the chain. This NFT allows the user to own their
-verification data as an asset in their account or wallet, ensuring the security and privacy of their sensitive
-information.
-
-Overall, the identity verification process is an important step in ensuring the security and integrity of the Provenance
-Blockchain ecosystem. By requiring users to complete this process, Provenance is able to maintain a high level of trust
-and security, which is critical in any blockchain-based application or service.
+1. To initiate the process, the user must visit an identity verification provider company.
+2. The identity verification process involves the user providing personal information (name, date of birth, address) and
+   submitting relevant documentation to confirm their identity. Documentation requirements may vary based on the level
+   of verification needed by the application or service. or example, some services may require a government-issued ID,
+   while others may require additional documents such as proof of address or proof of income.
+3. Upon completing the verification process, the provider writes an Attribute to the user's account on the Provenance
+   Blockchain, indicating that the user has passed the verification requirements. This Attribute serves as proof of
+   completion and can grant access to specific features or services within the Provenance ecosystem.
+4. The identity verification provider stores the verification data in the Encrypted Object Store (EOS), which
+   coordinates with Provenance Blockchain NFT records. By storing the data in the EOS, the provider ensures data
+   security and immutability.
+5. The provider also creates a unique NFT (non-fungible token) representing the verification data on the blockchain.
+   This NFT allows the user to own their verification data as an asset in their account or wallet, ensuring the security
+   and privacy of sensitive information.
 
 ![identity verification check](/img/learn/dapps/verification-flow-1.png)
 
-## User Allow dApp to Read KYC
+## Step 2: User Grants dApp Permission to Read KYC
+
+User KYC Attributes can be utilized in two ways:
+
+1. The dApp or smart contract can make decisions based on the Attribute's presence or absence and name. If the Attribute
+   exists, it means the user has met the requirements for the credential. In many cases, this check is sufficient to
+   complete the business process.
+2. If the credential use case requires the full identity verification data, the dApp can request permission from the
+   user to read the data stored in the EOS.
+
+The method for accessing NFT identity data depends on the Identity Provider. The provider could make the EOS Gateway
+available to application users or provide an API to fetch the data. For more information on the design and availability
+of Identity NFTs, refer to the [Identity NFTs](identity-nfts) section.
 
 ![identity verification check](/img/learn/dapps/verification-flow-2.png)

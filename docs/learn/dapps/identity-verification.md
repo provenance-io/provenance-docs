@@ -2,6 +2,8 @@
 title: Identity Verification
 ---
 
+zero-knowledge identity protocol
+
 # Identity Verification on Provenance Blockchain
 
 Identity verification processes, such as **Know Your Customer (KYC)**, **Anti-Money Laundering (AML)**, and **506\(c\) investor
@@ -51,6 +53,6 @@ an NFT in the user's wallet and can be easily shared with other dApps.
 ![identity verification check](/img/learn/dapps/wallet-with-identity.png)
 
 
-The actual data is stored in Provenance's Encrypted Object Store (EOS), which provides a secure and private location for
+The verification data is stored in Provenance's Encrypted Object Store (EOS), which provides a secure and private location for
 the data to be stored. The user can then permission their own EOS credential data to the dApp of their choosing,
 allowing them to share their identity information without compromising their privacy or security.

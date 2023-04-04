@@ -9,7 +9,7 @@ const sidebars = {
       className: 'section-heading',
       collapsible: false,
       items: [
-        // 'learn/dapps/dapps-overview',
+        'learn/dapps/dapps-overview',
         {
           type: 'category',
           label: 'Asset Design & Lifecycle',
