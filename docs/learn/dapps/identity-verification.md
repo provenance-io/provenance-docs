@@ -2,8 +2,6 @@
 title: Identity Verification
 ---
 
-zero-knowledge identity protocol
-
 # Identity Verification on Provenance Blockchain
 
 Identity verification processes, such as **Know Your Customer (KYC)**, **Anti-Money Laundering (AML)**, and **506\(c\) investor
