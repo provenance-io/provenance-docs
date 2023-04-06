@@ -34,7 +34,7 @@ const sidebars = {
           collapsible: false,
           collapsed: true,
           items: [
-            'discover/wallets',
+            // 'discover/wallets',
             // 'learn/dapps/fiat-ramps',
             {
               type: 'category',
