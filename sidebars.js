@@ -1,27 +1,88 @@
-/**
- * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
-
- The sidebars can be generated from the filesystem, or explicitly defined here.
-
- Create as many sidebars as you want.
- */
 
 // @ts-check
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
+  dappsSidebar: [
+    {
+      type: 'category',
+      label: 'dApp Guide',
+      className: 'section-heading',
+      collapsible: false,
+      items: [
+        'learn/dapps/dapps-overview',
+        {
+          type: 'category',
+          label: 'Asset Design & Lifecycle',
+          className: 'section-heading',
+          collapsible: false,
+          items: [
+            {
+              type: 'ref',
+              label: 'Asset Design',
+              id: 'learn/asset-lifecycle/assets-overview'
+            },
+            // {
+            //   type: 'ref',
+            //   id: 'learn/asset-lifecycle/asset-lifecycle'
+            // }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'User Experience',
+          className: 'section-heading',
+          collapsible: false,
+          collapsed: true,
+          items: [
+            // 'discover/wallets',
+            // 'learn/dapps/fiat-ramps',
+            {
+              type: 'category',
+              label: 'Identity Verification',
+              collapsible: true,
+              link: {
+                type: 'doc',
+                id: 'learn/dapps/identity-verification',
+              },
+              items: [
+                'learn/dapps/identity-verification/flow',
+                'learn/dapps/identity-verification/attribute-names',
+                'learn/dapps/identity-verification/attribute-values',
+                'learn/dapps/identity-verification/identity-nfts',
+              ],
+            },
+            // 'learn/dapps/organization-management',
+          ],
+        },
+          /*
+        {
+          type: 'category',
+          label: 'Architecture',
+          className: 'section-heading',
+          collapsible: false,
+          items: [
+            'learn/dapps/dapp-architecture',
+            'learn/dapps/ui-ux',
+            'learn/dapps/blockchain-communication',
+            'learn/dapps/data-privacy',
+          ],
+        },
+           */
+
+      ],
+    },
+  ],
     assetLifecycleSidebar: [
         {
             type: 'category',
-            label: 'Asset Lifecycle Guide',
+      label: 'Asset Guide',
             className: 'section-heading',
             collapsible: false,
             items: [
                 'learn/asset-lifecycle/assets-overview',
                 'learn/asset-lifecycle/nfts',
                 'learn/asset-lifecycle/markers',
+                // 'learn/asset-lifecycle/asset-lifecycle',
                 // 'learn/asset-lifecycle/issue',
                 // 'learn/asset-lifecycle/manage',
                 // 'learn/asset-lifecycle/trade',
@@ -150,7 +211,7 @@ const sidebars = {
                 'pb/modules/cosmos-modules',
                 'pb/modules/metadata-module',
                 'pb/modules/marker-module',
-                'pb/modules/account',
+        // 'pb/modules/attribute-module',
                 'pb/modules/name-module',
                 'pb/modules/provwasm-smart-contracts',
             ],

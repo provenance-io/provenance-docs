@@ -1,15 +1,15 @@
 # Financial NFTs 
 
-Single-asset NFTs are represented on Provenance Blockchain using the [Metadata module](https://docs.provenance.io/modules/metadata-module).
+Single-asset NFTs are represented on Provenance Blockchain using the [Metadata module](https://developer.provenance.io/docs/modules/metadata-module).
 
-The Metadata module was designed to work in conjunction with Provenance Blockchain’s [Client Execution Environment](https://docs.provenance.io/p8e/overview) (CEE), whose purpose is to control and reason about asset-specific data off-chain while using the blockchain for recording an immutable history of the asset data and metadata on-chain. This powerful capability provides data privacy for Personally Identifying Information (PII) and other Non-Public Information (NPI).
+The Metadata module was designed to work in conjunction with Provenance Blockchain’s [Client Execution Environment](https://developer.provenance.io/docs/p8e/overview) (CEE), whose purpose is to control and reason about asset-specific data off-chain while using the blockchain for recording an immutable history of the asset data and metadata on-chain. This powerful capability provides data privacy for Personally Identifying Information (PII) and other Non-Public Information (NPI).
 
 Usage of the CEE is an optional extension to the Provenance Blockchain, and asset NFTs may be minted directly on-chain without using the CEE.
   
 
 ## Anatomy of an NFT 
 
-An NFT on Provenance Blockchain is defined by the [Scope](https://docs.provenance.io/modules/metadata-module#scope-data-structures) data structure.
+An NFT on Provenance Blockchain is defined by the [Scope](https://developer.provenance.io/docs/modules/metadata-module#scope-data-structures) data structure.
 
 ![nft](/img/learn/asset-lifecycle/nft.png)
 

@@ -13,7 +13,7 @@ As a borrower moves throughout the application stage of the mortgage process, da
 
 ## Onboarding Loan Documents
 
-Recall that in the [Loan Package data model](https://docs.provenance.io/integrating/asset-originators-guide/loan-onboarding-service/data-mapping), loan document metadata is stored separately from the loan application and underwriting data - in a separate Record. Also, rather than store every byte of every loan document within the loan scope, the `documents` Record will contain a list of loan document metadata. Each entry contains the URI to the actual object and a checksum of the contents to provide evidence of tampering with that off-chain object.
+Recall that in the [Loan Package data model](https://developer.provenance.io/docs/integrating/asset-originators-guide/loan-onboarding-service/data-mapping), loan document metadata is stored separately from the loan application and underwriting data - in a separate Record. Also, rather than store every byte of every loan document within the loan scope, the `documents` Record will contain a list of loan document metadata. Each entry contains the URI to the actual object and a checksum of the contents to provide evidence of tampering with that off-chain object.
 
 Technically speaking, those documents could be stored anywhere, however, the Encrypted Object Store is a great way to store documents such that they can be shared with business partners and downstream applications. Both DART and Portfolio Manager are built to look for documents in the Encrypted Object Store. Storing documents as encrypted objects in the Objects Store allows for automated replication and less integration work between business partners.
 

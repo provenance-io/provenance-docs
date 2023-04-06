@@ -39,14 +39,14 @@ name, and their value is expressed as a whole number. Sending coins is as simple
 only a signature from the sender to confirm the transfer. Each coin is fungible, meaning that each coin is 
 indistinguishable from another and can be replaced by another unit of equal value.
 
-A Marker has its own [lifecycle](https://docs.provenance.io/modules/marker-module#state-transitions) represented by a 
+A Marker has its own [lifecycle](https://developer.provenance.io/docs/modules/marker-module#state-transitions) represented by a 
 finite state machine. A Marker is ready to use when it reaches the `Active` state.
 
 ## Coins and Tokens
 On Provenance Blockchain, a Marker can be created to govern the rules of any type of coin or token. 
 This allows for the generation of a customized and controlled digital asset.
 
-Coin examples include [Hash](https://explorer.provenance.io/asset/nhash), the [utility token](https://docs.provenance.io/ecosystem/financial-services-blockchain/token-economics#provenance-fees-and-hash)
+Coin examples include [Hash](https://explorer.provenance.io/asset/nhash), the [utility token](https://developer.provenance.io/docs/ecosystem/financial-services-blockchain/token-economics#provenance-fees-and-hash)
 of Provenance Blockchain; [USDF](https://www.usdfconsortium.com/), a bank-minted tokenized deposit; and [figureomni](https://explorer.provenance.io/asset/cfigureomni),
 a use case-specific Omnibus Bank coin (tokenized deposit).
 
@@ -61,7 +61,7 @@ Cosmos [Coin](https://buf.build/cosmos/cosmos-sdk/docs/main:cosmos.base.v1beta1#
 
 ## Tokenized Asset Control
 
-The marker system provides advanced token management through its implementation of fine-grained [Access Grants](https://docs.provenance.io/modules/marker-module#access-grants). 
+The marker system provides advanced token management through its implementation of fine-grained [Access Grants](https://developer.provenance.io/docs/modules/marker-module#access-grants). 
 This allows for greater customization and flexibility in the management of marker accounts. 
 Access rights, such as minting, burning, depositing, withdrawing, deleting, administrating, and transferring, 
 can be assigned to multiple addresses or delegated to organizational 
@@ -93,7 +93,7 @@ Marker tokens come in two flavors:
 
 For Restricted Markers, the transfer permission is usually delegated to a smart contract. In the following example,
 `example-co.stock` trading in a secondary market is delegated to a smart contact, which checks that the recipient's
-506c accreditation is present and currently valid. If the recipient's 506c Attribute is either missing or expired,
+506\(c\) accreditation is present and currently valid. If the recipient's 506\(c\) Attribute is either missing or expired,
 the smart contract will not allow the transfer to complete.
 
 ![marker structure](/img/learn/asset-lifecycle/marker-transfer-approval.png)

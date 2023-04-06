@@ -2,7 +2,8 @@
 
 A blockchain wallet allows users to store and manage their assets and sign/send messages on the blockchain.
 
-> Before starting development, it is recommended that dApp developers familiarize themselves with the Provenance Blockchain <a href="https://docs.provenance.io/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/key-management">Key Management Strategies</a> and
+> Before starting development, it is recommended that dApp developers familiarize themselves with the Provenance Blockchain
+> [Key Management Strategies](/docs/pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/key-management/)
 > the available wallets supported by Provenance Blockchain.
 
 ### Supported Wallets

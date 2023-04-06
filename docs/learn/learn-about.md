@@ -12,7 +12,9 @@
 - [**Guide to the Digital Asset Lifecycle**](/docs/learn/asset-lifecycle/assets-overview): _Issue, Manage, Trade_
 
 ### Building dApps
-
+<!--
+- [**dApp Builder's Guide**](/docs/learn/dapps/dapps-overview)
+-->
 - [Creating React dApps via WalletConnect-JS](https://medium.com/provenanceblockchain/creating-dapps-via-walletconnect-js-658268c8d549)
 
 ### Smart Contracts
