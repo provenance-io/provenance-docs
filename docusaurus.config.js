@@ -122,8 +122,22 @@ const config = {
           },
           {
             label: "Guides",
-            to: "docs/learn/learn-about",
+            type: "dropdown",
             position: "left",
+            items: [
+              {
+                label: "Asset Lifecycle Guide",
+                to: "docs/learn/asset-lifecycle/assets-overview",
+              },
+              {
+                label: "dApp Builder's Guide",
+                to: "docs/learn/dapps/dapps-overview",
+              },
+              {
+                label: "More Guides & Tutorials",
+                to: "docs/learn/learn-about",
+              },
+            ],
           },
           {
             label: "Build",
