@@ -17,7 +17,7 @@ export PIO_HOME=~/.provenanced // or directory of your choosing.
 provenanced init choose-a-moniker --chain-id pio-mainnet-1
 curl https://raw.githubusercontent.com/provenance-io/mainnet/main/pio-mainnet-1/genesis.json> genesis.json
 mv genesis.json $PIO_HOME/config
-Step 4:Change config.toml to have the db-backend set to `cleveldb` 
+Step 4:Change config.toml to have the db-backend set to `cleveldb`
 ```# Database backend: goleveldb | cleveldb | boltdb | rocksdb | badgerdb
 # * goleveldb (github.com/syndtr/goleveldb - most popular implementation)
 #   - pure go
@@ -38,5 +38,5 @@ Step 4:Change config.toml to have the db-backend set to `cleveldb`
 #   - EXPERIMENTAL
 #   - use badgerdb build tag (go build -tags badgerdb)
 db_backend = "cleveldb```
-Step 5: provenanced start --p2p.seeds 4bd2fb0ae5a123f1db325960836004f980ee09b4@seed-0.provenance.io:26656, 048b991204d7aac7209229cbe457f622eed96e5d@seed-1.provenance.io:26656 --x-crisis-skip-assert-invariants
+Step 5: provenanced start --p2p.seeds 40f9493fa7ab4259159240e9a8ba12f90743079b@seed.provenance.io:26656 --x-crisis-skip-assert-invariants
 ````
