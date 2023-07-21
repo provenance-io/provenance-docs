@@ -7,7 +7,7 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 
 When storing data in the Encrypted Object Store, asset originators have to the choice to encrypt that data with one or more keys. First and foremost, you will want to encrypt your own data with your own public encryption key. After that, the choice is yours to permission other entities such as your business partners or various down stream applications like Portfolio Manager and DART.
 
-The primary mechanism for providing this support is done by adding additional audience members to stored assets. Please reference [DIME (Encryption Envelope Specification)](https://developer.provenance.io/docs/p8e/overview/encrypted-object-store/dime-encryption-envelope-specification#dime-encryptionenvelopespecification-retrievalcontext) for additional information on how data is encrypted.
+The primary mechanism for providing this support is done by adding additional audience members to stored assets. Please reference [DIME (Encryption Envelope Specification)](https://developer.provenance.io/docs/pb/p8e/overview/encrypted-object-store/dime-encryption-envelope-specification#dime-encryptionenvelopespecification-retrievalcontext) for additional information on how data is encrypted.
 
 When storing objects in the Object Store or executing BlockVault contracts, additional audiences can be specified in a `permissions` object using the `PermissionInfo` schema:
 
