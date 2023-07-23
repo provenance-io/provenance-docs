@@ -4,7 +4,9 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Running a testnet node for pio-testnet-1 from a quicksync file." />
 
-The steps for running testnet are exactly the same as mainnet except that the github repo is here https://github.com/provenance-io/testnet and the chain id is `pio-testnet-1`
+The steps for running testnet are for the most part the same as mainnet except that the github repo is here
+[https://github.com/provenance-io/testnet](https://github.com/provenance-io/testnet), the `-t` flag is required to
+set the key prefix from 505 to 1 (putting the binary in testnet mode)and the chain id is `pio-testnet-1`
 
 ````markup
 Step 1: download the latest quickysync via https://test.provenance.io/quicksync.

@@ -19,14 +19,14 @@ While using the quick-start method provides a quick and easy way to start a test
 Use the following to start up a Provenance Blockchain node in the foreground.
 
 :::info
-Refer to [https://github.com/provenance-io/testnet](https://github.com/provenance-io/testnet) for the latest testnet version. As of this writing, it is `0.2.0` as reflected in the version tags below.
+Refer to [https://github.com/provenance-io/testnet](https://github.com/provenance-io/testnet) for the latest testnet version. As of this writing, it is `1.16.0` as reflected in the version tags below.
 :::
 
 ```
 export PIO_HOME=~/.provenanced
 git clone https://github.com/provenance-io/provenance.git
 cd provenance
-git checkout tags/v0.2.0 -b v0.2.0
+git checkout tags/v1.16.0 -b v1.16.0
 make clean
 make install
 provenanced -t init choose-a-moniker --chain-id pio-testnet-1
@@ -54,7 +54,7 @@ Unlike the Quick Start instructions, this section describes setting up a new ful
 Before starting this section, be sure the prerequisites have been installed as described in [Installing Provenance Blockchain](../../#prerequisites).
 
 :::info
-See the [testnet repo](https://github.com/provenance-io/testnet) for the latest genesis/config files and version information. The node started in this section is chain id `pio-testnet-1` Provenance Blockchain release 0.2.0 ([https://github.com/provenance-io/provenance/releases/tag/v0.2.0](https://github.com/provenance-io/provenance/releases/tag/v0.2.0))
+See the [testnet repo](https://github.com/provenance-io/testnet) for the latest genesis/config files and version information. The node started in this section is chain id `pio-testnet-1` Provenance Blockchain release 1.16.0 ([https://github.com/provenance-io/provenance/releases/tag/v1.16.0](https://github.com/provenance-io/provenance/releases/tag/v1.16.0))
 :::
 
 ### Cleaning up Existing testnet Node
@@ -69,10 +69,10 @@ mkdir -p $PIO_HOME/config
 
 ### Download and Install Provenance Blockchain
 
-Use `git` to download the latest testnet version of Provenance Blockchain (`0.2.0` as of this writing):
+Use `git` to download the latest testnet version of Provenance Blockchain (`1.16.0` as of this writing):
 
 ```bash
-git clone -b v0.2.0 https://github.com/provenance-io/provenance.git
+git clone -b v1.16.0 https://github.com/provenance-io/provenance.git
 cd provenance
 ```
 
@@ -90,7 +90,7 @@ provenanced version --long
 
 name: Provenance Blockchain
 server_name: provenanced
-version: 0.2.0
+version: 1.16.0
 commit: 75fef3a701af3787a56d4c8c6b40f67b95b79eb6
 build_tags: netgo,gcc,cleveldb,ledger
 go: go version go1.15.5 darwin/amd64
