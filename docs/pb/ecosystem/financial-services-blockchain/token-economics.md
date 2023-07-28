@@ -25,7 +25,7 @@ The number of minted Hash remains constant, and no new Hash is minted as reward 
 inflation of the Hash value through the new influx of Hash.
 
 To learn more about acquiring Hash, please refer
-to [Provenance's guide on acquiring Hash](https://provenance.io/ecosystem/Hash/).
+to [Provenance's guide on acquiring Hash](https://provenance.io/purchase-hash).
 
 [^1] _Validators on the Provenance Blockchain network are responsible for adding new blocks to the chain and ensuring
 the validity of transactions. If a validator is found to be acting in bad faith or not following the network's rules,
@@ -45,7 +45,7 @@ security and stability._
 | Initial Active Set Size       | 100 validators |
 | Community pool                | 7%             |
 
-TODO add initial allocation 
+TODO add initial allocation
 
 ## Staking Hash
 
