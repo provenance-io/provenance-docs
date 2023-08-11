@@ -17,26 +17,26 @@ public network.
 ### Secure and proven communication channels
 
 Connections between Provenance and another blockchain are created with cryptographic proofs that ensure a formal and
-secure connection as well as a completely audit history of all communications.
+secure connection as well as an auditable history of all communications.
 
 ### Proofs of chain integrity, health, and liveness
 
-Beyond just the secure communications between chains an IBC connection provides proofs that both chains are healthy and
+Beyond secure communication between chains, an IBC connection provides proof that both chains are healthy and
 current. This is extremely important for private blockchains that are not otherwise reachable for public
 testing/inspection. Through the use of an IBC connection the private network can prove that it is functioning correctly
-and is actively processing transactions while preserving completely privacy of data and transactions.
+and is actively processing transactions while completely preserving privacy of data and transactions.
 
 ### Proofs of data authenticity for transactions
 
 All transactions and communications between networks are recorded using the standard blockchain concepts of transactions
-signed by public/private keys. For Provenance based blockchains the same accounts addresses are used on all zones making
+signed by private keys and verified by public keys. For Provenance based blockchains the same account addresses are used on all zones making
 it straightforward to attribute transactions to an identity.
 
 ### Separation of trust contexts
 
-Different business cases have different sets of partners and in some cases there are reason to limit information access
+Different business cases have different sets of partners and in some cases there are reasons to limit information access
 to a smaller group of affiliates than those that participate in the public Provenance mainnet. In these cases the use of
-an alternate zone with different set of validators and stakeholders may make sense.
+an alternate zone with different validators and stakeholders may make sense.
 
 ## How it Works
 
