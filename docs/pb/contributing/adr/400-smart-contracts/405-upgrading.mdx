@@ -11,7 +11,7 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 The deployment of a smart contract typically follows these steps:
 
 1. **Build and Compile:** The initial step where the contract is built and compiled.
-2. **Store/Deploy Contract:** The contract is then stored/deployed to the Provenance blockchain network. This process involves submitting a governance proposal that includes the encoded WebAssembly (WASM) and metadata about the contract such as notes, repository links, and admin details. Successful submission returns a unique code ID.
+2. **Store/Deploy Contract:** The contract is then stored/deployed to the Provenance blockchain network. This process involves submitting a governance proposal that includes the encoded WebAssembly (WASM) and metadata about the contract such as notes, repository links, and admin details. A unique code id, used to reference the stored code, is created if the proposal is passed.
 3. **Instantiate Contract:** Using the obtained code ID, the contract is instantiated.
 4. **Execute/Invoke Contract:** The contract is then ready for execution or invocation.
 5. **Development of New Features:** New features for the contract are coded.
