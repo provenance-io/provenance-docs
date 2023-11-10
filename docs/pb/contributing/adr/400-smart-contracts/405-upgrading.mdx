@@ -1,0 +1,61 @@
+# 405 - Smart Contract Lifecycle and Version Transition
+
+import { DocSubheader } from '/docs/components/DocSubheader';
+
+<DocSubheader text="The typical lifecycle of a smart contract within the ecosystem, focusing on the transition process from version 1 (v1) to version 2 (v2), and the procedures and policies associated with this process." />
+
+## 1. Lifecycle of a Smart Contract
+
+### Deployment Plan
+
+The deployment of a smart contract typically follows these steps:
+
+1. **Build and Compile:** The initial step where the contract is built and compiled.
+2. **Store/Deploy Contract:** The contract is then stored/deployed to the Provenance blockchain network. This process involves submitting a governance proposal that includes the encoded WebAssembly (WASM) and metadata about the contract such as notes, repository links, and admin details. A unique code id, used to reference the stored code, is created if the proposal is passed.
+3. **Instantiate Contract:** Using the obtained code ID, the contract is instantiated.
+4. **Execute/Invoke Contract:** The contract is then ready for execution or invocation.
+5. **Development of New Features:** New features for the contract are coded.
+6. **Store/Deploy Updated Contract:** The updated contract code is stored/deployed, again through a governance proposal, which returns a new code ID.
+7. **Migrate Existing Contract:** The existing contract is migrated to the new code ID, effectively upgrading the contract.
+
+### Version Transition (v1 to v2)
+
+- Upon upgrading, the contract address remains the same but runs the migrated (new) code.
+- The v1 version of the contract is no longer active and cannot be interacted with; the v1 instance effectively becomes the v2 version.
+
+<p className="p-4 bg-sky-100 rounded-lg shadow-md max-w-xl m-auto">
+  <span className="font-bold block text-xl border-0 border-b border-sky-200 pb-1 mb-1 border-solid">
+    Note
+  </span>
+  The v1 code remains stored and could be instantiated with its code ID, but the
+  specific migrated instance permanently changes to run the new version.
+</p>
+
+## 2. Migration and User Transition Strategies
+
+### Developer's Responsibility
+
+- Developers are responsible for ensuring successful migration. This typically involves proper deprecation of APIs, storing version data in the contract, and migrating stored data.
+
+### Communication and Deprecation
+
+- There is no standard deprecation policy. Communication about upgrades and changes is typically done out-of-band by the developers to their clients.
+- A proper deprecation process involves maintaining the previous version API along with the new API, allowing older clients to update their code in parallel with the new version.
+
+## 3. Data Handling and Integrity
+
+### Data Maintenance and Migration
+
+- The duration for which data is stored depends on the contract's function. A "skeleton" contract upgrade can be used to delete stored data and remove admin access, essentially sunsetting the older contract.
+- It's crucial to maintain data integrity during migration, and in cases of corruption, recovery from previous blocks might be possible, though this is not a standard practice and has not been widely performed.
+
+## 4. Risks and Challenges
+
+- Bad upgrades, such as those with flawed data migration logic or broken functions, require the updated contract code to be uploaded and migrated to.
+- In case of migration failure due to errors, the transaction fails and no changes are made. However, issues arising from bad programming logic (not actual transaction errors) are permanent and require subsequent fixes.
+
+## 5. Additional Notes
+
+- Once a contract is updated from v1 to v2, v2 takes over and v1 can no longer be called.
+- The process of migration updates the version state data, indicating the transition from v1 to v2.
+- It's important to note that once migrated, there is no reversing to the previous version. Any necessary corrections must be addressed by moving forward with new updates and migrations.
