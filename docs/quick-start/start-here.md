@@ -10,9 +10,10 @@ Welcome! Let's get you pointed in the right direction. What would you like to do
   - [Access HASH](https://provenance.io/purchase-hash), the utility token for participating on-chain.
   - Learn how to [delegate (stake) my Hash](https://provenance.io/delegate-hash)
   - [Become a Validator](/docs/quick-start/become-a-validator) in the network
+  - [Tokenize an asset](/docs/learn/asset-lifecycle/markers) on Provenance Blockchain
 - Develop a Solution
   - Learn how to [develop smart contracts](/docs/quick-start/write-a-smart-contract)
-  - [Write a dApp](/docs/quick-start/build-a-dapp) for Provenance Blockchain
+  - [Write a dApp](/docs/quick-start/build-a-dapp) on Provenance Blockchain
 
 ## Get in touch
 

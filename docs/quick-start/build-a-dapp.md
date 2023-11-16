@@ -2,11 +2,13 @@
 
 ## What's a dApp?
 
-A **dApp** is a _decentralized application_; that is, an app (web or mobile) that talks to a blockchain. 
+A **dApp** is a _decentralized application_; that is, an app (web or mobile) that talks to a blockchain.
 
 A key feature of a dApp is the ability for a user to connect their wallet as their identity and authentication mechanism. Any actions
 the user takes through the dApp are sent back to the user's wallet app for the user to approve, sign, and submit their
 transaction directly to the blockchain.
+
+## dApp Architecture
 
 ![dApp architecture](/img/quick-start/dapp-architecture.png)
 
@@ -21,12 +23,12 @@ A typical Provenance Blockchain dApp will:
 - Read and write data using [Google Protocol Buffers](https://developers.google.com/protocol-buffers) and [Provenance Proto docs](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md)
 
 - Communicate with the blockchain through the Provenance and Cosmos [GRPC](https://grpc.io/) Services (APIs), examples including:
-  - Provenance [Attribute Query Serivce](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.attribute.v1.Query) for querying KYC/AML attributes for a user account 
+
+  - Provenance [Attribute Query Serivce](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.attribute.v1.Query) for querying KYC/AML attributes for a user account
   - Provenance [Marker Msg Service](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.marker.v1.Msg) for creating new tokens
   - Cosmos [Bank Msg Service](https://buf.build/cosmos/cosmos-sdk/docs/main:cosmos.bank.v1beta1) for sending coins/tokens to another account
 
 - Make use of the [BlockVault CEE data privacy system](/docs/pb/p8e/overview/) for [PII](https://www.investopedia.com/terms/p/personally-identifiable-information-pii.asp) data that needs to stay off-chain
-  
 
 ## Resources
 

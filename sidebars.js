@@ -275,7 +275,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'Integrating with p8e',
+              label: 'Integrating with BlockVault',
               link: {
                 type: 'doc',
                 id: 'pb/integrating/integrating-with-p8e/index',
@@ -314,7 +314,7 @@ const sidebars = {
                     },
                     {
                       type: 'category',
-                      label: 'P8e Contracts',
+                      label: 'BlockVault Contracts',
                       link: {
                         type: 'doc',
                         id: 'pb/integrating/integrating-with-p8e/p8e-contract-execution-environment-p8e/p8e-contracts/index',
