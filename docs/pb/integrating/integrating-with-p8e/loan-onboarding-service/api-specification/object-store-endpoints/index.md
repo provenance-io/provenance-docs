@@ -1,5 +1,6 @@
 # Object Store Endpoints
 
+import { DataCard } from '/docs/components/DataCard';
 import { DocSubheader } from '/docs/components/DocSubheader';
 
 <DocSubheader text="Endpoints for storing and retrieving objects and files"
@@ -7,20 +8,14 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 
 ## Encrypt and Store
 
-{% content-ref url="store-object.mdx" %}
-[store-object.mdx](store-object.mdx)
-{% endcontent-ref %}
+<!-- TODO: Create better links for this page -->
 
-{% content-ref url="store-file.md" %}
+[store-object.mdx](store-object.mdx)
+
 [store-file.md](store-file.md)
-{% endcontent-ref %}
 
 ### Retrieve and Decrypt
 
-{% content-ref url="retrieve-object.md" %}
 [retrieve-object.md](retrieve-object.md)
-{% endcontent-ref %}
 
-{% content-ref url="retrieve-file.md" %}
 [retrieve-file.md](retrieve-file.md)
-{% endcontent-ref %}

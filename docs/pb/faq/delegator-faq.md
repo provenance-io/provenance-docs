@@ -115,9 +115,11 @@ distributing their stake across multiple validators.
 
 ## How To Stake Your Hash
 
-{% hint style="info" %} Please take a moment to thoroughly
+:::info
+Please take a moment to thoroughly
 understand [how delegation and staking work](delegator-faq.md#what-is-a-delegator) along with
-the [risks](delegator-faq.md#risks) outlined in the previous section. {% endhint %}
+the [risks](delegator-faq.md#risks) outlined in the previous section.
+:::
 
 ### Staking Using the Provenance Blockchain Explorer
 
@@ -170,5 +172,7 @@ to adjust your delegations:
 
 ![](/img/faq/image (8).png)
 
-{% hint style="info" %} Your rewards for a given validator are immediately claimed when you change your delegation
-against it, which is reflected in the transaction log. {% endhint %}
+:::info
+Your rewards for a given validator are immediately claimed when you change your delegation
+against it, which is reflected in the transaction log.
+:::

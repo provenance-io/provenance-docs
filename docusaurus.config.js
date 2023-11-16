@@ -2,8 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 // To enable syntax highlighting
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import { themes as prismThemes } from 'prism-react-renderer';
 
 // To enable LaTex
 const math = require('remark-math');
@@ -281,9 +280,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Provenance Blockchain Foundation`,
       },
       prism: {
-        theme: darkCodeTheme,
-        darkTheme: darkCodeTheme,
-        additionalLanguages: ['kotlin', 'protobuf'],
+        theme: prismThemes.dracula,
+        additionalLanguages: ['bash', 'json', 'kotlin', 'protobuf'],
       },
     }),
 };

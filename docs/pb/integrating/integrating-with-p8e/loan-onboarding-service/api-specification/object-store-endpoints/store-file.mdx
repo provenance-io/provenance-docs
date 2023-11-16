@@ -2,8 +2,7 @@
 
 import { DocSubheader } from '/docs/components/DocSubheader';
 
-<DocSubheader text="Encrypt and store any file"
-/>
+<DocSubheader text="Encrypt and store any file" />
 
 ## Description
 
@@ -92,11 +91,8 @@ Supply one `apikey` header when running in test or production environments..
 
 ### Sample Request
 
-To follow along, download the `sample.pdf` file below or use any file on your machine.
-
-{% file src="../../../../../.gitbook/assets/sample.pdf" %}
-A simple PDF that can be used as an example
-{% endfile %}
+To follow along, <a href="/sample.pdf" target="_blank">download this `sample.pdf`</a> file
+or use any file on your machine.
 
 ```bash
 curl --location --request POST 'localhost:8080/p8e-cee-api/external/api/v1/eos/file' \

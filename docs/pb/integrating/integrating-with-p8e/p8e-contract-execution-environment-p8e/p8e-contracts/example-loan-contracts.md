@@ -107,7 +107,7 @@ Upon execution of this contract:
 
 ### Example BlockVault Scope (Truncated):
 
-```javascript
+```js
 {
   "blocknumber": 5191103,
   "blocktransactionindex": 0,

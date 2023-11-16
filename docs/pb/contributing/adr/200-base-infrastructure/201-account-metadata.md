@@ -83,6 +83,6 @@ The creation of this structure will result in a system with some additional coor
 
 ### Neutral
 
-{neutral consequences}
+\{neutral consequences\}
 
 ## References
