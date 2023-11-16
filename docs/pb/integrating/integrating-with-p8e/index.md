@@ -1,11 +1,11 @@
-# Integrating with p8e
+# Integrating with BlockVault
 
 import { DocSubheader } from '/docs/components/DocSubheader';
 
-<DocSubheader text="A practical guide for integrating with p8e"
+<DocSubheader text="A practical guide for integrating with BlockVault"
 />
 
-This guide walks through some key concepts and practical steps to begin your journey in originating and managing assets on Provenance Blockchain. You will learn how to use the [BlockVault Contract Execution Environment (p8e)](https://developer.provenance.io/docs/pb/p8e/overview) to manage private, sensitive data while maintaining a public record of changes, comprised of hashes of the data stored in p8e.
+This guide walks through some key concepts and practical steps to begin your journey in originating and managing assets on Provenance Blockchain. You will learn how to use the [BlockVault Contract Execution Environment (formerly nicknamed “P8e”)](https://developer.provenance.io/docs/pb/p8e/overview) to manage private, sensitive data while maintaining a public record of changes, comprised of hashes of the data stored in BlockVault.
 
 By following along, you will learn more about:
 
@@ -13,7 +13,7 @@ By following along, you will learn more about:
 - operating an [Encrypted Object Store](https://github.com/provenance-io/object-store) with the option to enable replication,
 - writing and publishing BlockVault smart contracts,
 - key management and permissioning others, and
-- using the [p8e Contract Execution Environment API](https://github.com/provenance-io/p8e-cee-api) to transact with the Provenance Blockchain network.
+- using the [BlockVault Contract Execution Environment API](https://github.com/provenance-io/p8e-cee-api) to transact with the Provenance Blockchain network.
 
 For sake of brevity, this guide will not describe how to deploy and configure a Provenance Blockchain Node. It will, however, guide users in how to spin up a local network for testing, and how to configure which node is used when submitting the transaction proposal message to the network.
 

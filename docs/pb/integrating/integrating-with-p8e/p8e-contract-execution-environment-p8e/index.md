@@ -1,10 +1,10 @@
 ---
-description: Practical implementations of p8e
+description: Practical implementations of BlockVault
 ---
 
-# BlockVault Contract Execution Environment (p8e)
+# BlockVault Contract Execution Environment (formerly nicknamed “P8e”)
 
-While the components and key concepts of BlockVault and BlockVault contracts are covered in the [p8e Overview](https://developer.provenance.io/docs/pb/p8e/overview), this guide will focus on how to deploy your own BlockVault environment and put it to use.
+While the components and key concepts of BlockVault and BlockVault contracts are covered in the [BlockVault Overview](https://developer.provenance.io/docs/pb/p8e/overview), this guide will focus on how to deploy your own BlockVault environment and put it to use.
 
 By the end of this guide, you will feel comfortable spinning up and configuring your own development environment, writing and publishing your own BlockVault contracts, and executing them. Whether it's to build a new use case or integrate with an existing one, you will gain an understanding of where your data lives and who has access to it.
 

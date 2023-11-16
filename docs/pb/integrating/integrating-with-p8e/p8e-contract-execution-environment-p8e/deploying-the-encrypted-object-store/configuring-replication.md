@@ -19,7 +19,7 @@ Replication is then controlled by mapping public encryption keys to Object Store
 
 Each party that owns their own object store must enable replication in the other direction to properly set up bi-directional replication. This is designed to keep control in the hands of the object store owner.
 
-To make configuration easier, the [p8e Contract Execution Environment API](https://github.com/provenance-io/p8e-cee-api) includes an endpoint to help object store owners map public encryption keys to third-party object stores. The following curl command shows this endpoint in action.
+To make configuration easier, the [BlockVault Contract Execution Environment API](https://github.com/provenance-io/p8e-cee-api) includes an endpoint to help object store owners map public encryption keys to third-party object stores. The following curl command shows this endpoint in action.
 
 ```bash
 curl --location \

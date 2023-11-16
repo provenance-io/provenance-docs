@@ -9,7 +9,7 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 
 A local environment can help get you acquainted with the object store. Typical use cases will require at least two object stores, to simulate data being shared between two separate participants.
 
-A script for deploying a local environment in Docker with two object stores and a Provenance node is available in the BlockVault CEE API repository. It stands up two object stores backed by a PostgreSQL data store along with a single Provenance Blockchain node. The object stores and blockchain node provide an environment to exercise the various operations needed to understand how data is stored in p8e. This repository also provides a web-server you can use to exercise and manipulate your environment to meet your needs.
+A script for deploying a local environment in Docker with two object stores and a Provenance node is available in the BlockVault CEE API repository. It stands up two object stores backed by a PostgreSQL data store along with a single Provenance Blockchain node. The object stores and blockchain node provide an environment to exercise the various operations needed to understand how data is stored in BlockVault. This repository also provides a web-server you can use to exercise and manipulate your environment to meet your needs.
 
 ![Local Environment Setup](/img/integrating/local-environment-setup.png)
 

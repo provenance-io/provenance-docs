@@ -69,7 +69,7 @@ To make onboarding loan data in such a way that it is accessible to DART and/or 
 }
 ```
 
-Passing those two values as `true` will add the public keys for each service to the audiences list that gets submitted to p8e. Asset originators can decide for themselves which services they want to permission on an asset-by-asset basis.
+Passing those two values as `true` will add the public keys for each service to the audiences list that gets submitted to BlockVault. Asset originators can decide for themselves which services they want to permission on an asset-by-asset basis.
 
 :::info
 All three `PermissionInfo` attributes and as many `Audience` members as needed can be included in each request.

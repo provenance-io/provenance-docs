@@ -10,7 +10,7 @@ In this section, you'll learn about a practical implementation of the [p8e-scope
 We will cover the [API Specification](api-specification/) and walk through the proper execution order:
 
 1. Publishing a new BlockVault contract,
-2. Storing data in p8e, and finally
+2. Storing data in BlockVault, and finally
 3. Recording a new asset on the Provenance Blockchain ledger.
 
 ## Deploying Locally

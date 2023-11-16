@@ -2,7 +2,7 @@
 
 ## Diagrams
 
-![p8e Execution Environment](/img/p8e/p8e-execution-environment.png)
+![BlockVault Execution Environment](/img/p8e/p8e-execution-environment.png) \(formerly nicknamed “P8e”\)
 
 ### Port Mappings
 

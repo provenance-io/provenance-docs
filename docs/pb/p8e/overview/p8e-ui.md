@@ -8,7 +8,7 @@ This UI may be either run locally via docker, or hosted alongside your BlockVaul
 
 ### Running Locally
 
-With [https://www.docker.com/products/docker-desktop\[docker](https://www.docker.com/products/docker-desktop[docker) installed\], you can run the following command to pull down and run the latest ui image \(replace the P8E\_URL value with the appropriate BlockVault webservice url for the instance you are using\). Additionally, you can specify the port for the ui to run on locally by changing the `3000` in the following command to your desired port.
+With [https://www.docker.com/products/docker-desktop\[docker](https://www.docker.com/products/docker-desktop[docker) installed\], you can run the following command to pull down and run the latest ui image \(replace the P8E_URL value with the appropriate BlockVault webservice url for the instance you are using\). Additionally, you can specify the port for the ui to run on locally by changing the `3000` in the following command to your desired port.
 
 ```bash
 docker run -p 3000:80 --env P8E_URL='http://my-p8e-webservice-url' us.gcr.io/figure-production/p8e-ui:latest
@@ -16,15 +16,15 @@ docker run -p 3000:80 --env P8E_URL='http://my-p8e-webservice-url' us.gcr.io/fig
 
 Then you can access the UI at [http://localhost:3000](http://localhost:3000) \(where 3000 is your designated port\).
 
-### Running alongside hosted p8e
+### Running alongside hosted BlockVault
 
-The same container specified above to run locally can be deployed and traffic routed to port 80. If no P8E\_URL environment variable is specified to the container, then it will be assumed that the BlockVault webservice can be found at `<base_url>/api/p8e`, where `<base_url>` is the base url of the hosted ui.
+The same container specified above to run locally can be deployed and traffic routed to port 80. If no P8E_URL environment variable is specified to the container, then it will be assumed that the BlockVault webservice can be found at `<base_url>/api/p8e`, where `<base_url>` is the base url of the hosted ui.
 
 ## Features
 
 ### Login
 
-Logging into the UI is accomplished via your Provenance Blockchain account. Upon your first login to the BlockVault ui, you will be prompted to allow sharing data with p8e.
+Logging into the UI is accomplished via your Provenance Blockchain account. Upon your first login to the BlockVault ui, you will be prompted to allow sharing data with BlockVault.
 
 ### Key Management
 
@@ -47,4 +47,3 @@ The 'Contracts' section of the ui displays more details on the latest contracts 
 ### Scope Details
 
 The 'Scope' section of the ui displays the current and historical state of scopes. You can either search for a scope by uuid, or click on the scope uuid link from a contract that acted upon a scope. When viewing a scope, you can just click on any fact/prerequisite \(condition\)/consideration \(function\) input or output and a modal will display the desired data. At the bottom of the scope details page is a listing of the historical state of that scope, which you can click on and view in another page.
-
