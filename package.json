@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "provenance-blockchain-developer-portal",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -51,6 +51,6 @@
     ]
   },
   "engines": {
-    "node": ">=16.14"
+    "node": ">=20"
   }
 }
