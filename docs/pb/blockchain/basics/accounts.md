@@ -125,7 +125,9 @@ Refer to [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
 
 As discussed in the previous section the [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), [BIP43](https://github.com/bitcoin/bips/blob/master/bip-0043.mediawiki), and [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) specifications define a standard for path notation for building the HD Wallet address hierarchy. Hardened derivation at a particular level is indicated by an apostrophe. For example, the following example of hardened derivation is used for the first three levels, while for the last two levels non-hardened derivation is used \(typically\):
 
-`m / 44' / 505' / 0' / 0 / 0`
+```text
+m / 44' / 505' / 0' / 0 / 0
+```
 
 There are two possible types of BIP32 derivation, hardened and non-hardened keys.
 

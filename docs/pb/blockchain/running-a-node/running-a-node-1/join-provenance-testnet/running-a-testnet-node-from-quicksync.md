@@ -8,7 +8,7 @@ The steps for running testnet are for the most part the same as mainnet except t
 [https://github.com/provenance-io/testnet](https://github.com/provenance-io/testnet), the `-t` flag is required to
 set the key prefix from 505 to 1 (putting the binary in testnet mode)and the chain id is `pio-testnet-1`
 
-````markup
+```markup
 Step 1: download the latest quickysync via https://test.provenance.io/quicksync.
 Step 2: Note down the provenance version required for the quicksync file downloaded in step 1.
 Step 3: Download appropriate release from https://github.com/provenance-io/provenance/releases/ noted from step 2.
@@ -19,4 +19,4 @@ provenanced init -t choose-a-moniker --chain-id pio-testnet-1
 curl https://raw.githubusercontent.com/provenance-io/testnet/main/pio-testnet-1/genesis.json> genesis.json
 mv genesis.json $PIO_HOME/config
 Step 6: provenanced start --testnet --p2p.seeds 4403e0e55fa4e43a454c4bf7922c8a93a51fb12d@seed.test.provenance.io:26656 --x-crisis-skip-assert-invariants
-````
+```
