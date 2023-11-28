@@ -59,20 +59,6 @@ const config = {
     },
   ],
 
-  plugins: [
-    async function myPlugin(context, options) {
-      return {
-        name: 'docusaurus-tailwindcss',
-        configurePostCss(postcssOptions) {
-          // Appends TailwindCSS and AutoPrefixer.
-          postcssOptions.plugins.push(require('tailwindcss'));
-          postcssOptions.plugins.push(require('autoprefixer'));
-          return postcssOptions;
-        },
-      };
-    },
-  ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -284,6 +270,40 @@ const config = {
         additionalLanguages: ['bash', 'json', 'kotlin', 'protobuf'],
       },
     }),
+
+  plugins: [
+    async function myPlugin(context, options) {
+      return {
+        name: 'docusaurus-tailwindcss',
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(require('tailwindcss'));
+          postcssOptions.plugins.push(require('autoprefixer'));
+          return postcssOptions;
+        },
+      };
+    },
+    [
+      '@docusaurus/plugin-google-analytics',
+      {
+        trackingID: 'G-J8X4N657D9',
+        anonymizeIP: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        fromExtensions: ['html'],
+        toExtensions: ['html'],
+        redirects: [
+          {
+            from: ['/main', '/master', '/v0.43', '/v0.44'],
+            to: '/',
+          },
+        ],
+      },
+    ],
+  ],
 };
 
 module.exports = config;
