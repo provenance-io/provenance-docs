@@ -45,7 +45,28 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        gtag: {
+          trackingID: 'G-J8X4N657D9',
+          anonymizeIP: true,
+        },
       }),
+    ],
+    [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          {
+            spec: 'openapi/swagger.yaml',
+            route: '/api/',
+          },
+        ],
+        // Theme Options for modifying how redoc renders them
+        theme: {
+          // Change with your site colors
+          primaryColor: '#18367C',
+        },
+      },
     ],
   ],
 
@@ -88,7 +109,7 @@ const config = {
               },
               {
                 label: 'Run a Node',
-                to: 'docs/quick-start/run-a-node',
+                to: 'docs/pb/blockchain/running-a-node/running-a-node-1/',
               },
               {
                 label: 'Become a Validator',
@@ -284,21 +305,14 @@ const config = {
       };
     },
     [
-      '@docusaurus/plugin-google-analytics',
-      {
-        trackingID: 'G-J8X4N657D9',
-        anonymizeIP: true,
-      },
-    ],
-    [
       '@docusaurus/plugin-client-redirects',
       {
-        fromExtensions: ['html'],
-        toExtensions: ['html'],
+        // fromExtensions: ['html'],
+        // toExtensions: ['zip'],
         redirects: [
           {
-            from: ['/main', '/master', '/v0.43', '/v0.44'],
-            to: '/',
+            from: '/docs/quick-start/run-a-node',
+            to: '/docs/pb/blockchain/running-a-node/running-a-node-1/',
           },
         ],
       },
