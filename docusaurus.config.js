@@ -42,6 +42,7 @@ const config = {
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -307,8 +308,6 @@ const config = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        // fromExtensions: ['html'],
-        // toExtensions: ['zip'],
         redirects: [
           {
             from: '/docs/quick-start/run-a-node',
