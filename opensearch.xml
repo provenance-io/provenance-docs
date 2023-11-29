@@ -4,8 +4,8 @@
   <ShortName>Provenance Blockchain Developer Portal</ShortName>
   <Description>Search Provenance Blockchain Developer Portal</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://vwagner.github.io/img/prov-logo.svg</Image>
-  <Url type="text/html" method="get" template="https://vwagner.github.io/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://vwagner.github.io/opensearch.xml" />
-  <moz:SearchForm>https://vwagner.github.io/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://developer.provenance.io/img/prov-logo.svg</Image>
+  <Url type="text/html" method="get" template="https://developer.provenance.io/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://developer.provenance.io/opensearch.xml" />
+  <moz:SearchForm>https://developer.provenance.io/</moz:SearchForm>
 </OpenSearchDescription>
