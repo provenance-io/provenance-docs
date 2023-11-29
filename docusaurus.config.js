@@ -13,7 +13,7 @@ const config = {
   title: 'Provenance Blockchain Developer Portal',
   tagline:
     'A distributed, proof-of-stake blockchain designed for financial service industries.',
-  url: 'https://vwagner.github.io',
+  url: 'https://developer.provenance.io',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
