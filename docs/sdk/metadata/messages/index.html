@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-sdk/metadata/messages" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">Metadata Messages | Provenance Blockchain Developer Portal</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://developer.provenance.io/docs/sdk/metadata/messages"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Metadata Messages | Provenance Blockchain Developer Portal"><meta data-rh="true" name="description" content="In this section we describe the processing of the metadata messages and the corresponding updates to the state."><meta data-rh="true" property="og:description" content="In this section we describe the processing of the metadata messages and the corresponding updates to the state."><link data-rh="true" rel="icon" href="/img/prov-logo.svg"><link data-rh="true" rel="canonical" href="https://developer.provenance.io/docs/sdk/metadata/messages"><link data-rh="true" rel="alternate" href="https://developer.provenance.io/docs/sdk/metadata/messages" hreflang="en"><link data-rh="true" rel="alternate" href="https://developer.provenance.io/docs/sdk/metadata/messages" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://5NLCC7K64G-dsn.algolia.net" crossorigin="anonymous"><link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J8X4N657D9"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-J8X4N657D9",{anonymize_ip:!0})</script>
+
+
+
+<link rel="search" type="application/opensearchdescription+xml" title="Provenance Blockchain Developer Portal" href="/opensearch.xml">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.29567142.css">
+<script src="/assets/js/runtime~main.80843de0.js" defer="defer"></script>
+<script src="/assets/js/main.3eab12f4.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/prov-logo-full-color.png" alt="Provenance Blockchain Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/prov-logo-full-color.png" alt="Provenance Blockchain Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Quick Start</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/quick-start/start-here">Start Here</a></li><li><a class="dropdown__link" href="/docs/quick-start/wallet-and-hash">Get a Wallet &amp; Hash</a></li><li><a class="dropdown__link" href="/docs/pb/blockchain/running-a-node/running-a-node-1/">Run a Node</a></li><li><a class="dropdown__link" href="/docs/quick-start/become-a-validator">Become a Validator</a></li><li><a class="dropdown__link" href="/docs/learn/asset-lifecycle/markers">Tokenize an Asset</a></li><li><a class="dropdown__link" href="/docs/quick-start/build-a-dapp">Build a dApp</a></li><li><a class="dropdown__link" href="/docs/quick-start/write-a-smart-contract">Write a Smart Contract</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Guides</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/learn/asset-lifecycle/assets-overview">Asset Lifecycle Guide</a></li><li><a class="dropdown__link" href="/docs/learn/dapps/dapps-overview">dApp Builder&#x27;s Guide</a></li><li><a class="dropdown__link" href="/docs/learn/learn-about">More Guides &amp; Tutorials</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Build</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/build/dev-environment">Dev Environment</a></li><li><a class="dropdown__link" href="/docs/build/clients">Clients</a></li><li><a class="dropdown__link" href="/docs/build/libraries">Libraries and APIs</a></li><li><a href="https://provenance.io/grants" target="_blank" rel="noopener noreferrer" class="dropdown__link">Grants Program</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Discover</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/discover/explorer">Provenance Explorer</a></li><li><a class="dropdown__link" href="/docs/discover/wallets">Wallets</a></li><li><a class="dropdown__link" href="/docs/discover/hash">Hash</a></li><li><a class="dropdown__link" href="/docs/discover/usdf">USDF</a></li><li><a class="dropdown__link" href="/docs/discover/smart-contract-catalog">Smart Contract Catalog</a></li><li><a class="dropdown__link" href="/docs/discover/dapps">dApps</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Connect</a><ul class="dropdown__menu"><li><a href="https://github.com/provenance-io/" target="_blank" rel="noopener noreferrer" class="dropdown__link">GitHub</a></li><li><a href="https://discord.gg/kNZC8nwCFP" target="_blank" rel="noopener noreferrer" class="dropdown__link">Discord</a></li><li><a href="https://www.linkedin.com/company/provenance-blockchain/" target="_blank" rel="noopener noreferrer" class="dropdown__link">LinkedIn</a></li><li><a href="https://twitter.com/provenancefdn" target="_blank" rel="noopener noreferrer" class="dropdown__link">Twitter</a></li><li><a href="https://medium.com/provenanceblockchain" target="_blank" rel="noopener noreferrer" class="dropdown__link">Blog</a></li></ul></div><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/">Documentation</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/provenance-io" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/">Introduction</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed section-heading"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/pb/ecosystem/financial-services-blockchain/">Ecosystem</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed section-heading"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/pb/blockchain/introduction/">Blockchain</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed section-heading"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/docs/pb/modules/">Modules</a><button aria-label="Expand sidebar category &#x27;Modules&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed section-heading"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/pb/modules/ibc-and-zones">IBC and Zones</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed section-heading"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/pb/p8e/overview/">BlockVault</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed section-heading"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/pb/contributing/adr/">Contributing</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed section-heading"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/pb/faq/validator-faq">FAQ</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item section-heading"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" href="/docs/sdk/">SDK</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/">List of Modules</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" tabindex="0" href="/docs/sdk/attribute/">x/attribute</a><button aria-label="Expand sidebar category &#x27;x/attribute&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" tabindex="0" href="/docs/sdk/exchange/">x/exchange</a><button aria-label="Expand sidebar category &#x27;x/exchange&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" tabindex="0" href="/docs/sdk/hold/">x/hold</a><button aria-label="Expand sidebar category &#x27;x/hold&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/ibchooks/">x/ibchooks</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/ibcratelimit/">ibcratelimit</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" tabindex="0" href="/docs/sdk/marker/">x/marker</a><button aria-label="Expand sidebar category &#x27;x/marker&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" tabindex="0" href="/docs/sdk/metadata/">x/metadata</a><button aria-label="Collapse sidebar category &#x27;x/metadata&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/metadata/concepts">Metadata Concepts</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/metadata/state">Metadata State</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/sdk/metadata/messages">Metadata Messages</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/metadata/authz">Metadata Authz</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/metadata/queries">Metadata Queries</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/metadata/events">Metadata Events</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/metadata/telemetry">Metadata Events</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/sdk/metadata/params">Metadata Parameters</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" tabindex="0" href="/docs/sdk/metadata/examples/kotlin/">examples</a></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" tabindex="0" href="/docs/sdk/msgfees/">x/msgfees</a><button aria-label="Expand sidebar category &#x27;x/msgfees&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" tabindex="0" href="/docs/sdk/name/">x/name</a><button aria-label="Expand sidebar category &#x27;x/name&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" tabindex="0" href="/docs/sdk/oracle/">x/oracle</a><button aria-label="Expand sidebar category &#x27;x/oracle&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" tabindex="0" href="/docs/sdk/reward/">x/rewards</a><button aria-label="Expand sidebar category &#x27;x/rewards&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" tabindex="0" href="/docs/sdk/trigger/">x/trigger</a><button aria-label="Expand sidebar category &#x27;x/trigger&#x27;" type="button" class="clean-btn menu__caret"></button></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item section-heading"><div class="menu__list-item-collapsible"><a class="menu__link">License</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener noreferrer" class="menu__link menuExternalLink_NmtK" tabindex="0">Apache 2.0<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">SDK</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/sdk/metadata/"><span itemprop="name">x/metadata</span></a><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Metadata Messages</span><meta itemprop="position" content="3"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Metadata Messages</h1>
+<p>In this section we describe the processing of the metadata messages and the corresponding updates to the state.
+All created/modified state objects specified by each message are defined within the <a href="/docs/sdk/metadata/state">state</a> section.</p>
+<p>These endpoints, requests, and responses are defined in <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto" target="_blank" rel="noopener noreferrer">tx.proto</a>.</p>
+<ul>
+<li><a href="#entries">Entries</a>
+<ul>
+<li><a href="#msgwritescope">Msg/WriteScope</a></li>
+<li><a href="#msgdeletescope">Msg/DeleteScope</a></li>
+<li><a href="#msgaddscopedataaccess">Msg/AddScopeDataAccess</a></li>
+<li><a href="#msgdeletescopedataaccess">Msg/DeleteScopeDataAccess</a></li>
+<li><a href="#msgaddscopeowner">Msg/AddScopeOwner</a></li>
+<li><a href="#msgdeletescopeowner">Msg/DeleteScopeOwner</a></li>
+<li><a href="#msgupdatevalueowners">Msg/UpdateValueOwners</a></li>
+<li><a href="#msgmigratevalueowner">Msg/MigrateValueOwner</a></li>
+<li><a href="#msgwritesession">Msg/WriteSession</a></li>
+<li><a href="#msgwriterecord">Msg/WriteRecord</a></li>
+<li><a href="#msgdeleterecord">Msg/DeleteRecord</a></li>
+</ul>
+</li>
+<li><a href="#specifications">Specifications</a>
+<ul>
+<li><a href="#msgwritescopespecification">Msg/WriteScopeSpecification</a></li>
+<li><a href="#msgdeletescopespecification">Msg/DeleteScopeSpecification</a></li>
+<li><a href="#msgwritecontractspecification">Msg/WriteContractSpecification</a></li>
+<li><a href="#msgdeletecontractspecification">Msg/DeleteContractSpecification</a></li>
+<li><a href="#msgaddcontractspectoscopespec">Msg/AddContractSpecToScopeSpec</a></li>
+<li><a href="#msgdeletecontractspecfromscopespec">Msg/DeleteContractSpecFromScopeSpec</a></li>
+<li><a href="#msgwriterecordspecification">Msg/WriteRecordSpecification</a></li>
+<li><a href="#msgdeleterecordspecification">Msg/DeleteRecordSpecification</a></li>
+</ul>
+</li>
+<li><a href="#object-store-locators">Object Store Locators</a>
+<ul>
+<li><a href="#msgbindoslocator">Msg/BindOSLocator</a></li>
+<li><a href="#msgdeleteoslocator">Msg/DeleteOSLocator</a></li>
+<li><a href="#msgmodifyoslocator">Msg/ModifyOSLocator</a></li>
+</ul>
+</li>
+<li><a href="#account-data">Account Data</a>
+<ul>
+<li><a href="#msgsetaccountdata">Msg/SetAccountData</a></li>
+</ul>
+</li>
+<li><a href="#authz-grants">Authz Grants</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="entries">Entries<a href="#entries" class="hash-link" aria-label="Direct link to Entries" title="Direct link to Entries">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgwritescope">Msg/WriteScope<a href="#msgwritescope" class="hash-link" aria-label="Direct link to Msg/WriteScope" title="Direct link to Msg/WriteScope">​</a></h3>
+<p>A scope is created or updated using the <code>WriteScope</code> service method.</p>
+<p>Scopes are identified using their <code>scope_id</code>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request">Request<a href="#request" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L76-L99" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L76-L99</a></p>
+<p>The <code>scope_uuid</code> field is optional.
+It should be a uuid formated as a string using the standard UUID format.
+If supplied, it will be used to generate the appropriate scope id for use in the <code>scope.scope_id</code> field.</p>
+<p>The <code>spec_uuid</code> field is optional.
+It should be a uuid formated as a string using the standard UUID format.
+If supplied, it will be used to generate the appropriate scope specification id for use in the <code>scope.specification_id</code> field.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response">Response<a href="#response" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L101-L105" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L101-L105</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures">Expected failures<a href="#expected-failures" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>The <code>scope_id</code> is missing or invalid.</li>
+<li>The <code>specification_id</code> is missing or invalid.</li>
+<li>The <code>owners</code> list is empty.</li>
+<li>Any of the owner <code>address</code> values aren&#x27;t bech32 address strings.</li>
+<li>Any of the <code>data_access</code> values aren&#x27;t bech32 address strings.</li>
+<li>A <code>value_owner_address</code> is provided that isn&#x27;t a bech32 address string.</li>
+<li>The <code>signers</code> do not have permission to write the scope.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgdeletescope">Msg/DeleteScope<a href="#msgdeletescope" class="hash-link" aria-label="Direct link to Msg/DeleteScope" title="Direct link to Msg/DeleteScope">​</a></h3>
+<p>A scope is deleted using the <code>DeleteScope</code> service method.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-1">Request<a href="#request-1" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L107-L120" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L107-L120</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-1">Response<a href="#response-1" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L122-L123" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L122-L123</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-1">Expected failures<a href="#expected-failures-1" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>No scope exists with the given <code>scope_id</code>.</li>
+<li>The <code>signers</code> do not have permission to delete the scope.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgaddscopedataaccess">Msg/AddScopeDataAccess<a href="#msgaddscopedataaccess" class="hash-link" aria-label="Direct link to Msg/AddScopeDataAccess" title="Direct link to Msg/AddScopeDataAccess">​</a></h3>
+<p>Addresses can be added to a scope&#x27;s data access list using the <code>AddScopeDataAccess</code> service method.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-2">Request<a href="#request-2" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L125-L142" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L125-L142</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-2">Response<a href="#response-2" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L144-L145" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L144-L145</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-2">Expected failures<a href="#expected-failures-2" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>Any provided address is invalid.</li>
+<li>Any provided address is already in the scope&#x27;s data access list.</li>
+<li>The <code>signers</code> do not have permission to update the scope.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgdeletescopedataaccess">Msg/DeleteScopeDataAccess<a href="#msgdeletescopedataaccess" class="hash-link" aria-label="Direct link to Msg/DeleteScopeDataAccess" title="Direct link to Msg/DeleteScopeDataAccess">​</a></h3>
+<p>Addresses can be deleted from a scope&#x27;s data access list using the <code>DeleteScopeDataAccess</code> service method.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-3">Request<a href="#request-3" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L147-L164" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L147-L164</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-3">Response<a href="#response-3" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L166-L167" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L166-L167</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-3">Expected failures<a href="#expected-failures-3" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>Any provided address is not already in the scope&#x27;s data access list.</li>
+<li>The <code>signers</code> do not have permission to update the scope.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgaddscopeowner">Msg/AddScopeOwner<a href="#msgaddscopeowner" class="hash-link" aria-label="Direct link to Msg/AddScopeOwner" title="Direct link to Msg/AddScopeOwner">​</a></h3>
+<p>Scope owners can be added to a scope using the <code>AddScopeOwner</code> service method.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-4">Request<a href="#request-4" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L169-L186" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L169-L186</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-4">Response<a href="#response-4" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L188-L189" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L188-L189</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-4">Expected failures<a href="#expected-failures-4" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>Any new party is invalid.</li>
+<li>An <code>optional = true</code> party is being added to a <code>require_party_rollup = false</code> scope.</li>
+<li>The <code>signers</code> do not have permission to update the scope.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgdeletescopeowner">Msg/DeleteScopeOwner<a href="#msgdeletescopeowner" class="hash-link" aria-label="Direct link to Msg/DeleteScopeOwner" title="Direct link to Msg/DeleteScopeOwner">​</a></h3>
+<p>Scope owners can be deleted from a scope using the <code>DeleteScopeOwner</code> service method.
+All owner parties with any of the provided addresses will be removed from the scope.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-5">Request<a href="#request-5" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L191-L208" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L191-L208</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-5">Response<a href="#response-5" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L210-L211" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L210-L211</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-5">Expected failures<a href="#expected-failures-5" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>Any provided <code>owners</code> (addresses) are not an address in a party in the scope.</li>
+<li>The resulting scope owners do not meet scope specification requirements.</li>
+<li>The <code>signers</code> do not have permission to update the scope.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgupdatevalueowners">Msg/UpdateValueOwners<a href="#msgupdatevalueowners" class="hash-link" aria-label="Direct link to Msg/UpdateValueOwners" title="Direct link to Msg/UpdateValueOwners">​</a></h3>
+<p>The value owner address of one or more scopes can be updated using the <code>UpdateValueOwners</code> service method.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-6">Request<a href="#request-6" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/37cdb0c84db7b2f91aef057a606c5ba6aece06a1/proto/provenance/metadata/v1/tx.proto#L219-L235" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/37cdb0c84db7b2f91aef057a606c5ba6aece06a1/proto/provenance/metadata/v1/tx.proto#L219-L235</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-6">Response<a href="#response-6" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/37cdb0c84db7b2f91aef057a606c5ba6aece06a1/proto/provenance/metadata/v1/tx.proto#L237-L238" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/37cdb0c84db7b2f91aef057a606c5ba6aece06a1/proto/provenance/metadata/v1/tx.proto#L237-L238</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-6">Expected failures<a href="#expected-failures-6" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>The new value owner address is invalid.</li>
+<li>Any of the provided scope ids are not metadata scope identifiers or do not exist.</li>
+<li>The signers are not allowed to update the value owner address of a provided scope.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgmigratevalueowner">Msg/MigrateValueOwner<a href="#msgmigratevalueowner" class="hash-link" aria-label="Direct link to Msg/MigrateValueOwner" title="Direct link to Msg/MigrateValueOwner">​</a></h3>
+<p>All scopes with a given existing value owner address can be updated to have a new proposed value owner address using the <code>MigrateValueOwner</code> endpoint.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-7">Request<a href="#request-7" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/37cdb0c84db7b2f91aef057a606c5ba6aece06a1/proto/provenance/metadata/v1/tx.proto#L240-L252" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/37cdb0c84db7b2f91aef057a606c5ba6aece06a1/proto/provenance/metadata/v1/tx.proto#L240-L252</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-7">Response<a href="#response-7" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/37cdb0c84db7b2f91aef057a606c5ba6aece06a1/proto/provenance/metadata/v1/tx.proto#L254-L255" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/37cdb0c84db7b2f91aef057a606c5ba6aece06a1/proto/provenance/metadata/v1/tx.proto#L254-L255</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-7">Expected failures<a href="#expected-failures-7" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>Either the existing or proposed values are not valid bech32 addresses.</li>
+<li>The existing address is not a value owner on any scopes.</li>
+<li>The signers are not allowed to update the value owner address of a scope being updated.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgwritesession">Msg/WriteSession<a href="#msgwritesession" class="hash-link" aria-label="Direct link to Msg/WriteSession" title="Direct link to Msg/WriteSession">​</a></h3>
+<p>A session is created or updated using the <code>WriteSession</code> service method.</p>
+<p>Sessions are identified using their <code>session_id</code>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-8">Request<a href="#request-8" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L213-L238" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L213-L238</a></p>
+<p>The <code>session_id_components</code> field is optional.
+If supplied, it will be used to generate the appropriate session id for use in the <code>session.session_id</code> field.</p>
+<p>The <code>spec_uuid</code> field is optional.
+It should be a uuid formated as a string using the standard UUID format.
+If supplied, it will be used to generate the appropriate contract specification id for use in the <code>session.specification_id</code> field.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-8">Response<a href="#response-8" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L253-L257" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L253-L257</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-8">Expected failures<a href="#expected-failures-8" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>The <code>session_id</code> is missing or invalid.</li>
+<li>The <code>specification_id</code> is missing or invalid.</li>
+<li>The <code>parties</code> list is empty.</li>
+<li>Any of the <code>parties</code> have an <code>address</code> that isn&#x27;t a bech32 address string.</li>
+<li>Any of the <code>parties</code> have a <code>role</code> of <code>unspecified</code>.</li>
+<li>The <code>audit.message</code> string is longer than 200 characters.</li>
+<li>The <code>specification_id</code> is being changed.</li>
+<li>The session is being updated, but no <code>name</code> is provided.</li>
+<li>The session&#x27;s scope cannot be found.</li>
+<li>The session&#x27;s contract specification does not exist.</li>
+<li>The <code>signers</code> do not have permission to write the session.</li>
+<li>The <code>audit</code> fields are changed.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgwriterecord">Msg/WriteRecord<a href="#msgwriterecord" class="hash-link" aria-label="Direct link to Msg/WriteRecord" title="Direct link to Msg/WriteRecord">​</a></h3>
+<p>A record is created or updated using the <code>WriteRecord</code> service method.</p>
+<p>Records are identified using their <code>name</code> and <code>session_id</code>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-9">Request<a href="#request-9" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L260-L289" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L260-L289</a></p>
+<p>The <code>session_id_components</code> field is optional.
+If supplied, it will be used to generate the appropriate session id for use in the <code>record.session_id</code> field.</p>
+<p>The <code>contract_spec_uuid</code> field is optional.
+It should be a uuid formated as a string using the standard UUID format.
+If supplied, it will be used with <code>record.name</code> to generate the appropriate record specification id for use in the <code>record.specification_id</code> field.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-9">Response<a href="#response-9" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L291-L295" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L291-L295</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-9">Expected failures<a href="#expected-failures-9" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>The <code>session_id</code> is missing or invalid.</li>
+<li>The <code>specification_id</code> is provided but invalid.</li>
+<li>An entry in <code>inputs</code> does not have a <code>name</code>.</li>
+<li>An entry in <code>inputs</code> does not have a <code>source</code>.</li>
+<li>An entry in <code>inputs</code> has a <code>source</code> type that doesn&#x27;t match the input&#x27;s <code>status</code>.</li>
+<li>An entry in <code>inputs</code> has a <code>record_id</code> <code>source</code> but the <code>record_id</code> is missing or invalid.</li>
+<li>An entry in <code>inputs</code> does not have a <code>type_name</code>.</li>
+<li>An entry in <code>outputs</code> has a <code>status</code> of <code>unspecified</code>.</li>
+<li>An entry in <code>outputs</code> has a <code>status</code> of <code>pass</code> or <code>fail</code>, and doesn&#x27;t have a <code>hash</code>.</li>
+<li>The <code>name</code> is missing.</li>
+<li>The <code>process.method</code> is missing.</li>
+<li>The <code>process.name</code> is missing.</li>
+<li>The <code>process.process_id</code> is missing.</li>
+<li>A record is being updated and the <code>name</code> values are different.</li>
+<li>A record is being updated and the <code>session</code> values are different.</li>
+<li>A record is being updated and the <code>specification_id</code> values are different.</li>
+<li>The record&#x27;s scope cannot be found.</li>
+<li>The record&#x27;s session cannot be found.</li>
+<li>The record&#x27;s contract specification cannot be found.</li>
+<li>The record&#x27;s record specification cannot be found.</li>
+<li>There are duplicate <code>inputs</code> by <code>name</code>.</li>
+<li>An entry in <code>inputs</code> exists that is not part of the record specification.</li>
+<li>The <code>inputs</code> list does not contain one or more inputs defined in the record specification.</li>
+<li>An entry in <code>inputs</code> has a <code>type_name</code> different from its input specification.</li>
+<li>An entry in <code>inputs</code> has a <code>source</code> type that doesn&#x27;t match the input specification.</li>
+<li>An entry in <code>inputs</code> has a <code>source</code> value that doesn&#x27;t match the intput specification.</li>
+<li>The record specification has a result type of <code>record</code> but there isn&#x27;t exactly one entry in <code>outputs</code>.</li>
+<li>The record specification has a result type of <code>record_list</code> but the <code>outputs</code> list is empty.</li>
+<li>The <code>signers</code> do not have permission to write the record.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgdeleterecord">Msg/DeleteRecord<a href="#msgdeleterecord" class="hash-link" aria-label="Direct link to Msg/DeleteRecord" title="Direct link to Msg/DeleteRecord">​</a></h3>
+<p>A record is deleted using the <code>DeleteRecord</code> service method.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-10">Request<a href="#request-10" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L297-L310" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L297-L310</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-10">Response<a href="#response-10" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L312-L313" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L312-L313</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-10">Expected failures<a href="#expected-failures-10" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>No record exists with the given <code>record_id</code>.</li>
+<li>The <code>signers</code> do not have permission to delete the record.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="specifications">Specifications<a href="#specifications" class="hash-link" aria-label="Direct link to Specifications" title="Direct link to Specifications">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgwritescopespecification">Msg/WriteScopeSpecification<a href="#msgwritescopespecification" class="hash-link" aria-label="Direct link to Msg/WriteScopeSpecification" title="Direct link to Msg/WriteScopeSpecification">​</a></h3>
+<p>A scope specification is created or updated using the <code>WriteScopeSpecification</code> service method.</p>
+<p>Scope specifications are identified using their <code>specification_id</code>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-11">Request<a href="#request-11" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L315-L333" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L315-L333</a></p>
+<p>The <code>spec_uuid</code> field is optional.
+It should be a uuid formated as a string using the standard UUID format.
+If supplied, it will be used to generate the appropriate scope specification id for use in the <code>specification.specification_id</code> field.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-11">Response<a href="#response-11" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L335-L339" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L335-L339</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-11">Expected failures<a href="#expected-failures-11" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>The <code>specificatio_id</code> is missing or invalid.</li>
+<li>The <code>description</code> has an empty <code>name</code> or the <code>name</code> is longer than 200 characters.</li>
+<li>The <code>description</code> has a <code>description</code> longer than 5000 characters.</li>
+<li>The <code>description</code> has a <code>website_url</code> or <code>icon_url</code> that is empty or longer than 2048 characters.</li>
+<li>The <code>description</code> has a <code>website_url</code> or <code>icon_url</code> that has a protocol other than <code>http</code>, <code>https</code>, or <code>data</code>.</li>
+<li>The <code>owners</code> list is empty.</li>
+<li>One of the entries in <code>owners</code> is not a valid bech32 address.</li>
+<li>The <code>parties_involved</code> list is empty.</li>
+<li>One of the entries in <code>contract_spec_ids</code> is invalid.</li>
+<li>One of the entries in <code>contract_spec_ids</code> does not exist.</li>
+<li>One or more <code>owners</code> of the existing scope specification are not <code>signers</code>.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgdeletescopespecification">Msg/DeleteScopeSpecification<a href="#msgdeletescopespecification" class="hash-link" aria-label="Direct link to Msg/DeleteScopeSpecification" title="Direct link to Msg/DeleteScopeSpecification">​</a></h3>
+<p>A scope specification is deleted using the <code>DeleteScopeSpecification</code> service method.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-12">Request<a href="#request-12" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L341-L354" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L341-L354</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-12">Response<a href="#response-12" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L356-L357" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L356-L357</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-12">Expected failures<a href="#expected-failures-12" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>No scope specification exists with the given <code>specification_id</code></li>
+<li>One or more <code>owners</code> are not <code>signers</code>.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgwritecontractspecification">Msg/WriteContractSpecification<a href="#msgwritecontractspecification" class="hash-link" aria-label="Direct link to Msg/WriteContractSpecification" title="Direct link to Msg/WriteContractSpecification">​</a></h3>
+<p>A contract specification is created or updated using the <code>WriteContractSpecification</code> service method.</p>
+<p>Contract specifications are identified using their <code>specification_id</code>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-13">Request<a href="#request-13" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L359-L377" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L359-L377</a></p>
+<p>The <code>spec_uuid</code> field is optional.
+It should be a uuid formated as a string using the standard UUID format.
+If supplied, it will be used to generate the appropriate contract specification id for use in the <code>specification.specification_id</code> field.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-13">Response<a href="#response-13" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L379-L384" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L379-L384</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-13">Expected failures<a href="#expected-failures-13" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>The <code>specification_id</code> is missing or invalid.</li>
+<li>The <code>description</code> has an empty <code>name</code> or the <code>name</code> is longer than 200 characters.</li>
+<li>The <code>description</code> has a <code>description</code> longer than 5000 characters.</li>
+<li>The <code>description</code> has a <code>website_url</code> or <code>icon_url</code> that is empty or longer than 2048 characters.</li>
+<li>The <code>description</code> has a <code>website_url</code> or <code>icon_url</code> that has a protocol other than <code>http</code>, <code>https</code>, or <code>data</code>.</li>
+<li>The <code>owners</code> list is empty.</li>
+<li>One of the entries in <code>owners</code> is not a valid bech32 address.</li>
+<li>The <code>parties_involved</code> list is empty.</li>
+<li>The <code>source</code> is empty.</li>
+<li>The <code>source</code> is a resource id, that is invalid.</li>
+<li>The <code>source</code> is a hash that is empty.</li>
+<li>The <code>class_name</code> is empty or longer than 1000 characters.</li>
+<li>One or more <code>owners</code> of the existing contract specification are not <code>signers</code>.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgdeletecontractspecification">Msg/DeleteContractSpecification<a href="#msgdeletecontractspecification" class="hash-link" aria-label="Direct link to Msg/DeleteContractSpecification" title="Direct link to Msg/DeleteContractSpecification">​</a></h3>
+<p>A contract specification is deleted using the <code>DeleteContractSpecification</code> service method.</p>
+<p>This will also delete all record specifications associated with this contract specification.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-14">Request<a href="#request-14" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L437-L450" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L437-L450</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-14">Response<a href="#response-14" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L452-L453" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L452-L453</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-14">Expected failures<a href="#expected-failures-14" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>No contract specification exists with the given <code>specification_id</code></li>
+<li>One or more <code>owners</code> are not <code>signers</code>.</li>
+<li>One of the record specifications associated with this contract specification cannot be deleted.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgaddcontractspectoscopespec">Msg/AddContractSpecToScopeSpec<a href="#msgaddcontractspectoscopespec" class="hash-link" aria-label="Direct link to Msg/AddContractSpecToScopeSpec" title="Direct link to Msg/AddContractSpecToScopeSpec">​</a></h3>
+<p>A contract specification can be added to a scope specification using the <code>AddContractSpecToScopeSpec</code> service method.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-15">Request<a href="#request-15" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L386-L406" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L386-L406</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-15">Response<a href="#response-15" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L408-L409" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L408-L409</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-15">Expected failures<a href="#expected-failures-15" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>The <code>contract_specification_id</code> is missing or invalid.</li>
+<li>The <code>scope_specification_id</code> is missing or invalid.</li>
+<li>The contract specification does not exist.</li>
+<li>The scope specification does not exist.</li>
+<li>
+<ul>
+<li>The contract specification is already allowed in the provided scope specification.</li>
+</ul>
+</li>
+<li>One or more of the scope specification <code>owners</code> are not <code>signers</code>.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgdeletecontractspecfromscopespec">Msg/DeleteContractSpecFromScopeSpec<a href="#msgdeletecontractspecfromscopespec" class="hash-link" aria-label="Direct link to Msg/DeleteContractSpecFromScopeSpec" title="Direct link to Msg/DeleteContractSpecFromScopeSpec">​</a></h3>
+<p>A contract specification can be removed from a scope specification using the <code>AddContractSpecToScopeSpec</code> service method.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-16">Request<a href="#request-16" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L411-L431" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L411-L431</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-16">Response<a href="#response-16" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L433-L435" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L433-L435</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-16">Expected failures<a href="#expected-failures-16" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>The <code>contract_specification_id</code> is missing or invalid.</li>
+<li>The <code>scope_specification_id</code> is missing or invalid.</li>
+<li>The scope specification does not exist.</li>
+<li>The contract specification is not already allowed in the provided scope specification.</li>
+<li>One or more of the scope specification <code>owners</code> are not <code>signers</code>.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgwriterecordspecification">Msg/WriteRecordSpecification<a href="#msgwriterecordspecification" class="hash-link" aria-label="Direct link to Msg/WriteRecordSpecification" title="Direct link to Msg/WriteRecordSpecification">​</a></h3>
+<p>A record specification is created or updated using the <code>WriteRecordSpecification</code> service method.</p>
+<p>Record specifications are identified using their <code>specification_id</code>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-17">Request<a href="#request-17" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L455-L473" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L455-L473</a></p>
+<p>The <code>contract_spec_uuid</code> field is optional.
+It should be a uuid formated as a string using the standard UUID format.
+If supplied, it will be used with the <code>specification.name</code> to generate the appropriate record specification id for use in the <code>specification.specification_id</code> field.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-17">Response<a href="#response-17" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L475-L480" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L475-L480</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-17">Expected failures<a href="#expected-failures-17" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>The <code>specification_id</code> is missing or invalid.</li>
+<li>No contract specification exists with the given contract specification id portion of the <code>specification_id</code>.</li>
+<li>One or more contract specification <code>owners</code> are not <code>signers</code>.</li>
+<li>The <code>name</code> is longer than 200 characters.</li>
+<li>One of the <code>input_specifications</code> is missing a <code>name</code> or its <code>name</code> is longer than 200 characters.</li>
+<li>One of the <code>input_specifications</code> is missing a <code>type_name</code> or its <code>type_name</code> is longer than 1000 characters.</li>
+<li>One of the <code>input_specifications</code> is missing a <code>source</code>.</li>
+<li>One of the <code>input_specifications</code> has a <code>source</code> that is a record id that is missing or invalid.</li>
+<li>One of the <code>input_specifications</code> has a <code>source</code> that is a hash that is missing.</li>
+<li>The <code>type_name</code> is longer than 1000 characters.</li>
+<li>The <code>responsible_parties</code> list is empty.</li>
+<li>The <code>result_type</code> is unspecified.</li>
+<li>A record specification is being updated and the <code>name</code> values are different.</li>
+<li>A record specification is being updated and the <code>specification_id</code> values are different.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgdeleterecordspecification">Msg/DeleteRecordSpecification<a href="#msgdeleterecordspecification" class="hash-link" aria-label="Direct link to Msg/DeleteRecordSpecification" title="Direct link to Msg/DeleteRecordSpecification">​</a></h3>
+<p>A record specification is deleted using the <code>DeleteRecordSpecification</code> service method.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-18">Request<a href="#request-18" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L482-L495" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L482-L495</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-18">Response<a href="#response-18" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L497-L498" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L497-L498</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-18">Expected failures<a href="#expected-failures-18" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>No record specification exists with the given <code>specification_id</code>.</li>
+<li>No contract specification exists with the given contract specification id portion of the <code>specification_id</code>.</li>
+<li>One or more <code>owners</code> of the contracts specification are not <code>signers</code>.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="object-store-locators">Object Store Locators<a href="#object-store-locators" class="hash-link" aria-label="Direct link to Object Store Locators" title="Direct link to Object Store Locators">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgbindoslocator">Msg/BindOSLocator<a href="#msgbindoslocator" class="hash-link" aria-label="Direct link to Msg/BindOSLocator" title="Direct link to Msg/BindOSLocator">​</a></h3>
+<p>An Object Store Locator entry is created using the <code>BindOSLocator</code> service method.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-19">Request<a href="#request-19" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L500-L506" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L500-L506</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-19">Response<a href="#response-19" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L508-L511" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L508-L511</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-19">Expected failures<a href="#expected-failures-19" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>The <code>owner</code> is missing.</li>
+<li>The <code>owner</code> is not a valid bech32 address.</li>
+<li>The <code>uri</code> is empty.</li>
+<li>The <code>uri</code> is not a valid URI.</li>
+<li>The <code>owner</code> does not match an existing account.</li>
+<li>An object store locator already exists for the given <code>owner</code>.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgdeleteoslocator">Msg/DeleteOSLocator<a href="#msgdeleteoslocator" class="hash-link" aria-label="Direct link to Msg/DeleteOSLocator" title="Direct link to Msg/DeleteOSLocator">​</a></h3>
+<p>An Object Store Locator entry is deleted using the <code>DeleteOSLocator</code> service method.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-20">Request<a href="#request-20" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L513-L520" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L513-L520</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-20">Response<a href="#response-20" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L522-L525" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L522-L525</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-20">Expected failures<a href="#expected-failures-20" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>The <code>owner</code> is missing.</li>
+<li>The <code>owner</code> is not a valid bech32 address.</li>
+<li>The <code>uri</code> is empty.</li>
+<li>The <code>uri</code> is not a valid URI.</li>
+<li>The <code>owner</code> does not match an existing account.</li>
+<li>An object store locator does not exist for the given <code>owner</code>.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgmodifyoslocator">Msg/ModifyOSLocator<a href="#msgmodifyoslocator" class="hash-link" aria-label="Direct link to Msg/ModifyOSLocator" title="Direct link to Msg/ModifyOSLocator">​</a></h3>
+<p>An Object Store Locator entry is updated using the <code>DeleteOSLocator</code> service method.</p>
+<p>Object Store Locators are identified by their <code>owner</code>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="request-21">Request<a href="#request-21" class="hash-link" aria-label="Direct link to Request" title="Direct link to Request">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L527-L533" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L527-L533</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="response-21">Response<a href="#response-21" class="hash-link" aria-label="Direct link to Response" title="Direct link to Response">​</a></h4>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L535-L538" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/tx.proto#L535-L538</a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="expected-failures-21">Expected failures<a href="#expected-failures-21" class="hash-link" aria-label="Direct link to Expected failures" title="Direct link to Expected failures">​</a></h4>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>The <code>owner</code> is missing.</li>
+<li>The <code>owner</code> is not a valid bech32 address.</li>
+<li>The <code>uri</code> is empty.</li>
+<li>The <code>uri</code> is not a valid URI.</li>
+<li>The <code>owner</code> does not match an existing account.</li>
+<li>An object store locator does not exist for the given <code>owner</code>.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="account-data">Account Data<a href="#account-data" class="hash-link" aria-label="Direct link to Account Data" title="Direct link to Account Data">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="msgsetaccountdata">Msg/SetAccountData<a href="#msgsetaccountdata" class="hash-link" aria-label="Direct link to Msg/SetAccountData" title="Direct link to Msg/SetAccountData">​</a></h3>
+<p>Simple data (a string) can be associated with scopes using the <code>SetAccountData</code> service method.</p>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/e83f1955cba07e2ba87790c4487d22632ae9e69c/proto/provenance/metadata/v1/tx.proto#L589-L606" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/e83f1955cba07e2ba87790c4487d22632ae9e69c/proto/provenance/metadata/v1/tx.proto#L589-L606</a></p>
+<p>+++ <a href="https://github.com/provenance-io/provenance/blob/e83f1955cba07e2ba87790c4487d22632ae9e69c/proto/provenance/metadata/v1/tx.proto#L608-L609" target="_blank" rel="noopener noreferrer">https://github.com/provenance-io/provenance/blob/e83f1955cba07e2ba87790c4487d22632ae9e69c/proto/provenance/metadata/v1/tx.proto#L608-L609</a></p>
+<p>This service message is expected to fail if:</p>
+<ul>
+<li>The provided address is not a scope id.</li>
+<li>The provided scope id does not exist.</li>
+<li>The signers do not have authority to update the entry.</li>
+<li>The provided value is too long (as defined by the attribute module params).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="authz-grants">Authz Grants<a href="#authz-grants" class="hash-link" aria-label="Direct link to Authz Grants" title="Direct link to Authz Grants">​</a></h2>
+<p>Authz requires the use of fully qualified message type URLs when applying grants to an address. See <a href="/docs/sdk/metadata/authz">04_authz.md</a> for more details.</p>
+<p>Fully qualified <code>metadata</code> message type URLs:</p>
+<ul>
+<li><code>/provenance.metadata.v1.MsgWriteScopeRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgDeleteScopeRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgAddScopeDataAccessRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgDeleteScopeDataAccessRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgAddScopeOwnerRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgDeleteScopeOwnerRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgUpdateValueOwnersRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgMigrateValueOwnerRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgWriteSessionRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgWriteRecordRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgDeleteRecordRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgWriteScopeSpecificationRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgDeleteScopeSpecificationRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgWriteContractSpecificationRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgDeleteContractSpecificationRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgAddContractSpecToScopeSpecRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgDeleteContractSpecFromScopeSpecRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgWriteRecordSpecificationRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgDeleteRecordSpecificationRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgBindOSLocatorRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgDeleteOSLocatorRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgModifyOSLocatorRequest</code></li>
+<li><code>/provenance.metadata.v1.MsgSetAccountDataRequest</code></li>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/sdk/metadata/state"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Metadata State</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/sdk/metadata/authz"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Metadata Authz</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#entries" class="table-of-contents__link toc-highlight">Entries</a><ul><li><a href="#msgwritescope" class="table-of-contents__link toc-highlight">Msg/WriteScope</a></li><li><a href="#msgdeletescope" class="table-of-contents__link toc-highlight">Msg/DeleteScope</a></li><li><a href="#msgaddscopedataaccess" class="table-of-contents__link toc-highlight">Msg/AddScopeDataAccess</a></li><li><a href="#msgdeletescopedataaccess" class="table-of-contents__link toc-highlight">Msg/DeleteScopeDataAccess</a></li><li><a href="#msgaddscopeowner" class="table-of-contents__link toc-highlight">Msg/AddScopeOwner</a></li><li><a href="#msgdeletescopeowner" class="table-of-contents__link toc-highlight">Msg/DeleteScopeOwner</a></li><li><a href="#msgupdatevalueowners" class="table-of-contents__link toc-highlight">Msg/UpdateValueOwners</a></li><li><a href="#msgmigratevalueowner" class="table-of-contents__link toc-highlight">Msg/MigrateValueOwner</a></li><li><a href="#msgwritesession" class="table-of-contents__link toc-highlight">Msg/WriteSession</a></li><li><a href="#msgwriterecord" class="table-of-contents__link toc-highlight">Msg/WriteRecord</a></li><li><a href="#msgdeleterecord" class="table-of-contents__link toc-highlight">Msg/DeleteRecord</a></li></ul></li><li><a href="#specifications" class="table-of-contents__link toc-highlight">Specifications</a><ul><li><a href="#msgwritescopespecification" class="table-of-contents__link toc-highlight">Msg/WriteScopeSpecification</a></li><li><a href="#msgdeletescopespecification" class="table-of-contents__link toc-highlight">Msg/DeleteScopeSpecification</a></li><li><a href="#msgwritecontractspecification" class="table-of-contents__link toc-highlight">Msg/WriteContractSpecification</a></li><li><a href="#msgdeletecontractspecification" class="table-of-contents__link toc-highlight">Msg/DeleteContractSpecification</a></li><li><a href="#msgaddcontractspectoscopespec" class="table-of-contents__link toc-highlight">Msg/AddContractSpecToScopeSpec</a></li><li><a href="#msgdeletecontractspecfromscopespec" class="table-of-contents__link toc-highlight">Msg/DeleteContractSpecFromScopeSpec</a></li><li><a href="#msgwriterecordspecification" class="table-of-contents__link toc-highlight">Msg/WriteRecordSpecification</a></li><li><a href="#msgdeleterecordspecification" class="table-of-contents__link toc-highlight">Msg/DeleteRecordSpecification</a></li></ul></li><li><a href="#object-store-locators" class="table-of-contents__link toc-highlight">Object Store Locators</a><ul><li><a href="#msgbindoslocator" class="table-of-contents__link toc-highlight">Msg/BindOSLocator</a></li><li><a href="#msgdeleteoslocator" class="table-of-contents__link toc-highlight">Msg/DeleteOSLocator</a></li><li><a href="#msgmodifyoslocator" class="table-of-contents__link toc-highlight">Msg/ModifyOSLocator</a></li></ul></li><li><a href="#account-data" class="table-of-contents__link toc-highlight">Account Data</a><ul><li><a href="#msgsetaccountdata" class="table-of-contents__link toc-highlight">Msg/SetAccountData</a></li></ul></li><li><a href="#authz-grants" class="table-of-contents__link toc-highlight">Authz Grants</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Contact</div><ul class="footer__items clean-list"><li class="footer__item"><a href="mailto:inbound@provenance.io" target="_blank" rel="noopener noreferrer" class="footer__link-item">inbound@provenance.io<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/kNZC8nwCFP" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/provenancefdn" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://medium.com/provenanceblockchain" target="_blank" rel="noopener noreferrer" class="footer__link-item">Blog<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/provenance-io" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Provenance Blockchain Foundation</div></div></div></footer></div>
+</body>
+</html>
