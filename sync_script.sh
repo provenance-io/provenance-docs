@@ -65,7 +65,9 @@ for version in "${VERSIONS[@]}"; do
   done
 
   # Add modules page list
+
   cat ../x/README.md | sed 's/\/spec\//\//g' > ./sdk/README.md
+  echo -e "---\nsidebar_position: 0\n---\n\n$(cat ./sdk/README.md)" > ./sdk/README.md
 
   for folder in "sdk"; do
     if [ "$version" == "main" ]; then
