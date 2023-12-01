@@ -12,7 +12,7 @@ Deposit, Voting, and Tallying results.
 ## Deposit Stage
 
 Anyone can submit a proposal to the Provenance network for stake holders to review. Proposals must meet the minimum
-required deposit of 1,000 HASH to proceed to the voting stage. A proposal has up to 48 hours to collect enough deposits
+required deposit of 50,000 HASH to proceed to the voting stage. A proposal has up to 48 hours to collect enough deposits
 to become eligible for voting. If the proposal does not achieve quorum or the proposal is vetoed, the deposits are
 forfeit.
 
@@ -40,6 +40,5 @@ period. Certain proposals such as software upgrades have their effects applied a
 
 ## Governance Configuration
 
-Current governance configuration parameters can be viewed on the 
+Current governance configuration parameters can be viewed on the
 [Explorer](https://explorer.provenance.io/network/params) (see the `Gov` configuration section).
-
