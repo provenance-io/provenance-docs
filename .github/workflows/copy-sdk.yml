@@ -45,6 +45,4 @@ jobs:
           labels: |
             automated pr
           assignees: webbushka
-          reviewers: peter-evans
-          team-reviewers: |
-            blockchain-core
+          reviewers: webbushka
