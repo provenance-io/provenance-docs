@@ -14,7 +14,8 @@ Data from the [Provenance Explorer](https://explorer.provenance.io)
 
 ### Tokenomics
 
-Provenance Blockchain is uniquely suited to drive massive disruption in financial services by combining truth-vs-trust and riskless transactions, creating bilateral decentralized markets. Read more in our <a href="https://developer.provenance.io/docs/pb/ecosystem/financial-services-blockchain/token-economics">tokenomics paper</a>.
+Provenance Blockchain is uniquely suited to drive massive disruption in financial services by combining truth-vs-trust and riskless transactions, creating bilateral decentralized markets. Read more in our
+[tokenomics paper](https://provenance.io/ecosystem/HASH/tokenomics/).
 
 ### Get Hash
 

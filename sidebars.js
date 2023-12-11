@@ -100,7 +100,7 @@ const sidebars = {
       collapsed: true,
       items: [
         'pb/ecosystem/financial-services-blockchain/index',
-        'pb/ecosystem/financial-services-blockchain/token-economics',
+        // 'pb/ecosystem/financial-services-blockchain/token-economics',
         'pb/ecosystem/financial-services-blockchain/distribution',
         {
           type: 'category',

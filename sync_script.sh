@@ -3,6 +3,7 @@
 set -e -o pipefail
 
 # Set the remote repository URL to clone from
+# TODO: pull from https://github.com/provenance-io/cosmos-modules as well
 REMOTE_REPO_URL="https://github.com/provenance-io/provenance.git"
 
 # Store the current working directory in WORK_DIR

@@ -313,6 +313,10 @@ const config = {
             from: '/docs/quick-start/run-a-node',
             to: '/docs/pb/blockchain/running-a-node/running-a-node-1/',
           },
+          {
+            from: '/docs/pb/ecosystem/financial-services-blockchain/token-economics',
+            to: 'https://provenance.io/ecosystem/HASH/tokenomics/',
+          },
         ],
       },
     ],

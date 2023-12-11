@@ -17,7 +17,7 @@ Examples of RWAs include:
 Just like cryptocurrencies, tokenized assets can be bought, traded, and held in digital wallets by individuals or managed by an investment platform.
 
 On Provenance Blockchain, all tokenized assets (including cryptocurrencies, tokens, asset pools, cap tables,
-stablecoins, and digital money) are defined by the [**Marker module**](/docs/pb/modules/marker-module).
+stablecoins, and digital money) are defined by the [**Marker module**](/docs/sdk/modules/marker-module).
 A Provenance Blockchain **Marker** is a flexible and nuanced container for all asset types that allows for
 custom configuration and administration of an asset token.
 
@@ -37,7 +37,7 @@ name, and their value is expressed as a whole number. Sending coins is as simple
 only a signature from the sender to confirm the transfer. Each coin is fungible, meaning that each coin is
 indistinguishable from another and can be replaced by another unit of equal value.
 
-A Marker has its own [lifecycle](https://developer.provenance.io/docs/modules/marker-module#state-transitions) represented by a
+A Marker has its own [lifecycle](/docs/sdk/marker/state_transitions) represented by a
 finite state machine. A Marker is ready to use when it reaches the `Active` state.
 
 ## Coins and Tokens
@@ -45,8 +45,7 @@ finite state machine. A Marker is ready to use when it reaches the `Active` stat
 On Provenance Blockchain, a Marker can be created to govern the rules of any type of coin or token.
 This allows for the generation of a customized and controlled digital asset.
 
-Coin examples include [Hash](https://explorer.provenance.io/asset/nhash), the [utility token](https://developer.provenance.io/docs/ecosystem/financial-services-blockchain/token-economics#provenance-fees-and-hash)
-of Provenance Blockchain; [USDF](https://www.usdfconsortium.com/), a bank-minted tokenized deposit; and [figureomni](https://explorer.provenance.io/asset/cfigureomni),
+Coin examples include [Hash](https://explorer.provenance.io/asset/nhash), the [utility token](https://provenance.io/ecosystem/HASH/tokenomics/) of Provenance Blockchain; [USDF](https://www.usdfconsortium.com/), a bank-minted tokenized deposit; and [figureomni](https://explorer.provenance.io/asset/cfigureomni),
 a use case-specific Omnibus Bank coin (tokenized deposit).
 
 Real World Aset examples include private company stock, such as
