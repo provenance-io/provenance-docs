@@ -17,7 +17,7 @@ Examples of RWAs include:
 Just like cryptocurrencies, tokenized assets can be bought, traded, and held in digital wallets by individuals or managed by an investment platform.
 
 On Provenance Blockchain, all tokenized assets (including cryptocurrencies, tokens, asset pools, cap tables,
-stablecoins, and digital money) are defined by the [**Marker module**](/docs/sdk/modules/marker-module).
+stablecoins, and digital money) are defined by the [**Marker module**](/docs/pb/modules/marker-module).
 A Provenance Blockchain **Marker** is a flexible and nuanced container for all asset types that allows for
 custom configuration and administration of an asset token.
 
