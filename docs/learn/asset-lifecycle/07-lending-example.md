@@ -75,22 +75,3 @@ context of Provenance Blockchain, TVL includes the amount of capital that has be
 The TVL for loan pools on Provenance Blockchain is determined by the originator's Capital Markets team. The team evaluates a
 variety of factors such as unpaid balances, accrued interest, market trends and potential loan movement between pools to
 price each marker loan pool. The pricing is updated on a daily basis.
-
-Marker pricing data is sent to the [**Pricing Engine**](https://figure.tech/service-pricing-engine/swagger-ui/index.html#/Pricing).
-[Provenance Explorer](https://explorer.provenance.io/dashboard) pulls data from the Pricing Engine to to calculate and display the chain total value.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    

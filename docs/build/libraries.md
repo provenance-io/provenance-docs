@@ -4,22 +4,21 @@ sidebar_position: 3
 
 # Libraries and APIs
 
-This page comprised a large list of libraries and APIs currently available. We recommend using this resource as a starting point before development to find projects that match your own, and use the existing examples to simplify your efforts. 
+This page comprised a large list of libraries and APIs currently available. We recommend using this resource as a starting point before development to find projects that match your own, and use the existing examples to simplify your efforts.
 These resources may also connect you with developers who you can interact with via Slack or Discord. Stay tuned, as more ongoing projects will be added here continuously!
 
 ## Provenance Blockchain APIs
 
-| Resource                                                                                                         | Description                                                     |
-| ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| [Attribute](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.attribute.v1.Attribute) <br/> [Attribute Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/attribute/v1/tx.proto)  <br/> [Query Attribute Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/attribute/v1/query.proto)  | API for the [Attribute Module](/docs/pb/modules/attribute-module)        |
-| [MarkerAccount](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.marker.v1.MarkerAccount) <br/> [Marker Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/marker/v1/tx.proto)  <br/> [Query Marker Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/marker/v1/query.proto)  | API for the [Marker Module](/docs/pb/modules/marker-module)        |
-| [Scope (NFT)](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.metadata.v1.Scope) <br/> [Metadata Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/metadata/v1/tx.proto)  <br/> [Query Metadata Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/metadata/v1/query.proto)  | API for the [Metadata Module](/docs/pb/modules/metadata-module)        |
-| [MsgFee](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.msgfees.v1.MsgFee) <br/> [MsgFees Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/msgfees/v1/tx.proto)  <br/> [Query MsgFees Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/msgfees/v1/query.proto)  | API for the [Msgfees Module](https://github.com/provenance-io/provenance/tree/main/x/msgfees/spec)        |
-| [NameRecord](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.name.v1.NameRecord) <br/> [Name Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/name/v1/tx.proto)  <br/> [Query Name Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/name/v1/query.proto)  | API for the [Name Module](/docs/pb/modules/name-module)        |
-| [RewardProgram](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.reward.v1.RewardProgram) <br/> [Reward Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/reward/v1/tx.proto)  <br/> [Query Reward Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/reward/v1/query.proto)  | API for the [Reward Module](https://github.com/provenance-io/provenance/tree/main/x/reward/spec)        |
-| https://buf.build/cosmos/cosmos-sdk/docs/main                                                                    | Cosmos API Documentation                                        |
-| https://docs.tendermint.com/main/rpc/                                                                           | Tendermint API Documentation                                    |
-
+| Resource                                                                                                                                                                                                                                                                                                                                                                                                        | Description                                                                                        |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [Attribute](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.attribute.v1.Attribute) <br/> [Attribute Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/attribute/v1/tx.proto) <br/> [Query Attribute Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/attribute/v1/query.proto) | API for the [Attribute Module](/docs/pb/modules/attribute-module)                                  |
+| [MarkerAccount](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.marker.v1.MarkerAccount) <br/> [Marker Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/marker/v1/tx.proto) <br/> [Query Marker Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/marker/v1/query.proto)        | API for the [Marker Module](/docs/pb/modules/marker-module)                                        |
+| [Scope (NFT)](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.metadata.v1.Scope) <br/> [Metadata Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/metadata/v1/tx.proto) <br/> [Query Metadata Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/metadata/v1/query.proto)        | API for the [Metadata Module](/docs/pb/modules/metadata-module)                                    |
+| [MsgFee](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.msgfees.v1.MsgFee) <br/> [MsgFees Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/msgfees/v1/tx.proto) <br/> [Query MsgFees Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/msgfees/v1/query.proto)                 | API for the [Msgfees Module](https://github.com/provenance-io/provenance/tree/main/x/msgfees/spec) |
+| [NameRecord](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.name.v1.NameRecord) <br/> [Name Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/name/v1/tx.proto) <br/> [Query Name Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/name/v1/query.proto)                        | API for the [Name Module](/docs/pb/modules/name-module)                                            |
+| [RewardProgram](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.reward.v1.RewardProgram) <br/> [Reward Tx Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/reward/v1/tx.proto) <br/> [Query Reward Messages](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance/reward/v1/query.proto)        | API for the [Reward Module](https://github.com/provenance-io/provenance/tree/main/x/reward/spec)   |
+| https://buf.build/cosmos/cosmos-sdk/docs/main                                                                                                                                                                                                                                                                                                                                                                   | Cosmos API Documentation                                                                           |
+| https://docs.tendermint.com/main/rpc/                                                                                                                                                                                                                                                                                                                                                                           | Tendermint API Documentation                                                                       |
 
 ## Data and Business Intelligence
 
@@ -33,8 +32,8 @@ These resources may also connect you with developers who you can interact with v
 
 ### BlockVault Contracts
 
-| Resource                                                                                                          | Description                                                                                |
-| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Resource                                                                                                                 | Description                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
 | [Off-Chain BlockVault Contracts & SDK](https://medium.com/provenanceblockchain/off-chain-p8e-contracts-sdk-ac313e40c9c7) | An introduction and tutorial on Provenance Blockchain's off-chain SDK, published on Medium |
 
 ### Object Store
@@ -45,22 +44,22 @@ These resources may also connect you with developers who you can interact with v
 
 ### Client Side Contract Execution
 
-| Resource                                                | Description                                                                                        |
-| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Resource                                                | Description                                                                                               |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | https://github.com/provenance-io/loan-package-contracts | Defines a loan package scope specification and BlockVault smart contracts that can be executed against it |
-| https://github.com/provenance-io/object-store           | A object storage system with a gRPC interface and strong encryption properties                     |
-| https://github.com/provenance-io/object-store-locator   | Object store locator service                                                                       |
-| https://github.com/provenance-io/p8e                    | Optional layer that allows client-side contract execution with data privacy                        |
-| https://github.com/provenance-io/p8e-cee-api            | Provenance Contract Execution Environment API                                                      |
+| https://github.com/provenance-io/object-store           | A object storage system with a gRPC interface and strong encryption properties                            |
+| https://github.com/provenance-io/object-store-locator   | Object store locator service                                                                              |
+| https://github.com/provenance-io/p8e                    | Optional layer that allows client-side contract execution with data privacy                               |
+| https://github.com/provenance-io/p8e-cee-api            | Provenance Contract Execution Environment API                                                             |
 | https://github.com/provenance-io/p8e-docker-compose     | Supporting tools for rapid BlockVault test environment deployment                                         |
-| https://github.com/provenance-io/p8e-gradle-plugin      | Allows for publishing BlockVault Contracts against a BlockVault environment                                      |
-| https://github.com/provenance-io/p8e-scope-sdk          | Development kit for interacting with the Provenance Blockchain metadata module                     |
+| https://github.com/provenance-io/p8e-gradle-plugin      | Allows for publishing BlockVault Contracts against a BlockVault environment                               |
+| https://github.com/provenance-io/p8e-scope-sdk          | Development kit for interacting with the Provenance Blockchain metadata module                            |
 | https://github.com/provenance-io/p8e-ui                 | Simple UI for BlockVault development                                                                      |
 
 ### Data Models
 
-| Resource                                              | Description                                                                                                             |
-| ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Resource                                              | Description                                                                                                                    |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | https://github.com/provenance-io/metadata-asset-model | protobuf data model reference standard for Provenance Blockchain Metadata module and BlockVault Contract Execution Environment |
 
 ## Docker Images
@@ -96,7 +95,6 @@ These resources may also connect you with developers who you can interact with v
 | https://github.com/provenance-io/provwallet-swift                   | R&D iOs mobile app                                                        |
 | https://github.com/provenance-io/walletconnect-js                   | WalletConnect client for dApps                                            |
 | https://github.com/provenance-io/walletconnect-js/tree/main/webDemo | Example React dApp using WalletConnect                                    |
-| https://test.figure.tech/walletconnect                              | Example WalletConnect dApp                                                |
 | https://github.com/provenance-io/wallet-utils                       | Typescript Utils to create wallet messages - protos, build messages       |
 
 ## Scripts and Utilities
@@ -114,17 +112,3 @@ These resources may also connect you with developers who you can interact with v
 | https://github.com/provenance-io/wasmd  | Hosts Wasmd, the first implementation of a cosmos zone with wasm smart contracts enabled                                                                             |
 | https://github.com/provenance-io/wasmit | A Go lib for building integration test commands that store, instantiate, execute and query smart contracts on a Provenance localnet using the command line.          |
 | https://github.com/provenance-io/wasmvm | This is a wrapper around the CosmWasm VM. It allows you to compile, initialize and execute CosmWasm smart contracts from Go applications, in particular from x/wasm. |
-
-## Third Party APIs
-
-| Resource                                                | Description                                                                 |
-| ------------------------------------------------------- | --------------------------------------------------------------------------- |
-| https://pay.test.figure.com/pay/docs/index.html#/       | Figure Pay Partner API guide                                                |
-| https://test.figure.tech/docs/apis/marketplace/         | Figure Marketplace API guide                                                |
-| https://test.figure.tech/docs/apis/onboard/#tag/Assets  | Figure Asset Onboarding API guide                                           |
-| https://test.figure.tech/docs/apis/documents/           | Figure document filling, mapping, and signature storage for dApps API guide |
-| https://test.figure.tech/docs/apis/asset-manager/       | Figure Asset Manager API guide                                              |
-| https://test.figure.tech/docs/apis/portfolio-manager/   | Figure Portfolio Manager API guide                                          |
-| https://test.figure.tech/docs/apis/pricing-engine/      | Figure Pricing Engine API guide                                             |
-| https://test.figure.tech/docs/apis/provenance-explorer/ | Provenance Explorer API guide                                               |
-| https://test.figure.tech/docs/apis/block-api/           | Figure Block API guide                                                      |
