@@ -19,5 +19,6 @@ Provenance Blockchain leverages inherited modules from Cosmos SDK, and has purpo
 * [Msg Fees](./msgfees/README.md) - Manages additional fees that can be applied to tx msgs.
 * [Name](./name/README.md) - Provides a system for providing human-readable names as aliases for addresses.
 * [Oracle](./oracle/README.md) - Provides the capability to dynamically expose query endpoints.
-* [Reward](./reward/README.md) - Provides a system for distributing rewards to accounts.
+* [Quarantine](./quarantine/README.md) - Prevents accounts from receiving unwanted funds.
+* [Sanction](./sanction/README.md) - Provides a mechanism for freezing accounts.
 * [Trigger](./trigger/README.md) - Provides a system for triggering transactions based on predeterminded events.
