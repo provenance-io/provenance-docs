@@ -41,7 +41,7 @@ activity related to the loan.
 
 Loan Pools allow for the bundling of individual loans into a single, more easily tradable security. This provides a
 means for pooling risk and increasing liquidity for investors. The Provenance Blockchain provides a flexible solution
-for creating these loan pools by using its [**Marker**](/docs/pb/modules/marker-module) construct.
+for creating these loan pools by using its [**Marker**](/docs/sdk/marker/) construct.
 
 A loan trading platform dApp can be used to select loans for contribution to a pool and create a Marker. The loan-level
 data is stored in the EOS and can be permissioned to the loan trading platform, giving them access to the data necessary

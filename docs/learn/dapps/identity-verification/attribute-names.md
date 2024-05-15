@@ -1,6 +1,6 @@
 # Identity Attribute Names
 
-[Names](/docs/pb/modules/name-module) on the Provenance Blockchain are a way to give simpler and easier-to-remember names to complicated blockchain addresses. These names can be used to show who owns and controls certain information on the blockchain. This guide assumes you have an understanding of how names work on Provenance Blockchain.
+[Names](/docs/sdk/name/) on the Provenance Blockchain are a way to give simpler and easier-to-remember names to complicated blockchain addresses. These names can be used to show who owns and controls certain information on the blockchain. This guide assumes you have an understanding of how names work on Provenance Blockchain.
 
 ## Pattern for Identity Attribute Names
 
@@ -12,4 +12,4 @@ The Name hierarchy provides a method for establishing authority, where each leve
 
 ## Adding Your Organization to the KYC Namespace
 
-In order to add your organization to the kyc namespace, you will need to reach out to an owner of the namespace. More on that [here](/docs/pb/modules/name-module/#creation-of-root-names)
+In order to add your organization to the kyc namespace, you will need to reach out to an owner of the namespace. More on that [here](/docs/sdk/name/concepts#creation-of-root-names)

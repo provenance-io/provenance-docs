@@ -12,10 +12,9 @@ data.
 
 ![identity verification check](/img/learn/dapps/identity-badge.png)
 
-
 ## Understanding Provenance NFTs and Their Construction
 
-Provenance NFTs are defined by the [Metadata Module](/docs/pb/modules/metadata-module) using the
+Provenance NFTs are defined by the [Metadata Module](/docs/sdk/metadata/) using the
 [Scope data structure](https://github.com/provenance-io/provenance/blob/main/docs/proto-docs.md#provenance.metadata.v1.Scope)
 . To understand how Identity
 Verification NFTs are constructed on Provenance Blockchain, it's essential to review [how NFTs are designed](/docs/learn/asset-lifecycle/nfts)
@@ -27,7 +26,7 @@ platform-neutral mechanism for serializing structured data.
 
 When creating an Identity Verification NFT, an Identity Provider will define one or more Protobuf Records included in
 the Scope. These Records will store the user's identity verification data, such as the verification level, verification
-date, and other relevant information. 
+date, and other relevant information.
 
 The Identity Provider will then create the NFT on the Provenance Blockchain, associating it with the user's account. Once
 the NFT is minted, the user will have ownership and control over their identity data.
@@ -40,7 +39,6 @@ the NFT's Scope data structure.
 
 Depending on the Identity Provider's implementation, the data can be accessed through an API provided by the Identity
 Provider or an EOS Gateway that directly interfaces with the off-chain encrypted object store holding the identity data.
-
 
 ## Example Identity NFT
 

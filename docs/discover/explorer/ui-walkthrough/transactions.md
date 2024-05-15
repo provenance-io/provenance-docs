@@ -1,6 +1,6 @@
 # Transactions
 
-A transaction is how everything gets committed to the blockchain. From transfers of Hash to [Smart Contract](/docs/pb/modules/provwasm-smart-contracts.md) executions, it all gets recorded to the blockchain ledger via transactions.
+A transaction is how everything gets committed to the blockchain. From transfers of Hash to [Smart Contract](/docs/sdk/z-smart-contracts/) executions, it all gets recorded to the blockchain ledger via transactions.
 
 ## Listview
 

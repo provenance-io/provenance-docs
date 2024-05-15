@@ -10,7 +10,7 @@ Asset originators can technically get away with mastering a single BlockVault co
 ## BlockVault Gradle Plugin
 
 :::info
-Having an understanding of the [Provenance Metadata module](https://developer.provenance.io/docs/modules/metadata-module) is strongly recommended.
+Having an understanding of the [Provenance Metadata module](/docs/sdk/metadata) is strongly recommended.
 :::
 
 In order to execute contracts with the [Provenance Scope SDK](https://github.com/provenance-io/p8e-scope-sdk), the contracts must be published into your execution environment. The `p8e-gradle-plugin` provides a set of tasks in order to accomplish just that. Publishing contracts performs the following high level actions in order to allow contracts to be executed:
@@ -20,7 +20,7 @@ In order to execute contracts with the [Provenance Scope SDK](https://github.com
 
 ## Publishing via the BlockVault CEE API
 
-To make things easier, the `p8e-CEE-API` exposes the `p8e-gradle-plugin` functionality in a RESTful endpoint, allowing users to publish their own BlockVault contracts or pre-defined contracts into their own BlockVault environment. See the [Create Contract Specification](https://developer.provenance.io/docs/integrating/asset-originators-guide/loan-onboarding-service/api-specification#create-contract-specification) documentation on the API Specification page.
+To make things easier, the `p8e-CEE-API` exposes the `p8e-gradle-plugin` functionality in a RESTful endpoint, allowing users to publish their own BlockVault contracts or pre-defined contracts into their own BlockVault environment. See the [Create Contract Specification](/docs/integrating/asset-originators-guide/loan-onboarding-service/api-specification#create-contract-specification) documentation on the API Specification page.
 
 The inputs that remain the same no matter which environment you're working in include:
 

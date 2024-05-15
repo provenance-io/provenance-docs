@@ -11,12 +11,12 @@ managing these processes can be a complex and challenging task, requiring signif
 ![identity verification check](/img/learn/dapps/identity-verification-check.png)
 
 To simplify and streamline the identity verification process, Provenance Blockchain has developed a solution that uses
-[**Attributes**](/docs/pb/modules/attribute-module), a name-value pair structure that allows for the storage and management of verified identity information on
+[**Attributes**](/docs/sdk/attribute), a name-value pair structure that allows for the storage and management of verified identity information on
 the blockchain. Attributes are essentially metadata added to a blockchain account to indicate that an individual or
 entity has passed a specific verification process.
 
 For instance, an attribute might be used to verify that a person has completed a KYC process or that an entity is
-accredited to invest in a particular security. The data stored in the attribute value can be of 
+accredited to invest in a particular security. The data stored in the attribute value can be of
 [various types](https://github.com/provenance-io/provenance/blob/main/proto/provenance/attribute/v1/attribute.proto#L32), including
 text, JSON, URL, UUID and other formats.
 
@@ -45,11 +45,10 @@ One option for sharing this data securely with dApps is for the verification pro
 relational database and make it available to dApps through REST API calls. However, this approach requires negotiation
 between each dApp and each verification provider (for example, establishing an API key for access), which can be time-consuming and cumbersome.
 
-A better way to share user verification data is to create an [NFT](/docs/learn/asset-lifecycle/nfts) ([Scope](/docs/pb/modules/metadata-module)) that represents the user's
+A better way to share user verification data is to create an [NFT](/docs/learn/asset-lifecycle/nfts) ([Scope](/docs/sdk/metadata/)) that represents the user's
 credentials and is stored in their account on the blockchain. This way, the digital identity credential can be stored as
 an NFT in the user's wallet and can be easily shared with other dApps.
 ![identity verification check](/img/learn/dapps/wallet-with-identity.png)
-
 
 The verification data is stored in Provenance's Encrypted Object Store (EOS), which provides a secure and private location for
 the data to be stored. The user can then permission their own EOS credential data to the dApp of their choosing,

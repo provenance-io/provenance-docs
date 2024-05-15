@@ -6,7 +6,7 @@ description: High-level creation of a coin marker on Provenance Blockchain.
 
 ## Overview
 
-A Coin on Provenance Blockchain is implemented as a [Marker](/docs/pb/modules/marker-module.md). Each coin that is generated can be transferred freely between blockchain [accounts ](accounts.md)and represents a value exchange between parties. A coin marker is a simple structure that is meant to be used as a building block for a more complex use case, such as a [stablecoin](stablecoin.md#stablecoins).
+A Coin on Provenance Blockchain is implemented as a [Marker](/docs/sdk/marker). Each coin that is generated can be transferred freely between blockchain [accounts ](accounts.md)and represents a value exchange between parties. A coin marker is a simple structure that is meant to be used as a building block for a more complex use case, such as a [stablecoin](stablecoin.md#stablecoins).
 
 ## Creating a Coin
 
@@ -323,13 +323,13 @@ balances:
 
 ### Review
 
-It is important to discern that addresses are identifiers that point to accounts on Provenance Blockchain. Each [account](accounts.md) on Provenance Blockchain can hold coins of various denominations, and [markers](/docs/pb/modules/marker-module.md) are a special type of account that has its own denomination, can hold coins, and can hold NFTs (Scopes) described later.
+It is important to discern that addresses are identifiers that point to accounts on Provenance Blockchain. Each [account](accounts.md) on Provenance Blockchain can hold coins of various denominations, and [markers](/docs/sdk/marker) are a special type of account that has its own denomination, can hold coins, and can hold NFTs (Scopes) described later.
 
 In this exercise a coin was created, tokens of that coin were minted, and then subsequently transferred to a recipients address. The tokens that were transferred are now held by the recipient and are no longer within the control of the marker, manager, addresses that have permissions on the marker.
 
 ## Stablecoins
 
-The coin created above can be used as a stablecoin to provide a bridge between fiat and digital currency as the basis for transactions of value on Provenance Blockchain. Each new stablecoin is represented on the blockchain as a [marker ](/docs/pb/modules/marker-module.md)managed by the issuer. Issuers of stablecoin manage fiat currency in a traditional banking account structure that handles the necessary BSA/AML obligations. Issuing institutions have complete control over the management of their coin and provide a redemption method where a holder can convert the digital holding to fiat over banking rails.
+The coin created above can be used as a stablecoin to provide a bridge between fiat and digital currency as the basis for transactions of value on Provenance Blockchain. Each new stablecoin is represented on the blockchain as a [marker ](/docs/sdk/marker)managed by the issuer. Issuers of stablecoin manage fiat currency in a traditional banking account structure that handles the necessary BSA/AML obligations. Issuing institutions have complete control over the management of their coin and provide a redemption method where a holder can convert the digital holding to fiat over banking rails.
 
 :::info
 See [Omnibus Banks](stablecoin.md) for more participant information.

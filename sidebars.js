@@ -197,25 +197,6 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Modules',
-      className: 'section-heading',
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: 'doc',
-        id: 'pb/modules/modules',
-      },
-      items: [
-        'pb/modules/cosmos-modules',
-        'pb/modules/metadata-module',
-        'pb/modules/marker-module',
-        // 'pb/modules/attribute-module',
-        'pb/modules/name-module',
-        'pb/modules/provwasm-smart-contracts',
-      ],
-    },
-    {
-      type: 'category',
       label: 'IBC and Zones',
       className: 'section-heading',
       collapsible: true,

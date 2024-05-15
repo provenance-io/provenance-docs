@@ -4,13 +4,13 @@ description: Practical implementations of BlockVault
 
 # BlockVault Contract Execution Environment (formerly nicknamed “P8e”)
 
-While the components and key concepts of BlockVault and BlockVault contracts are covered in the [BlockVault Overview](https://developer.provenance.io/docs/pb/p8e/overview), this guide will focus on how to deploy your own BlockVault environment and put it to use.
+While the components and key concepts of BlockVault and BlockVault contracts are covered in the [BlockVault Overview](/docs/pb/p8e/overview), this guide will focus on how to deploy your own BlockVault environment and put it to use.
 
 By the end of this guide, you will feel comfortable spinning up and configuring your own development environment, writing and publishing your own BlockVault contracts, and executing them. Whether it's to build a new use case or integrate with an existing one, you will gain an understanding of where your data lives and who has access to it.
 
 ## Participation Models
 
-There is more than one way to participate in the Provenance Blockchain ecosystem. Some participants will want to simply send data to a technology service provider (such as Figure Tech) and allow them to orchestrate the process of pushing data to the Encrypted Object Store and Provenance Blockchain ledger. In this model, the technology service provider likely also hosts and operates the BlockVault Contract Execution Environment and/or [Provenance Blockchain Nodes](https://developer.provenance.io/docs/blockchain/introduction/major-components#provenance-blockchain-node) used to store loan data and record transactions, respectively.
+There is more than one way to participate in the Provenance Blockchain ecosystem. Some participants will want to simply send data to a technology service provider (such as Figure Tech) and allow them to orchestrate the process of pushing data to the Encrypted Object Store and Provenance Blockchain ledger. In this model, the technology service provider likely also hosts and operates the BlockVault Contract Execution Environment and/or [Provenance Blockchain Nodes](/docs/blockchain/introduction/major-components#provenance-blockchain-node) used to store loan data and record transactions, respectively.
 
 Other participants will want full control over their data and will choose to operate their own interfaces, middleware (including Object Stores), or Provenance Blockchain Nodes. Ultimately, each participant can decide which components they are comfortable operating. The more control over the running applications and data stores, the more flexibility the participant has to build out new use cases with business partners within the ecosystem, extending the loan data model as needed.
 

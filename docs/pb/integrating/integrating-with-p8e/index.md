@@ -5,7 +5,7 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 <DocSubheader text="A practical guide for integrating with BlockVault"
 />
 
-This guide walks through some key concepts and practical steps to begin your journey in originating and managing assets on Provenance Blockchain. You will learn how to use the [BlockVault Contract Execution Environment (formerly nicknamed “P8e”)](https://developer.provenance.io/docs/pb/p8e/overview) to manage private, sensitive data while maintaining a public record of changes, comprised of hashes of the data stored in BlockVault.
+This guide walks through some key concepts and practical steps to begin your journey in originating and managing assets on Provenance Blockchain. You will learn how to use the [BlockVault Contract Execution Environment (formerly nicknamed “P8e”)](/docs/pb/p8e/overview) to manage private, sensitive data while maintaining a public record of changes, comprised of hashes of the data stored in BlockVault.
 
 By following along, you will learn more about:
 

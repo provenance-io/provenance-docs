@@ -1,4 +1,4 @@
-# Smart Contracts (ProvWasm)
+# ProvWasm Smart Contracts
 
 import { DocSubheader } from '/docs/components/DocSubheader';
 
