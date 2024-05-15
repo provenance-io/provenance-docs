@@ -200,7 +200,7 @@ const config = {
               },
               {
                 label: 'dApps',
-                to: 'docs/discover/dapps',
+                to: 'https://provenance.io/connect',
               },
             ],
           },
@@ -316,6 +316,10 @@ const config = {
           {
             from: '/docs/pb/ecosystem/financial-services-blockchain/token-economics',
             to: 'https://provenance.io/ecosystem/HASH/tokenomics/',
+          },
+          {
+            from: '/docs/discover/dapps',
+            to: 'https://provenance.io/connect',
           },
         ],
       },
