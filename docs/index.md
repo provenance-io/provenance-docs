@@ -30,9 +30,9 @@ Provenance Blockchain is licensed under the [Apache 2.0 license](https://www.apa
   <DataCard title="Read" content="about the Provenance blockchain and financial services" link="https://developer.provenance.io/docs/pb/blockchain/introduction/"/>
   <DataCard title="Start" content="with the basics of the Provenance Blockchain network" link="https://developer.provenance.io/docs/pb/blockchain/basics/anatomy-of-a-provenance-application"/>
   <DataCard title="Install" content="the Provenance blockchain application to run a node" link="https://developer.provenance.io/docs/pb/blockchain/running-a-node/"/>
-  <DataCard title="Explore" content="the entirety of the Provenance ecosystem and community" link="https://developer.provenance.io/docs/pb/ecosystem/community/"/>
+  <DataCard title="Explore" content="the entirety of the Provenance ecosystem and community" link="https://provenance.io/connect"/>
   <DataCard title="Learn" content="how the Provenance Modules empower business" link="https://developer.provenance.io/docs/pb/modules/"/>
   <DataCard title="Discover" content="how the Provenance Contract Execution Environment works" link="https://developer.provenance.io/docs/pb/p8e/overview/"/>
   <DataCard title="Build" content="your integration into the Provenance Blockchain" link="https://developer.provenance.io/docs/pb/integrating/integrating-with-p8e/"/>
-  <DataCard title="Follow" content="real-world use cases and applications built on Provenance" link="https://developer.provenance.io/docs/discover/dapps"/>
+  <DataCard title="Follow" content="real-world use cases and applications built on Provenance" link="https://twitter.com/provenancefdn"/>
 </div>

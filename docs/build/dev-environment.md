@@ -17,7 +17,7 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is one of our favorite IDEs to use when we are working on the chain.
 
-[VS Code](https://code.visualstudio.com/) is another great option, especially as we build JavaScript dApps like our [explorer](/docs/discover/explorer.md) and [others](/docs/discover/dapps).
+[VS Code](https://code.visualstudio.com/) is another great option, especially as we build JavaScript dApps like our [explorer](/docs/discover/explorer.md) and [others](https://provenance.io/connect).
 
 [Provenance Code Extension](https://github.com/FigureTechnologies/provenance-code-extension) is a VS Code extension for smart contract development on the Provenance blockchain.
 
