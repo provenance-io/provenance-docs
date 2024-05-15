@@ -1,6 +1,6 @@
 # Assets
 
-Assets are typically known as [markers](/docs/pb/modules/marker-module.md) or tokens. They are the representation of coins on the blockchain. An asset can contain just itself, or other assets and NFTs. In more abstract terms, if an asset is a fund, that fund can contain shares of other funds and distinct non-fungible assets.&#x20;
+Assets are typically known as [markers](/docs/sdk/marker) or tokens. They are the representation of coins on the blockchain. An asset can contain just itself, or other assets and NFTs. In more abstract terms, if an asset is a fund, that fund can contain shares of other funds and distinct non-fungible assets.&#x20;
 
 ## Listview
 

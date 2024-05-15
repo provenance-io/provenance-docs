@@ -7,7 +7,7 @@ import { DocSubheader } from '/docs/components/DocSubheader';
 
 ## Description
 
-Used to retrieve and decrypt objects from the object store. See [Encrypted Object Store ](https://developer.provenance.io/docs/pb/p8e/overview/encrypted-object-store)for additional information.
+Used to retrieve and decrypt objects from the object store. See [Encrypted Object Store ](/docs/pb/p8e/overview/encrypted-object-store)for additional information.
 
 An object's `hash` and `type` must be passed such that the API can parse the fetched Protocol Buffer.
 

@@ -21,7 +21,7 @@ As you will see below, the Figure Tech team has extended the base Asset data mod
 ## Loan Package
 
 :::info
-This section builds on the [Metadata Module](https://developer.provenance.io/docs/modules/metadata-module) documentation. Revisit that page for definitions of the four core state objects in BlockVault: Contracts, Records, Sessions, and Scopes.
+This section builds on the [Metadata Module](/docs/sdk/metadata) documentation. Revisit that page for definitions of the four core state objects in BlockVault: Contracts, Records, Sessions, and Scopes.
 :::
 
 Asset originators must understand the structure of the scope they are going to onboard to Provenance Blockchain, also known as the Record Specification. We will stick to the mortgage as an example of an asset that we want to represent as an asset in Provenance. The Loan Package Record Specification is one scope that includes the following six records:

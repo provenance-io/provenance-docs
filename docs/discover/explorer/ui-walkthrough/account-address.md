@@ -13,7 +13,7 @@ Information to note:
 - **Account Name**: currently only applies to **ModuleAccount** types, this helps identify what the account is for
 - **Sequence**: the current number of transactions the address has submitted to the blockchain. This helps maintain order of transactions and acts as a check when an address is submitting a lot of transactions in short order
 - **Fungible Tokens**: the number of distinct tokens the address holds a balance for
-- **Non-Fungible Tokens**: the number of NFTs the address holds. Currently seen as [Scopes](/docs/pb/modules/metadata-module.md)
+- **Non-Fungible Tokens**: the number of NFTs the address holds. Currently seen as [Scopes](/docs/sdk/metadata)
 
 ## Account Assets
 

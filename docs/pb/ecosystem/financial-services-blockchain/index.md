@@ -29,7 +29,6 @@ registry, and exchange.**
 By performing these key functions, Provenance Blockchain brings a new level of efficiency, transparency, and
 accessibility to financial markets.
 
-
 ## Enabling Marketplaces
 
 Provenance Blockchain makes it possible to create marketplaces for buying and selling digital assets without relying on
@@ -44,11 +43,11 @@ Provenance Blockchain provides the underlying technology to power these marketpl
 loans, loan participation, private funds, and securities can be leveraged to offer new products to investors. With Provenance
 Blockchain, buyers and sellers can trade with each other in a bilateral fashion, without counterparty or settlement risk.
 
-The platform also offers modules like the [**Name Module**](/docs/pb/modules/name-module.md) for KYC/AML and accreditation, and the
-[**Account**](/docs/pb/modules/cosmos-modules.md), [**Marker**](/docs/pb/modules/marker-module.md), and
-[**Bank**](/docs/pb/modules/cosmos-modules.md) Modules for real-time settlement without counterparty or settlement risk.
+The platform also offers modules like the [**Name Module**](/docs/sdk/name) for KYC/AML and accreditation, and the
+[**Account**](/docs/sdk/), [**Marker**](/docs/sdk/marker), and
+[**Bank**](/docs/sdk/) Modules for real-time settlement without counterparty or settlement risk.
 Complex ownership, exchange, and settlement functions can be expressed using
-[**Provenance Blockchain Smart Contracts**](/docs/pb/modules/provwasm-smart-contracts.md).
+[**Provenance Blockchain Smart Contracts**](/docs/sdk/z-smart-contracts/).
 
 In summary, Provenance Blockchain enables marketplaces to be created that offer unprecedented access, ease, and transparency to
 buyers and sellers of digital assets.

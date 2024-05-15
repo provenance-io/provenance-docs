@@ -15,4 +15,4 @@ The following diagram outlines the flow of data for typical transactions propose
 9. The index is updated with the new contract information. This information is used later for searching and querying the data.
 10. Affiliates acknowledge the completion event.
 
-For certain transactions, affiliates can also interact directly with Provenance Blockchain without utilizing or even needing a Contract Execution Environment. For example, [markers](/docs/pb/modules/marker-module.md) are managed by directly interacting with Provenance Blockchain instead of executing contracts.
+For certain transactions, affiliates can also interact directly with Provenance Blockchain without utilizing or even needing a Contract Execution Environment. For example, [markers](/docs/sdk/marker) are managed by directly interacting with Provenance Blockchain instead of executing contracts.
