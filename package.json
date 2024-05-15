@@ -16,9 +16,9 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.0.1",
-    "@docusaurus/plugin-client-redirects": "^3.0.1",
-    "@docusaurus/preset-classic": "^3.0.1",
+    "@docusaurus/core": "^3.3.2",
+    "@docusaurus/plugin-client-redirects": "^3.3.2",
+    "@docusaurus/preset-classic": "^3.3.2",
     "@heroicons/react": "^2.0.18",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
