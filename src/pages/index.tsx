@@ -1,34 +1,17 @@
-import React from "react";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
-
-import styles from "./index.module.css";
-
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/quick-start/start-here"
-          >
-            Get Started
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import React from 'react'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import Layout from '@theme/Layout'
+import HomepageEssentials from '@site/src/components/HomepageEssentials'
+import HomepageHeader from '@site/src/components/HomepageHeader'
+import HomepageGetStarted from '@site/src/components/HomepageGetStarted'
+import HomepageTutorials from '@site/src/components/HomepageTutorials'
+import HomepageConnect from '@site/src/components/HomepageConnect'
+import HomepageLearn from '@site/src/components/HomepageLearn'
+import HomepageCollaborate from '@site/src/components/HomepageCollaborate'
 
 export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext()
+
   return (
     <Layout
       title={`${siteConfig.title} Docs`}
@@ -36,8 +19,13 @@ export default function Home(): JSX.Element {
     >
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <HomepageEssentials />
+        <HomepageGetStarted />
+        <HomepageTutorials />
+        <HomepageConnect />
+        <HomepageLearn />
+        <HomepageCollaborate />
       </main>
     </Layout>
-  );
+  )
 }

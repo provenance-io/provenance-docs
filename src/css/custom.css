@@ -4,13 +4,14 @@
  * work well for content-centric websites.
  */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(../../static/font/MaisonNeue/maison-neue.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-font-family-base: "Montserrat";
+  --ifm-font-family-base: "Maison Neue", sans-serif;
   --ifm-color-primary: #3463d9;
   --ifm-color-primary-dark: #2649a1;
   --ifm-color-primary-darker: #0f2d79;
@@ -39,21 +40,21 @@
   margin: 16px 0;
 }
 
-.section-heading > .menu__list-item-collapsible > .menu__link--active {
+.section-heading>.menu__list-item-collapsible>.menu__link--active {
   color: var(--ifm-menu-color);
 }
 
-.section-heading > .menu__list-item-collapsible > .menu__link {
+.section-heading>.menu__list-item-collapsible>.menu__link {
   opacity: 0.75;
   text-transform: uppercase;
   font-size: 0.75em;
 }
 
-.section-heading > .menu__list-item-collapsible:hover {
+.section-heading>.menu__list-item-collapsible:hover {
   background: none;
 }
 
-.section-heading > .menu__list {
+.section-heading>.menu__list {
   padding-left: 0;
 }
 
@@ -68,11 +69,16 @@
   height: 70px;
 }
 
-.navbar__brand > .navbar__logo {
+.navbar__brand>.navbar__logo {
   height: 50px;
   width: 150px;
 }
 
-html[data-theme="dark"] .navbar__brand > .navbar__logo {
+html[data-theme="dark"] .navbar__brand>.navbar__logo {
   filter: brightness(0) invert(1);
+}
+
+.footer__link-item {
+  display: flex;
+  align-items: center;
 }
