@@ -1,4 +1,5 @@
 import React from 'react'
+import { useIsClient } from '@uidotdev/usehooks'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Layout from '@theme/Layout'
 import HomepageEssentials from '@site/src/components/HomepageEssentials'
@@ -11,6 +12,7 @@ import HomepageCollaborate from '@site/src/components/HomepageCollaborate'
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext()
+  const isClient = useIsClient()
 
   return (
     <Layout
@@ -23,7 +25,7 @@ export default function Home(): JSX.Element {
         <HomepageGetStarted />
         <HomepageTutorials />
         <HomepageConnect />
-        <HomepageLearn />
+        {isClient && <HomepageLearn />}
         <HomepageCollaborate />
       </main>
     </Layout>
