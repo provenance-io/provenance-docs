@@ -60,12 +60,12 @@ export default function GetStarted() {
       <h2 className="font-MaisonNeueExtended text-5xl font-bold text-neutral-600">
         Get Started
       </h2>
-      <Cards>
+      <Cards className="my-12">
         {GetStartedList.map((props, idx) => (
           <Card key={idx} {...props} />
         ))}
       </Cards>
-      <Button className="mt-12" showArrow>
+      <Button showArrow to="/docs/quick-start/start-here">
         Find More
       </Button>
     </section>

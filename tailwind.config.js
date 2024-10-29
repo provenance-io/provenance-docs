@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /*
 colors: https://www.figma.com/file/JePDx60O9FB8JD06Irf7Gu/Provenance-Style-Guide?node-id=2%3A632&t=mEB8VgcTQaf1MjWP-0
@@ -144,7 +144,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'header-flare': "url('../../static/img/header-flare.png')",
+        'header-flare': "url('../../static/img/header-flare.svg')",
+        'mid-section-flare': "url('../../static/img/mid-section-flare.png')",
       },
       backgroundSize: {
         'size-step': '42px, 48px',
@@ -199,4 +200,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}

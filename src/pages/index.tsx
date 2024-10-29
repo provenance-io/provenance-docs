@@ -18,7 +18,7 @@ export default function Home(): JSX.Element {
       description="Developer site and docs for Provenance Blockchain Foundation"
     >
       <HomepageHeader />
-      <main>
+      <main className="bg-mid-section-flare bg-center bg-no-repeat">
         <HomepageEssentials />
         <HomepageGetStarted />
         <HomepageTutorials />
