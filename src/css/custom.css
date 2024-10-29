@@ -77,8 +77,3 @@
 html[data-theme="dark"] .navbar__brand>.navbar__logo {
   filter: brightness(0) invert(1);
 }
-
-.footer__link-item {
-  display: flex;
-  align-items: center;
-}

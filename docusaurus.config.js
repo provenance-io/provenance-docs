@@ -2,11 +2,11 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 // To enable syntax highlighting
-import { themes as prismThemes } from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer'
 
 // To enable LaTex
-const math = require('remark-math');
-const katex = require('rehype-katex');
+const math = require('remark-math')
+const katex = require('rehype-katex')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -96,61 +96,7 @@ const config = {
         },
         items: [
           {
-            type: 'dropdown',
-            position: 'left',
-            label: 'Quick Start',
-            items: [
-              {
-                label: 'Start Here',
-                to: 'docs/quick-start/start-here',
-              },
-              {
-                label: 'Get a Wallet & Hash',
-                to: 'docs/quick-start/wallet-and-hash',
-              },
-              {
-                label: 'Run a Node',
-                to: 'docs/pb/blockchain/running-a-node/running-a-node-1/',
-              },
-              {
-                label: 'Become a Validator',
-                to: 'docs/quick-start/become-a-validator',
-              },
-              {
-                label: 'Tokenize an Asset',
-                to: 'docs/learn/asset-lifecycle/markers',
-              },
-              {
-                label: 'Build a dApp',
-                to: 'docs/quick-start/build-a-dapp',
-              },
-              {
-                label: 'Write a Smart Contract',
-                to: 'docs/quick-start/write-a-smart-contract',
-              },
-            ],
-          },
-          {
             label: 'Guides',
-            type: 'dropdown',
-            position: 'left',
-            items: [
-              {
-                label: 'Asset Lifecycle Guide',
-                to: 'docs/learn/asset-lifecycle/assets-overview',
-              },
-              {
-                label: "dApp Builder's Guide",
-                to: 'docs/learn/dapps/dapps-overview',
-              },
-              {
-                label: 'More Guides & Tutorials',
-                to: 'docs/learn/learn-about',
-              },
-            ],
-          },
-          {
-            label: 'Build',
             type: 'dropdown',
             position: 'left',
             items: [
@@ -162,74 +108,45 @@ const config = {
                 label: 'Clients',
                 to: 'docs/build/clients',
               },
-
               {
                 label: 'Libraries and APIs',
                 to: 'docs/build/libraries',
-              },
-              {
-                label: 'Grants Program',
-                to: 'https://provenance.io/grants',
-              },
-            ],
-          },
-          {
-            label: 'Discover',
-            type: 'dropdown',
-            position: 'left',
-            items: [
-              {
-                label: 'Provenance Explorer',
-                to: 'docs/discover/explorer',
-              },
-              {
-                label: 'Wallets',
-                to: 'docs/discover/wallets',
-              },
-              {
-                label: 'Hash',
-                to: 'docs/discover/hash',
-              },
-              {
-                label: 'USDF',
-                to: 'docs/discover/usdf',
               },
               {
                 label: 'Smart Contract Catalog',
                 to: 'docs/discover/smart-contract-catalog',
               },
               {
-                label: 'dApps',
+                label: 'CONNECT dApps',
                 to: 'https://provenance.io/connect',
+              },
+              {
+                label: 'Wallets',
+                to: 'https://www.provenance.io/connect/?tag=wallets',
+              },
+              {
+                label: 'HASH',
+                to: 'https://www.provenance.io/ecosystem/HASH/',
               },
             ],
           },
           {
-            label: 'Connect',
+            label: 'Tutorials',
             type: 'dropdown',
             position: 'left',
             items: [
               {
-                label: 'GitHub',
-                to: 'https://github.com/provenance-io/',
+                label: 'Asset Lifecycle Guide',
+                to: 'docs/learn/asset-lifecycle/assets-overview',
               },
               {
-                label: 'Discord',
-                to: 'https://discord.gg/kNZC8nwCFP',
-              },
-
-              {
-                label: 'LinkedIn',
-                to: 'https://www.linkedin.com/company/provenance-blockchain/',
+                label: 'dApps Builder Guide',
+                to: 'docs/learn/dapps/dapps-overview',
               },
 
               {
-                label: 'Twitter',
-                to: 'https://twitter.com/provenancefdn',
-              },
-              {
-                label: 'Blog',
-                to: 'https://medium.com/provenanceblockchain',
+                label: 'More Tutorials and Guides',
+                to: 'docs/learn/learn-about',
               },
             ],
           },
@@ -299,11 +216,11 @@ const config = {
         name: 'docusaurus-tailwindcss',
         configurePostCss(postcssOptions) {
           // Appends TailwindCSS and AutoPrefixer.
-          postcssOptions.plugins.push(require('tailwindcss'));
-          postcssOptions.plugins.push(require('autoprefixer'));
-          return postcssOptions;
+          postcssOptions.plugins.push(require('tailwindcss'))
+          postcssOptions.plugins.push(require('autoprefixer'))
+          return postcssOptions
         },
-      };
+      }
     },
     [
       '@docusaurus/plugin-client-redirects',
@@ -325,6 +242,6 @@ const config = {
       },
     ],
   ],
-};
+}
 
-module.exports = config;
+module.exports = config

@@ -12,7 +12,9 @@ export default function HomepageHeader() {
           applications that make financial services operate better.
         </p>
         <p>
-          <Button showArrow>Start on Testnet</Button>
+          <Button showArrow linkTo="/docs/quick-start/start-here">
+            Start on Testnet
+          </Button>
         </p>
       </div>
     </header>

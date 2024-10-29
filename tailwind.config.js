@@ -7,10 +7,10 @@ fonts: https://www.figma.com/file/JePDx60O9FB8JD06Irf7Gu/Provenance-Style-Guide?
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/*.{js,jsx,ts,tsx}',
-    './src/components/**/*.{js,jsx,ts,tsx}',
-    './src/templates/**/*.{js,jsx,ts,tsx}',
+    './src/**/*.{md,mdx,js,jsx,ts,tsx}',
+    './docs/**/*.{md,mdx,js,jsx,ts,tsx}',
   ],
+  corePlugins: { preflight: false },
   safelist: [
     {
       pattern: /gap-.+|grid-cols-.+/,

@@ -1,16 +1,16 @@
-import React, { AnchorHTMLAttributes } from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
+import React, { AnchorHTMLAttributes } from 'react'
+import clsx from 'clsx'
+import Link from '@docusaurus/Link'
 
 export type ButtonProps = {
-  children: React.ReactNode;
-  className?: string;
-  showArrow?: boolean;
-  linkTo?: string;
-  btnType?: 'primary' | 'light' | 'outline' | 'icon';
-  size?: 'small' | 'medium' | 'large' | 'full';
-  [key: string]: any;
-};
+  children: React.ReactNode
+  className?: string
+  showArrow?: boolean
+  linkTo?: string
+  btnType?: 'primary' | 'light' | 'outline' | 'icon'
+  size?: 'small' | 'medium' | 'large' | 'full'
+  [key: string]: any
+}
 
 /** Creates a button on the page */
 export default function Button({
@@ -23,7 +23,7 @@ export default function Button({
   ...rest
 }: ButtonProps) {
   return (
-    <Link to={linkTo}>
+    <Link to={linkTo} className="hover:no-underline">
       <button
         {...rest}
         className={clsx(
@@ -53,7 +53,7 @@ export default function Button({
             'p-4': btnType === 'icon' && size === 'large',
           },
 
-          className
+          className,
         )}
       >
         {children}
@@ -71,5 +71,5 @@ export default function Button({
         )}
       </button>
     </Link>
-  );
+  )
 }

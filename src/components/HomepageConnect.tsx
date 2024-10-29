@@ -13,7 +13,7 @@ const ConnectBtn = props => (
 
 export default function Connect() {
   return (
-    <section className="mx-auto grid grid-cols-1 lg:max-w-5xl lg:grid-cols-2 lg:items-center xl:max-w-screen-xl 2xl:max-w-screen-2xl">
+    <section className="mx-auto grid grid-cols-1 md:max-w-5xl md:grid-cols-2 md:items-center xl:max-w-screen-xl 2xl:max-w-screen-2xl">
       <div className="container py-16">
         <h2 className="font-MaisonNeueExtended text-5xl font-bold text-neutral-600">
           <img

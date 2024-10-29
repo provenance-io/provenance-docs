@@ -35,7 +35,9 @@ export default function Tutorials() {
           <Card key={idx} {...props} />
         ))}
       </Cards>
-      <Button showArrow>Find More</Button>
+      <Button showArrow linkTo="/docs/learn/learn-about">
+        Find More
+      </Button>
     </section>
   )
 }
