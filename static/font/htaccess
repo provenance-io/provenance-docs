@@ -1,0 +1,4 @@
+SetEnvIf Referer example\.com localreferer
+<FilesMatch \.(woff)$>
+  Order deny,allow Deny from all Allow from env=localreferer
+</FilesMatch>

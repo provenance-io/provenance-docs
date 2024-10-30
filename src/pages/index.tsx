@@ -1,43 +1,33 @@
-import React from "react";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
-
-import styles from "./index.module.css";
-
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/quick-start/start-here"
-          >
-            Get Started
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import React from 'react'
+import { useIsClient } from '@uidotdev/usehooks'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import Layout from '@theme/Layout'
+import HomepageEssentials from '@site/src/components/Homepage/HomepageEssentials'
+import HomepageHeader from '@site/src/components/Homepage/HomepageHeader'
+import HomepageGetStarted from '@site/src/components/Homepage/HomepageGetStarted'
+import HomepageTutorials from '@site/src/components/Homepage/HomepageTutorials'
+import HomepageConnect from '@site/src/components/Homepage/HomepageConnect'
+import HomepageLearn from '@site/src/components/Homepage/HomepageLearn'
+import HomepageCollaborate from '@site/src/components/Homepage/HomepageCollaborate'
 
 export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext()
+  const isClient = useIsClient()
+
   return (
     <Layout
       title={`${siteConfig.title} Docs`}
       description="Developer site and docs for Provenance Blockchain Foundation"
     >
       <HomepageHeader />
-      <main>
-        <HomepageFeatures />
+      <main className="bg-mid-section-flare bg-center bg-no-repeat">
+        <HomepageEssentials />
+        <HomepageGetStarted />
+        <HomepageTutorials />
+        <HomepageConnect />
+        {isClient && <HomepageLearn />}
+        <HomepageCollaborate />
       </main>
     </Layout>
-  );
+  )
 }

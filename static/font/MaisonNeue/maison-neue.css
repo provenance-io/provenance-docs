@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('./MaisonNeueWEB-Book.woff2') format('woff2'),
+    url('./MaisonNeueWEB-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('./MaisonNeueWEB-Bold.woff2') format('woff2'),
+    url('./MaisonNeueWEB-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('./MaisonNeueWEB-Demi.woff2') format('woff2'),
+    url('./MaisonNeueWEB-Demi.woff') format('woff');
+  font-weight: semibold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('./MaisonNeueWEB-BookItalic.woff2') format('woff2'),
+    url('./MaisonNeueWEB-BookItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('./MaisonNeueWEB-Light.woff2') format('woff2'),
+    url('./MaisonNeueWEB-Light.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url('./MaisonNeueExtendedWEB-Bold.woff2') format('woff2'),
+    url('./MaisonNeueExtendedWEB-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url('./MaisonNeueExtendedWEB-Demi.woff2') format('woff2'),
+    url('./MaisonNeueExtendedWEB-Demi.woff') format('woff');
+  font-weight: semibold;
+  font-style: normal;
+}
