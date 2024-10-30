@@ -96,7 +96,7 @@ const config = {
         },
         items: [
           {
-            label: 'Guides',
+            label: 'Build',
             type: 'dropdown',
             position: 'left',
             items: [
