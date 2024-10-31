@@ -41,8 +41,9 @@ Byte Array Length: `17`
 * Bech32 Example: `"scope1qzge0zaztu65tx5x5llv5xc9ztsqxlkwel"`
 
 #### Scope Values
+<!-- link message: Scope -->
 
-+++ https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/scope.proto#L69-L96
++++ https://github.com/provenance-io/provenance/blob/v1.20.0/proto/provenance/metadata/v1/scope.proto#L70-L102
 
 ```protobuf
 // Scope defines a root reference for a collection of records owned by one or more parties.
@@ -58,14 +59,35 @@ message Scope {
   repeated Party owners = 3 [(gogoproto.nullable) = false];
   // Addresses in this list are authorized to receive off-chain data associated with this scope.
   repeated string data_access = 4;
-  // An address that controls the value associated with this scope.  Standard blockchain accounts and marker accounts
-  // are supported for this value.  This attribute may only be changed by the entity indicated once it is set.
+  // The address that controls the value associated with this scope.
+  //
+  // The value owner is actually tracked by the bank module using a coin with the denom "nft/<scope_id>".
+  // The value owner can be changed using WriteScope or anything that transfers funds, e.g. MsgSend.
+  //
+  // During WriteScope:
+  //  - If this field is empty, it indicates that there should not be a change to the value owner.
+  //    I.e. Once a scope has a value owner, it will always have one (until it's deleted).
+  //  - If this field has a value, the existing value owner will be looked up, and
+  //    - If there's already an existing value owner, they must be a signer,
+  //      and the coin will be transferred to the new value owner.
+  //    - If there isn't yet a value owner, the coin will be minted and sent to the new value owner.
+  //      If the scope already exists, the owners must be signers (just like changing other fields).
+  //      If it's a new scope, there's no special signer limitations related to the value owner.
   string value_owner_address = 5;
   // Whether all parties in this scope and its sessions must be present in this scope's owners field.
   // This also enables use of optional=true scope owners and session parties.
   bool require_party_rollup = 6;
 }
 ```
+
+Before a scope is stored in state, the `value_owner_address` is cleared out (set to an empty string).
+The scope is then protobuf encoded, and those bytes are the value stored in state.
+
+#### Scope Value Owners
+
+The `value_owner_address` is tracked using the `x/bank` module. When a scope first gets a value owner (either upon scope
+creation, or later with an update), a single coin with the denom `nft/<scope_id>` is minted and placed in the value
+owner's account. That coin can be transferred or traded the same ways as any other on-chain funds, e.g. via `MsgSend`.
 
 #### Scope Indexes
 
@@ -78,11 +100,6 @@ Scopes by owner:
 Scopes by Scope Specification:
 * Type byte: `0x11`
 * Part 1: All bytes of the scope specification key
-* Part 2: All bytes of the scope key
-
-Scopes by value owner:
-* Type byte: `0x18`
-* Part 1: The value owner address (length byte then value bytes)
 * Part 2: All bytes of the scope key
 
 
@@ -110,8 +127,9 @@ Byte Array Length: `33`
 * Bech32 Example: `"session1qxge0zaztu65tx5x5llv5xc9zts9sqlch3sxwn44j50jzgt8rshvqyfrjcr"`
 
 #### Session Values
+<!-- link message: Session -->
 
-+++ https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/scope.proto#L98-L124
++++ https://github.com/provenance-io/provenance/blob/v1.20.0/proto/provenance/metadata/v1/scope.proto#L104-L123
 
 ```protobuf
 // Session defines an execution context against a specific specification instance.
@@ -166,8 +184,9 @@ Byte Array Length: `33`
 * Bech32 Example: `"record1q2ge0zaztu65tx5x5llv5xc9ztsw42dq2jdvmdazuwzcaddhh8gmu3mcze3"`
 
 #### Record Values
+<!-- link message: Record -->
 
-+++ https://github.com/provenance-io/provenance/blob/812cb97c77036b8df59e10845fa8a04f4ba84c43/proto/provenance/metadata/v1/scope.proto#L126-L150
++++ https://github.com/provenance-io/provenance/blob/v1.20.0/proto/provenance/metadata/v1/scope.proto#L125-L142
 
 ```protobuf
 // A record (of fact) is attached to a session or each consideration output from a contract
@@ -221,8 +240,9 @@ Byte Array Length: `17`
 * Bech32 Example: `"scopespec1qnwg86nsatx5pl56muw0v9ytlz3qu3jx6m"`
 
 #### Scope Specification Values
+<!-- link message: ScopeSpecification -->
 
-+++ https://github.com/provenance-io/provenance/blob/4192fd46ea56574bb4ffcacb632d8bb54a720b28/proto/provenance/metadata/v1/specification.proto#L36-L58
++++ https://github.com/provenance-io/provenance/blob/v1.20.0/proto/provenance/metadata/v1/specification.proto#L36-L51
 
 ```protobuf
 // ScopeSpecification defines the required parties, resources, conditions, and consideration outputs for a contract
@@ -285,8 +305,9 @@ Byte Array Length: `17`
 * Bech32 Example: `"contractspec1q000d0q2e8w5say53afqdesxp2zqzkr4fn"`
 
 #### Contract Specification Values
+<!-- link message: ContractSpecification -->
 
-+++ https://github.com/provenance-io/provenance/blob/4192fd46ea56574bb4ffcacb632d8bb54a720b28/proto/provenance/metadata/v1/specification.proto#L60-L86
++++ https://github.com/provenance-io/provenance/blob/v1.20.0/proto/provenance/metadata/v1/specification.proto#L53-L76
 
 ```protobuf
 // ContractSpecification defines the required parties, resources, conditions, and consideration outputs for a contract
@@ -351,8 +372,9 @@ Byte Array Length: `33`
 * Bech32 Example: `"recspec1qh00d0q2e8w5say53afqdesxp2zw42dq2jdvmdazuwzcaddhh8gmuqhez44"`
 
 #### Record Specification Values
+<!-- link message: RecordSpecification -->
 
-+++ https://github.com/provenance-io/provenance/blob/4192fd46ea56574bb4ffcacb632d8bb54a720b28/proto/provenance/metadata/v1/specification.proto#L88-L108
++++ https://github.com/provenance-io/provenance/blob/v1.20.0/proto/provenance/metadata/v1/specification.proto#L78-L95
 
 ```protobuf
 // RecordSpecification defines the specification for a Record including allowed/required inputs/outputs
@@ -396,8 +418,9 @@ Byte Array Length: `21`
 | 2-(21 or 33) | The bytes of the owner address.                         |
 
 #### Object Store Locator Values
+<!-- link message: ObjectStoreLocator -->
 
-+++ https://github.com/provenance-io/provenance/blob/main/proto/provenance/metadata/v1/objectstore.proto#L9-L16
++++ https://github.com/provenance-io/provenance/blob/v1.20.0/proto/provenance/metadata/v1/objectstore.proto#L12-L23
 
 ```protobuf
 // Defines an Locator object stored on chain, which represents a owner( blockchain address) associated with a endpoint
