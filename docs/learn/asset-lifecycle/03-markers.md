@@ -45,11 +45,11 @@ finite state machine. A Marker is ready to use when it reaches the `Active` stat
 On Provenance Blockchain, a Marker can be created to govern the rules of any type of coin or token.
 This allows for the generation of a customized and controlled digital asset.
 
-Coin examples include [Hash](https://explorer.provenance.io/asset/nhash), the [utility token](https://provenance.io/ecosystem/HASH/tokenomics/) of Provenance Blockchain; [USDF](https://www.usdfconsortium.com/), a bank-minted tokenized deposit; and [figureomni](https://explorer.provenance.io/asset/cfigureomni),
+Coin examples include [Hash](https://zonescan.io/provenance/assets/nhash), the [utility token](https://provenance.io/ecosystem/HASH/tokenomics/) of Provenance Blockchain; [USDF](https://www.usdfconsortium.com/), a bank-minted tokenized deposit; and [figureomni](https://zonescan.io/provenance/assets/cfigureomni),
 a use case-specific Omnibus Bank coin (tokenized deposit).
 
 Real World Aset examples include private company stock, such as
-[figure-technologies-inc.cs.stock](https://explorer.provenance.io/asset/figure-technologies-inc.cs.stock) or loan
+[figure-technologies-inc.cs.stock](https://zonescan.io/provenance/assets/figure-technologies-inc.cs.stock) or loan
 pools (described below).
 
 While we generally discuss the token represented by a Marker, the unit object transferred between user accounts is a

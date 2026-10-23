@@ -49,8 +49,8 @@ decoupled, and can track the entire lifecycle of an asset.
 | Parameter                     | Value                                                                       | Description                                                            |
 | ----------------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | **acceptable_accreditations** | funds506c.passport.pb                                                       | Indicates LP required accreditations (506c qualified investor)         |
-| **subscription_code_id**      | [12](https://explorer.provenance.io/code/12)                                | Indicates which smart contract to use for LP subscriptions             |
-| **capital_denom**             | [cfigureomni](https://explorer.provenance.io/asset/cfigureomni) (USD cents) | Indicates which settlement token will be accepted as capital by the GP |
+| **subscription_code_id**      | [12](https://zonescan.io/provenance/codes/12)                               | Indicates which smart contract to use for LP subscriptions             |
+| **capital_denom**             | [cfigureomni](https://zonescan.io/provenance/assets/cfigureomni) (USD cents) | Indicates which settlement token will be accepted as capital by the GP |
 | **capital_per_share**         | 1,000                                                                       | Indicates price per share of fund in capital_denom currency (USD $10)  |
 
 <br/>
@@ -59,18 +59,18 @@ decoupled, and can track the entire lifecycle of an asset.
   <TabItem value="2" label="Contract Details">
 
 - Capital Raise smart contract [source code](https://github.com/FigureTechnologies/marketpalace-raise-contract)
-- Capital Raise smart contract [governance proposal](https://explorer.provenance.io/proposal/41)
-- Capital Raise smart contract [wasm code](https://explorer.provenance.io/code/22)
+- Capital Raise smart contract [governance proposal](https://zonescan.io/provenance/governance/41)
+- Capital Raise smart contract [wasm code](https://zonescan.io/provenance/codes/22)
 
 ---
 
   </TabItem>
 <TabItem value="3" label="Example Transactions">
 
-- Example [contract instantiation tx](https://explorer.provenance.io/tx/8C3253C39A3A952486AF35A7C5263838A074C2A07102BDFE2D1BDE2AE2E819A1/5877851)
-- Example [instantiated contract](https://explorer.provenance.io/contract/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p) with configuration (see History tab)
-- Example [commitment coin Marker](https://explorer.provenance.io/asset/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p.commitment)
-- Example [investment coin Marker](https://explorer.provenance.io/asset/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p.investment)
+- Example [contract instantiation tx](https://zonescan.io/provenance/transactions/8C3253C39A3A952486AF35A7C5263838A074C2A07102BDFE2D1BDE2AE2E819A1)
+- Example [instantiated contract](https://zonescan.io/provenance/contracts/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p) with configuration (see History tab)
+- Example [commitment coin Marker](https://zonescan.io/provenance/assets/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p.commitment)
+- Example [investment coin Marker](https://zonescan.io/provenance/assets/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p.investment)
 
 ---
 
@@ -96,15 +96,15 @@ The contract also tracks and manages redemptions and distributions that may occu
 - Raise contract [propose subscription](https://github.com/FigureTechnologies/marketpalace-raise-contract/blob/fb6735997247b96927b394e36570d09938301711/src/contract.rs#L94) entry point
 - Raise contract [instantiate subscription contract](https://github.com/FigureTechnologies/marketpalace-raise-contract/blob/fb6735997247b96927b394e36570d09938301711/src/subscribe.rs#L36)
 - Subscription smart contract [source code](https://github.com/FigureTechnologies/marketpalace-subscription-contract)
-- Subscription smart contract [governance proposal](https://explorer.provenance.io/proposal/42)
-- Subscription smart contract [wasm code](https://explorer.provenance.io/code/23)
+- Subscription smart contract [governance proposal](https://zonescan.io/provenance/governance/42)
+- Subscription smart contract [wasm code](https://zonescan.io/provenance/codes/23)
 
 ---
 
   </TabItem>
 <TabItem value="3" label="Example Transactions">
 
-- Example [Subscription Contract instantiated](https://explorer.provenance.io/contract/pb1fsr88cf0edxjfejhhhz90uqp7634ydvggea0n9thz74mcxn2mrxqahnuys) for investor
+- Example [Subscription Contract instantiated](https://zonescan.io/provenance/contracts/pb1fsr88cf0edxjfejhhhz90uqp7634ydvggea0n9thz74mcxn2mrxqahnuys) for investor
 
 ---
 
@@ -129,7 +129,7 @@ The commitment coin represents uncalled capital in the fund structure. It has im
   </TabItem>
 <TabItem value="3" label="Example Transactions">
 
-- Example of [GP accepting subscription](https://explorer.provenance.io/tx/D5921879CA11B3197D0E0D0298D51FC7DD4EF17EBAE24CBB872D024899F76093/5877856)
+- Example of [GP accepting subscription](https://zonescan.io/provenance/transactions/D5921879CA11B3197D0E0D0298D51FC7DD4EF17EBAE24CBB872D024899F76093)
 
 ---
 
@@ -154,7 +154,7 @@ Capital calls notify Investors using Provenance Event Stream
   </TabItem>
 <TabItem value="3" label="Example Transactions">
 
-- Example of [GP issuing capital call](https://explorer.provenance.io/tx/ED4FCD20ABE8315B5BBC1A4CB3033DF1400C3A7BCB9B596FBD454DC953EE61AC/5877857)
+- Example of [GP issuing capital call](https://zonescan.io/provenance/transactions/ED4FCD20ABE8315B5BBC1A4CB3033DF1400C3A7BCB9B596FBD454DC953EE61AC)
 
 ---
 
@@ -193,7 +193,7 @@ for manual reconciliation and data verification.
   </TabItem>
 <TabItem value="3" label="Example Transactions">
 
-- Example [GP closes capital call](https://explorer.provenance.io/tx/7A021B17114AF3F5473BE5DF0EE0580544A402A566DF5EA118FC15D64672FF86/8144885)
+- Example [GP closes capital call](https://zonescan.io/provenance/transactions/7A021B17114AF3F5473BE5DF0EE0580544A402A566DF5EA118FC15D64672FF86)
 
 ---
 
@@ -202,7 +202,7 @@ for manual reconciliation and data verification.
 
 ## Final Cap Table
 
-The [investment coin Marker](https://explorer.provenance.io/asset/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p.investment)
+The [investment coin Marker](https://zonescan.io/provenance/assets/pb1ff3y36d8hhjxdvk0620z7j52hlpns0wnsmgvgydn0vqq5xx7lluq2hky4p.investment)
 (click to see live example on Provenance Explorer)
 now represents the final cap table for the tokenized asset.
 
@@ -236,7 +236,7 @@ improves operational efficiency but also enhances trust and confidence among inv
   </TabItem>
 <TabItem value="3" label="Example Transactions">
 
-- Example [distribution](https://explorer.provenance.io/tx/68F824AEC9ABE771D04DB69EF1405248911E767C70035EC73510F36FD82F70D0/6615090)
+- Example [distribution](https://zonescan.io/provenance/transactions/68F824AEC9ABE771D04DB69EF1405248911E767C70035EC73510F36FD82F70D0)
 
 ---
 

@@ -10,7 +10,7 @@ Something about bilateral exchange allows T-0 instant settlement.
 
 ## USDF
 
-_[USDF](https://explorer.provenance.io/asset/usdf.c) is a bank-minted tokenized deposit referencing fiat currency on Provenance Blockchain._
+_[USDF](https://zonescan.io/provenance/assets/usdf.c) is a bank-minted tokenized deposit referencing fiat currency on Provenance Blockchain._
 
 USDF is available through the [USDF Consortium](https://www.usdfconsortium.com/), a membership-based association of 
 FDIC-insured banks that have come together to build modern blockchain-based payments rails. USDF enables real-time

@@ -41,4 +41,4 @@ period. Certain proposals such as software upgrades have their effects applied a
 ## Governance Configuration
 
 Current governance configuration parameters can be viewed on the
-[Explorer](https://explorer.provenance.io/network/params) (see the `Gov` configuration section).
+[Zonescan](https://zonescan.io/provenance/utilities#parameters) (see the Governance section).
